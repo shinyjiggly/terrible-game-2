@@ -1,0 +1,245 @@
+--- !ruby/object:Hash
+root:
+- 
+- !ruby/object:RPG::Troop
+  pages:
+  - !ruby/object:RPG::Troop::Page
+    list:
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 0
+    condition: !ruby/object:RPG::Troop::Page::Condition
+      actor_id: 1
+      turn_a: 0
+      turn_valid: false
+      enemy_hp: 50
+      switch_valid: false
+      switch_id: 1
+      enemy_index: 0
+      actor_valid: false
+      actor_hp: 50
+      turn_b: 0
+      enemy_valid: false
+    span: 0
+  name: Endless Mermaid
+  id: 1
+  members:
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 184
+    enemy_id: 1
+    x: 200
+    immortal: false
+- !ruby/object:RPG::Troop
+  pages:
+  - !ruby/object:RPG::Troop::Page
+    list:
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - 4
+      - 0
+      - 0
+      - 9999
+      indent: 0
+      code: 312
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - 4
+      - 1
+      - 0
+      - 300
+      indent: 0
+      code: 312
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 0
+    condition: !ruby/object:RPG::Troop::Page::Condition
+      actor_id: 1
+      turn_a: 0
+      turn_valid: true
+      enemy_hp: 50
+      switch_valid: false
+      switch_id: 1
+      enemy_index: 0
+      actor_valid: false
+      actor_hp: 50
+      turn_b: 1
+      enemy_valid: false
+    span: 0
+  name: Natsiya Soldier*5
+  id: 2
+  members:
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 184
+    enemy_id: 2
+    x: 176
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 264
+    enemy_id: 2
+    x: 168
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 320
+    enemy_id: 2
+    x: 80
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 224
+    enemy_id: 2
+    x: 248
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 320
+    enemy_id: 2
+    x: 224
+    immortal: false
+- !ruby/object:RPG::Troop
+  pages:
+  - !ruby/object:RPG::Troop::Page
+    list:
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "-deudlieness: quite a bit"
+      indent: 0
+      code: 108
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "-5 bullets per turn, high power, low accuracy"
+      indent: 0
+      code: 408
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "-2 turns to kill"
+      indent: 0
+      code: 408
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "-shots each 20% accuracy"
+      indent: 0
+      code: 408
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "-2-3 turns to die"
+      indent: 0
+      code: 108
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "-not very good at dodging"
+      indent: 0
+      code: 408
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "-perefer to take cover"
+      indent: 0
+      code: 408
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "-they act like tanks but they fucking suck at it. "
+      indent: 0
+      code: 408
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - they're also cowards.
+      indent: 0
+      code: 408
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 0
+    condition: !ruby/object:RPG::Troop::Page::Condition
+      actor_id: 1
+      turn_a: 0
+      turn_valid: false
+      enemy_hp: 50
+      switch_valid: false
+      switch_id: 1
+      enemy_index: 0
+      actor_valid: false
+      actor_hp: 50
+      turn_b: 0
+      enemy_valid: false
+    span: 0
+  name: Natsiya Soldier
+  id: 3
+  members:
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 232
+    enemy_id: 2
+    x: 176
+    immortal: false
+- !ruby/object:RPG::Troop
+  pages:
+  - !ruby/object:RPG::Troop::Page
+    list:
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "\\Name[Dolph]Enough!"
+      indent: 0
+      code: 101
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 340
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 0
+    condition: !ruby/object:RPG::Troop::Page::Condition
+      actor_id: 1
+      turn_a: 0
+      turn_valid: false
+      enemy_hp: 20
+      switch_valid: false
+      switch_id: 1
+      enemy_index: 0
+      actor_valid: false
+      actor_hp: 50
+      turn_b: 0
+      enemy_valid: true
+    span: 0
+  - !ruby/object:RPG::Troop::Page
+    list:
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "\\Name[Dolph]Enough!"
+      indent: 0
+      code: 101
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 340
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 0
+    condition: !ruby/object:RPG::Troop::Page::Condition
+      actor_id: 3
+      turn_a: 0
+      turn_valid: false
+      enemy_hp: 50
+      switch_valid: false
+      switch_id: 1
+      enemy_index: 0
+      actor_valid: true
+      actor_hp: 20
+      turn_b: 0
+      enemy_valid: false
+    span: 0
+  name: Masked Man...?
+  id: 4
+  members:
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 216
+    enemy_id: 3
+    x: 552
+    immortal: true

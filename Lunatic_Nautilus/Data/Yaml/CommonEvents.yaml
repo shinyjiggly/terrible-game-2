@@ -1,0 +1,18 @@
+--- !ruby/object:Hash
+root:
+- 
+- !ruby/object:RPG::CommonEvent
+  list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - hp -= 33
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 0
+  name: third recoil
+  trigger: 0
+  switch_id: 1
+  id: 1

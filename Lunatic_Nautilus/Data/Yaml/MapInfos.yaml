@@ -1,0 +1,86 @@
+--- !ruby/object:Hash
+root: !ruby/object:Hash
+  1: !ruby/object:RPG::MapInfo
+    scroll_x: 464
+    name: Ship Deck
+    expanded: true
+    order: 2
+    scroll_y: 478
+    parent_id: 0
+  2: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: Begin
+    expanded: false
+    order: 1
+    scroll_y: 324
+    parent_id: 0
+  3: !ruby/object:RPG::MapInfo
+    scroll_x: 624
+    name: testmap
+    expanded: false
+    order: 12
+    scroll_y: 320
+    parent_id: 0
+  4: !ruby/object:RPG::MapInfo
+    scroll_x: 560
+    name: warhip deck demo
+    expanded: true
+    order: 3
+    scroll_y: 1167
+    parent_id: 1
+  5: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: interior crocodile aligator
+    expanded: false
+    order: 4
+    scroll_y: 376
+    parent_id: 4
+  6: !ruby/object:RPG::MapInfo
+    scroll_x: 384
+    name: daraway's ship
+    expanded: true
+    order: 5
+    scroll_y: 1032
+    parent_id: 1
+  7: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: night scene 1
+    expanded: false
+    order: 7
+    scroll_y: 240
+    parent_id: 1
+  8: !ruby/object:RPG::MapInfo
+    scroll_x: 368
+    name: Cove waterway
+    expanded: true
+    order: 8
+    scroll_y: 464
+    parent_id: 7
+  9: !ruby/object:RPG::MapInfo
+    scroll_x: 532
+    name: midnight liquicave
+    expanded: true
+    order: 9
+    scroll_y: 496
+    parent_id: 8
+  10: !ruby/object:RPG::MapInfo
+    scroll_x: 1315
+    name: cave path
+    expanded: true
+    order: 10
+    scroll_y: 240
+    parent_id: 9
+  11: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: here's the slide
+    expanded: false
+    order: 11
+    scroll_y: 240
+    parent_id: 10
+  12: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: sideways scene
+    expanded: false
+    order: 6
+    scroll_y: 240
+    parent_id: 6
