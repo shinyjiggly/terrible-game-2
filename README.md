@@ -1,17 +1,17 @@
 # lunatic_whatever
 An original RPG Maker XP game about pirates I think.
 
-#How To Work On The Project
+# How To Work On The Project
 
-##Installing Stuff
+## Installing Stuff
 1. Install git. Windows version located at https://git-scm.com/download/win
 2. Install Ruby. Windows installer located at https://rubyinstaller.org/downloads/
 
-##Working With Git
+## Working With Git
 1. Do this tutorial: https://try.github.io
 2. Any questions? PM Blaze and she'll try to help you.
 
-##Cloning The Repository
+## Cloning The Repository
 1. Open Git Bash
 2. type `git clone https://github.com/FallingStar-Games/lunatic_whatever.git` and hit enter.
 3. Press Win+R
