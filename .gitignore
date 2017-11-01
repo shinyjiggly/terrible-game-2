@@ -35,5 +35,5 @@ build-iPhoneSimulator/
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 # Don't commit Data/*.rxdata for the projects outside of "script collection/" as they should be built from the YAML/ and Scripts/ folders. Currently disabled until committing tutorial is written.
-#/Lunatic_Nautilus/Data/*.rxdata
-#/messaround/Data/*.rxdata
+/Lunatic_Nautilus/Data/*.rxdata
+/messaround/Data/*.rxdata
