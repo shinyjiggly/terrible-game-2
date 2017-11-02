@@ -35,24 +35,6 @@ REM #======================
 
 RUBY data_importer.rb %PROJECT_DIR%
 
-REM #=======================
-REM #  Start RPG Maker XP
-REM #=======================
-
-RUBY start_rmxp.rb %PROJECT_DIR%
-
-REM #======================
-REM #  RMXP Data Exporter
-REM #======================
-
-RUBY data_exporter.rb %PROJECT_DIR%
-
-REM #========================
-REM #  RGSS Script Exporter
-REM #========================
-
-RUBY script_exporter.rb %PROJECT_DIR%
-
 REM #================================
 REM #  Return to Original Directory
 REM #================================
