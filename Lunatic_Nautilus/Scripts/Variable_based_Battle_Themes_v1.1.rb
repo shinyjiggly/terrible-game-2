@@ -65,6 +65,7 @@ class PK8
   Varba_Theme[0] = ["battle_theme1", 100, 100] #regular
   Varba_Theme[1] = ["guitarnoodle", 100, 100] #vs daraway
   Varba_Theme[2] = ["bigtestboss", 100, 100] #special
+  Varba_Theme[3] = ["jungle", 100, 100] #???
 end
 
 if PK8::Varba_RMXP == true # If using RMXP

@@ -14,7 +14,7 @@ module Atoa
   #   A = Enemy ID
   #   States = States ID
 
-  Auto_Status_Enemy[1] = [7]
+  #Auto_Status_Enemy[1] = [7] #makes enemy asleep
 
 end
 

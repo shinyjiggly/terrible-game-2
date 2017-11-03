@@ -136,11 +136,11 @@
 64022756    Consume items                                Consume_items.rb
 24406872    States Graphic                               States_Graphic.rb
 71807687    Equipment Sprite <--                         Equipment_Sprite____.rb
-8643023     Victory Window 2 (disabled)                  Victory_Window_2_(disabled).rb
+8643023     Victory Window 2 --disabled--                Victory_Window_2___disabled__.rb
 52246534    FFVII Menu                                   FFVII_Menu.rb
 77964422    Die on the map                               Die_on_the_map.rb
 18011638    Dash                                         Dash.rb
-79881993    Animated Title (version num here)            Animated_Title_(version_num_here).rb
+79881993    Animated Title --version num here--          Animated_Title___version_num_here__.rb
 81063585    Popup Window                                 Popup_Window.rb
 89413122    Variable-based Battle Themes v1.1            Variable_based_Battle_Themes_v1.1.rb
 47444769    Advanced Message Script                      Advanced_Message_Script.rb
@@ -150,5 +150,5 @@
 63588152    Main                                         Main.rb
 95038157    -----------------------------                EMPTY
 39119497    ------gay baby jail------                    ______gay_baby_jail______.rb
-78465921    Twohanded (disabled!!)                       Twohanded_(disabled!!).rb
+78465921    Twohanded --disabled!!--                     Twohanded___disabled!!__.rb
 31494106                                                 EMPTY

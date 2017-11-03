@@ -1615,7 +1615,7 @@ root: !ruby/object:RPG::Map
           - 1
           - 0
           - 0
-          - 3
+          - 0
           indent: 0
           code: 122
         - !ruby/object:RPG::EventCommand
@@ -1935,6 +1935,276 @@ root: !ruby/object:RPG::Map
       y: 7
       x: 20
       id: 15
+    16: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Soldier]\\P[16]Beware of the "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - Endless Mermaid...
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          indent: 0
+          code: 314
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 10
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 9
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 7
+          - 1
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 4
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 3
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 1
+          - 0
+          - 0
+          - 3
+          indent: 0
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_temp.no_pre_emptive = true"
+          indent: 0
+          code: 355
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_temp.no_surprised = true"
+          indent: 0
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_temp.no_back_attack = true"
+          indent: 0
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_temp.no_raid_attack = true"
+          indent: 0
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - true
+          - false
+          indent: 0
+          code: 301
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 601
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 602
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 604
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_temp.no_pre_emptive = false"
+          indent: 0
+          code: 355
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_temp.no_surprised = false"
+          indent: 0
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "#back attack always false, it broke"
+          indent: 0
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "$game_temp.no_raid_attack = false"
+          indent: 0
+          code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 11
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 3
+          - 0
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - 0
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 8
+          - 0
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 10
+          - 0
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 7
+          - 0
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 8
+          - 0
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          - 0
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - 0
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 9
+          - 0
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 4
+          - 0
+          - 0
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: natsiyasdrchardownx2
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      name: EV016
+      y: 4
+      x: 3
+      id: 16
   tileset_id: 1
   bgs: !ruby/object:RPG::AudioFile
     volume: 80

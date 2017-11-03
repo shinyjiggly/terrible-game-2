@@ -27,9 +27,15 @@ root:
   members:
   - !ruby/object:RPG::Troop::Member
     hidden: false
-    y: 184
+    y: 160
     enemy_id: 1
-    x: 200
+    x: 520
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 160
+    enemy_id: 1
+    x: 144
     immortal: false
 - !ruby/object:RPG::Troop
   pages:
@@ -65,7 +71,7 @@ root:
       enemy_index: 0
       actor_valid: false
       actor_hp: 50
-      turn_b: 1
+      turn_b: 0
       enemy_valid: false
     span: 0
   name: Natsiya Soldier*5

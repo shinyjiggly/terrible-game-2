@@ -538,11 +538,11 @@ module Atoa
   #    avaliable for skills.
   
   Skill_Settings[1] = ["MOVETYPE/STEPFOWARD","TARGETSWITCH"] #null skill
-  Skill_Settings[2] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORTARGET/false, false, true, false"] #single shot
-  Skill_Settings[3] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORTARGET/false, false, true, false","COMBO/1-5"] #5 shot
+  Skill_Settings[2] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORCASTER/false, true, false, false"] #single shot
+  Skill_Settings[3] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORCASTER/false, true, false, false"] #5-in-1 shot
   Skill_Settings[4] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[5] = ["MOVETYPE/STEPFOWARD"]
-  Skill_Settings[6] = ["MOVETYPE/STEPFOWARD"]
+  Skill_Settings[6] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORCASTER/false, true, false, false","COMBO/1-5"] #5 shot
   Skill_Settings[7] = ["MOVEPOSITION/50,0,150,0,300","MIRAGEADVANCE/nil","MIRAGEACTION/nil","TARGETSWITCH"]
 
   Skill_Settings[53] = ["MOVETYPE/STEPFOWARD"]
@@ -624,6 +624,7 @@ module Atoa
   #  Effects = Special Effects, look the list on the begin to know wich effects are
   #    avaliable for weapons.
   
+  Weapon_Settings[15] = ["COMBO/2"] 
   Weapon_Settings[17] = ["STARTTHROW/101-Attack13,0,122,123,124,125,300,-20,0,0,0",
                          "MOVETYPE/NOMOVE"]
   Weapon_Settings[18] = ["STARTTHROW/101-Attack13,0,122,123,124,125,300,-20,0,0,0",
@@ -643,9 +644,9 @@ module Atoa
   
   Weapon_Settings[42] = ["MOVETYPE/NOMOVE"]
   
-  Weapon_Settings[69] = ["STARTTHROWWEAPON/nil,10,126,126,126,126,200,0,-20,0,0",
-                         "ENDTHROWWEAPON/nil,10,126,126,126,126,200,0,-20,0,0",
-                         "MOVETYPE/STEPFOWARD","TARGET/ALLENEMIES"]
+  Weapon_Settings[69] = ["STARTTHROWWEAPON/nil,10,11,11,11,11,200,0,-20,0,0",
+                         "ENDTHROWWEAPON/nil,10,11,11,11,11,200,0,-20,0,0",
+                         "MOVETYPE/NOMOVE","TARGET/ALLENEMIES"]
   
   #=============================================================================
   
