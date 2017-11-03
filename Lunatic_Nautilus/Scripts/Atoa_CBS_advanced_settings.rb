@@ -538,8 +538,8 @@ module Atoa
   #    avaliable for skills.
   
   Skill_Settings[1] = ["MOVETYPE/STEPFOWARD","TARGETSWITCH"] #null skill
-  Skill_Settings[2] = ["MOVETYPE/NOMOVE","TARGETSWITCH"]
-  Skill_Settings[3] = ["MOVETYPE/STEPFOWARD","TARGETSWITCH"]
+  Skill_Settings[2] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORTARGET/false, false, true, false"] #single shot
+  Skill_Settings[3] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORTARGET/false, false, true, false","COMBO/1-5"] #5 shot
   Skill_Settings[4] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[5] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[6] = ["MOVETYPE/STEPFOWARD"]
