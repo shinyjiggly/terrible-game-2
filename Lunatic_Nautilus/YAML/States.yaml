@@ -2,9 +2,12 @@
 root:
 - 
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 0
   hit_rate: 100
+  hold_turn: 0
+  eva: 0
+  name: KO
+  zero_hp: true
+  atk_rate: 100
   minus_state_set:
   - 2
   - 3
@@ -21,549 +24,546 @@ root:
   - 14
   - 15
   - 16
-  atk_rate: 100
-  zero_hp: true
-  name: KO
   str_rate: 100
-  slip_damage: false
   battle_only: false
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: false
   rating: 10
-  shock_release_prob: 0
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 4
-  auto_release_prob: 0
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: true
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 0
   id: 1
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: true
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 0
   hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  hold_turn: 0
+  eva: 0
   name: Stun
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: false
   rating: 5
-  shock_release_prob: 0
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 4
-  auto_release_prob: 100
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 100
   id: 2
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 0
   hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  hold_turn: 0
+  eva: 0
   name: Poison
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: true
   battle_only: false
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: true
   rating: 5
-  shock_release_prob: 0
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 0
-  auto_release_prob: 0
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 0
   id: 3
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 2
   hit_rate: 20
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  hold_turn: 2
+  eva: 0
   name: Dazzle
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: false
   rating: 5
-  shock_release_prob: 0
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 0
-  auto_release_prob: 50
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 50
   id: 4
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 2
   hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  hold_turn: 2
+  eva: 0
   name: Mute
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: false
   rating: 5
-  shock_release_prob: 0
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 1
-  auto_release_prob: 50
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 50
   id: 5
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 2
   hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  hold_turn: 2
+  eva: 0
   name: Confuse
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: false
   rating: 5
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
+  maxsp_rate: 100
   shock_release_prob: 25
-  maxsp_rate: 100
-  mdef_rate: 100
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 3
-  auto_release_prob: 50
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 50
   id: 6
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 2
   hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  hold_turn: 2
+  eva: 0
   name: ZZZ
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: false
   rating: 5
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
+  maxsp_rate: 100
   shock_release_prob: 50
-  maxsp_rate: 100
-  mdef_rate: 100
   cant_evade: true
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 4
+  agi_rate: 100
+  guard_element_set: []
+  maxhp_rate: 100
   auto_release_prob: 50
-  maxhp_rate: 100
-  guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
   id: 7
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
+  hit_rate: 100
   hold_turn: 2
-  hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  eva: 0
   name: Paralyze
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: false
   rating: 5
-  shock_release_prob: 0
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 4
+  agi_rate: 100
+  guard_element_set: []
+  maxhp_rate: 100
   auto_release_prob: 25
-  maxhp_rate: 100
-  guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
   id: 8
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 4
   hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  hold_turn: 4
+  eva: 0
   name: Weaken
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 50
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: false
   rating: 4
-  shock_release_prob: 0
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 0
-  auto_release_prob: 100
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 100
   id: 9
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 4
   hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  hold_turn: 4
+  eva: 0
   name: Clumsy
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: false
   rating: 4
-  shock_release_prob: 0
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 0
-  auto_release_prob: 100
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 100
   id: 10
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 50
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 4
   hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  hold_turn: 4
+  eva: 0
   name: Slowed
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: false
   rating: 4
-  shock_release_prob: 0
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
+  mdef_rate: 100
+  restriction: 0
   agi_rate: 50
-  restriction: 0
-  auto_release_prob: 100
-  maxhp_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 100
   id: 11
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
+  hit_rate: 100
   hold_turn: 4
-  hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  eva: 0
   name: uhhhh...
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 50
-  nonresistance: false
+  slip_damage: false
   rating: 4
-  shock_release_prob: 0
+  nonresistance: false
+  int_rate: 50
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 0
-  auto_release_prob: 100
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 100
   id: 12
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 6
   hit_rate: 100
-  minus_state_set: []
-  atk_rate: 150
-  zero_hp: false
+  hold_turn: 6
+  eva: 0
   name: Sharp
+  zero_hp: false
+  atk_rate: 150
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: true
+  slip_damage: false
   rating: 3
-  shock_release_prob: 0
+  nonresistance: true
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 0
-  auto_release_prob: 100
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 100
   id: 13
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 6
   hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  hold_turn: 6
+  eva: 0
   name: Barrier
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: true
+  slip_damage: false
   rating: 3
-  shock_release_prob: 0
+  nonresistance: true
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 0
-  auto_release_prob: 100
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 150
+  maxhp_rate: 100
+  auto_release_prob: 100
   id: 14
-  animation_id: 0
+  pdef_rate: 150
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 6
   hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  hold_turn: 6
+  eva: 0
   name: Resist
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: true
+  slip_damage: false
   rating: 3
-  shock_release_prob: 0
+  nonresistance: true
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
+  shock_release_prob: 0
+  cant_evade: false
   mdef_rate: 150
-  cant_evade: false
-  agi_rate: 100
   restriction: 0
-  auto_release_prob: 100
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 100
   id: 15
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 100
+  hit_rate: 100
   hold_turn: 6
-  hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  eva: 100
   name: Blink
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: true
+  slip_damage: false
   rating: 3
-  shock_release_prob: 0
+  nonresistance: true
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 0
-  auto_release_prob: 100
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 100
   id: 16
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
-  hold_turn: 0
   hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
+  hold_turn: 0
+  eva: 0
   name: ugh
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: false
   rating: 5
-  shock_release_prob: 0
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 0
   cant_evade: false
-  agi_rate: 100
+  mdef_rate: 100
   restriction: 0
-  auto_release_prob: 0
-  maxhp_rate: 100
+  agi_rate: 100
   guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
+  maxhp_rate: 100
+  auto_release_prob: 0
   id: 17
-  animation_id: 0
+  pdef_rate: 100
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
 - !ruby/object:RPG::State
-  eva: 0
+  hit_rate: 100
   hold_turn: 0
-  hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
-  zero_hp: false
-  name: Bleed
-  str_rate: 100
-  slip_damage: false
-  battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
-  rating: 5
-  shock_release_prob: 4
-  maxsp_rate: 100
-  mdef_rate: 100
-  cant_evade: false
-  agi_rate: 100
-  restriction: 0
-  auto_release_prob: 0
-  maxhp_rate: 100
-  guard_element_set: []
-  cant_get_exp: false
-  pdef_rate: 100
-  id: 18
-  animation_id: 0
-  dex_rate: 100
-- !ruby/object:RPG::State
   eva: 0
-  hold_turn: 1
-  hit_rate: 100
-  minus_state_set: []
-  atk_rate: 100
+  name: Bleed
   zero_hp: false
-  name: Clock-blocked
+  atk_rate: 100
+  minus_state_set: []
   str_rate: 100
-  slip_damage: false
   battle_only: true
-  plus_state_set: []
-  int_rate: 100
-  nonresistance: false
+  slip_damage: false
   rating: 5
-  shock_release_prob: 0
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
   maxsp_rate: 100
-  mdef_rate: 100
+  shock_release_prob: 4
   cant_evade: false
+  mdef_rate: 100
+  restriction: 0
   agi_rate: 100
-  restriction: 4
-  auto_release_prob: 100
-  maxhp_rate: 100
   guard_element_set: []
-  cant_get_exp: false
+  maxhp_rate: 100
+  auto_release_prob: 0
+  id: 18
   pdef_rate: 100
-  id: 19
-  animation_id: 0
+  cant_get_exp: false
   dex_rate: 100
+  animation_id: 0
+- !ruby/object:RPG::State
+  hit_rate: 100
+  hold_turn: 1
+  eva: 0
+  name: Clock-blocked
+  zero_hp: false
+  atk_rate: 100
+  minus_state_set: []
+  str_rate: 100
+  battle_only: true
+  slip_damage: false
+  rating: 5
+  nonresistance: false
+  int_rate: 100
+  plus_state_set: []
+  maxsp_rate: 100
+  shock_release_prob: 0
+  cant_evade: false
+  mdef_rate: 100
+  restriction: 4
+  agi_rate: 100
+  guard_element_set: []
+  maxhp_rate: 100
+  auto_release_prob: 100
+  id: 19
+  pdef_rate: 100
+  cant_get_exp: false
+  dex_rate: 100
+  animation_id: 0

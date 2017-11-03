@@ -247,6 +247,7 @@ root:
       - 1
   frame_max: 6
   position: 3
+  id: 1
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -262,7 +263,6 @@ root:
       pitch: 100
     flash_duration: 5
     frame: 1
-  id: 1
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: hit
@@ -334,6 +334,7 @@ root:
       - 1
   frame_max: 4
   position: 1
+  id: 2
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -349,7 +350,6 @@ root:
       pitch: 120
     flash_duration: 5
     frame: 1
-  id: 2
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: shoot
@@ -517,6 +517,7 @@ root:
       data: []
   frame_max: 11
   position: 1
+  id: 3
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -546,7 +547,6 @@ root:
       pitch: 150
     flash_duration: 5
     frame: 5
-  id: 3
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: spike
@@ -1282,6 +1282,7 @@ root:
       data: []
   frame_max: 21
   position: 1
+  id: 4
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -1325,7 +1326,6 @@ root:
       pitch: 80
     flash_duration: 5
     frame: 7
-  id: 4
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: lava geyser
@@ -2197,6 +2197,7 @@ root:
       data: []
   frame_max: 19
   position: 1
+  id: 5
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -2212,7 +2213,6 @@ root:
       pitch: 80
     flash_duration: 5
     frame: 3
-  id: 5
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: fire wind
@@ -2636,6 +2636,7 @@ root:
       data: []
   frame_max: 17
   position: 3
+  id: 6
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -2679,7 +2680,6 @@ root:
       pitch: 140
     flash_duration: 3
     frame: 8
-  id: 6
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: infernal
@@ -3631,6 +3631,7 @@ root:
       data: []
   frame_max: 19
   position: 1
+  id: 7
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -3674,7 +3675,6 @@ root:
       pitch: 100
     flash_duration: 5
     frame: 9
-  id: 7
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: rumble
@@ -4018,6 +4018,7 @@ root:
       data: []
   frame_max: 13
   position: 3
+  id: 8
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -4033,7 +4034,6 @@ root:
       pitch: 80
     flash_duration: 5
     frame: 0
-  id: 8
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: test
@@ -4193,6 +4193,7 @@ root:
       data: []
   frame_max: 11
   position: 1
+  id: 9
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -4236,7 +4237,6 @@ root:
       pitch: 135
     flash_duration: 5
     frame: 6
-  id: 9
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ah
@@ -4324,6 +4324,7 @@ root:
       data: []
   frame_max: 7
   position: 1
+  id: 10
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -4339,7 +4340,6 @@ root:
       pitch: 120
     flash_duration: 5
     frame: 0
-  id: 10
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: fire
@@ -4443,8 +4443,8 @@ root:
       data: []
   frame_max: 7
   position: 1
-  timings: []
   id: 11
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: shoot5
@@ -4964,6 +4964,7 @@ root:
       - 1
   frame_max: 18
   position: 1
+  id: 12
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -5049,7 +5050,6 @@ root:
       pitch: 140
     flash_duration: 5
     frame: 14
-  id: 12
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: dark shot
@@ -5225,6 +5225,7 @@ root:
       data: []
   frame_max: 13
   position: 1
+  id: 13
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -5240,7 +5241,6 @@ root:
       pitch: 50
     flash_duration: 5
     frame: 4
-  id: 13
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: engulfy
@@ -5576,6 +5576,7 @@ root:
       data: []
   frame_max: 22
   position: 1
+  id: 14
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -5605,7 +5606,6 @@ root:
       pitch: 100
     flash_duration: 5
     frame: 18
-  id: 14
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: dark storm
@@ -5965,6 +5965,7 @@ root:
       data: []
   frame_max: 17
   position: 1
+  id: 15
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -5994,7 +5995,6 @@ root:
       pitch: 100
     flash_duration: 5
     frame: 7
-  id: 15
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: space darkness
@@ -6410,6 +6410,7 @@ root:
       data: []
   frame_max: 19
   position: 3
+  id: 16
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -6481,7 +6482,6 @@ root:
       pitch: 150
     flash_duration: 5
     frame: 14
-  id: 16
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: dark flames
@@ -6665,6 +6665,7 @@ root:
       - 1
   frame_max: 11
   position: 1
+  id: 17
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -6680,7 +6681,6 @@ root:
       pitch: 50
     flash_duration: 10
     frame: 0
-  id: 17
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: no hope
@@ -6992,6 +6992,7 @@ root:
       - 1
   frame_max: 19
   position: 1
+  id: 18
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -7049,7 +7050,6 @@ root:
       pitch: 100
     flash_duration: 5
     frame: 14
-  id: 18
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: blinded
@@ -7305,6 +7305,7 @@ root:
       data: []
   frame_max: 16
   position: 1
+  id: 19
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -7334,7 +7335,6 @@ root:
       pitch: 70
     flash_duration: 5
     frame: 9
-  id: 19
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: giduma???
@@ -7590,8 +7590,8 @@ root:
       data: []
   frame_max: 15
   position: 1
-  timings: []
   id: 20
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: skeleton vore, killing me instantly
@@ -8263,6 +8263,7 @@ root:
       data: []
   frame_max: 29
   position: 1
+  id: 21
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -8306,7 +8307,6 @@ root:
       pitch: 100
     flash_duration: 20
     frame: 22
-  id: 21
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: sloow
@@ -8746,8 +8746,8 @@ root:
       data: []
   frame_max: 19
   position: 1
-  timings: []
   id: 22
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: nyooom
@@ -9019,8 +9019,8 @@ root:
       data: []
   frame_max: 25
   position: 1
-  timings: []
   id: 23
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: good to go
@@ -9332,6 +9332,7 @@ root:
       data: []
   frame_max: 20
   position: 1
+  id: 24
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -9347,7 +9348,6 @@ root:
       pitch: 100
     flash_duration: 5
     frame: 10
-  id: 24
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: delay
@@ -9619,6 +9619,7 @@ root:
       data: []
   frame_max: 19
   position: 1
+  id: 25
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -9634,7 +9635,6 @@ root:
       pitch: 100
     flash_duration: 5
     frame: 6
-  id: 25
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: bonus move
@@ -9962,6 +9962,7 @@ root:
       data: []
   frame_max: 22
   position: 1
+  id: 26
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -10005,7 +10006,6 @@ root:
       pitch: 120
     flash_duration: 5
     frame: 16
-  id: 26
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: whip
@@ -10133,6 +10133,7 @@ root:
       data: []
   frame_max: 10
   position: 1
+  id: 27
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -10162,7 +10163,6 @@ root:
       pitch: 150
     flash_duration: 5
     frame: 2
-  id: 27
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: axe
@@ -10290,6 +10290,7 @@ root:
       data: []
   frame_max: 9
   position: 1
+  id: 28
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -10305,7 +10306,6 @@ root:
       pitch: 150
     flash_duration: 5
     frame: 2
-  id: 28
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: magicky thing
@@ -10521,6 +10521,7 @@ root:
       data: []
   frame_max: 14
   position: 1
+  id: 29
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -10550,7 +10551,6 @@ root:
       pitch: 100
     flash_duration: 5
     frame: 6
-  id: 29
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: scratch
@@ -10830,6 +10830,7 @@ root:
       data: []
   frame_max: 10
   position: 1
+  id: 30
   timings:
   - !ruby/object:RPG::Animation::Timing
     flash_color: !ruby/object:Color
@@ -10845,7 +10846,6 @@ root:
       pitch: 100
     flash_duration: 5
     frame: 3
-  id: 30
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -10861,8 +10861,8 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 31
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -10878,8 +10878,8 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 32
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -10895,8 +10895,8 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 33
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -10912,8 +10912,8 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 34
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -10929,8 +10929,8 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 35
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -10946,8 +10946,8 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 36
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -10963,8 +10963,8 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 37
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -10980,8 +10980,8 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 38
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -10997,8 +10997,8 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 39
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -11014,8 +11014,8 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 40
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -11031,8 +11031,8 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 41
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -11048,8 +11048,8 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 42
+  timings: []
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
@@ -11065,6 +11065,6 @@ root:
       data: []
   frame_max: 1
   position: 1
-  timings: []
   id: 43
+  timings: []
   animation_hue: 0

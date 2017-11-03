@@ -9,40 +9,38 @@
 
 require 'win32ole'
 require 'zlib'
+require './rmxp/rgss'
 
-#-------------------------------------------------------------------------------------
-# This change to Hash is critical if we want to version YAML files.  By default, the
-# order of hash keys is not guaranteed.  This change modifies the Hash#to_yaml method
-# to sort the hash based on key before emitting the YAML for it.
-#-------------------------------------------------------------------------------------
-class Hash
-  # Replacing the to_yaml function so it'll serialize hashes sorted (by their keys)
-  def to_yaml( opts = {} )
-    YAML::quick_emit( object_id, opts ) do |out|
-      out.map( taguri, to_yaml_style ) do |map|
-        sort.each do |k, v|   # <-- here's my addition (the 'sort')
-          map.add( k, v )
-        end
-      end
-    end
-  end
-end
+# Add bin directory to the Ruby search path
+#$LOAD_PATH << "C:/bin"
+
+require './addons'
 
 require 'yaml'
 
+# Setup the config file path
+os_version = `ver`.strip
+if os_version.index( "Windows XP" )
+  $CONFIG_PATH = String.new( $PROJECT_DIR + "/Game.yaml" )
+elsif os_version.index( "Windows" )
+  $CONFIG_PATH = String.new( $PROJECT_DIR + "/Game.yaml" ).gsub! "/", "\\"
+end
+
 # Read the config YAML file
 config = nil
-File.open( "config.yaml", "r+" ) do |configfile|
+File.open( $CONFIG_PATH, "r+" ) do |configfile|
   config = YAML::load( configfile )
 end
 
 # Initialize configuration parameters
-$RXDATA_DIR         = config["rxdata_dir"]
-$YAML_DIR           = config["yaml_dir"]
-$SCRIPTS_DIR        = config["scripts_dir"]
-$RXDATA_IGNORE_LIST = config["rxdata_ignore_list"]
-$VERBOSE            = config["verbose"]
-$MAGIC_NUMBER       = config["magic_number"]
+$RXDATA_DIR          = config['rxdata_dir']
+$YAML_DIR            = config['yaml_dir']
+$SCRIPTS_DIR         = config['scripts_dir']
+$RXDATA_IGNORE_LIST  = config['rxdata_ignore_list']
+$VERBOSE             = config['verbose']
+$MAGIC_NUMBER        = config['magic_number']
+$DEFAULT_STARTUP_MAP = config['edit_map_id']
+puts 
 
 # This is the filename for the export digest.  This file has an entry for
 # each RGSS script which has been exported from RMXP.  Each entry has 
@@ -223,7 +221,3 @@ def fix_name(title)
   end
   result
 end
-
-
-# Get the project directory from the command-line argument
-$PROJECT_DIR = ARGV[0]

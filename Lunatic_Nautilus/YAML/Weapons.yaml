@@ -2,1786 +2,1786 @@
 root:
 - 
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: Aged Axegun
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
   price: 500
-  agi_plus: 0
-  pdef: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
+  element_set: []
   atk: 20
-  element_set: []
   animation2_id: 28
-  description: An odd find that's become one of Dolph's favorites.
-  str_plus: 0
   id: 1
+  str_plus: 0
+  description: An odd find that's become one of Dolph's favorites.
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: Cutlass
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
   price: 50
-  agi_plus: 0
-  pdef: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
-  atk: 13
   element_set: []
+  atk: 13
   animation2_id: 27
-  description: a basic sword used by pirates. Nothing Special.
-  str_plus: 0
   id: 2
+  str_plus: 0
+  description: a basic sword used by pirates. Nothing Special.
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: Bare Fists
-  price: 0
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
   agi_plus: 0
-  pdef: 0
+  price: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
+  element_set: []
   atk: 9
-  element_set: []
   animation2_id: 2
-  description: Gonna throw down!
-  str_plus: 0
   id: 3
+  str_plus: 0
+  description: Gonna throw down!
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: Rapier
-  price: 0
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
   agi_plus: 0
-  pdef: 0
+  price: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
+  element_set: []
   atk: 13
-  element_set: []
   animation2_id: 2
-  description: a sword used for fencing.
-  str_plus: 0
   id: 4
+  str_plus: 0
+  description: a sword used for fencing.
 - !ruby/object:RPG::Weapon
+  int_plus: 0
   animation1_id: 1
-  int_plus: 0
-  icon_name: cosmicicon
-  mdef: 0
-  minus_state_set: []
   name: BETA STICK
-  price: 0
+  minus_state_set: []
+  mdef: 0
+  icon_name: cosmicicon
   agi_plus: 0
-  pdef: 0
+  price: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
-  atk: 10
   element_set: []
+  atk: 10
   animation2_id: 5
-  description: for beta testing only
-  str_plus: 0
   id: 5
+  str_plus: 0
+  description: for beta testing only
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: Knife
-  price: 0
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
   agi_plus: 0
-  pdef: 0
+  price: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
+  element_set: []
   atk: 3
-  element_set: []
   animation2_id: 2
-  description: it's a knife.
-  str_plus: 0
   id: 6
+  str_plus: 0
+  description: it's a knife.
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: basic axe
-  price: 0
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
   agi_plus: 0
-  pdef: 0
+  price: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
+  element_set: []
   atk: 12
-  element_set: []
   animation2_id: 28
-  description: hey where's the gun on this thing?
-  str_plus: 0
   id: 7
+  str_plus: 0
+  description: hey where's the gun on this thing?
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: Antlers
-  price: 0
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
   agi_plus: 0
-  pdef: 0
+  price: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
+  element_set: []
   atk: 33
-  element_set: []
   animation2_id: 2
-  description: At least they're useful for something...
-  str_plus: 12
   id: 8
+  str_plus: 12
+  description: At least they're useful for something...
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: Pistol
-  price: 0
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
   agi_plus: 0
-  pdef: 0
+  price: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
+  element_set: []
   atk: 100
-  element_set: []
   animation2_id: 3
-  description: it's a gun
-  str_plus: 0
   id: 9
+  str_plus: 0
+  description: it's a gun
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: Rifle
-  price: 0
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
   agi_plus: 0
-  pdef: 0
+  price: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
+  element_set: []
   atk: 75
-  element_set: []
   animation2_id: 3
-  description: this is a bigger gun.
-  str_plus: 0
   id: 10
+  str_plus: 0
+  description: this is a bigger gun.
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: Basic Staff
-  price: 0
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
   agi_plus: 0
-  pdef: 0
+  price: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
-  atk: 10
   element_set: []
+  atk: 10
   animation2_id: 2
-  description: A long pole
-  str_plus: 0
   id: 11
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: Simple Mace
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 10
-  element_set: []
-  animation2_id: 2
-  description: It's bark is sometimes worse than its bite...
   str_plus: 0
-  id: 12
+  description: A long pole
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
+  animation1_id: 0
+  name: Simple Mace
   minus_state_set: []
-  name: Tamer's whip
-  price: 0
+  mdef: 0
+  icon_name: ''
   agi_plus: 0
+  price: 0
+  plus_state_set: []
   pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 10
+  animation2_id: 2
+  id: 12
+  str_plus: 0
+  description: It's bark is sometimes worse than its bite...
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: Tamer's whip
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
   plus_state_set:
   - 8
-  dex_plus: 0
-  atk: 6
-  element_set: []
-  animation2_id: 27
-  description: A weapon of control.
-  str_plus: 0
-  id: 13
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: Claws
-  price: 0
-  agi_plus: 0
   pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 6
+  animation2_id: 27
+  id: 13
+  str_plus: 0
+  description: A weapon of control.
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: Claws
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
   plus_state_set:
   - 18
+  pdef: 0
   dex_plus: 0
+  element_set: []
   atk: 9
-  element_set: []
   animation2_id: 30
-  description: Blades from your own hands...er, paws
-  str_plus: 0
   id: 14
+  str_plus: 0
+  description: Blades from your own hands...er, paws
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: Knives
-  price: 0
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
   agi_plus: 0
-  pdef: 0
+  price: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
+  element_set: []
   atk: 3
-  element_set: []
   animation2_id: 2
-  description: it's two knives
-  str_plus: 0
   id: 15
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: it's two knives
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 16
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 17
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 18
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 19
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 20
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 21
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 22
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 23
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 24
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 25
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 26
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 27
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 28
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 29
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 30
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 31
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 32
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 33
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 34
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 35
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 36
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 37
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 38
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 39
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 40
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 41
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 42
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 43
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 44
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 45
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 46
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 47
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 48
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 49
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 50
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 51
+  str_plus: 0
+  description: ''
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: Divine Retribution
-  price: 0
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
   agi_plus: 0
-  pdef: 0
+  price: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
-  atk: 0
   element_set: []
+  atk: 0
   animation2_id: 0
-  description: A legendary mace with a strong sense of justice.
-  str_plus: 0
   id: 52
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: A legendary mace with a strong sense of justice.
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 53
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 54
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 55
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 56
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 57
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 58
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 59
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 60
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 61
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 62
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 63
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 64
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 65
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 66
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 67
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 68
+  str_plus: 0
+  description: ''
 - !ruby/object:RPG::Weapon
-  animation1_id: 0
   int_plus: 0
-  icon_name: planticon
-  mdef: 0
-  minus_state_set: []
+  animation1_id: 0
   name: 69 NICE
-  price: 0
+  minus_state_set: []
+  mdef: 0
+  icon_name: planticon
   agi_plus: 0
-  pdef: 0
+  price: 0
   plus_state_set: []
+  pdef: 0
   dex_plus: 0
-  atk: 0
   element_set: []
+  atk: 0
   animation2_id: 2
-  description: testing weapon for weapon formulas
-  str_plus: 0
   id: 69
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: testing weapon for weapon formulas
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 70
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 71
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 72
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 73
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 74
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 75
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 76
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 77
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 78
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 79
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 80
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 81
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 82
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 83
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 84
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 85
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 86
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 87
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 88
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 89
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 90
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 91
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 92
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 93
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 94
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 95
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 96
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 97
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 98
-- !ruby/object:RPG::Weapon
-  animation1_id: 0
-  int_plus: 0
-  icon_name: ''
-  mdef: 0
-  minus_state_set: []
-  name: ''
-  price: 0
-  agi_plus: 0
-  pdef: 0
-  plus_state_set: []
-  dex_plus: 0
-  atk: 0
-  element_set: []
-  animation2_id: 0
-  description: ''
   str_plus: 0
+  description: ''
+- !ruby/object:RPG::Weapon
+  int_plus: 0
+  animation1_id: 0
+  name: ''
+  minus_state_set: []
+  mdef: 0
+  icon_name: ''
+  agi_plus: 0
+  price: 0
+  plus_state_set: []
+  pdef: 0
+  dex_plus: 0
+  element_set: []
+  atk: 0
+  animation2_id: 0
   id: 99
+  str_plus: 0
+  description: ''

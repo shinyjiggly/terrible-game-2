@@ -6,132 +6,178 @@
 
 class Scene_Battle
   #--------------------------------------------------------------------------
+  # * Start Pre-Battle Phase
+  #--------------------------------------------------------------------------
+  def start_phase1
+    # Shift to phase 1
+    @phase = 1
+    # Clear all party member actions
+    $game_party.clear_actions
+    # Set up battle event
+    setup_battle_event
+  end
+  #--------------------------------------------------------------------------
+  # * Frame Update (pre-battle phase)
+  #--------------------------------------------------------------------------
+  def update_phase1
+    # Determine win/loss situation
+    if judge
+      # If won or lost: end method
+      return
+    end
+    # Start party command phase
+    start_phase2
+  end
+  #--------------------------------------------------------------------------
   # * Start Party Command Phase
   #--------------------------------------------------------------------------
-  alias acbs_start_phase2_scenebattle start_phase2
   def start_phase2
-    return if judge
-    @escape_ratio += 1
-    @help_window.visible = false
-    for battler in $game_party.actors + $game_troop.enemies
-      battler.defense_pose = false
+    # Shift to phase 2
+    @phase = 2
+    # Set actor to non-selecting
+    @actor_index = -1
+    @active_battler = nil
+    # Enable party command window
+    @party_command_window.active = true
+    @party_command_window.visible = true
+    # Disable actor command window
+    @actor_command_window.active = false
+    @actor_command_window.visible = false
+    # Clear main phase flag
+    $game_temp.battle_main_phase = false
+    # Clear all party member actions
+    $game_party.clear_actions
+    # If impossible to input command
+    unless $game_party.inputable?
+      # Start main phase
+      start_phase4
     end
-    acbs_start_phase2_scenebattle
+  end
+  #--------------------------------------------------------------------------
+  # * Frame Update (party command phase)
+  #--------------------------------------------------------------------------
+  def update_phase2
+    # If C button was pressed
+    if Input.trigger?(Input::C)
+      # Branch by party command window cursor position
+      case @party_command_window.index
+      when 0  # fight
+        # Play decision SE
+        $game_system.se_play($data_system.decision_se)
+        # Start actor command phase
+        start_phase3
+      when 1  # escape
+        # If it's not possible to escape
+        if $game_temp.battle_can_escape == false
+          # Play buzzer SE
+          $game_system.se_play($data_system.buzzer_se)
+          return
+        end
+        # Play decision SE
+        $game_system.se_play($data_system.decision_se)
+        # Escape processing
+        update_phase2_escape
+      end
+      return
+    end
   end
   #--------------------------------------------------------------------------
   # * Frame Update (party command phase: escape)
   #--------------------------------------------------------------------------
   def update_phase2_escape
-    if rand(100) < set_escape_rate
+    # Calculate enemy agility average
+    enemies_agi = 0
+    enemies_number = 0
+    for enemy in $game_troop.enemies
+      if enemy.exist?
+        enemies_agi += enemy.agi
+        enemies_number += 1
+      end
+    end
+    if enemies_number > 0
+      enemies_agi /= enemies_number
+    end
+    # Calculate actor agility average
+    actors_agi = 0
+    actors_number = 0
+    for actor in $game_party.actors
+      if actor.exist?
+        actors_agi += actor.agi
+        actors_number += 1
+      end
+    end
+    if actors_number > 0
+      actors_agi /= actors_number
+    end
+    # Determine if escape is successful
+    success = rand(100) < 50 * actors_agi / enemies_agi
+    # If escape is successful
+    if success
+      # Play escape SE
       $game_system.se_play($data_system.escape_se)
+      # Return to BGM before battle started
+      $game_system.bgm_play($game_temp.map_bgm)
+      # Battle ends
       battle_end(1)
-      play_map_bmg
+    # If escape is failure
     else
-      @escape_ratio += 2
+      # Clear all party member actions
       $game_party.clear_actions
+      # Start main phase
       start_phase4
     end
-  end
-  #--------------------------------------------------------------------------
-  # * Set escape success rate
-  #--------------------------------------------------------------------------
-  def set_escape_rate
-    actors_agi = $game_party.avarage_stat("agi")
-    enemies_agi = $game_troop.avarage_stat("agi")
-    return @escape_ratio * actors_agi / enemies_agi
   end
   #--------------------------------------------------------------------------
   # * Start After Battle Phase
   #--------------------------------------------------------------------------
   def start_phase5
+    # Shift to phase 5
     @phase = 5
-    @help_window.visible = false
-  end
-  #--------------------------------------------------------------------------
-  # * Set items droped by enemies
-  #--------------------------------------------------------------------------
-  def treasure_drop(enemy)
-    if rand(100) < enemy.treasure_prob
-      treasure = $data_items[enemy.item_id] if enemy.item_id > 0
-      treasure = $data_weapons[enemy.weapon_id] if enemy.weapon_id > 0
-      treasure = $data_armors[enemy.armor_id] if enemy.armor_id > 0
+    # Play battle end ME
+    $game_system.me_play($game_system.battle_end_me)
+    # Return to BGM before battle started
+    $game_system.bgm_play($game_temp.map_bgm)
+    # Initialize EXP, amount of gold, and treasure
+    exp = 0
+    gold = 0
+    treasures = []
+    # Loop
+    for enemy in $game_troop.enemies
+      # If enemy is not hidden
+      unless enemy.hidden
+        # Add EXP and amount of gold obtained
+        exp += enemy.exp
+        gold += enemy.gold
+        # Determine if treasure appears
+        if rand(100) < enemy.treasure_prob
+          if enemy.item_id > 0
+            treasures.push($data_items[enemy.item_id])
+          end
+          if enemy.weapon_id > 0
+            treasures.push($data_weapons[enemy.weapon_id])
+          end
+          if enemy.armor_id > 0
+            treasures.push($data_armors[enemy.armor_id])
+          end
+        end
+      end
     end
-    return treasure
-  end
-  #--------------------------------------------------------------------------
-  # * EXP Gain
-  #--------------------------------------------------------------------------
-  def gain_exp
-    exp = exp_gained
+    # Treasure is limited to a maximum of 6 items
+    treasures = treasures[0..5]
+    # Obtaining EXP
     for i in 0...$game_party.actors.size
       actor = $game_party.actors[i]
       if actor.cant_get_exp? == false
         last_level = actor.level
         actor.exp += exp
-        @status_window.level_up(i) if actor.level > last_level
+        if actor.level > last_level
+          @status_window.level_up(i)
+        end
       end
     end
-    return exp
-  end
-  #--------------------------------------------------------------------------
-  # * Set gained EXP
-  #--------------------------------------------------------------------------
-  def exp_gained
-    for enemy in $game_troop.enemies
-      exp = exp.nil? ? enemy.exp : exp + enemy.exp
-    end
-    if EXP_Share
-      actor_number = 0
-      for actor in $game_party.actors
-        actor_number += 1 unless actor.cant_get_exp?
-      end
-      exp = exp / [actor_number, 1].max
-    end
-    return exp
-  end
-  #--------------------------------------------------------------------------
-  # * Frame Update (after battle phase)
-  #--------------------------------------------------------------------------
-  def update_phase5
-    return if not_in_position($game_party.actors) or collapsing
-    unless $game_temp.battle_victory
-      set_result_window
-    end
-    if @phase5_wait_count > 0 and $game_temp.battle_victory
-      @phase5_wait_count -= 1
-      update_result_window
-      return
-    end
-    battle_end(0) if Input.trigger?(Input::C) and $game_temp.battle_victory
-  end
-  #--------------------------------------------------------------------------
-  # * Show result window
-  #--------------------------------------------------------------------------
-  def set_result_window
-    $game_system.me_play($game_system.battle_end_me)
-    play_map_bmg
-    treasures = []
-    for enemy in $game_troop.enemies
-      gold = gold.nil? ? enemy.gold : gold + enemy.gold
-      treasures << treasure_drop(enemy) unless enemy.hidden
-    end
-    exp = gain_exp
-    treasures = treasures.compact
-    gain_battle_spoil(gold, treasures)
-    @status_window.visible = false
-    @result_window = Window_BattleResult.new(exp, gold, treasures)
-    @result_window.add_multi_drops
-    $game_temp.battle_victory = true
-    set_victory_battlecry
-    @phase5_wait_count = Victory_Time
-  end
-  #--------------------------------------------------------------------------
-  # * Add items and gold to inventory
-  #     gold      : gold ammount
-  #     treasures : items
-  #--------------------------------------------------------------------------
-  def gain_battle_spoil(gold, treasures)
+    # Obtaining gold
     $game_party.gain_gold(gold)
+    # Obtaining treasure
     for item in treasures
       case item
       when RPG::Item
@@ -142,57 +188,34 @@ class Scene_Battle
         $game_party.gain_armor(item.id, 1)
       end
     end
+    # Make battle result window
+    @result_window = Window_BattleResult.new(exp, gold, treasures)
+    # Set wait count
+    @phase5_wait_count = 100
   end
   #--------------------------------------------------------------------------
-  # * Result Window Update
+  # * Frame Update (after battle phase)
   #--------------------------------------------------------------------------
-  def update_result_window
-    if @phase5_wait_count == 0
-      @result_window.update
-      @result_window.visible = true
-      $game_temp.battle_main_phase = false
-      @status_window.refresh
-    end
-  end
-  #--------------------------------------------------------------------------
-  # * Set allies victory battlecry
-  #--------------------------------------------------------------------------
-  def set_victory_battlecry
-    @victory_battlercry_battler
-    battle_cry_set = []
-    for battler in $game_party.actors
-      if check_bc_basic(battler, "VICTORY") and not battler.dead?
-        battle_cry_set << battler
+  def update_phase5
+    # If wait count is larger than 0
+    if @phase5_wait_count > 0
+      # Decrease wait count
+      @phase5_wait_count -= 1
+      # If wait count reaches 0
+      if @phase5_wait_count == 0
+        # Show result window
+        @result_window.visible = true
+        # Clear main phase flag
+        $game_temp.battle_main_phase = false
+        # Refresh status window
+        @status_window.refresh
       end
+      return
     end
-    unless battle_cry_set.empty? or $game_temp.no_actor_victory_bc
-      @victory_battlercry_battler = rand(battle_cry_set.size)
-    end 
-    if @last_active_actor != nil and not @last_active_actor.dead? and not
-       $game_temp.no_actor_victory_bc and battle_cry_set.include?(@last_active_enemy)
-      @victory_battlercry_battler = @last_active_actor
+    # If C button was pressed
+    if Input.trigger?(Input::C)
+      # Battle ends
+      battle_end(0)
     end
-    battle_cry_basic(@victory_battlercry_battler, "VICTORY") if @victory_battlercry_battler != nil
-  end
-  #--------------------------------------------------------------------------
-  # * Check if all battlers returned to their postions
-  #     party : party actors
-  #--------------------------------------------------------------------------
-  def not_in_position(party)
-    for battler in party
-      next unless battler.exist?
-      return true if battler.actual_x != battler.base_x
-      return true if battler.actual_y != battler.base_y
-    end
-    return false
-  end
-  #--------------------------------------------------------------------------
-  # * Check if an battler is during collapse
-  #--------------------------------------------------------------------------
-  def collapsing
-    for battler in $game_party.actors + $game_troop.enemies
-      return true if @spriteset.battler(battler).collapsing?
-    end
-    return false
   end
 end

@@ -99,25 +99,25 @@
 95698182    Atoa CBS - basic settings                    Atoa_CBS_basic_settings.rb
 69493194    Atoa CBS - advanced settings                 Atoa_CBS_advanced_settings.rb
 34381364    -----------------------------                EMPTY
-79216357    Object Superclass                            Object_Superclass.rb
-88254654    Weapon Class                                 Weapon_Class.rb
-91262721    Sprite Class                                 Sprite_Class.rb
-25974529    Sprite_Damage                                Sprite_Damage.rb
-57712716    Sprite_Battler                               Sprite_Battler.rb
-65863261    Throw_Sprite                                 Throw_Sprite.rb
-58515470    Spriteset_Battle                             Spriteset_Battle.rb
-62844030    Game_Battler                                 Game_Battler.rb
-78718865    Game_Actor                                   Game_Actor.rb
-35842394    Game_Enemy                                   Game_Enemy.rb
-64416899    Game_Party                                   Game_Party.rb
-43824694    Window_Base                                  Window_Base.rb
-65086911    Arrow_Base                                   Arrow_Base.rb
-77387994    Game_Temp                                    Game_Temp.rb
-50810533    Scene_Skill                                  Scene_Skill.rb
-85766596    Scene_Battle 1                               Scene_Battle_1.rb
-51009013    Scene_Battle 2                               Scene_Battle_2.rb
-17970177    Scene_Battle 3                               Scene_Battle_3.rb
-44841854    Scene_Battle 4                               Scene_Battle_4.rb
+79216357    Atoa Object Superclass                       Atoa_Object_Superclass.rb
+88254654    Atoa Weapon Class                            Atoa_Weapon_Class.rb
+91262721    Atoa Sprite Class                            Atoa_Sprite_Class.rb
+25974529    Atoa Sprite_Damage                           Atoa_Sprite_Damage.rb
+57712716    Atoa Sprite_Battler                          Atoa_Sprite_Battler.rb
+65863261    Atoa Throw_Sprite                            Atoa_Throw_Sprite.rb
+58515470    Atoa Spriteset_Battle                        Atoa_Spriteset_Battle.rb
+62844030    Atoa Game_Battler                            Atoa_Game_Battler.rb
+78718865    Atoa Game_Actor                              Atoa_Game_Actor.rb
+35842394    Atoa Game_Enemy                              Atoa_Game_Enemy.rb
+64416899    Atoa Game_Party                              Atoa_Game_Party.rb
+43824694    Atoa Window_Base                             Atoa_Window_Base.rb
+65086911    Atoa Arrow_Base                              Atoa_Arrow_Base.rb
+77387994    Atoa Game_Temp                               Atoa_Game_Temp.rb
+50810533    Atoa Scene_Skill                             Atoa_Scene_Skill.rb
+85766596    Atoa Scene_Battle 1                          Atoa_Scene_Battle_1.rb
+51009013    Atoa Scene_Battle 2                          Atoa_Scene_Battle_2.rb
+17970177    Atoa Scene_Battle 3                          Atoa_Scene_Battle_3.rb
+44841854    Atoa Scene_Battle 4                          Atoa_Scene_Battle_4.rb
 81782964    -----------------------------                EMPTY
 20208372    Large Party Menu                             Large_Party_Menu.rb
 60317430    Atoa CTB                                     Atoa_CTB.rb
@@ -142,7 +142,7 @@
 18011638    Dash                                         Dash.rb
 79881993    Animated Title (version num here)            Animated_Title_(version_num_here).rb
 81063585    Popup Window                                 Popup_Window.rb
-89413122    Variable-based Battle Themes v1.1            Variable_based_Battle_Themes_v1.1__.rb
+89413122    Variable-based Battle Themes v1.1            Variable_based_Battle_Themes_v1.1.rb
 47444769    Advanced Message Script                      Advanced_Message_Script.rb
 86422875    Draining skill                               Draining_skill.rb
 25664505    hp sacrifice                                 hp_sacrifice.rb

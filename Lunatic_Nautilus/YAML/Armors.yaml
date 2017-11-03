@@ -2,1685 +2,1685 @@
 root:
 - 
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: Clothes
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 12
   guard_state_set: []
-  dex_plus: 0
   kind: 2
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: Regular old clothes. It's best to at least wear this.
   id: 1
+  description: Regular old clothes. It's best to at least wear this.
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 6
-  icon_name: ''
+  int_plus: 0
   name: Short Breeches
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 6
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 4
   guard_state_set: []
-  dex_plus: 0
   kind: 2
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: Perfect for jumping in!
   id: 2
+  description: Perfect for jumping in!
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: Seaworthy Longcoat
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 15
   guard_state_set: []
-  dex_plus: 0
   kind: 2
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: A long blue coat perfect for weathering the ocean.
   id: 3
+  description: A long blue coat perfect for weathering the ocean.
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 7
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 7
   name: Elegant outfit
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 13
   guard_state_set: []
-  dex_plus: 2
   kind: 2
+  dex_plus: 2
   guard_element_set: []
-  str_plus: 0
-  description: Looks rather dignified, though maybe a bit stuffy.
   id: 4
+  description: Looks rather dignified, though maybe a bit stuffy.
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: Nice clothes
-  agi_plus: 21
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 21
   pdef: 12
   guard_state_set: []
-  dex_plus: 0
   kind: 2
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: High quality threads for the best comfort and style.
   id: 5
+  description: High quality threads for the best comfort and style.
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 6
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 7
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 8
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 9
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 10
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 11
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 12
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 13
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 14
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 15
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 16
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 17
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 18
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 19
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 20
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 21
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 22
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 23
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 24
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 25
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 26
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 27
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 28
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 29
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 30
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 31
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 32
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: Captain's bandanna
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 1
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: Streaked red with the blood of your enemies (not really)
   id: 33
+  description: Streaked red with the blood of your enemies (not really)
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 34
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 35
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 36
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 37
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 38
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 39
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 40
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 41
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 42
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 43
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 44
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 45
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 46
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 47
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 48
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 49
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 50
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 51
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 52
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 53
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 54
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 55
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 56
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 57
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 58
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 59
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 60
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 61
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 62
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 63
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 64
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 65
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 66
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 67
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 68
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 69
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 70
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 71
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 72
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 73
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 74
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 75
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 76
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 77
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 78
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 79
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 80
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 81
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 82
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 83
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 84
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 85
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 86
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 87
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 88
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 89
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 90
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 91
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 92
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 93
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 94
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 95
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 96
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 97
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 98
+  description: ''
+  str_plus: 0
 - !ruby/object:RPG::Armor
-  int_plus: 0
   eva: 0
-  mdef: 0
-  icon_name: ''
+  int_plus: 0
   name: ''
-  agi_plus: 0
-  price: 0
+  icon_name: ''
+  mdef: 0
   auto_state_id: 0
+  price: 0
+  agi_plus: 0
   pdef: 0
   guard_state_set: []
-  dex_plus: 0
   kind: 0
+  dex_plus: 0
   guard_element_set: []
-  str_plus: 0
-  description: ''
   id: 99
+  description: ''
+  str_plus: 0

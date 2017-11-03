@@ -9,154 +9,99 @@ class Game_Temp
   #--------------------------------------------------------------------------
   # * Public Instance Variables
   #--------------------------------------------------------------------------
-  attr_accessor :hide_windows
-  attr_accessor :skip_intro
-  attr_accessor :battle_start
-  attr_accessor :battle_end
-  attr_accessor :battle_victory
-  attr_accessor :battle_escape
-  attr_accessor :party_escaped
-  attr_accessor :status_hide
-  attr_accessor :no_actor_intro_bc
-  attr_accessor :no_enemy_intro_bc
-  attr_accessor :no_actor_victory_bc
-  attr_accessor :no_enemy_victory_bc
-  attr_accessor :battlers_viweport
+  attr_accessor :map_bgm                  # map music (for battle memory)
+  attr_accessor :message_text             # message text
+  attr_accessor :message_proc             # message callback (Proc)
+  attr_accessor :choice_start             # show choices: opening line
+  attr_accessor :choice_max               # show choices: number of items
+  attr_accessor :choice_cancel_type       # show choices: cancel
+  attr_accessor :choice_proc              # show choices: callback (Proc)
+  attr_accessor :num_input_start          # input number: opening line
+  attr_accessor :num_input_variable_id    # input number: variable ID
+  attr_accessor :num_input_digits_max     # input number: digit amount
+  attr_accessor :message_window_showing   # message window showing
+  attr_accessor :common_event_id          # common event ID
+  attr_accessor :in_battle                # in-battle flag
+  attr_accessor :battle_calling           # battle calling flag
+  attr_accessor :battle_troop_id          # battle troop ID
+  attr_accessor :battle_can_escape        # battle flag: escape possible
+  attr_accessor :battle_can_lose          # battle flag: losing possible
+  attr_accessor :battle_proc              # battle callback (Proc)
+  attr_accessor :battle_turn              # number of battle turns
+  attr_accessor :battle_event_flags       # battle event flags: completed
+  attr_accessor :battle_abort             # battle flag: interrupt
+  attr_accessor :battle_main_phase        # battle flag: main phase
+  attr_accessor :battleback_name          # battleback file name
+  attr_accessor :forcing_battler          # battler being forced into action
+  attr_accessor :shop_calling             # shop calling flag
+  attr_accessor :shop_goods               # list of shop goods
+  attr_accessor :name_calling             # name input: calling flag
+  attr_accessor :name_actor_id            # name input: actor ID
+  attr_accessor :name_max_char            # name input: max character count
+  attr_accessor :menu_calling             # menu calling flag
+  attr_accessor :menu_beep                # menu: play sound effect flag
+  attr_accessor :save_calling             # save calling flag
+  attr_accessor :debug_calling            # debug calling flag
+  attr_accessor :player_transferring      # player place movement flag
+  attr_accessor :player_new_map_id        # player destination: map ID
+  attr_accessor :player_new_x             # player destination: x-coordinate
+  attr_accessor :player_new_y             # player destination: y-coordinate
+  attr_accessor :player_new_direction     # player destination: direction
+  attr_accessor :transition_processing    # transition processing flag
+  attr_accessor :transition_name          # transition file name
+  attr_accessor :gameover                 # game over flag
+  attr_accessor :to_title                 # return to title screen flag
+  attr_accessor :last_file_index          # last save file no.
+  attr_accessor :debug_top_row            # debug screen: for saving conditions
+  attr_accessor :debug_index              # debug screen: for saving conditions
   #--------------------------------------------------------------------------
   # * Object Initialization
   #--------------------------------------------------------------------------
-  alias acbs_initialize_gametemp initialize
   def initialize
-    acbs_initialize_gametemp
-    @hide_windows = false
-    @skip_intro = false
-    @battle_start = false
-    @battle_end = false
-    @battle_victory = false
-    @battle_escape = false
-    @party_escaped = false
-    @status_hide = false
-    @no_actor_intro_bc = true
-    @no_enemy_intro_bc = true
-    @no_actor_victory_bc = true
-    @no_enemy_victory_bc = true
-  end
-end
-
-#==============================================================================
-# ** Game_System
-#------------------------------------------------------------------------------
-#  This class handles data surrounding the system. Backround music, etc.
-#  is managed here as well. Refer to "$game_system" for the instance of 
-#  this class.
-#==============================================================================
-
-class Game_System
-  #--------------------------------------------------------------------------
-  # * Include Settings Module
-  #--------------------------------------------------------------------------
-  include Atoa
-  #--------------------------------------------------------------------------
-  # * Public Instance Variables
-  #--------------------------------------------------------------------------
-  attr_accessor :battler_positions
-  #--------------------------------------------------------------------------
-  # * Object Initialization
-  #--------------------------------------------------------------------------
-  alias acbs_initialize_gamesys initialize
-  def initialize
-    acbs_initialize_gamesys
-    @battler_positions = Custom_Postions
-  end
-end
-
-#==============================================================================
-# ** Game_BattleAction
-#------------------------------------------------------------------------------
-#  This class handles actions in battle. It's used within the Game_Battler 
-#  class.
-#==============================================================================
-
-class Game_BattleAction
-  #--------------------------------------------------------------------------
-  # * Public Instance Variables
-  #--------------------------------------------------------------------------
-  attr_accessor :hit_times
-  attr_accessor :combo_times
-  attr_accessor :action_sequence
-  #--------------------------------------------------------------------------
-  # * Clear
-  #--------------------------------------------------------------------------
-  alias acbs_clear clear
-  def clear
-    acbs_clear
-    @hit_times = 0
-    @combo_times = 0
-    @action_sequence = []
-  end
-end
-
-#==============================================================================
-# ** Game_Troop
-#------------------------------------------------------------------------------
-#  This class deals with troops. Refer to "$game_troop" for the instance of
-#  this class.
-#==============================================================================
-
-class Game_Troop
-  #--------------------------------------------------------------------------
-  # * Clear
-  #--------------------------------------------------------------------------
-  def clear_actions
-    for enemies in @enemies
-      enemies.current_action.clear
-    end
-  end
-  #--------------------------------------------------------------------------
-  # * Get stat avarage value
-  #     stat : status
-  #--------------------------------------------------------------------------
-  def avarage_stat(stat)
-    value = 0
-    for target in @enemies
-      value += eval("target.#{stat}")
-    end
-    value /= [@enemies.size, 1].max
-    return value
-  end
-  #--------------------------------------------------------------------------
-  # * Get battlers avarage position
-  #--------------------------------------------------------------------------
-  def avarage_position
-    x = 0
-    y = 0
-    for target in @enemies
-      x += target.actual_x
-      y += target.actual_y
-    end
-    x /= [@enemies.size, 1].max
-    y /= [@enemies.size, 1].max
-    return [x, y]
-  end
-end
-
-#==============================================================================
-# ** Interpreter 
-#------------------------------------------------------------------------------
-#  This interpreter runs event commands. This class is used within the
-#  Game_System class and the Game_Event class.
-#==============================================================================
-
-class Interpreter
-  #--------------------------------------------------------------------------
-  # * Enemy Transform
-  #--------------------------------------------------------------------------
-  def command_336
-    enemy = $game_troop.enemies[@parameters[0]]
-    if enemy != nil
-      enemy.transform(@parameters[1])
-      $scene.spriteset.battler(enemy).change_pose(0)
-    end
-    return true
+    @map_bgm = nil
+    @message_text = nil
+    @message_proc = nil
+    @choice_start = 99
+    @choice_max = 0
+    @choice_cancel_type = 0
+    @choice_proc = nil
+    @num_input_start = 99
+    @num_input_variable_id = 0
+    @num_input_digits_max = 0
+    @message_window_showing = false
+    @common_event_id = 0
+    @in_battle = false
+    @battle_calling = false
+    @battle_troop_id = 0
+    @battle_can_escape = false
+    @battle_can_lose = false
+    @battle_proc = nil
+    @battle_turn = 0
+    @battle_event_flags = {}
+    @battle_abort = false
+    @battle_main_phase = false
+    @battleback_name = ''
+    @forcing_battler = nil
+    @shop_calling = false
+    @shop_id = 0
+    @name_calling = false
+    @name_actor_id = 0
+    @name_max_char = 0
+    @menu_calling = false
+    @menu_beep = false
+    @save_calling = false
+    @debug_calling = false
+    @player_transferring = false
+    @player_new_map_id = 0
+    @player_new_x = 0
+    @player_new_y = 0
+    @player_new_direction = 0
+    @transition_processing = false
+    @transition_name = ""
+    @gameover = false
+    @to_title = false
+    @last_file_index = 0
+    @debug_top_row = 0
+    @debug_index = 0
   end
 end

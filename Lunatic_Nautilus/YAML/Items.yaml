@@ -2,2873 +2,2873 @@
 root:
 - 
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: Potion
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 50
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: 105-Heal01
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 3
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
+  recover_sp_rate: 0
+  parameter_type: 0
   animation2_id: 1
-  parameter_type: 0
-  description: Restores HP to one ally.
+  hit: 100
   id: 1
-  variance: 0
+  description: Restores HP to one ally.
   recover_hp: 500
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: false
-  icon_name: watericon
-  minus_state_set: []
+  animation1_id: 0
   name: Blue Orb
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: watericon
   recover_hp_rate: 0
+  common_event_id: 0
+  mdef_f: 0
+  price: 0
   occasion: 3
-  price: 0
-  recover_sp: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: The Power of Water...?
+  animation2_id: 0
+  hit: 100
   id: 2
-  variance: 0
+  description: The Power of Water...?
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
+  consumable: true
   animation1_id: 1
-  consumable: true
-  icon_name: ''
-  minus_state_set: []
   name: wake me up
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 12
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 2222
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 5
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: wake me up inside
+  animation2_id: 0
+  hit: 100
   id: 3
-  variance: 0
+  description: wake me up inside
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 4
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 5
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 6
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 7
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 8
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 9
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 10
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 11
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 12
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 13
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 14
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 15
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 16
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 17
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 18
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 19
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 20
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 21
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 22
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 23
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 24
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 25
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 26
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 27
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 28
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 29
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 30
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 31
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 32
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 33
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 34
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 35
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 36
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 37
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 38
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 39
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 40
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 41
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 42
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 43
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 44
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 45
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 46
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 47
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 48
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 49
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 50
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 51
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 52
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 53
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 54
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 55
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 56
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 57
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 58
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 59
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 60
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 61
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 62
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 63
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 64
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 65
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 66
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 67
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 68
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 69
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 70
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 71
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 72
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 73
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 74
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 75
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 76
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 77
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 78
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 79
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 80
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 81
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 82
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 83
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 84
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 85
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 86
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 87
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 88
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 89
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 90
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 91
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 92
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 93
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 94
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 95
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 96
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 97
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 98
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0
 - !ruby/object:RPG::Item
-  animation1_id: 0
   consumable: true
-  icon_name: ''
-  minus_state_set: []
+  animation1_id: 0
   name: ''
-  mdef_f: 0
-  common_event_id: 0
+  minus_state_set: []
+  icon_name: ''
   recover_hp_rate: 0
-  occasion: 0
+  common_event_id: 0
+  mdef_f: 0
   price: 0
-  recover_sp: 0
+  occasion: 0
   plus_state_set: []
-  pdef_f: 0
+  recover_sp: 0
+  parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
-  parameter_points: 0
+  pdef_f: 0
   scope: 0
-  recover_sp_rate: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
+  recover_sp_rate: 0
   parameter_type: 0
-  description: ''
+  animation2_id: 0
+  hit: 100
   id: 99
-  variance: 0
+  description: ''
   recover_hp: 0
+  variance: 0

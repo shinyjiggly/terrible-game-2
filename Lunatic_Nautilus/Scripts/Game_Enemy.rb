@@ -7,180 +7,298 @@
 
 class Game_Enemy < Game_Battler
   #--------------------------------------------------------------------------
-  # * Public Instance Variables
-  #--------------------------------------------------------------------------
-  attr_accessor :steal_items     # steal item list
-  attr_accessor :steal_attempt   # steal attempts value
-  #--------------------------------------------------------------------------
   # * Object Initialization
   #     troop_id     : troop ID
   #     member_index : troop member index
-  #     enemy_id     : enemy ID
   #--------------------------------------------------------------------------
-  def initialize(troop_id, member_index, enemy_id = nil)
+  def initialize(troop_id, member_index)
     super()
     @troop_id = troop_id
     @member_index = member_index
     troop = $data_troops[@troop_id]
-    @enemy_id = enemy_id.nil? ? troop.members[@member_index].enemy_id : enemy_id
+    @enemy_id = troop.members[@member_index].enemy_id
     enemy = $data_enemies[@enemy_id]
     @battler_name = enemy.battler_name
     @battler_hue = enemy.battler_hue
-    @maxhp = maxhp
-    @maxsp = maxsp
-    @hp = @maxhp
-    @sp = @maxsp
-    @str = base_str
-    @dex = base_dex
-    @agi = base_agi
-    @int = base_int
-    @gold = gold
-    @exp = exp
-    @hidden = enemy_id.nil? ? troop.members[@member_index].hidden : false
-    @immortal = enemy_id.nil? ? troop.members[@member_index].immortal : false
-    @steal_items = Enemy_Steal[@enemy_id].to_a
-    @steal_attempt = 0
-    @moving = @sp_damage = false
-    battler_position_setup
+    @hp = maxhp
+    @sp = maxsp
+    @hidden = troop.members[@member_index].hidden
+    @immortal = troop.members[@member_index].immortal
   end
   #--------------------------------------------------------------------------
-  # * Check if battler is an actor
+  # * Get Enemy ID
   #--------------------------------------------------------------------------
-  def actor?
+  def id
+    return @enemy_id
+  end
+  #--------------------------------------------------------------------------
+  # * Get Index
+  #--------------------------------------------------------------------------
+  def index
+    return @member_index
+  end
+  #--------------------------------------------------------------------------
+  # * Get Name
+  #--------------------------------------------------------------------------
+  def name
+    return $data_enemies[@enemy_id].name
+  end
+  #--------------------------------------------------------------------------
+  # * Get Basic Maximum HP
+  #--------------------------------------------------------------------------
+  def base_maxhp
+    return $data_enemies[@enemy_id].maxhp
+  end
+  #--------------------------------------------------------------------------
+  # * Get Basic Maximum SP
+  #--------------------------------------------------------------------------
+  def base_maxsp
+    return $data_enemies[@enemy_id].maxsp
+  end
+  #--------------------------------------------------------------------------
+  # * Get Basic Strength
+  #--------------------------------------------------------------------------
+  def base_str
+    return $data_enemies[@enemy_id].str
+  end
+  #--------------------------------------------------------------------------
+  # * Get Basic Dexterity
+  #--------------------------------------------------------------------------
+  def base_dex
+    return $data_enemies[@enemy_id].dex
+  end
+  #--------------------------------------------------------------------------
+  # * Get Basic Agility
+  #--------------------------------------------------------------------------
+  def base_agi
+    return $data_enemies[@enemy_id].agi
+  end
+  #--------------------------------------------------------------------------
+  # * Get Basic Intelligence
+  #--------------------------------------------------------------------------
+  def base_int
+    return $data_enemies[@enemy_id].int
+  end
+  #--------------------------------------------------------------------------
+  # * Get Basic Attack Power
+  #--------------------------------------------------------------------------
+  def base_atk
+    return $data_enemies[@enemy_id].atk
+  end
+  #--------------------------------------------------------------------------
+  # * Get Basic Physical Defense
+  #--------------------------------------------------------------------------
+  def base_pdef
+    return $data_enemies[@enemy_id].pdef
+  end
+  #--------------------------------------------------------------------------
+  # * Get Basic Magic Defense
+  #--------------------------------------------------------------------------
+  def base_mdef
+    return $data_enemies[@enemy_id].mdef
+  end
+  #--------------------------------------------------------------------------
+  # * Get Basic Evasion
+  #--------------------------------------------------------------------------
+  def base_eva
+    return $data_enemies[@enemy_id].eva
+  end
+  #--------------------------------------------------------------------------
+  # * Get Offensive Animation ID for Normal Attack
+  #--------------------------------------------------------------------------
+  def animation1_id
+    return $data_enemies[@enemy_id].animation1_id
+  end
+  #--------------------------------------------------------------------------
+  # * Get Target Animation ID for Normal Attack
+  #--------------------------------------------------------------------------
+  def animation2_id
+    return $data_enemies[@enemy_id].animation2_id
+  end
+  #--------------------------------------------------------------------------
+  # * Get Element Revision Value
+  #     element_id : Element ID
+  #--------------------------------------------------------------------------
+  def element_rate(element_id)
+    # Get a numerical value corresponding to element effectiveness
+    table = [0,200,150,100,50,0,-100]
+    result = table[$data_enemies[@enemy_id].element_ranks[element_id]]
+    # If protected by state, this element is reduced by half
+    for i in @states
+      if $data_states[i].guard_element_set.include?(element_id)
+        result /= 2
+      end
+    end
+    # End Method
+    return result
+  end
+  #--------------------------------------------------------------------------
+  # * Get State Effectiveness
+  #--------------------------------------------------------------------------
+  def state_ranks
+    return $data_enemies[@enemy_id].state_ranks
+  end
+  #--------------------------------------------------------------------------
+  # * Determine State Guard
+  #     state_id : state ID
+  #--------------------------------------------------------------------------
+  def state_guard?(state_id)
     return false
   end
   #--------------------------------------------------------------------------
-  # * Decide if Command is Inputable
+  # * Get Normal Attack Element
   #--------------------------------------------------------------------------
-  def inputable?
-    return super
-  end 
-  #--------------------------------------------------------------------------
-  # * Type string setting
-  #--------------------------------------------------------------------------
-  def type_name
-    return 'Enemy'
+  def element_set
+    return []
   end
   #--------------------------------------------------------------------------
-  # Definição de arma atual
+  # * Get Normal Attack State Change (+)
   #--------------------------------------------------------------------------
-  def current_weapon
-    return nil
+  def plus_state_set
+    return []
   end
   #--------------------------------------------------------------------------
-  # * Set initial position
+  # * Get Normal Attack State Change (-)
   #--------------------------------------------------------------------------
-  def battler_position_setup
-    base_x = @troop_id == 0 ? 0 : self.screen_x
-    base_y = @troop_id == 0 ? 0 : self.screen_y
-    @base_x = @original_x = @actual_x = @target_x = @initial_x = @hit_x = @damage_x = base_x
-    @base_y = @original_y = @actual_y = @target_y = @initial_y = @hit_y = @damage_y = base_y
+  def minus_state_set
+    return []
   end
   #--------------------------------------------------------------------------
-  # * Set multi drop items
+  # * Aquire Actions
   #--------------------------------------------------------------------------
-  def multi_drops
-    drop_items = []
-    return drop_items if Enemy_Drops[@enemy_id].nil?
-    Enemy_Drops[@enemy_id].each do |item, drop_rate|
-      item = item.split('')
-      if item[0] == 'i'
-        item = item.join
-        item.slice!('i')
-        if (rand(1000) < (drop_rate * 10).to_i) and not 
-           (item_id == $data_items[item.to_i].id)
-          drop_items << $data_items[item.to_i]
-        end
-      elsif item[0] == 'a'
-        item = item.join
-        item.slice!('a')
-        if (rand(1000) < (drop_rate * 10).to_i) and not 
-           (armor_id == $data_armors[item.to_i].id)
-          drop_items << $data_armors[item.to_i]
-        end
-      elsif item[0] == 'w'
-        item = item.join
-        item.slice!('w')
-        if (rand(1000) < (drop_rate * 10).to_i) and not 
-           (weapon_id == $data_weapons[item.to_i].id)
-          drop_items << $data_weapons[item.to_i]
-        end
-      end
-    end
-    return drop_items
+  def actions
+    return $data_enemies[@enemy_id].actions
   end
   #--------------------------------------------------------------------------
-  # * Set steal items
-  #     user : user
-  #     ext  : steal action extensio
+  # * Get EXP
   #--------------------------------------------------------------------------
-  def stole_item_set(user, ext)
-    return false unless ext != nil
-    @item_stole = @item_to_steal = @stole_item_index = nil
-    steal_success = rand(100) < (Steal_Rate + self.steal_attempt) * user.agi / self.agi
-    self.steal_attempt += 1
-    return nil if self.steal_items.nil? or self.steal_items == []
-    return false unless steal_success
-    @item_stole = []
-    ext.slice!('STEAL/')
-    self.steal_items.each do |item, steal_rate|
-      item = item.split('')
-      if item[0] == 'i' and not ext == 'GOLD'
-        item = item.join
-        item.slice!('i')
-        @item_stole << $data_items[item.to_i] if rand(1000) < (steal_rate * 10).to_i
-      elsif item[0] == 'a' and not ext == 'GOLD'
-        item = item.join
-        item.slice!('a')
-        @item_stole << $data_armors[item.to_i] if rand(1000) < (steal_rate * 10).to_i
-      elsif item[0] == 'w' and not ext == 'GOLD'
-        item = item.join
-        item.slice!('w')
-        @item_stole << $data_weapons[item.to_i] if rand(1000) < (steal_rate * 10).to_i
-      elsif item[0] == 'g' and not ext == 'ITEM'
-        item = item.join
-        item.slice!('g')
-        @item_stole << item.to_i if rand(1000) < (steal_rate * 10).to_i
-      end
-    end
-    return false if @item_stole == []
-    self.steal_attempt = 0
-    @stole_item_index = rand(@item_stole.size)
-    @item_to_steal = @item_stole[@stole_item_index]
-    if Multi_Steal
-      self.steal_items.delete_at(@stole_item_index)
-    else
-      self.steal_items = []
-    end
-    return @item_to_steal
+  def exp
+    return $data_enemies[@enemy_id].exp
+  end
+  #--------------------------------------------------------------------------
+  # * Get Gold
+  #--------------------------------------------------------------------------
+  def gold
+    return $data_enemies[@enemy_id].gold
+  end
+  #--------------------------------------------------------------------------
+  # * Get Item ID
+  #--------------------------------------------------------------------------
+  def item_id
+    return $data_enemies[@enemy_id].item_id
+  end
+  #--------------------------------------------------------------------------
+  # * Get Weapon ID
+  #--------------------------------------------------------------------------
+  def weapon_id
+    return $data_enemies[@enemy_id].weapon_id
+  end
+  #--------------------------------------------------------------------------
+  # * Get Armor ID
+  #--------------------------------------------------------------------------
+  def armor_id
+    return $data_enemies[@enemy_id].armor_id
+  end
+  #--------------------------------------------------------------------------
+  # * Get Treasure Appearance Probability
+  #--------------------------------------------------------------------------
+  def treasure_prob
+    return $data_enemies[@enemy_id].treasure_prob
+  end
+  #--------------------------------------------------------------------------
+  # * Get Battle Screen X-Coordinate
+  #--------------------------------------------------------------------------
+  def screen_x
+    return $data_troops[@troop_id].members[@member_index].x
+  end
+  #--------------------------------------------------------------------------
+  # * Get Battle Screen Y-Coordinate
+  #--------------------------------------------------------------------------
+  def screen_y
+    return $data_troops[@troop_id].members[@member_index].y
+  end
+  #--------------------------------------------------------------------------
+  # * Get Battle Screen Z-Coordinate
+  #--------------------------------------------------------------------------
+  def screen_z
+    return screen_y
+  end
+  #--------------------------------------------------------------------------
+  # * Escape
+  #--------------------------------------------------------------------------
+  def escape
+    # Set hidden flag
+    @hidden = true
+    # Clear current action
+    self.current_action.clear
+  end
+  #--------------------------------------------------------------------------
+  # * Transform
+  #     enemy_id : ID of enemy to be transformed
+  #--------------------------------------------------------------------------
+  def transform(enemy_id)
+    # Change enemy ID
+    @enemy_id = enemy_id
+    # Change battler graphics
+    @battler_name = $data_enemies[@enemy_id].battler_name
+    @battler_hue = $data_enemies[@enemy_id].battler_hue
+    # Remake action
+    make_action
   end
   #--------------------------------------------------------------------------
   # * Make Action
   #--------------------------------------------------------------------------
   def make_action
+    # Clear current action
     self.current_action.clear
-    return unless self.movable?
+    # If unable to move
+    unless self.movable?
+      # End Method
+      return
+    end
+    # Extract current effective actions
     available_actions = []
     rating_max = 0
     for action in self.actions
-      n = get_battle_turn
+      # Confirm turn conditions
+      n = $game_temp.battle_turn
       a = action.condition_turn_a
       b = action.condition_turn_b
-      next if (b == 0 and n != a) or (b > 0 and (n < 1 or n < a or n % b != a % b))
-      next if self.hp * 100.0 / self.maxhp > action.condition_hp
-      next if $game_party.max_level < action.condition_level
+      if (b == 0 and n != a) or
+         (b > 0 and (n < 1 or n < a or n % b != a % b))
+        next
+      end
+      # Confirm HP conditions
+      if self.hp * 100.0 / self.maxhp > action.condition_hp
+        next
+      end
+      # Confirm level conditions
+      if $game_party.max_level < action.condition_level
+        next
+      end
+      # Confirm switch conditions
       switch_id = action.condition_switch_id
-      next if switch_id > 0 and $game_switches[switch_id] == false
-      next if action.kind == 1 and not skill_can_use?(action.skill_id) and Enemy_Dont_Skip_Action
-      available_actions.push << action
-      rating_max = [rating_max, action.rating].max
+      if switch_id > 0 and $game_switches[switch_id] == false
+        next
+      end
+      # Add this action to applicable conditions
+      available_actions.push(action)
+      if action.rating > rating_max
+        rating_max = action.rating
+      end
     end
+    # Calculate total with max rating value at 3 (exclude 0 or less)
     ratings_total = 0
     for action in available_actions
-      ratings_total += action.rating - (rating_max - 3)  if action.rating > rating_max - 3
+      if action.rating > rating_max - 3
+        ratings_total += action.rating - (rating_max - 3)
+      end
     end
+    # If ratings total isn't 0
     if ratings_total > 0
+      # Create random numbers
       value = rand(ratings_total)
+      # Set things that correspond to created random numbers as current action
       for action in available_actions
         if action.rating > rating_max - 3
           if value < action.rating - (rating_max - 3)
@@ -195,29 +313,5 @@ class Game_Enemy < Game_Battler
         end
       end
     end
-  end
-  #--------------------------------------------------------------------------
-  # * Get Battle Turn
-  #--------------------------------------------------------------------------
-  def get_battle_turn
-    return $game_temp.battle_turn
-  end
-  #--------------------------------------------------------------------------
-  # * Get Battle Screen X-Coordinate
-  #--------------------------------------------------------------------------
-  def screen_x
-    return $data_troops[@troop_id].members[@member_index].x + Enemy_Position_AdjustX
-  end
-  #--------------------------------------------------------------------------
-  # * Get Battle Screen Y-Coordinate
-  #--------------------------------------------------------------------------
-  def screen_y
-    return $data_troops[@troop_id].members[@member_index].y + Enemy_Position_AdjustY
-  end
-  #--------------------------------------------------------------------------
-  # * Get Battle Screen Z-Coordinate
-  #--------------------------------------------------------------------------
-  def screen_z
-    return screen_y
   end
 end

@@ -2,6 +2,7 @@
 root:
 - 
 - !ruby/object:RPG::Tileset
+  panorama_hue: 0
   terrain_tags: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -600,10 +601,10 @@ root:
     - 0
     - 0
     - 0
-  panorama_hue: 0
-  fog_sy: 0
   name: Cove
+  fog_sy: 0
   fog_opacity: 64
+  panorama_name: ''
   priorities: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1202,607 +1203,8 @@ root:
     - 0
     - 0
     - 0
-  panorama_name: ''
   fog_sx: 0
   fog_hue: 0
-  passages: !ruby/object:Table
-    dim: 1
-    zsize: 1
-    ysize: 1
-    xsize: 592
-    data:
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 10
-    - 8
-    - 12
-    - 0
-    - 0
-    - 15
-    - 15
-    - 0
-    - 2
-    - 0
-    - 4
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 3
-    - 1
-    - 5
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 0
-    - 0
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 15
-    - 15
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 15
-    - 15
-    - 15
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 15
-    - 0
-    - 15
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 15
-    - 0
-    - 15
-    - 15
-    - 15
-    - 15
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 15
-    - 15
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
   autotile_names:
   - shorelineautotileax2
   - midwater
@@ -1811,13 +1213,612 @@ root:
   - bounderies
   - ''
   - ''
+  passages: !ruby/object:Table
+    dim: 1
+    zsize: 1
+    ysize: 1
+    xsize: 592
+    data:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 10
+    - 8
+    - 12
+    - 0
+    - 0
+    - 15
+    - 15
+    - 0
+    - 2
+    - 0
+    - 4
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 3
+    - 1
+    - 5
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 0
+    - 0
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 15
+    - 15
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 15
+    - 15
+    - 15
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 15
+    - 0
+    - 15
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 15
+    - 0
+    - 15
+    - 15
+    - 15
+    - 15
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 15
+    - 15
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
   fog_zoom: 200
   fog_name: ''
-  battleback_name: shipdeckx2
-  tileset_name: piratecovetestx2
   id: 1
+  tileset_name: piratecovetestx2
+  battleback_name: shipdeckx2
   fog_blend_type: 0
 - !ruby/object:RPG::Tileset
+  panorama_hue: 0
   terrain_tags: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2472,10 +2473,10 @@ root:
     - 0
     - 0
     - 0
-  panorama_hue: 0
-  fog_sy: 0
   name: Ship Deck
+  fog_sy: 0
   fog_opacity: 64
+  panorama_name: beamingsun
   priorities: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -3130,9 +3131,16 @@ root:
     - 0
     - 0
     - 0
-  panorama_name: beamingsun
   fog_sx: 0
   fog_hue: 0
+  autotile_names:
+  - deepwater
+  - midwater
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   passages: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -3787,21 +3795,14 @@ root:
     - 0
     - 0
     - 0
-  autotile_names:
-  - deepwater
-  - midwater
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   fog_zoom: 200
   fog_name: ''
-  battleback_name: shipdeckx2
-  tileset_name: shiptilex2
   id: 2
+  tileset_name: shiptilex2
+  battleback_name: shipdeckx2
   fog_blend_type: 0
 - !ruby/object:RPG::Tileset
+  panorama_hue: 0
   terrain_tags: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -4456,10 +4457,10 @@ root:
     - 0
     - 0
     - 0
-  panorama_hue: 0
-  fog_sy: 0
   name: Warship Deck
+  fog_sy: 0
   fog_opacity: 64
+  panorama_name: beamingsun
   priorities: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -5114,9 +5115,16 @@ root:
     - 0
     - 0
     - 0
-  panorama_name: beamingsun
   fog_sx: 0
   fog_hue: 0
+  autotile_names:
+  - deepwater
+  - midwater
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   passages: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -5771,21 +5779,14 @@ root:
     - 0
     - 0
     - 0
-  autotile_names:
-  - deepwater
-  - midwater
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   fog_zoom: 200
   fog_name: ''
-  battleback_name: warshipbattlex2
-  tileset_name: warshipx2
   id: 3
+  tileset_name: warshipx2
+  battleback_name: warshipbattlex2
   fog_blend_type: 0
 - !ruby/object:RPG::Tileset
+  panorama_hue: 0
   terrain_tags: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -6440,10 +6441,10 @@ root:
     - 0
     - 0
     - 0
-  panorama_hue: 0
-  fog_sy: 0
   name: daraway ship
+  fog_sy: 0
   fog_opacity: 64
+  panorama_name: starsx2
   priorities: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -7098,9 +7099,16 @@ root:
     - 0
     - 0
     - 0
-  panorama_name: starsx2
   fog_sx: 0
   fog_hue: 0
+  autotile_names:
+  - deepwater
+  - midwater
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   passages: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -7755,21 +7763,14 @@ root:
     - 0
     - 0
     - 0
-  autotile_names:
-  - deepwater
-  - midwater
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   fog_zoom: 200
   fog_name: ''
-  battleback_name: shipdeckx2
-  tileset_name: darawayshipx2
   id: 4
+  tileset_name: darawayshipx2
+  battleback_name: shipdeckx2
   fog_blend_type: 0
 - !ruby/object:RPG::Tileset
+  panorama_hue: 0
   terrain_tags: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -8160,10 +8161,10 @@ root:
     - 0
     - 0
     - 0
-  panorama_hue: 0
-  fog_sy: 0
   name: ''
+  fog_sy: 0
   fog_opacity: 64
+  panorama_name: ''
   priorities: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -8554,9 +8555,16 @@ root:
     - 0
     - 0
     - 0
-  panorama_name: ''
   fog_sx: 0
   fog_hue: 0
+  autotile_names:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   passages: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -8947,21 +8955,14 @@ root:
     - 0
     - 0
     - 0
-  autotile_names:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   fog_zoom: 200
   fog_name: ''
-  battleback_name: ''
-  tileset_name: ''
   id: 5
+  tileset_name: ''
+  battleback_name: ''
   fog_blend_type: 0
 - !ruby/object:RPG::Tileset
+  panorama_hue: 0
   terrain_tags: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -9352,10 +9353,10 @@ root:
     - 0
     - 0
     - 0
-  panorama_hue: 0
-  fog_sy: 0
   name: ''
+  fog_sy: 0
   fog_opacity: 64
+  panorama_name: ''
   priorities: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -9746,9 +9747,16 @@ root:
     - 0
     - 0
     - 0
-  panorama_name: ''
   fog_sx: 0
   fog_hue: 0
+  autotile_names:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   passages: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -10139,17 +10147,9 @@ root:
     - 0
     - 0
     - 0
-  autotile_names:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   fog_zoom: 200
   fog_name: ''
-  battleback_name: ''
-  tileset_name: ''
   id: 6
+  tileset_name: ''
+  battleback_name: ''
   fog_blend_type: 0

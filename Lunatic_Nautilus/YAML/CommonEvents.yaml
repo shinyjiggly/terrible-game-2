@@ -2,6 +2,7 @@
 root:
 - 
 - !ruby/object:RPG::CommonEvent
+  name: third recoil
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
@@ -12,7 +13,6 @@ root:
     parameters: []
     indent: 0
     code: 0
-  name: third recoil
   trigger: 0
   switch_id: 1
   id: 1

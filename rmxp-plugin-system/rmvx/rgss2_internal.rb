@@ -1,7 +1,8 @@
 #===============================================================================
-# Filename:    rgss_internal.rb
+# Filename:    rgss2_internal.rb
 #
 # Developer:   Raku (rakudayo@gmail.com)
+#              Haraberu
 #
 # Description: This file contains Ruby implementations of the RGSS Built-in
 #    classes Table, Color, and Tone.  These classes are required to load and
@@ -39,7 +40,7 @@ class Table
   end
   def self._load(s)
     size, nx, ny, nz, items = *s[0, 20].unpack('LLLLL')
-    t = Table.new(*[nx, ny, nz][0,size])         # The * turn the array into an argument list
+    t = Table.new(*[nx, ny, nz][0,size])
     t.data = s[20, items * 2].unpack("S#{items}")
     t
   end
@@ -117,5 +118,30 @@ class Tone
   end
   def gray=(val)
     @gray  = [[val.to_f, 0.0].max, 255.0].min
+  end
+end
+
+class Rect
+  attr_accessor :x 
+  attr_accessor :y 
+  attr_accessor :width 
+  attr_accessor :height 
+  def initialize(x, y, width, height) 
+    @x=x
+    @y=y
+    @width=width
+    @height=height
+  end
+  def set(x, y, width, height) 
+    @x=x
+    @y=y
+    @width=width
+    @height=height
+  end
+  def _dump(d = 0)
+    [@x, @y, @width, @height].pack('i4')
+  end
+  def self._load(s)
+    Rect.new(*s.unpack('i4'))
   end
 end

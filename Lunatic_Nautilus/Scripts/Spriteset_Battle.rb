@@ -7,138 +7,126 @@
 
 class Spriteset_Battle
   #--------------------------------------------------------------------------
-  # * Include Settings Module
-  #--------------------------------------------------------------------------
-  include Atoa
-  #--------------------------------------------------------------------------
   # * Public Instance Variables
   #--------------------------------------------------------------------------
-  attr_accessor :actor_sprites
-  attr_accessor :enemy_sprites
-  attr_accessor :battleback_width
-  attr_accessor :battleback_height
-  attr_reader   :viewport3
-  attr_reader   :viewport4
+  attr_reader   :viewport1                # enemy viewport
+  attr_reader   :viewport2                # actor viewport
   #--------------------------------------------------------------------------
   # * Object Initialization
   #--------------------------------------------------------------------------
   def initialize
-    set_viewport
-    set_sprites
+    # Make viewports
+    @viewport1 = Viewport.new(0, 0, 640, 320)
+    @viewport2 = Viewport.new(0, 0, 640, 480)
+    @viewport3 = Viewport.new(0, 0, 640, 480)
+    @viewport4 = Viewport.new(0, 0, 640, 480)
+    @viewport2.z = 101
+    @viewport3.z = 200
+    @viewport4.z = 5000
+    # Make battleback sprite
+    @battleback_sprite = Sprite.new(@viewport1)
+    # Make enemy sprites
+    @enemy_sprites = []
+    for enemy in $game_troop.enemies.reverse
+      @enemy_sprites.push(Sprite_Battler.new(@viewport1, enemy))
+    end
+    # Make actor sprites
+    @actor_sprites = []
+    @actor_sprites.push(Sprite_Battler.new(@viewport2))
+    @actor_sprites.push(Sprite_Battler.new(@viewport2))
+    @actor_sprites.push(Sprite_Battler.new(@viewport2))
+    @actor_sprites.push(Sprite_Battler.new(@viewport2))
+    # Make weather
+    @weather = RPG::Weather.new(@viewport1)
+    # Make picture sprites
+    @picture_sprites = []
+    for i in 51..100
+      @picture_sprites.push(Sprite_Picture.new(@viewport3,
+        $game_screen.pictures[i]))
+    end
+    # Make timer sprite
+    @timer_sprite = Sprite_Timer.new
+    # Frame update
     update
   end
   #--------------------------------------------------------------------------
-  # * Set viewport
+  # * Dispose
   #--------------------------------------------------------------------------
-  def set_viewport
-    screen_pos_x = Battle_Screen_Position[0]
-    screen_pos_y = Battle_Screen_Position[1]
-    screen_width = Battle_Screen_Dimension[0]
-    screen_height = Battle_Screen_Dimension[1]
-    @viewport1 = Viewport.new(screen_pos_x, screen_pos_y, screen_width, screen_height)
-    @viewport2 = Viewport.new(screen_pos_x, screen_pos_y, screen_width, screen_height)
-    @viewport3 = Viewport.new(screen_pos_x, screen_pos_y, screen_width, screen_height)
-    @viewport4 = Viewport.new(screen_pos_x, screen_pos_y, screen_width, screen_height)
-    @viewport2.z = Battler_High_Priority ? 2001 : 101
-    @viewport3.z = Battler_High_Priority ? 2200 : 200
-    @viewport4.z = 5000
-    $game_temp.battlers_viweport = @viewport2
+  def dispose
+    # If battleback bit map exists, dispose of it
+    if @battleback_sprite.bitmap != nil
+      @battleback_sprite.bitmap.dispose
+    end
+    # Dispose of battleback sprite
+    @battleback_sprite.dispose
+    # Dispose of enemy sprites and actor sprites
+    for sprite in @enemy_sprites + @actor_sprites
+      sprite.dispose
+    end
+    # Dispose of weather
+    @weather.dispose
+    # Dispose of picture sprites
+    for sprite in @picture_sprites
+      sprite.dispose
+    end
+    # Dispose of timer sprite
+    @timer_sprite.dispose
+    # Dispose of viewports
+    @viewport1.dispose
+    @viewport2.dispose
+    @viewport3.dispose
+    @viewport4.dispose
   end
   #--------------------------------------------------------------------------
-  # * Set sprites
+  # * Determine if Effects are Displayed
   #--------------------------------------------------------------------------
-  def set_sprites
-    @battleback_sprite = Sprite.new(@viewport1)
-    @enemy_sprites = []
-    for enemy in $game_troop.enemies
-      @enemy_sprites << Sprite_Battler.new(@viewport2, enemy)
+  def effect?
+    # Return true if even 1 effect is being displayed
+    for sprite in @enemy_sprites + @actor_sprites
+      return true if sprite.effect?
     end
-    @actor_sprites = []
-    for i in 0...$game_party.actors.size
-      @actor_sprites << Sprite_Battler.new(@viewport2, $game_party.actors[i])
-      $game_party.actors[i].battler_position_setup
-    end
-    @old_party = $game_party.actors.dup
-    @weather = RPG::Weather.new(@viewport2)
-    @picture_sprites = []
-    for i in 51..100
-      @picture_sprites << Sprite_Picture.new(@viewport3, $game_screen.pictures[i])
-    end
-    @timer_sprite = Sprite_Timer.new
+    return false
   end
   #--------------------------------------------------------------------------
   # * Frame Update
   #--------------------------------------------------------------------------
   def update
-    update_battlers
-    update_sprites
-    update_viewport
-  end
-  #--------------------------------------------------------------------------
-  # * Battlers update
-  #--------------------------------------------------------------------------
-  def update_battlers
-    if $game_party.actors != @old_party
-      empty_slot = []
-      for i in 0...@actor_sprites.size
-        next if $game_party.actors.include?(@actor_sprites[i].battler)
-        @actor_sprites[i].dispose
-        @actor_sprites[i] = nil
+    # Update actor sprite contents (corresponds with actor switching)
+    @actor_sprites[0].battler = $game_party.actors[0]
+    @actor_sprites[1].battler = $game_party.actors[1]
+    @actor_sprites[2].battler = $game_party.actors[2]
+    @actor_sprites[3].battler = $game_party.actors[3]
+    # If battleback file name is different from current one
+    if @battleback_name != $game_temp.battleback_name
+      @battleback_name = $game_temp.battleback_name
+      if @battleback_sprite.bitmap != nil
+        @battleback_sprite.bitmap.dispose
       end
-      for i in 0...$game_party.actors.size
-        next if @old_party.include?($game_party.actors[i])
-        @actor_sprites << Sprite_Battler.new(@viewport2, $game_party.actors[i])
-        $game_party.actors[i].battler_position_setup
-      end
-      @actor_sprites.compact!
-      @old_party = $game_party.actors.dup
+      @battleback_sprite.bitmap = RPG::Cache.battleback(@battleback_name)
+      @battleback_sprite.src_rect.set(0, 0, 640, 320)
     end
-  end
-  #--------------------------------------------------------------------------
-  # * Sprites update
-  #--------------------------------------------------------------------------
-  def update_sprites
-    update_battleback if @battleback_name != $game_temp.battleback_name
+    # Update battler sprites
     for sprite in @enemy_sprites + @actor_sprites
       sprite.update
-      sprite.set_battler_patterns
     end
+    # Update weather graphic
     @weather.type = $game_screen.weather_type
     @weather.max = $game_screen.weather_max
     @weather.update
-    for sprite in @picture_sprites do sprite.update end
+    # Update picture sprites
+    for sprite in @picture_sprites
+      sprite.update
+    end
+    # Update timer sprite
     @timer_sprite.update
-  end
-  #--------------------------------------------------------------------------
-  # * Battleback update
-  #--------------------------------------------------------------------------
-  def update_battleback
-    @battleback_name = $game_temp.battleback_name
-    @battleback_sprite.bitmap.dispose if @battleback_sprite.bitmap != nil
-    @battleback_sprite.bitmap = RPG::Cache.battleback(@battleback_name)
-    @battleback_width = @battleback_sprite.bitmap.width
-    @battleback_height = @battleback_sprite.bitmap.height
-    @battleback_sprite.src_rect.set(0, 0, @battleback_width, @battleback_height)
-  end
-  #--------------------------------------------------------------------------
-  # * Viewport update
-  #--------------------------------------------------------------------------
-  def update_viewport
+    # Set screen color tone and shake position
+    @viewport1.tone = $game_screen.tone
     @viewport1.ox = $game_screen.shake
-    @viewport2.ox = $game_screen.shake
-    @viewport2.tone = $game_screen.tone
+    # Set screen flash color
     @viewport4.color = $game_screen.flash_color
+    # Update viewports
     @viewport1.update
     @viewport2.update
     @viewport4.update
-  end
-  #--------------------------------------------------------------------------
-  # * Select an battler sprite
-  #--------------------------------------------------------------------------
-  def battler(battler)
-    for sprite in @actor_sprites + @enemy_sprites
-      return sprite if sprite.battler == battler
-    end
-    return nil
   end
 end

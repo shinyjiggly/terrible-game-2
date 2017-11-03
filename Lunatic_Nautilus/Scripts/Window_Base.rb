@@ -4,11 +4,183 @@
 #  This class is for all in-game windows.
 #==============================================================================
 
-class Window_Base
+class Window_Base < Window
   #--------------------------------------------------------------------------
-  # * Include Settings Module
+  # * Object Initialization
+  #     x      : window x-coordinate
+  #     y      : window y-coordinate
+  #     width  : window width
+  #     height : window height
   #--------------------------------------------------------------------------
-  include Atoa
+  def initialize(x, y, width, height)
+    super()
+    @windowskin_name = $game_system.windowskin_name
+    self.windowskin = RPG::Cache.windowskin(@windowskin_name)
+    self.x = x
+    self.y = y
+    self.width = width
+    self.height = height
+    self.z = 100
+  end
+  #--------------------------------------------------------------------------
+  # * Dispose
+  #--------------------------------------------------------------------------
+  def dispose
+    # Dispose if window contents bit map is set
+    if self.contents != nil
+      self.contents.dispose
+    end
+    super
+  end
+  #--------------------------------------------------------------------------
+  # * Get Text Color
+  #     n : text color number (0-7)
+  #--------------------------------------------------------------------------
+  def text_color(n)
+    case n
+    when 0
+      return Color.new(255, 255, 255, 255) #white 
+    when 1
+      return Color.new(128, 128, 255, 255) #blue
+    when 2
+      return Color.new(255, 128, 128, 255) #pink
+    when 3
+      return Color.new(128, 255, 128, 255) #green
+    when 4
+      return Color.new(128, 255, 255, 255) #cyan
+    when 5
+      return Color.new(255, 128, 255, 255) #magenta
+    when 6
+      return Color.new(255, 255, 128, 255) #yellow
+    when 7
+      return Color.new(192, 192, 192, 255) #gray
+    else
+      normal_color
+    end
+  end
+  #--------------------------------------------------------------------------
+  # * Get Normal Text Color
+  #--------------------------------------------------------------------------
+  def normal_color
+    return Color.new(255, 255, 255, 255)
+  end
+  #--------------------------------------------------------------------------
+  # * Get Disabled Text Color
+  #--------------------------------------------------------------------------
+  def disabled_color
+    return Color.new(255, 255, 255, 128)
+  end
+  #--------------------------------------------------------------------------
+  # * Get System Text Color
+  #--------------------------------------------------------------------------
+  def system_color
+    return Color.new(192, 224, 255, 255)
+  end
+  #--------------------------------------------------------------------------
+  # * Get Crisis Text Color
+  #--------------------------------------------------------------------------
+  def crisis_color
+    return Color.new(255, 255, 64, 255)
+  end
+  #--------------------------------------------------------------------------
+  # * Get Knockout Text Color
+  #--------------------------------------------------------------------------
+  def knockout_color
+    return Color.new(255, 64, 0)
+  end
+  #--------------------------------------------------------------------------
+  # * Frame Update
+  #--------------------------------------------------------------------------
+  def update
+    super
+    # Reset if windowskin was changed
+    if $game_system.windowskin_name != @windowskin_name
+      @windowskin_name = $game_system.windowskin_name
+      self.windowskin = RPG::Cache.windowskin(@windowskin_name)
+    end
+  end
+  #--------------------------------------------------------------------------
+  # * Draw Graphic
+  #     actor : actor
+  #     x     : draw spot x-coordinate
+  #     y     : draw spot y-coordinate
+  #--------------------------------------------------------------------------
+  def draw_actor_graphic(actor, x, y)
+    bitmap = RPG::Cache.character(actor.character_name, actor.character_hue)
+    cw = bitmap.width / 4
+    ch = bitmap.height / 4
+    src_rect = Rect.new(0, 0, cw, ch)
+    self.contents.blt(x - cw / 2, y - ch, bitmap, src_rect)
+  end
+  #--------------------------------------------------------------------------
+  # * Draw Name
+  #     actor : actor
+  #     x     : draw spot x-coordinate
+  #     y     : draw spot y-coordinate
+  #--------------------------------------------------------------------------
+  def draw_actor_name(actor, x, y)
+    self.contents.font.color = normal_color
+    self.contents.draw_text(x, y, 120, 32, actor.name)
+  end
+  #--------------------------------------------------------------------------
+  # * Draw Class
+  #     actor : actor
+  #     x     : draw spot x-coordinate
+  #     y     : draw spot y-coordinate
+  #--------------------------------------------------------------------------
+  def draw_actor_class(actor, x, y)
+    self.contents.font.color = normal_color
+    self.contents.draw_text(x, y, 236, 32, actor.class_name)
+  end
+  #--------------------------------------------------------------------------
+  # * Draw Level
+  #     actor : actor
+  #     x     : draw spot x-coordinate
+  #     y     : draw spot y-coordinate
+  #--------------------------------------------------------------------------
+  def draw_actor_level(actor, x, y)
+    self.contents.font.color = system_color
+    self.contents.draw_text(x, y, 32, 32, "Lv")
+    self.contents.font.color = normal_color
+    self.contents.draw_text(x + 32, y, 24, 32, actor.level.to_s, 2)
+  end
+  #--------------------------------------------------------------------------
+  # * Make State Text String for Drawing
+  #     actor       : actor
+  #     width       : draw spot width
+  #     need_normal : Whether or not [normal] is needed (true / false)
+  #--------------------------------------------------------------------------
+  def make_battler_state_text(battler, width, need_normal)
+    # Get width of brackets
+    brackets_width = self.contents.text_size("[]").width
+    # Make text string for state names
+    text = ""
+    for i in battler.states
+      if $data_states[i].rating >= 1
+        if text == ""
+          text = $data_states[i].name
+        else
+          new_text = text + "/" + $data_states[i].name
+          text_width = self.contents.text_size(new_text).width
+          if text_width > width - brackets_width
+            break
+          end
+          text = new_text
+        end
+      end
+    end
+    # If text string for state names is empty, make it [normal]
+    if text == ""
+      if need_normal
+        text = "[OK]" #Normal
+      end
+    else
+      # Attach brackets
+      text = "[" + text + "]"
+    end
+    # Return completed text string
+    return text
+  end
   #--------------------------------------------------------------------------
   # * Draw State
   #     actor : actor
@@ -16,27 +188,83 @@ class Window_Base
   #     y     : draw spot y-coordinate
   #     width : draw spot width
   #--------------------------------------------------------------------------
-  alias acbs_draw_actor_state_windobase draw_actor_state
-  def draw_actor_state(actor, x, y, width = 0)
-    unless Icon_States  
-      acbs_draw_actor_state_windobase(actor, x, y, 120) 
-      return
+  def draw_actor_state(actor, x, y, width = 120)
+    text = make_battler_state_text(actor, width, true)
+    self.contents.font.color = actor.hp == 0 ? knockout_color : normal_color
+    self.contents.draw_text(x, y, width, 32, text)
+  end
+  #--------------------------------------------------------------------------
+  # * Draw EXP
+  #     actor : actor
+  #     x     : draw spot x-coordinate
+  #     y     : draw spot y-coordinate
+  #--------------------------------------------------------------------------
+  def draw_actor_exp(actor, x, y)
+    self.contents.font.color = system_color
+    self.contents.draw_text(x, y, 24, 32, "E")
+    self.contents.font.color = normal_color
+    self.contents.draw_text(x + 24, y, 84, 32, actor.exp_s, 2)
+    self.contents.draw_text(x + 108, y, 12, 32, "/", 1)
+    self.contents.draw_text(x + 120, y, 84, 32, actor.next_exp_s)
+  end
+  #--------------------------------------------------------------------------
+  # * Draw HP
+  #     actor : actor
+  #     x     : draw spot x-coordinate
+  #     y     : draw spot y-coordinate
+  #     width : draw spot width
+  #--------------------------------------------------------------------------
+  def draw_actor_hp(actor, x, y, width = 144)
+    # Draw "HP" text string
+    self.contents.font.color = system_color
+    self.contents.draw_text(x, y, 32, 32, $data_system.words.hp)
+    # Calculate if there is draw space for MaxHP
+    if width - 32 >= 108
+      hp_x = x + width - 108
+      flag = true
+    elsif width - 32 >= 48
+      hp_x = x + width - 48
+      flag = false
     end
-    status_icon = []
-    actor.states.sort!
-    for i in actor.states
-      if $data_states[i].rating >= 1
-        begin
-          status_icon << RPG::Cache.icon($data_states[i].name + '_st')
-          break if status_icon.size > (Icon_max - 1) or i == 1
-        rescue
-        end
-      end
+    # Draw HP
+    self.contents.font.color = actor.hp == 0 ? knockout_color :
+      actor.hp <= actor.maxhp / 4 ? crisis_color : normal_color
+    self.contents.draw_text(hp_x, y, 48, 32, actor.hp.to_s, 2)
+    # Draw MaxHP
+    if flag
+      self.contents.font.color = normal_color
+      self.contents.draw_text(hp_x + 48, y, 12, 32, "/", 1)
+      self.contents.draw_text(hp_x + 60, y, 48, 32, actor.maxhp.to_s)
     end
-    for icon in status_icon
-      rect = Rect.new(0, 0, Icon_X, Icon_Y)
-      self.contents.blt(x + X_Adjust, y + Y_Adjust + 4, icon, rect, 255)
-      x += Icon_X + 2
+  end
+  #--------------------------------------------------------------------------
+  # * Draw SP
+  #     actor : actor
+  #     x     : draw spot x-coordinate
+  #     y     : draw spot y-coordinate
+  #     width : draw spot width
+  #--------------------------------------------------------------------------
+  def draw_actor_sp(actor, x, y, width = 144)
+    # Draw "SP" text string
+    self.contents.font.color = system_color
+    self.contents.draw_text(x, y, 32, 32, $data_system.words.sp)
+    # Calculate if there is draw space for MaxHP
+    if width - 32 >= 108
+      sp_x = x + width - 108
+      flag = true
+    elsif width - 32 >= 48
+      sp_x = x + width - 48
+      flag = false
+    end
+    # Draw SP
+    self.contents.font.color = actor.sp == 0 ? knockout_color :
+      actor.sp <= actor.maxsp / 4 ? crisis_color : normal_color
+    self.contents.draw_text(sp_x, y, 48, 32, actor.sp.to_s, 2)
+    # Draw MaxSP
+    if flag
+      self.contents.font.color = normal_color
+      self.contents.draw_text(sp_x + 48, y, 12, 32, "/", 1)
+      self.contents.draw_text(sp_x + 60, y, 48, 32, actor.maxsp.to_s)
     end
   end
   #--------------------------------------------------------------------------
@@ -44,10 +272,9 @@ class Window_Base
   #     actor : actor
   #     x     : draw spot x-coordinate
   #     y     : draw spot y-coordinate
-  #     type  : parameter type
-  #     w     : draw width
+  #     type  : parameter type (0-6)
   #--------------------------------------------------------------------------
-  def draw_actor_parameter(actor, x, y, type, w = 132)
+  def draw_actor_parameter(actor, x, y, type)
     case type
     when 0
       parameter_name = $data_system.words.atk
@@ -62,8 +289,7 @@ class Window_Base
       parameter_name = $data_system.words.str
       parameter_value = actor.str
     when 4
-      parameter_name = Damage_Algorithm_Type > 1 ? Status_Vitality :
-        $data_system.words.dex
+      parameter_name = $data_system.words.dex
       parameter_value = actor.dex
     when 5
       parameter_name = $data_system.words.agi
@@ -71,343 +297,25 @@ class Window_Base
     when 6
       parameter_name = $data_system.words.int
       parameter_value = actor.int
-    when 7
-      parameter_name = Status_Evasion
-      parameter_value = actor.eva
     end
     self.contents.font.color = system_color
-    self.contents.draw_text(x, y, w, 32, parameter_name)
+    self.contents.draw_text(x, y, 120, 32, parameter_name)
     self.contents.font.color = normal_color
-    self.contents.draw_text(x + w, y, 36, 32, parameter_value.to_s, 2)
-  end
-end
-
-#==============================================================================
-# ** Window_Command
-#------------------------------------------------------------------------------
-#  This window deals with general command choices.
-#==============================================================================
-
-class Window_Command < Window_Selectable
-  #--------------------------------------------------------------------------
-  # * Public Instance Variables
-  #--------------------------------------------------------------------------
-  attr_accessor :commands    # Commands
-  #--------------------------------------------------------------------------
-  # * Enable Item
-  #     index : item number
-  #--------------------------------------------------------------------------
-  def enable_item(index)
-    draw_item(index, normal_color)
-  end
-end
-
-#==============================================================================
-# ** Window_Help
-#------------------------------------------------------------------------------
-#  This window shows skill and item explanations along with actor status.
-#==============================================================================
-
-class Window_Help < Window_Base
-  #--------------------------------------------------------------------------
-  # * Public Instance Variables
-  #--------------------------------------------------------------------------
-  attr_accessor :battler    # Battler
-  #--------------------------------------------------------------------------
-  # * Object Initialization
-  #--------------------------------------------------------------------------
-  alias acbs_initialize_window_help initialize
-  def initialize
-    acbs_initialize_window_help
-    if $game_temp.in_battle
-      self.z = 4000
-      self.back_opacity = Base_Opacity
-    end
+    self.contents.draw_text(x + 120, y, 36, 32, parameter_value.to_s, 2)
   end
   #--------------------------------------------------------------------------
-  # * Set Enemy
-  #     enemy : name and status displaying enemy
+  # * Draw Item Name
+  #     item : item
+  #     x    : draw spot x-coordinate
+  #     y    : draw spot y-coordinate
   #--------------------------------------------------------------------------
-  alias acbs_set_enemy_windobase set_enemy
-  def set_enemy(enemy)
-    unless Icon_States  
-      acbs_set_enemy_windobase(enemy)
+  def draw_item_name(item, x, y)
+    if item == nil
       return
     end
-    draw_enemy_name(enemy)
-  end
-  #--------------------------------------------------------------------------
-  # * Draw enemy name and states
-  #     enemy : name and status displaying enemy
-  #--------------------------------------------------------------------------
-  def draw_enemy_name(enemy)
-    text = enemy.name
-    align = 1
-    if text != @text or align != @align
-      self.contents.clear
-      self.contents.font.color = normal_color
-      self.contents.draw_text(4, 0, self.width - 40, 32, text, align)
-      text_width = self.contents.text_size(text).width
-      x = (text_width + self.width)/2
-      draw_actor_state(enemy, x, 0)
-      @text = text
-      @align = align
-      @actor = nil
-    end
-    self.visible = true
-  end
-  #--------------------------------------------------------------------------
-  # * Set Text
-  #  text    : text string displayed in window
-  #  align   : alignment (0..flush left, 1..center, 2..flush right)
-  #  battler : battler
-  #--------------------------------------------------------------------------
-  def set_text(text, align = 0, battler = nil)
-    if text != @text or align != @align or @battler != battler
-      self.contents.clear
-      self.contents.font.color = normal_color
-      self.contents.draw_text(4, 0, self.width - 40, 32, text, align)
-      @text = text
-      @align = align
-      @actor = nil
-      @battler = battler
-    end
-    self.visible = true
-  end
-end
-
-#==============================================================================
-# ** Window_Item
-#------------------------------------------------------------------------------
-#  This window displays items in possession on the item and battle screens.
-#==============================================================================
-
-class Window_Item < Window_Selectable
-  #--------------------------------------------------------------------------
-  # * Object Initialization
-  #--------------------------------------------------------------------------
-  alias acbs_initialize_windowitem initialize
-  def initialize
-    acbs_initialize_windowitem
-    if $game_temp.in_battle
-      self.y = 320
-      self.height = 160
-      self.z = 1000
-      self.back_opacity = Base_Opacity
-    end
-  end
-end
-
-#==============================================================================
-# ** Window_Skill
-#------------------------------------------------------------------------------
-#  This window displays usable skills on the skill and battle screens.
-#==============================================================================
-
-class Window_Skill < Window_Selectable
-  #--------------------------------------------------------------------------
-  # * Object Initialization
-  #     actor : actor
-  #--------------------------------------------------------------------------
-  alias acbs_initialize_windowskill initialize
-  def initialize(actor)
-    acbs_initialize_windowskill(actor)
-    if $game_temp.in_battle
-      self.y = 320
-      self.height = 160
-      self.z = 1000
-      self.back_opacity = Base_Opacity
-    end
-  end
-  #--------------------------------------------------------------------------
-  # * Draw Item
-  #     index : item number
-  #--------------------------------------------------------------------------
-  def draw_item(index)
-    skill = @data[index]
-    self.contents.font.color = set_skill_color(skill.id)
-    x = 4 + index % 2 * (288 + 32)
-    y = index / 2 * 32
-    rect = Rect.new(x, y, self.width / @column_max - 32, 32)
-    self.contents.fill_rect(rect, Color.new(0, 0, 0, 0))
-    bitmap = RPG::Cache.icon(skill.icon_name)
-    opacity = self.contents.font.color == normal_color ? 255 : 128
-    self.contents.blt(x, y + 4, bitmap, Rect.new(0, 0, 24, 24), opacity)
-    self.contents.draw_text(x + 28, y, 204, 32, skill.name, 0)
-    draw_skill_cost(skill, x, y)
-  end
-  #--------------------------------------------------------------------------
-  # * Set skill text color
-  #     skill_id : skill ID
-  #--------------------------------------------------------------------------
-  def set_skill_color(skill_id)
-    if @actor.skill_can_use?(skill_id)
-      return normal_color
-    else
-      return disabled_color
-    end
-  end
-  #--------------------------------------------------------------------------
-  # * Draw Skill Cost
-  #     skill : skill
-  #     x     : draw spot x-coordinate
-  #     y     : draw spot y-coordinate
-  #--------------------------------------------------------------------------
-  def draw_skill_cost(skill, x, y)
-    return if Hide_Zero_SP
-    cost = @actor.calc_sp_cost(skill)
-    self.contents.draw_text(x + 232, y, 48, 32, cost.to_s, 2)
-  end
-end
-
-#==============================================================================
-# ** Window_PartyCommand
-#------------------------------------------------------------------------------
-#  This window is used to select whether to fight or escape on the battle
-#  screen.
-#==============================================================================
-
-class Window_PartyCommand < Window_Selectable
-  #--------------------------------------------------------------------------
-  # * Object Initialization
-  #--------------------------------------------------------------------------
-  alias acbs_initialise_windowpartycommand initialize
-  def initialize
-    acbs_initialise_windowpartycommand
-    self.z = 4000
-  end
-end
-
-#==============================================================================
-# ** Window_BattleStatus
-#------------------------------------------------------------------------------
-#  This window displays the status of all party members on the battle screen.
-#==============================================================================
-
-class Window_BattleStatus < Window_Base
-  #--------------------------------------------------------------------------
-  # * Object Initialization
-  #--------------------------------------------------------------------------
-  alias acbs_initialize_windowbattlestatus initialize
-  def initialize
-    acbs_initialize_windowbattlestatus
-    self.z = 900
-    self.back_opacity = Base_Opacity
-  end
-  #--------------------------------------------------------------------------
-  # * Frame Update
-  #--------------------------------------------------------------------------
-  def update
-    super
-  end
-  #--------------------------------------------------------------------------
-  # * Window visibility
-  #     n : opacity
-  #--------------------------------------------------------------------------
-  def visible=(n)
-    super
-  end
-end
-
-#==============================================================================
-# ** Window_BattleResult
-#------------------------------------------------------------------------------
-#  This window displays amount of gold and EXP acquired at the end of a battle.
-#==============================================================================
-
-class Window_BattleResult < Window_Base
-  #--------------------------------------------------------------------------
-  # * Public Instance Variables
-  #--------------------------------------------------------------------------
-  attr_accessor :exp         # experience
-  attr_accessor :gold        # gold
-  attr_accessor :treasures   # items
-  #--------------------------------------------------------------------------
-  # * Object Initialization
-  #     exp       : EXP
-  #     gold      : amount of gold
-  #     treasures : treasures
-  #--------------------------------------------------------------------------
-  alias acbs_intialize_battleresult initialize
-  def initialize(exp, gold, treasures)
-    acbs_intialize_battleresult(exp, gold, treasures)
-    self.back_opacity = 100 #Base_Opacity
-    self.z = 4000
-  end
-  #--------------------------------------------------------------------------
-  # * Add extra item drops
-  #--------------------------------------------------------------------------
-  def add_multi_drops
-    @extra_treasures = []
-    for enemy in $game_troop.enemies
-      @extra_treasures << enemy.multi_drops
-    end
-    @extra_treasures.flatten!
-    for item in @extra_treasures
-      case item
-      when RPG::Item
-        $game_party.gain_item(item.id, 1)
-      when RPG::Weapon
-        $game_party.gain_weapon(item.id, 1)
-      when RPG::Armor
-        $game_party.gain_armor(item.id, 1)
-      end
-    end
-    @treasures << @extra_treasures
-    @treasures.flatten!
-    @treasures.sort! {|a, b| a.id <=> b.id}
-    @treasures.sort! do |a, b|
-      a_class = a.is_a?(RPG::Item) ? 0 : a.is_a?(RPG::Weapon) ? 1 : 2
-      b_class = b.is_a?(RPG::Item) ? 0 : b.is_a?(RPG::Weapon) ? 1 : 2
-      a_class <=> b_class
-    end
-    self.height = [@treasures.size * 32 + 64, 288].min
-    self.contents = Bitmap.new(width - 32, @treasures.size * 32 + 32)
-    self.y = 100 - height / 2 # 160
-    refresh
-  end
-  #--------------------------------------------------------------------------
-  # * Frame Update
-  #--------------------------------------------------------------------------
-  def update
-    super
-    if @treasures.size * 32 + 64 > 288
-      if Input.press?(Input::UP)
-        self.oy -= 4 if self.oy > 0
-      elsif Input.press?(Input::DOWN)
-        self.oy += 4 if self.oy < @treasures.size * 32 + 64 - 288
-      end
-    end
-  end
-end
-
-#==============================================================================
-# ■ Window_NameCommand
-#------------------------------------------------------------------------------
-# Esta janela exibe o nome do battler ativo
-#==============================================================================
-
-class Window_NameCommand < Window_Base
-  #--------------------------------------------------------------------------
-  # initialize object
-  #     actor : Herói
-  #     x     : Desenhar a partir da coordenada x
-  #     y     : Desenhar a partir da coordenada y
-  #--------------------------------------------------------------------------
-  def initialize(actor, x, y) #make the box
-    super(x, y, 130, 44) #160,64
-    self.contents = Bitmap.new(width - 44, height - 32 ) #-32 #put the stuff up and right 32
-    self.contents.font.name = "PlopDump"
-    self.back_opacity = Base_Opacity
-    self.z = 4000
-    refresh(actor)
-  end
-  #--------------------------------------------------------------------------
-  # Update
-  #--------------------------------------------------------------------------
-  def refresh(actor)
-    self.contents.clear
+    bitmap = RPG::Cache.icon(item.icon_name)
+    self.contents.blt(x, y + 4, bitmap, Rect.new(0, 0, 24, 24))
     self.contents.font.color = normal_color
-    self.contents.draw_text(-32, -8, 128, 32, actor.name, 1) if actor != nil
-  end #0,-8,128,32
+    self.contents.draw_text(x + 28, y, 212, 32, item.name)
+  end
 end
