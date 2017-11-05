@@ -1815,7 +1815,7 @@ root:
   fog_name: ''
   id: 1
   tileset_name: piratecovetestx2
-  battleback_name: shipdeckx2
+  battleback_name: beachbattlex2
   fog_blend_type: 0
 - !ruby/object:RPG::Tileset
   panorama_hue: 0
@@ -7767,7 +7767,7 @@ root:
   fog_name: ''
   id: 4
   tileset_name: darawayshipx2
-  battleback_name: shipdeckx2
+  battleback_name: darawaydeckx2
   fog_blend_type: 0
 - !ruby/object:RPG::Tileset
   panorama_hue: 0

@@ -2,7 +2,7 @@
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: beautifulsunsetland
+    name: guitarpractice
     pitch: 100
   events: !ruby/object:Hash
     1: !ruby/object:RPG::Event
@@ -1117,7 +1117,7 @@ root: !ruby/object:RPG::Map
           parameters:
           - !ruby/object:RPG::AudioFile
             volume: 100
-            name: iceyboss
+            name: Terror_of_the_Seas
             pitch: 100
           indent: 0
           code: 241
@@ -1936,7 +1936,7 @@ root: !ruby/object:RPG::Map
     volume: 35
     name: oceanloop
     pitch: 100
-  autoplay_bgm: false
+  autoplay_bgm: true
   data: !ruby/object:Table
     dim: 3
     zsize: 3

@@ -5,7 +5,7 @@ root: !ruby/object:Hash
     name: Ship Deck
     expanded: true
     order: 2
-    scroll_y: 478
+    scroll_y: 472
     parent_id: 0
   2: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -40,12 +40,12 @@ root: !ruby/object:Hash
     name: daraway's ship
     expanded: true
     order: 5
-    scroll_y: 1032
+    scroll_y: 904
     parent_id: 1
   7: !ruby/object:RPG::MapInfo
     scroll_x: 320
     name: night scene 1
-    expanded: false
+    expanded: true
     order: 7
     scroll_y: 240
     parent_id: 1
@@ -54,7 +54,7 @@ root: !ruby/object:Hash
     name: Cove waterway
     expanded: true
     order: 8
-    scroll_y: 464
+    scroll_y: 360
     parent_id: 7
   9: !ruby/object:RPG::MapInfo
     scroll_x: 532
