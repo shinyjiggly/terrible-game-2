@@ -18,7 +18,7 @@ root:
   animation2_id: 28
   id: 1
   str_plus: 0
-  description: An odd find that's become one of Dolph's favorites.
+  description: I think I should find a replacement for this soon...
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0
@@ -268,11 +268,11 @@ root:
   pdef: 0
   dex_plus: 0
   element_set: []
-  atk: 3
+  atk: 5
   animation2_id: 2
   id: 15
   str_plus: 0
-  description: it's two knives
+  description: A speedy weapon for quick thinkers.
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0
