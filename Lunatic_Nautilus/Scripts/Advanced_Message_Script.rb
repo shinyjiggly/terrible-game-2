@@ -672,7 +672,7 @@ if @popchar >= 0
     x = [[character.screen_x -  $ams.event_message_x_ofset - self.width / 2, 4].max, 636 - self.width].min
     
     if character.screen_y < 190
-      y = [[character.screen_y + $ams.event_message_y_ofset + 20 - self.height, 4].max, 476 - self.height].min
+      y = [[character.screen_y + $ams.event_message_y_ofset + 30 - self.height, 4].max, 476 - self.height].min
     else
       y = [[character.screen_y - $ams.event_message_y_ofset - self.height, 4].max, 476 - self.height].min
     end

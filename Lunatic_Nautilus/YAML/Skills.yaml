@@ -205,12 +205,12 @@ root:
   sp_cost: 1
   variance: 15
 - !ruby/object:RPG::Skill
-  animation1_id: 0
+  animation1_id: 29
   int_f: 100
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: Deadly Blow
   common_event_id: 0
   mdef_f: 100
   occasion: 1
@@ -222,13 +222,13 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   dex_f: 0
   power: 0
   element_set: []
-  hit: 100
-  animation2_id: 0
-  description: ''
+  hit: 50
+  animation2_id: 28
+  description: Trade Accuracy for Power. What could go wrong?
   str_f: 0
   id: 8
   sp_cost: 0

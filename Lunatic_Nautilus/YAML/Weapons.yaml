@@ -104,7 +104,7 @@ root:
   pdef: 0
   dex_plus: 0
   element_set: []
-  atk: 3
+  atk: 6
   animation2_id: 2
   id: 6
   str_plus: 0
@@ -268,7 +268,7 @@ root:
   pdef: 0
   dex_plus: 0
   element_set: []
-  atk: 3
+  atk: 6
   animation2_id: 2
   id: 15
   str_plus: 0

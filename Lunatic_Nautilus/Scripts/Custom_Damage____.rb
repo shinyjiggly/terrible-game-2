@@ -81,6 +81,7 @@ module Atoa
   #gun of five
   Skill_Custom_Formula[4] = "({atk} + rand({atk}))/3"
   Skill_Custom_Formula[5] = "((({atk}/2 + rand({atk})*1.5)*{str})*2 - {def})" #gunaxe x2
+  Skill_Custom_Formula[8] = "#{Weapon_Custom_Formula[5]}" #inaccurate gunaxe
   
   # This example the power of the attack depends on the number of potions
   # ($game_party.item_number(1) = number of potions)

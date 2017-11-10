@@ -5,7 +5,7 @@ root: !ruby/object:Hash
     name: Ship Deck
     expanded: true
     order: 2
-    scroll_y: 312
+    scroll_y: 344
     parent_id: 0
   2: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -24,7 +24,7 @@ root: !ruby/object:Hash
   4: !ruby/object:RPG::MapInfo
     scroll_x: 560
     name: warhip deck demo
-    expanded: false
+    expanded: true
     order: 3
     scroll_y: 1071
     parent_id: 1
@@ -82,5 +82,5 @@ root: !ruby/object:Hash
     name: sideways scene
     expanded: false
     order: 6
-    scroll_y: 312
+    scroll_y: 328
     parent_id: 6
