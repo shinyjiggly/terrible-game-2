@@ -670,7 +670,15 @@ if @popchar >= 0
   if events != nil
     character = get_character(@popchar)
     x = [[character.screen_x -  $ams.event_message_x_ofset - self.width / 2, 4].max, 636 - self.width].min
-    y = [[character.screen_y - $ams.event_message_y_ofset - self.height, 4].max, 476 - self.height].min
+    
+    if character.screen_y < 190
+      y = [[character.screen_y + $ams.event_message_y_ofset + 20 - self.height, 4].max, 476 - self.height].min
+    else
+      y = [[character.screen_y - $ams.event_message_y_ofset - self.height, 4].max, 476 - self.height].min
+    end
+    
+      #the y is set up so it's at the char's screen position, minus the offset,
+#and then minus the height, 
     self.x = x
     self.y = y
   end

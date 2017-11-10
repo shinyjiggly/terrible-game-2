@@ -1932,7 +1932,7 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: false
       name: EV015
-      y: 7
+      y: 1
       x: 20
       id: 15
     16: !ruby/object:RPG::Event
