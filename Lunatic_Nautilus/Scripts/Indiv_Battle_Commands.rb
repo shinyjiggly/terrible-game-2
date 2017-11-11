@@ -28,19 +28,19 @@ module Atoa
   #
   # Skill_Command[Command_Name] = [Skills_IDs]
   #
-  Skill_Command['Magic'] = [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+  Skill_Command['Magic'] = [ 6, 7, 9, 10, 11, 12, 13, 14, 15, 
     16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
     35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
     54, 55, 56]
   
-  Skill_Command['Techs'] = [1, 2, 3, 4, 5, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68,
+  Skill_Command['Techs'] = [1, 2, 3, 4, 5, 8, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68,
     69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82]
   
-  Skill_Command['Summon'] = [83,84,85,86]
+  # Skill_Command['Summon'] = [83,84,85,86]
   
-  Skill_Command['Limit Break'] = [108]
+  # Skill_Command['Limit Break'] = [108]
   
-  Skill_Command['Unite'] = [100,103]
+  # Skill_Command['Unite'] = [100,103]
     
   # Actor Commands.
   # These are the commands linked to the actors, they will be shown even if
@@ -50,8 +50,7 @@ module Atoa
   #
   # Actor_Command[Command_Name] = {Actor_id => [Skills_IDs]}
   #
-  Actor_Command['Skill'] = {1 => [88,92,97,126], 2 => [89,93,99,146],
-    3 => [90,95,96,106,147]}
+  # Actor_Command['Skill'] = {1 => [88,92,97,126], 2 => [89,93,99,146], 3 => [90,95,96,106,147]}
     
   #Actor_Command['Temporal Arts'] = {4 => [46,47,48,49,50]}
   

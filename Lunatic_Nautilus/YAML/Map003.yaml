@@ -1047,8 +1047,9 @@ root: !ruby/object:RPG::Map
           parameters:
           - - after battle (later)
             - before battle
+            - ENOUIGH
             - 'no'
-          - 2
+          - 4
           indent: 0
           code: 102
         - !ruby/object:RPG::EventCommand
@@ -1166,6 +1167,135 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters:
           - 2
+          - ENOUIGH
+          indent: 0
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 221
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 1
+          - 1
+          indent: 1
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - 1
+          - 1
+          indent: 1
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 4
+          - 1
+          - 1
+          indent: 1
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          - 1
+          - 1
+          indent: 1
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 6
+          - 1
+          - 1
+          indent: 1
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 7
+          - 1
+          - 1
+          indent: 1
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 8
+          - 1
+          - 1
+          indent: 1
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 9
+          - 1
+          - 1
+          indent: 1
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 10
+          - 1
+          - 1
+          indent: 1
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          indent: 1
+          code: 106
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - 2
+          - 0
+          - 0
+          - 10
+          indent: 1
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:Tone
+            red: -85.0
+            green: -85.0
+            blue: 51.0
+            gray: 34.0
+          - 0
+          indent: 1
+          code: 223
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 12
+          - 9
+          - 16
+          - 4
+          - 1
+          indent: 1
+          code: 201
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - shoopdown
+          indent: 1
+          code: 222
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 100
+            name: Terror_of_the_Seas
+            pitch: 100
+          indent: 1
+          code: 241
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - get outta here
+          indent: 1
+          code: 119
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 3
           - 'no'
           indent: 0
           code: 402
