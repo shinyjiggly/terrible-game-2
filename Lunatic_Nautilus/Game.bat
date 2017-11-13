@@ -19,3 +19,5 @@ CD "%PLUGIN_SYSTEM_ROOT%"
 RUBY start_rmxp.rb "%RMXP_PROJECT_ROOT%"
 
 CD %OLD_DIR%
+
+pause
