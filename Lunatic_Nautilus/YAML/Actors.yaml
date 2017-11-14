@@ -5652,7 +5652,7 @@ root:
   id: 9
   armor1_id: 0
   armor3_fix: false
-  battler_name: testbattle
+  battler_name: shesi_battlex2
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
