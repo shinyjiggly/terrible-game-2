@@ -79,33 +79,33 @@ root:
   members:
   - !ruby/object:RPG::Troop::Member
     hidden: false
-    y: 184
+    y: 192
     enemy_id: 2
-    x: 176
+    x: 72
     immortal: false
   - !ruby/object:RPG::Troop::Member
     hidden: false
-    y: 264
+    y: 256
     enemy_id: 2
-    x: 168
-    immortal: false
-  - !ruby/object:RPG::Troop::Member
-    hidden: false
-    y: 320
-    enemy_id: 2
-    x: 80
-    immortal: false
-  - !ruby/object:RPG::Troop::Member
-    hidden: false
-    y: 224
-    enemy_id: 2
-    x: 248
+    x: 152
     immortal: false
   - !ruby/object:RPG::Troop::Member
     hidden: false
     y: 320
+    enemy_id: 2
+    x: 72
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 192
     enemy_id: 2
     x: 224
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 320
+    enemy_id: 2
+    x: 248
     immortal: false
 - !ruby/object:RPG::Troop
   pages:
