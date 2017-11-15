@@ -538,13 +538,19 @@ module Atoa
   #    avaliable for skills.
   
   Skill_Settings[1] = ["MOVETYPE/STEPFOWARD","TARGETSWITCH"] #null skill
-  Skill_Settings[2] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORCASTER/false, true, false, false"] #single shot
-  Skill_Settings[3] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORCASTER/false, true, false, false"] #5-in-1 shot
-  Skill_Settings[4] = ["MOVETYPE/STEPFOWARD"]
-  Skill_Settings[5] = ["MOVETYPE/STEPFOWARD"]
-  Skill_Settings[6] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORCASTER/false, true, false, false","COMBO/1-5"] #5 shot
+  Skill_Settings[2] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORCASTER/false, true, false, false"] 
+  #single shot
+  Skill_Settings[3] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORCASTER/false, true, false, false"] 
+  #5-in-1 shot
+  Skill_Settings[4] = ["MOVETYPE/STEPFOWARD","ANIME/7"]
+  #gunblitz
+  Skill_Settings[5] = ["ANIME/7","MOVETYPE/MOVETOTARGET","ADVJUMP/50", "DMGSHAKE/5", "MIRAGEADVANCE/nil"]
+  #lethal strike
+  Skill_Settings[6] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORCASTER/false, true, false, false","COMBO/1-5"] 
+  #5 shot
   Skill_Settings[7] = ["MOVEPOSITION/50,0,150,0,300","MIRAGEADVANCE/nil","MIRAGEACTION/nil","TARGETSWITCH"]
-
+  #test
+  
   Skill_Settings[53] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[54] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[55] = ["MOVETYPE/STEPFOWARD"]
@@ -885,7 +891,8 @@ module Atoa
   #  The battler with filename 'Test', during the 1st frame of the ID 4 pose will
   #  play the animation ID 15, it will repeat until the chages the pose. During
   #  the 2nd frame fo the ID 7 pose will play the animation ID 30 once
-  Pose_Animation['FrioFighter'] = {20 => {1 => [128, false]}}
+  
+  #Pose_Animation['FrioFighter'] = {20 => {1 => [128, false]}}
 
   #¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
   # CUSTOM GRAPHICS POSES CONFIG

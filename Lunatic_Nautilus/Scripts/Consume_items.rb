@@ -1,13 +1,13 @@
 #==============================================================================
-# Consum Items Actions
+# Consume Items Actions
 # By Atoa
 #==============================================================================
-# This script allows you to create skills and weapons that consum itens
+# This script allows you to create skills and weapons that consume itens
 # when used
 # 
 # That way you can make bows that needs arrows or something like that
 #
-# There are two types of consum:
+# There are two types of consume:
 # 1 - Consum items from the inventory
 #   On this type, it's necessary to have all items set on the amount needed,
 #   and all needed items are used up.

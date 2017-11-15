@@ -175,21 +175,21 @@ root: !ruby/object:RPG::System
   elements:
   - ''
   - Fire
+  - Water
+  - Air
+  - Earth
   - Ice
   - Thunder
-  - Water
-  - Earth
-  - Wind
-  - Light
-  - Darkness
-  - vs Undead
-  - vs Snake
-  - vs Aquatic
-  - vs Beast
-  - vs Goblin
-  - vs Bird
-  - vs Devil
-  - vs Angel
+  - Plant
+  - Poison
+  - Holy
+  - Dark
+  - Cosmic
+  - Psychic
+  - Time
+  - Piercing
+  - Slashing
+  - Bludgeoning
   start_y: 7
   battler_hue: 0
   load_se: !ruby/object:RPG::AudioFile

@@ -27,6 +27,9 @@ module Atoa
   # Set the skills that the actor won't learn with equipments.
   # Skill_Restriction[Actor_ID] = [Skill_IDs]
   
+  Skill_Restriction[3] = [4, 5] 
+  #cleaver doesn't learn gunblitz and lethal strike
+  
   #Skill_Restriction[1] = [1, 2, 3]
   
   #=============================================================================

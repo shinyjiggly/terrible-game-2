@@ -13,7 +13,9 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 15
+  - 16
   atk: 20
   animation2_id: 28
   id: 1
@@ -31,7 +33,8 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 15
   atk: 13
   animation2_id: 27
   id: 2
@@ -67,7 +70,8 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 14
   atk: 13
   animation2_id: 2
   id: 4
@@ -85,7 +89,8 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 11
   atk: 10
   animation2_id: 5
   id: 5
@@ -103,7 +108,8 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 15
   atk: 6
   animation2_id: 2
   id: 6
@@ -121,7 +127,9 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 15
+  - 16
   atk: 12
   animation2_id: 28
   id: 7
@@ -139,7 +147,8 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 14
   atk: 33
   animation2_id: 2
   id: 8
@@ -193,7 +202,8 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 16
   atk: 10
   animation2_id: 2
   id: 11
@@ -211,7 +221,9 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 14
+  - 16
   atk: 10
   animation2_id: 2
   id: 12
@@ -230,7 +242,8 @@ root:
   - 8
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 15
   atk: 6
   animation2_id: 27
   id: 13
@@ -249,7 +262,8 @@ root:
   - 18
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 15
   atk: 9
   animation2_id: 30
   id: 14
@@ -267,7 +281,8 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 15
   atk: 6
   animation2_id: 2
   id: 15

@@ -80,7 +80,7 @@ module Atoa
   # Commands not listed here will be never shown for that actor, even if he fills the
   # condition to have that command. You can use that to remove basic commands
   # like "Attack" and "Defend" from an Actor.
-  Custom_Command_Order[2] = ['Defend','Attack','Item','Magic','Techs','Skill','Summon']
+  #Custom_Command_Order[2] = ['Attack','Defend','Item','Magic','Techs','Skill','Summon']
   
   #==============================================================================
   # Window Settings

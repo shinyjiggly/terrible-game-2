@@ -24,7 +24,7 @@ module Atoa
   #   no animation
   # 
   
-  #Drain_Action['Skill'][116] = {'hp' => [100, 50, nil, true, false], sp' =>[100, 50, 18, true, false]}
+  Drain_Action['Skill'][63] = {'hp' => [100, 50, nil, true, false], 'sp' =>[100, 50, 18, true, false]}
   #Drain_Action['Weapon'][43] = {'hp' => [50, 50, nil, true, true]}
   
   #Drain_Action['Skill'][5] = {'hp' => [100, -33, 10, true, false]} #moved over to other 

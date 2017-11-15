@@ -79,9 +79,9 @@ root:
   members:
   - !ruby/object:RPG::Troop::Member
     hidden: false
-    y: 192
+    y: 208
     enemy_id: 2
-    x: 72
+    x: 88
     immortal: false
   - !ruby/object:RPG::Troop::Member
     hidden: false
@@ -91,21 +91,21 @@ root:
     immortal: false
   - !ruby/object:RPG::Troop::Member
     hidden: false
-    y: 320
+    y: 296
     enemy_id: 2
-    x: 72
+    x: 96
     immortal: false
   - !ruby/object:RPG::Troop::Member
     hidden: false
-    y: 192
+    y: 208
     enemy_id: 2
     x: 224
     immortal: false
   - !ruby/object:RPG::Troop::Member
     hidden: false
-    y: 320
+    y: 288
     enemy_id: 2
-    x: 248
+    x: 224
     immortal: false
 - !ruby/object:RPG::Troop
   pages:
