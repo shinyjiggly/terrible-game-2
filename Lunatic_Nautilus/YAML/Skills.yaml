@@ -29,7 +29,7 @@ root:
   str_f: 0
   id: 1
   sp_cost: 80
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
@@ -87,7 +87,7 @@ root:
   str_f: 0
   id: 3
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
@@ -116,7 +116,7 @@ root:
   str_f: 0
   id: 4
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 29
   int_f: 100
@@ -145,7 +145,7 @@ root:
   str_f: 0
   id: 5
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
@@ -174,7 +174,7 @@ root:
   str_f: 0
   id: 6
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
@@ -203,7 +203,7 @@ root:
   str_f: 0
   id: 7
   sp_cost: 1
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 29
   int_f: 100
@@ -232,7 +232,7 @@ root:
   str_f: 0
   id: 8
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
@@ -638,7 +638,7 @@ root:
   str_f: 0
   id: 22
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
@@ -726,7 +726,7 @@ root:
   str_f: 0
   id: 25
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
@@ -756,7 +756,7 @@ root:
   str_f: 0
   id: 26
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
@@ -1599,7 +1599,7 @@ root:
   pdef_f: 0
   scope: 1
   dex_f: 6
-  power: 50
+  power: 2000
   element_set:
   - 10
   hit: 100
@@ -1608,7 +1608,7 @@ root:
   str_f: 0
   id: 54
   sp_cost: 23
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
@@ -1638,7 +1638,7 @@ root:
   str_f: 0
   id: 55
   sp_cost: 50
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
@@ -1668,7 +1668,7 @@ root:
   str_f: 0
   id: 56
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
@@ -1883,7 +1883,7 @@ root:
   str_f: 0
   id: 63
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100

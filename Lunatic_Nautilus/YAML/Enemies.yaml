@@ -93,7 +93,7 @@ root:
   eva: 0
   animation1_id: 0
   name: Natsiya Sold.
-  mdef: 20
+  mdef: 0
   gold: 5
   weapon_id: 0
   int: 50
