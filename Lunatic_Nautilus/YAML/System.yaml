@@ -5,22 +5,22 @@ root: !ruby/object:RPG::System
   - battle theme
   - progress
   - recoil amount
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - days at sea
+  - docked map x
+  - docked map y
+  - docked map id
+  - current chapter
+  - saved ship map x
+  - saved ship map y
+  - saved ship map id
+  - docked loaction
+  - squares travelled today
+  - maximum squares per day
+  - new ship map x
+  - new ship map y
+  - new ship map id
+  - button press
+  - special event
   - ''
   - ''
   - ''
@@ -65,7 +65,7 @@ root: !ruby/object:RPG::System
     volume: 100
     name: boss
     pitch: 100
-  start_map_id: 3
+  start_map_id: 14
   shop_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: buying
@@ -95,10 +95,10 @@ root: !ruby/object:RPG::System
   switches:
   - 
   - willing to listen to voice acting
-  - ''
-  - ''
-  - ''
-  - ''
+  - ship docked
+  - can use ship
+  - tracking ship movement
+  - locked in place
   - ''
   - ''
   - ''
@@ -258,4 +258,4 @@ root: !ruby/object:RPG::System
     name: saved
     pitch: 100
   battle_transition: battletransition
-  start_x: 10
+  start_x: 15
