@@ -99,7 +99,7 @@ root: !ruby/object:RPG::System
   - can use ship
   - tracking ship movement
   - locked in place
-  - ''
+  - restless
   - ''
   - ''
   - ''

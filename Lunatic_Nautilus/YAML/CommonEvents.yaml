@@ -72,14 +72,54 @@ root:
     code: 122
   - !ruby/object:RPG::EventCommand
     parameters:
+    - change this later
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 8
+    - 0
+    - 0
+    - 2
+    indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 0
     - 1
-    - 19
+    - 20
     - 28
     - 4
     - 1
-    indent: 1
+    indent: 2
     code: 201
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 6
+    - 13
+    - 25
+    - 4
+    - 1
+    indent: 2
+    code: 201
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
     - shoopleft
@@ -113,6 +153,35 @@ root:
 - !ruby/object:RPG::CommonEvent
   name: progress day
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 6
+    - 0
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[0]There are more important things "
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - than sleeping!
+    indent: 1
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 115
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
     - 0
@@ -170,6 +239,16 @@ root:
     - 1
     - 0
     - 1
+    indent: 2
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 19
+    - 19
+    - 0
+    - 2
+    - 10
+    - 30
     indent: 2
     code: 122
   - !ruby/object:RPG::EventCommand
@@ -510,14 +589,49 @@ root:
     code: 408
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 1
+    - 8
+    - 0
+    - 0
+    - 2
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 0
     - 1
-    - 19
+    - 20
     - 28
-    - 0
-    - 0
-    indent: 0
+    - 4
+    - 1
+    indent: 1
     code: 201
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 6
+    - 13
+    - 25
+    - 4
+    - 1
+    indent: 1
+    code: 201
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters:
     - battletransition
@@ -732,14 +846,49 @@ root:
     code: 135
   - !ruby/object:RPG::EventCommand
     parameters:
+    - 1
+    - 8
+    - 0
+    - 0
+    - 2
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 0
     - 1
     - 14
     - 26
     - 2
     - 0
-    indent: 0
+    indent: 1
     code: 201
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 6
+    - 10
+    - 20
+    - 2
+    - 0
+    indent: 1
+    code: 201
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
