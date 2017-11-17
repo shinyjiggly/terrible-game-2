@@ -206,13 +206,13 @@ root:
   variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 29
-  int_f: 100
+  int_f: 0
   icon_name: ''
   eva_f: 0
   minus_state_set: []
   name: Deadly Blow
   common_event_id: 0
-  mdef_f: 100
+  mdef_f: 0
   occasion: 1
   agi_f: 0
   plus_state_set: []
@@ -226,7 +226,7 @@ root:
   dex_f: 0
   power: 0
   element_set: []
-  hit: 50
+  hit: 100
   animation2_id: 28
   description: Trade Accuracy for Power. What could go wrong?
   str_f: 0
