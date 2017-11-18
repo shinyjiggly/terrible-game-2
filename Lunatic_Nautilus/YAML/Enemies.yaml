@@ -93,7 +93,7 @@ root:
   eva: 0
   animation1_id: 0
   name: Natsiya Sold.
-  mdef: 20
+  mdef: 0
   gold: 5
   weapon_id: 0
   int: 50
@@ -186,17 +186,17 @@ root:
     skill_id: 3
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 5
   eva: 0
   animation1_id: 0
   name: Masked Man...?
-  mdef: 100
+  mdef: 10
   gold: 25
   weapon_id: 0
   int: 50
   maxsp: 500
   treasure_prob: 100
-  pdef: 20
+  pdef: 3
   exp: 16
   agi: 6
   maxhp: 500
@@ -233,7 +233,7 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
+  dex: 7
   animation2_id: 2
   id: 3
   item_id: 0

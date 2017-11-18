@@ -49,22 +49,22 @@ module Atoa
   
 
   
-  Weapon_Custom_Formula[1] = "({atk}/2 + rand({atk})*1.5).round*{str} - {def}" #gunaxe
-  Weapon_Custom_Formula[2] = "({atk} + rand({atk})/8)*{str} - {def}" #sword
-  Weapon_Custom_Formula[3] = "({str} + (rand({str}) / 4)) - {def}" #fist
-  Weapon_Custom_Formula[4] = "({atk}/2 + rand({atk})/8)*user.dex - {def}/2" #rapier
-  Weapon_Custom_Formula[5] = "rand({atk}) * (({str}*2)-{def})" #testing
-  Weapon_Custom_Formula[6] = "({atk} + rand({atk}) / 4) * ({str} + user.dex) / 2 - {def}" #single knife
-  Weapon_Custom_Formula[7] = "[rand({atk}),{atk}/2].max * [(({str}+{atk})-({def})),1].max" #random axe
-  Weapon_Custom_Formula[8] = "({str} + (rand({str}) / 4)) - {def}" #antlers
-  Weapon_Custom_Formula[9] = "({atk} + rand({atk}))" #gun
-  Weapon_Custom_Formula[10] = "({atk} + rand({atk}))" #gun
-  Weapon_Custom_Formula[11] = "({atk} + rand({atk})/8) * ({str} + user.int) / 2 - {def}" #staff
-  Weapon_Custom_Formula[12] = "({atk} / 2 + rand({atk})) * [(({str}+{atk})-({def})),1].max" #mace
-  Weapon_Custom_Formula[13] = "({ATK}*2 + rand({ATK})/8)*{STR} - {DEF}*2" #whip
-  Weapon_Custom_Formula[14] = "({ATK}*2 + rand({ATK})/8)*{STR} - {DEF}*2" #claws
+  Weapon_Custom_Formula[1] = "({atk}/2 + rand({atk}+1)*1.5).round*{str} - {def}" #gunaxe
+  Weapon_Custom_Formula[2] = "({atk} + rand({atk}+1)/8)*{str} - {def}" #sword
+  Weapon_Custom_Formula[3] = "({str} + (rand({str}+1) / 4)) - {def}" #fist
+  Weapon_Custom_Formula[4] = "({atk}/2 + rand({atk}+1)/8)*user.dex - {def}/2" #rapier
+  Weapon_Custom_Formula[5] = "rand({atk}) * (({str}*2+1)-{def})" #testing
+  Weapon_Custom_Formula[6] = "({atk} + rand({atk}+1) / 4) * ({str} + user.dex) / 2 - {def}" #single knife
+  Weapon_Custom_Formula[7] = "[rand({atk}+1),{atk}/2].max * [(({str}+{atk})-({def})),1].max" #random axe
+  Weapon_Custom_Formula[8] = "({str} + (rand({str}+1) / 4)) - {def}" #antlers
+  Weapon_Custom_Formula[9] = "({atk} + rand({atk}+1))" #gun
+  Weapon_Custom_Formula[10] = "({atk} + rand({atk}+1))" #gun
+  Weapon_Custom_Formula[11] = "({atk} + rand({atk}+1)/8) * ({str} + user.int) / 2 - {def}" #staff
+  Weapon_Custom_Formula[12] = "({atk} / 2 + rand({atk}+1)) * [(({str}+{atk})-({def})),1].max" #mace
+  Weapon_Custom_Formula[13] = "({ATK}*2 + rand({ATK}+1)/8)*{STR} - {DEF}*2" #whip
+  Weapon_Custom_Formula[14] = "({ATK}*2 + rand({ATK}+1)/8)*{STR} - {DEF}*2" #claws
   
-  Weapon_Custom_Formula[15] = "#{Weapon_Custom_Formula[6]} * 2" #double knives
+  Weapon_Custom_Formula[15] = "#{Weapon_Custom_Formula[6]}" #double knives
   
   
   Weapon_Custom_Formula[69] = "69" #nice
@@ -80,8 +80,9 @@ module Atoa
   Skill_Custom_Formula[3] = "(rand(2)*rand(2) * ({atk} + rand({atk})/4)) + (rand(2)*rand(2) * ({atk} + rand({atk})/4)) + (rand(2)*rand(2) * ({atk} + rand({atk})/4)) + (rand(2)*rand(2) * ({atk} + rand({atk})/4)) + (rand(2)*rand(2) * ({atk} + rand({atk})/4))" 
   #gun of five
   Skill_Custom_Formula[4] = "({atk} + rand({atk}))/3"
-  Skill_Custom_Formula[5] = "((({atk}/2 + rand({atk})*1.5)*{str})*2 - {def})" #gunaxe x2
-  Skill_Custom_Formula[8] = "#{Weapon_Custom_Formula[5]}" #inaccurate gunaxe
+  Skill_Custom_Formula[5] = "((({atk}/2 + rand({atk}+1)*1.5)*{str})*2 - {def})" #gunaxe x2
+  Skill_Custom_Formula[8] = "#{Skill_Custom_Formula[5]}" #inaccurate gunaxe
+  Skill_Custom_Formula[54] = "(26+rand(26+1)/8)*user.int" #shasho
   
   # This example the power of the attack depends on the number of potions
   # ($game_party.item_number(1) = number of potions)

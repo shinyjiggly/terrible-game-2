@@ -1527,29 +1527,44 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Fiora]\\P[11]Hey Dolph, how's my voice sound?"
+          - "\\Name[Fiora]\\P[11]You know Dolph, for a Terror of the "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Fiora]\\P[11]I've been practicing speaking more softly."
+          - Seas...
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[0]You sound good! You're well on "
+          - "\\Name[Fiora]\\P[11]Your STR is pretty low."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - your way to becoming a real doe!
+          - "\\Name[Dolph]\\P[0]No, yours is just absurdly high "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'because we haven''t refined your damage formula '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Fiora]\\P[11]Aw, thank you!"
+          - yet.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Fiora]\\P[11]I think I prefer it this. It makes me "
           indent: 0
           code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - feel like a powerful goddess.
+          indent: 0
+          code: 401
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -1794,6 +1809,13 @@ root: !ruby/object:RPG::Map
           code: 129
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 8
+          - 0
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 6
           - 1
           - 1
@@ -1816,13 +1838,6 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters:
           - 4
-          - 1
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 3
           - 1
           - 1
           indent: 0

@@ -28,6 +28,7 @@ module Atoa
   
   # Rad Arts
   HP_Sacrifice_Action['Skill'][5] = [100, 'percent', 33, 10, true, true]  #lethal strike
+  HP_Sacrifice_Action['Skill'][54] = [100, 'percent', 25, 10, true, true] #shasho
   
   #HP_Sacrifice_Action['Skill'][6] = [100, 'percent', 100, nil, false, true]  #Black Payment
   #HP_Sacrifice_Action['Skill'][34] = [100, 'percent', 10, nil, true, false] #Blotted Life
