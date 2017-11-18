@@ -29,7 +29,7 @@ class Sprite
   alias initialize default_initialize rescue nil
   alias default_initialize initialize
   def initialize(viewport=nil)
-    @wave_amp = 2
+    @wave_amp = 0 #2
     @wave_length = 72
     @wave_speed = 720
     @wave_phase = 0.25
