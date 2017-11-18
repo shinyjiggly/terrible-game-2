@@ -468,7 +468,7 @@ module Atoa
   #   Be very careful to avoid erros.
   #   ** must be written this way: 
   #     SOUND, CURVE, DOWN, LEFT, RIGHT, UP, SPEED, X1, Y1, X2, Y2
-  #    (the values must be separated by coma.
+  #    (the values must be separated by comma.
   #     SOUND = Name of the sound file used on the throw start. leave nil for no sound.
   #     CURVE = Curve angle for the throw. Numeric value, can be decimal.
   #       Default Value for straight throws = 0.
@@ -630,7 +630,22 @@ module Atoa
   #  Effects = Special Effects, look the list on the begin to know wich effects are
   #    avaliable for weapons.
   
-  Weapon_Settings[15] = ["COMBO/2"] 
+  Weapon_Settings[1] = ["DMGVARIANCE/0"] #Aged Axegun
+  Weapon_Settings[2] = ["DMGVARIANCE/0"] #Cutlass
+  Weapon_Settings[3] = ["DMGVARIANCE/0"] #Bare Fists
+  Weapon_Settings[4] = ["DMGVARIANCE/0"] #Rapier
+  Weapon_Settings[5] = ["DMGVARIANCE/0"] #BETA STICK
+  Weapon_Settings[6] = ["DMGVARIANCE/0"] #Knife
+  Weapon_Settings[7] = ["DMGVARIANCE/0"] #Basic Axe
+  Weapon_Settings[8] = ["DMGVARIANCE/0"] #Antlers
+  Weapon_Settings[9] = ["DMGVARIANCE/0"] #Pistol
+  Weapon_Settings[10] = ["DMGVARIANCE/0"]#Rifle
+  Weapon_Settings[11] = ["DMGVARIANCE/0"]#Basic Staff
+  Weapon_Settings[12] = ["DMGVARIANCE/0"]#Simple Mace
+  Weapon_Settings[13] = ["DMGVARIANCE/0"]#Tamer's Whip
+  Weapon_Settings[14] = ["DMGVARIANCE/0"]#Claws
+  Weapon_Settings[15] = ["COMBO/2", "DMGVARIANCE/0"] #Knives
+  Weapon_Settings[16] = ["DMGVARIANCE/0"]
   Weapon_Settings[17] = ["STARTTHROW/101-Attack13,0,122,123,124,125,300,-20,0,0,0",
                          "MOVETYPE/NOMOVE"]
   Weapon_Settings[18] = ["STARTTHROW/101-Attack13,0,122,123,124,125,300,-20,0,0,0",
