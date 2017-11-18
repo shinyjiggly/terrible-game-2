@@ -5,7 +5,7 @@ root: !ruby/object:Hash
     name: Ship Deck
     expanded: true
     order: 2
-    scroll_y: 1064
+    scroll_y: 728
     parent_id: 0
   2: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -15,16 +15,16 @@ root: !ruby/object:Hash
     scroll_y: 324
     parent_id: 0
   3: !ruby/object:RPG::MapInfo
-    scroll_x: 417
+    scroll_x: 532
     name: testmap
-    expanded: false
+    expanded: true
     order: 12
     scroll_y: 303
     parent_id: 0
   4: !ruby/object:RPG::MapInfo
     scroll_x: 560
     name: warhip deck demo
-    expanded: true
+    expanded: false
     order: 3
     scroll_y: 1071
     parent_id: 1
@@ -64,7 +64,7 @@ root: !ruby/object:Hash
     scroll_y: 496
     parent_id: 8
   10: !ruby/object:RPG::MapInfo
-    scroll_x: 1315
+    scroll_x: 541
     name: cave path
     expanded: true
     order: 10
@@ -84,3 +84,24 @@ root: !ruby/object:Hash
     order: 6
     scroll_y: 328
     parent_id: 6
+  13: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: world map
+    expanded: true
+    order: 13
+    scroll_y: 240
+    parent_id: 3
+  14: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: dock 1
+    expanded: false
+    order: 14
+    scroll_y: 240
+    parent_id: 13
+  15: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: dock 2
+    expanded: false
+    order: 15
+    scroll_y: 240
+    parent_id: 13

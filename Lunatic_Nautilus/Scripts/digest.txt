@@ -146,6 +146,9 @@
 47444769    Advanced Message Script                      Advanced_Message_Script.rb
 86422875    Draining skill                               Draining_skill.rb
 25664505    hp sacrifice                                 hp_sacrifice.rb
+60108649    sprite wave effect                           sprite_wave_effect.rb
+20058967    Scroll panorama                              Scroll_panorama.rb
+28868707    anti lag                                     anti_lag.rb
 37417015    -------------------                          EMPTY
 63588152    Main                                         Main.rb
 95038157    -----------------------------                EMPTY
