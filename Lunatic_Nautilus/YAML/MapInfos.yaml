@@ -15,7 +15,7 @@ root: !ruby/object:Hash
     scroll_y: 324
     parent_id: 0
   3: !ruby/object:RPG::MapInfo
-    scroll_x: 715
+    scroll_x: 532
     name: testmap
     expanded: true
     order: 12
@@ -38,7 +38,7 @@ root: !ruby/object:Hash
   6: !ruby/object:RPG::MapInfo
     scroll_x: 384
     name: daraway's ship
-    expanded: false
+    expanded: true
     order: 5
     scroll_y: 904
     parent_id: 1

@@ -2263,6 +2263,15 @@ root: !ruby/object:RPG::Map
           code: 221
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 4
+          - 4
+          - 0
+          - 0
+          - 0
+          indent: 0
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 1
           - 7
           - 5
