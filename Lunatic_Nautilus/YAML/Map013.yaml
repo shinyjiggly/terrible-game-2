@@ -207,7 +207,7 @@ root: !ruby/object:RPG::Map
           - 14
           - 0
           - 0
-          - 1
+          - 2
           indent: 0
           code: 111
         - !ruby/object:RPG::EventCommand
@@ -277,26 +277,13 @@ root: !ruby/object:RPG::Map
           code: 122
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 11
-          - 11
+          - 9
+          - 9
           - 0
           - 1
           - 15
           indent: 1
           code: 122
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - we moved x
-          indent: 1
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 411
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1
@@ -333,19 +320,6 @@ root: !ruby/object:RPG::Map
           indent: 1
           code: 122
         - !ruby/object:RPG::EventCommand
-          parameters:
-          - we moved y
-          indent: 1
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 1
-          code: 0
-        - !ruby/object:RPG::EventCommand
-          parameters: []
-          indent: 0
-          code: 411
-        - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1
           code: 0
@@ -372,11 +346,6 @@ root: !ruby/object:RPG::Map
           - make the saved coords the same as the new ones
           indent: 1
           code: 108
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - you've done enouh
-          indent: 1
-          code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - check for events here
@@ -620,9 +589,11 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 7
+          - 6
+          - 6
+          - 0
           indent: 0
-          code: 117
+          code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
           - 19
@@ -639,6 +610,12 @@ root: !ruby/object:RPG::Map
           indent: 0
           code: 123
         - !ruby/object:RPG::EventCommand
+          parameters:
+          - 7
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
+
           parameters: []
           indent: 0
           code: 0

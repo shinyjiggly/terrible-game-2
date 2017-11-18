@@ -5,6 +5,9 @@
 #==============================================================================
 
 begin
+  #Graphics.frame_rate = 60 
+  #changes framerate to 60, makes everything hella fast
+  
   # Prepare for transition
   Graphics.freeze
   # Make scene object (title screen)
