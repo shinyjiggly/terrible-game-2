@@ -1,4 +1,5 @@
-finding the formula for hit rate and crit rate in the scripts (programming)
+finding the formula for hit rate and crit rate in the scripts (programming)done!
+
 deciding what the new formula for hit rate and crit rate should be (design)
 slowing down the skill animations so you can actually take it in (animation)
 deciding what the animation for Lethal Strike and Deadly Blow should be (animation/design)
@@ -13,6 +14,7 @@ fixing the front of the galleon deck so it doesn't just look like it's using a t
 reexamining the choreography, cinematography, and aesthetics of the cutscenes (direction in general)
 altering the Lethal Strike and Shasho animations to convey a self-sacrifice (animation)
 is there a way to fix the framerate and choppy vsync? (programming)
-fixing Deadly Blow so that it has a 50% chance to hit instead of a 0% chance (programming)
+-fixing Deadly Blow so that it has a 50% chance to hit instead of a 0% chance (programming)
+fixed! it now takes ATK and STR into account so now it actually does damage.
 fixing the HP sacrifice glitch with Shasho, just like we fixed it with Lethal Strike (programming)
 changing Cleaver's casting animations so the darkness comes from within (animation)
