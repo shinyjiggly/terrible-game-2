@@ -146,7 +146,10 @@ class Window_Help < Window_Base
     if text != @text or align != @align
       self.contents.clear
       self.contents.font.color = normal_color
+      self.contents.font.name = "PlopDump"
+      self.contents.font.size = 20
       self.contents.draw_text(4, 0, self.width - 40, 32, text, align)
+      #self.contents.draw_text(4, 0, self.width - 40, 32, text, align)
       text_width = self.contents.text_size(text).width
       x = (text_width + self.width)/2
       draw_actor_state(enemy, x, 0)
@@ -166,6 +169,8 @@ class Window_Help < Window_Base
     if text != @text or align != @align or @battler != battler
       self.contents.clear
       self.contents.font.color = normal_color
+      self.contents.font.size = 20
+      self.contents.font.name = "PlopDump"
       self.contents.draw_text(4, 0, self.width - 40, 32, text, align)
       @text = text
       @align = align
@@ -256,6 +261,7 @@ class Window_Skill < Window_Selectable
   def draw_skill_cost(skill, x, y)
     return if Hide_Zero_SP
     cost = @actor.calc_sp_cost(skill)
+    self.contents.font.size = 20
     self.contents.draw_text(x + 232, y, 48, 32, cost.to_s, 2)
   end
 end
@@ -395,7 +401,7 @@ class Window_NameCommand < Window_Base
   #     y     : Desenhar a partir da coordenada y
   #--------------------------------------------------------------------------
   def initialize(actor, x, y) #make the box
-    super(x, y, 130, 44) #160,64
+    super(x, y, 130, 50)
     self.contents = Bitmap.new(width - 44, height - 32 ) #-32 #put the stuff up and right 32
     self.contents.font.name = "PlopDump"
     self.back_opacity = Base_Opacity

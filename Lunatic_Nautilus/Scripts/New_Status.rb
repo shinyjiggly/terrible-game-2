@@ -79,8 +79,18 @@ module Atoa
   #     'dmg' = Critical Damage: Changes the damage dealt by critical hits.
   #     'rcrt' = Critical Rate Resist: Changes the chance of reciving citical hits
   #     'rdmg' = Critical Damage Resist: Changes the damage recived by critical hits.
-  Speacial_Status['Weapon'] = {35 => {'hit' => -20,'crt' => 20}, 36 => {'dmg' => 200}}
-  Speacial_Status['Armor'] = {35 => {'rcrt' => 20, 'rdmg' => -50}, 36 => {'hit' =>20,'crt' => 25,'dmg' => 50}}
+  
+  #NOTE: GO TO CUSTOM DAMAGE TO CHANGE THESE
+  
+  #Speacial_Status['Weapon'] = {
+  #35 => {'hit' => -20,'crt' => 20}, 
+  #36 => {'dmg' => 200}
+  #}
+  
+  #Speacial_Status['Armor'] = {
+  #35 => {'rcrt' => 20, 'rdmg' => -50}, 
+  #36 => {'hit' =>20,'crt' => 25,'dmg' => 50}
+  #}
   #=============================================================================
 
 end

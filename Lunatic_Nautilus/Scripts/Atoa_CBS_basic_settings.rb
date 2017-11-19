@@ -88,7 +88,7 @@ module Atoa
   # false = battlers will be shown bellow battle status window
   
   # Set the time between actions
-  Battle_Speed = 5
+  Battle_Speed = 2
   # Must be an value between 1 and 10, the higher the faster.
   
   # Set if the battlers grapihics will be shown after or before the transition
@@ -142,17 +142,17 @@ module Atoa
   Victory_Time = 90   # Victory animation duration. Numeric Value
   
   # Set here the postion of the Battle Command Window
-  Command_Window_Position = 3
+  Command_Window_Position = 2
   # 0 = Above the Actor
   # 1 = Right of the Actor
   # 2 = Left of the Actor
   # 3 = Custom
 
   # Adjust the command window postion, don't have effect if 'Command_Window_Position = 3'
-  Command_Window_Position_Adjust =  [0, 0]
+  Command_Window_Position_Adjust =  [0, -100]
   
   # Set the postion of the command window  if 'Command_Window_Position = 3'
-  Command_Window_Custom_Position = [240, 128]
+  Command_Window_Custom_Position = [0, 128] #[240, 128]
   
   # Set there the postion of actor name window
   Name_Window_Position = 4
@@ -241,7 +241,7 @@ module Atoa
   # 4 = All Custom, you can make your own algorithm
   
   # Base Variance for Normal Attacks
-  Base_Variance = 10
+  Base_Variance = 0
   
   # Base critical hit rate
   Base_Critical_Rate = 5
@@ -313,12 +313,12 @@ module Atoa
   # State cycle times.
   State_Cycle_Time = 2
   
-  # Definição do momento em quem os efeitos de 'slip_damage' (veneno e regeneração)
-  # terão efeito
+  # Definition of the moment when the effects of 'slip_damage' 
+  #(poison and regeneration) will have effect
   Slip_Damage_Pop_Time = 0
-  # 0 = Antes da Ação de cada battler
-  # 1 = Após da Ação de cada battler
-  # 2 = No final do turn
+  # 0 = Before actions
+  # 1 = After actions
+  # 2 = end of turn
   
   # # Use Icons to show states? 
   Icon_States = false

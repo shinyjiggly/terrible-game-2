@@ -47,7 +47,16 @@ module Atoa
   # Obs.: Weapon formulas have priority above actors formulas
   # Weapon_Custom_Formula[ID] = "Formula"
   
-
+  #Note: please consult New Status to change these:
+  Speacial_Status['Weapon'] = {
+  1 => {'hit' => -90}, 
+  36 => {'dmg' => 200}
+  }
+  
+    Speacial_Status['Armor'] = {
+  35 => {'rcrt' => 20, 'rdmg' => -50}, 
+  36 => {'hit' =>20,'crt' => 25,'dmg' => 50}
+  }
   
   Weapon_Custom_Formula[1] = "({atk}/2 + rand({atk}+1)*1.5).round*{str} - {def}" #gunaxe
   Weapon_Custom_Formula[2] = "({atk} + rand({atk}+1)/8)*{str} - {def}" #sword

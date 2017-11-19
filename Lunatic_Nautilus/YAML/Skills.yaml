@@ -216,7 +216,7 @@ root:
   occasion: 1
   agi_f: 0
   plus_state_set: []
-  atk_f: 0
+  atk_f: 100
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
@@ -224,12 +224,12 @@ root:
   pdef_f: 0
   scope: 1
   dex_f: 0
-  power: 0
+  power: 15
   element_set: []
   hit: 100
   animation2_id: 28
   description: Trade Accuracy for Power. What could go wrong?
-  str_f: 0
+  str_f: 100
   id: 8
   sp_cost: 0
   variance: 0
