@@ -1004,7 +1004,32 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dwight]\\P[7]Heyyyyy."
+          - "\\Name[Dwight]\\P[7]I kinda feel sorry for the "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - one who has to find that accuracy formula.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Dwight]\\P[7]Is it really that important?"
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Cleaver]\\P[9]Ye need to understand the tools "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - yer workin' with to formulate a plan.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Dolph]\\P[0]What he said."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1527,44 +1552,39 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Fiora]\\P[11]You know Dolph, for a Terror of the "
+          - "\\Name[Fiora]\\P[11]Sometimes I feel like I take up too "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - Seas...
+          - much space wherever I go...
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Fiora]\\P[11]Your STR is pretty low."
+          - "\\Name[Fiora]\\P[11]Kinda wish I didn't have this body."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[0]No, yours is just absurdly high "
+          - "\\Name[Dolph]\\P[0]It's okay, Fiora."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'because we haven''t refined your damage formula '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - yet.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\Name[Fiora]\\P[11]I think I prefer it this. It makes me "
+          - "\\Name[Dolph]\\P[0]The designers will find a way to let "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - feel like a powerful goddess.
+          - you and Shesi fit nicely with the rest of us.
           indent: 0
           code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Fiora]\\P[11]...Thank you."
+          indent: 0
+          code: 101
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -1802,6 +1822,13 @@ root: !ruby/object:RPG::Map
           code: 129
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 8
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 5
           - 1
           - 1
@@ -1809,7 +1836,7 @@ root: !ruby/object:RPG::Map
           code: 129
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 8
+          - 3
           - 0
           - 1
           indent: 0

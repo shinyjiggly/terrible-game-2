@@ -49,7 +49,7 @@ module Atoa
   
   #Note: please consult New Status to change these:
   Speacial_Status['Weapon'] = {
-  1 => {'hit' => -90}, 
+  1 => {'hit' => -20, 'CRIT-HIT' => +10}, 
   36 => {'dmg' => 200}
   }
   

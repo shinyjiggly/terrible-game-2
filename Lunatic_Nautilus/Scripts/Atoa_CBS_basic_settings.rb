@@ -244,7 +244,7 @@ module Atoa
   Base_Variance = 0
   
   # Base critical hit rate
-  Base_Critical_Rate = 5
+  Base_Critical_Rate = 0
   
   # Base critical damage rate
   Base_Critical_Damage = 100

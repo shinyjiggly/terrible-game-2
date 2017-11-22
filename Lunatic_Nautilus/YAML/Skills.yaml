@@ -226,7 +226,7 @@ root:
   dex_f: 0
   power: 15
   element_set: []
-  hit: 100
+  hit: 50
   animation2_id: 28
   description: Trade Accuracy for Power. What could go wrong?
   str_f: 100
