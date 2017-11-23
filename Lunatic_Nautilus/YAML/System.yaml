@@ -190,7 +190,7 @@ root: !ruby/object:RPG::System
   - Piercing
   - Slashing
   - Bludgeoning
-  start_y: 8
+  start_y: 9
   battler_hue: 0
   load_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -250,4 +250,4 @@ root: !ruby/object:RPG::System
     name: saved
     pitch: 100
   battle_transition: battletransition
-  start_x: 6
+  start_x: 10

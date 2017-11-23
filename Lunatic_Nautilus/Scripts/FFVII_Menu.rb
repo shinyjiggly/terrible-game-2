@@ -31,7 +31,7 @@ class Scene_Menu
      s5 = "Save"
      s6 = "End Game"
      
-     s7 = "End Day" #new!!
+     s7 = "Next Day ==>" #new!!
      
    #if ship is not docked (2) and ship can be used (3)
    if $game_switches[2] == false and $game_switches[3] == true and $game_map.map_id == 1

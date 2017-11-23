@@ -47,9 +47,22 @@ module Atoa
   # Obs.: Weapon formulas have priority above actors formulas
   # Weapon_Custom_Formula[ID] = "Formula"
   
-  #Note: please consult New Status to change these:
+  
+  # Speacial_Status = New Status for Weapons or Armors and
+  # Speacial_Status[Action_Type] = { Action_ID => {Status => Value}} 
+  #   equip_kind = kind of the equipment
+  #     'Weapon' for weapons, 'Armor' for armors
+  #   Action_ID = Weapon ID or Armor ID
+  #   Status = Status Changed, can be equal:
+  #     'hit' = Hit Rate: Hit Rate Modifier
+  #     'crt' = Critical Rate: Changes the chance of causing critical hits.
+  #     'dmg' = Critical Damage: Changes the damage dealt by critical hits.
+  #     'rcrt' = Critical Rate Resist: Changes the chance of reciving citical hits
+  #     'rdmg' = Critical Damage Resist: Changes the damage recived by critical hits.
+  
+  #Note: New Status is the script page with the code for making this stuff work
   Speacial_Status['Weapon'] = {
-  1 => {'hit' => -20, 'CRIT-HIT' => +10}, 
+  1 => {'hit' => -20, 'CRIT-HIT' => +10},  #gunaxe
   36 => {'dmg' => 200}
   }
   

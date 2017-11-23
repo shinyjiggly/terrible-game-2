@@ -499,7 +499,7 @@ module Atoa
   #    avaliable for actors.
   
   Actor_Settings[1] = ["NOCOLLAPSE"]
-  Actor_Settings[2] = ["NOCOLLAPSE"]
+  Actor_Settings[2] = ["NOCOLLAPSE", "JUMP/200"]
   Actor_Settings[3] = ["NOCOLLAPSE"]
   Actor_Settings[4] = ["NOCOLLAPSE"]
   Actor_Settings[5] = ["NOCOLLAPSE"]
@@ -524,7 +524,7 @@ module Atoa
   Enemy_Settings[1] = ["COLLAPSE/0"]
   Enemy_Settings[2] = ["COLLAPSE/0"]
   Enemy_Settings[3] =["ENEMYINTRO"]
-  Enemy_Settings[4] = ["VICTORYPOSE","ENEMYINTRO","COLLAPSE/1"]
+  #Enemy_Settings[4] = ["VICTORYPOSE","ENEMYINTRO","COLLAPSE/1"]
   Enemy_Settings[11] = ["VICTORYPOSE","COLLAPSE/2"]
 
   #=============================================================================
@@ -632,7 +632,7 @@ module Atoa
   
   Weapon_Settings[1] = [] #Aged Axegun
   Weapon_Settings[2] = [] #Cutlass
-  Weapon_Settings[3] = [] #Bare Fists
+  Weapon_Settings[3] = ["ADVJUMP/90"] #Bare Fists
   Weapon_Settings[4] = [] #Rapier
   Weapon_Settings[5] = [] #BETA STICK
   Weapon_Settings[6] = [] #Knife
@@ -700,11 +700,13 @@ module Atoa
   # SOUND EFFECTS/BATTLE CRY SETTINGS
   #¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
   # Here you can configure the sound effects of actors and enemies.
-  # The configuration form is very simillar to the othe settings.
+  # The configuration form is very simillar to the other settings.
   #
-  # Configuration of Sound effects based on battler poses
-  # Useful for sound effects syncronized with poses (setep sound, weapon swing and even voices)
-  # This one is file based, so all battlers with the same graphic will have this sounds.
+  # Configuration of Sound effects based on battler poses:
+  # Useful for sound effects syncronized with poses 
+  #(setep sound, weapon swing and even voices)
+  # This one is file based, so all battlers with the same graphic will 
+  #have this sounds.
   # Pose_Battle_Cry['File Name'] = {POSE => {FRAME => Settings}}
   #
   # Settings for actors sound effects
@@ -716,10 +718,15 @@ module Atoa
   # Então deverá adicionar os atributos. Porém, a condiguração dos atributos é
   # mais complexa
     
-  Pose_Battle_Cry['Leon'] = {7 => {2 => ['ouu',100,100]},
-     5 => {1 => ['ouu',80,100], 3 => ['ouu',80,100]},
-     6 => {1 => ['ouu',80,100], 3 => ['ouu',80,100]},}
+  Pose_Battle_Cry['Leon'] = {7 => {2 => ['ouu',100,100]}, 
+   5 => {1 => ['ouu',80,100], 3 => ['ouu',80,100]}, 
+   6 => {1 => ['ouu',80,100], 3 => ['ouu',80,100]},}
   
+   #how the heck do I get boing noises when jeremiah jumps
+  #Pose_Battle_Cry['jeremiahbattlex2'] = 
+  #{4 => {2 => ['boingthing', 100, 100]}},
+  #{5 => {2 => ['boingthing', 100, 100]}}
+     
   Actor_Battle_Cry[1] = {'COLLAPSE' => [['ouu',100,100]]}
   Actor_Battle_Cry[2] = {'COLLAPSE' => [['ouu',100,100]]}
   Actor_Battle_Cry[3] = {'COLLAPSE' => [['ouu',100,100]]}

@@ -12,7 +12,7 @@ module Atoa
   Speacial_Status = {}
   # Do not remove this line
 
-  # Here yo can set some values to change the equip and status menu
+  # Here you can set some values to change the equip and status menu
   # This script isn't comatible with complex equip and status menu systems, 
   # so use this area to customize your menus
   
@@ -158,6 +158,8 @@ class RPG::Armor
   def hit
     arm = Speacial_Status['Armor']
     return arm[@id] != nil && arm[@id]['hit'] != nil ? arm[@id]['hit'] : 0
+    #give us the number for the armor if it doesn't equal nil, 
+    #and armor hit rate doesn't equal zero
   end
   #--------------------------------------------------------------------------
   # * Get Critical Hit Rate

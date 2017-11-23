@@ -49,7 +49,7 @@ class Window_Base < Window
     when 4
       return Color.new(128, 255, 255, 255) #cyan
     when 5
-      return Color.new(255, 128, 255, 255) #magenta
+      return Color.new(0, 0, 0, 255) #black
     when 6
       return Color.new(255, 255, 128, 255) #yellow
     when 7

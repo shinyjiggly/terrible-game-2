@@ -10849,14 +10849,14 @@ root:
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''
-  animation_name: ''
+  animation_name: caldera1x2
   frames:
   - !ruby/object:RPG::Animation::Frame
     cell_max: 0
     cell_data: !ruby/object:Table
-      dim: 1
+      dim: 2
       zsize: 1
-      ysize: 1
+      ysize: 8
       xsize: 0
       data: []
   frame_max: 1

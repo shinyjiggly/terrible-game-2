@@ -708,7 +708,8 @@ root:
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 24
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -768,7 +769,8 @@ root:
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 24
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -799,7 +801,8 @@ root:
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 24
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -860,7 +863,8 @@ root:
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 24
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
