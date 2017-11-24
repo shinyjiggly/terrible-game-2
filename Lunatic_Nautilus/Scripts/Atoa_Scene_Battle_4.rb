@@ -1351,7 +1351,7 @@ class Scene_Battle
     battler.multi_action_running = battler.action_done = true
     @status_window.refresh if status_need_refresh
     battler.current_skill = battler.now_action if battler.current_skill.nil?
-    battler.animation_1 = battler.current_skill.animation1_id
+    battler.animation_1 = battler.current_skill.animation1_id #uhhhh
     battler.animation_2 = battler.current_skill.animation2_id
     battler.animation_2 = battler.animation2_id if battler.animation_2 == 0
     @common_event_id = battler.current_skill.common_event_id

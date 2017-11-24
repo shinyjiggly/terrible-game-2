@@ -33,7 +33,7 @@ module Atoa
     35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
     54, 55, 56]
   
-  Skill_Command['Techs'] = [1, 2, 3, 4, 5, 8, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68,
+  Skill_Command['Techs'] = [1, 2, 3, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68,
     69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82]
   
   # Skill_Command['Summon'] = [83,84,85,86]
@@ -67,7 +67,8 @@ module Atoa
   #Usable_Command['Return'] = 87
   
   Usable_Command['Gunblitz'] = 4
-  
+  Usable_Command['Lethal Strike'] = 5
+  Usable_Command['Deadly Blow'] = 8
   # Commands Color
   # You can add different colors for each command name
   #  Command_Color[Command_Name] = [red, green, blue]
@@ -186,8 +187,10 @@ class Game_Actor < Game_Battler
           end
         end
         for command in Usable_Command.dup
+          #
           if command[1] == skill.id and not @individual_commands.include?(command[0])
             next if $atoa_script['Atoa Overdrive'] and (Overdrive_Commands.include?(command[0]) and !self.overdrive_full?)
+            #sticks the thing in command slot 0 into the array of individual commands
             @individual_commands << command[0]
           end
         end        
@@ -313,16 +316,29 @@ class Scene_Battle
         return
       end
       if @active_battler != nil and 
-        @active_battler.individual_commands.include?(@command_name)
-        if Usable_Command.include?(@command_name)
+        
+        @active_battler.individual_commands.include?(@command_name)#active battler's individual commands hace command name in them
+        
+        if Usable_Command.include?(@command_name) #if the usable command has [command name] in it
+          #unless skill can use it true
           unless @active_battler.skill_can_use?(Usable_Command[@command_name])
+            #slap their little pizza hands away from it
             $game_system.se_play($data_system.buzzer_se)
             return
           end
+          
+          #now that we got that out of the way,
+          #let's call this current action kind 1
           @active_battler.current_action.kind = 1
           @commands_category = @command_name
           @direct_command = true
-          confirm_action_select($data_skills[Usable_Command[@command_name]])       
+          #this is considered a direct command, 
+          #and the command category is just it's name
+          @active_battler.current_action.skill_id = Usable_Command[@command_name] #might need to go after
+          confirm_action_select($data_skills[Usable_Command[@command_name]]) 
+          #then confirm the selection of [this skill] which is a usable command which is also a skill in the database
+          #it selects the skill in the database which is [command name]
+          #and then gives this to the thing
           return
         else
           $game_system.se_play($data_system.decision_se)
@@ -475,8 +491,8 @@ class Scene_Battle
   #--------------------------------------------------------------------------
   # * Frame Update (actor command phase : self selection)
   #--------------------------------------------------------------------------
-  alias update_phase3_select_self update_phase3_select_self
-  def update_phase3_select_self
+  alias update_phase3_select_self update_phase3_select_self #alias update_phase3_select_self update_phase3_select_self
+  def update_phase3_select_self_ibc #def update_phase3_select_self
     @self_arrow.update
     if Input.trigger?(Input::B) and @direct_command
       $game_system.se_play($data_system.cancel_se)
@@ -641,7 +657,8 @@ class Window_Command_IBC < Window_Selectable
     self.contents.font.color = set_font_color(index, color)
     rect = Rect.new(4, 32 * index, self.contents.width - 8, 32)
     self.contents.fill_rect(rect, Color.new(0, 0, 0, 0))
-    self.contents.draw_text(rect, @commands[index]) #important
+    self.contents.draw_text(rect, @commands[index]) 
+    #draws the text for the commands
   end
   #--------------------------------------------------------------------------
   # * Get font color
