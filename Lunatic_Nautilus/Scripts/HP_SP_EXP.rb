@@ -1,21 +1,26 @@
 #==============================================================================
 # Add-On: HP/SP/EXP Meter
 # by Atoa
+# edited by shinyjiggly/lavendersiren
 #==============================================================================
 # Adds HP/SP/EXP Meters
 # Remove this Add-On if you wish to use custom HP/SP/EXP bars
 # This Add-On must be always bellow 'ACBS | Battle Windows'
 # if you are using it
+#note: the edits are unfinished and currently only affect the hp bar.
+#they will be applied to the sp bar eventually.
 #==============================================================================
 
 module Atoa
-  HP_Meter  = 'HPMeter'  # Name of the HP meter graphic file
+  HP_Meter  = 'hpmeterbendtest'  # Name of the HP meter graphic file
+  HP_Meter2  = 'HPMeter2'  # Name of the vertical HP meter graphic file
   SP_Meter  = 'SPMeter'  # Name of the SP meter graphic file
   EXP_Meter = 'EXPMeter' # Name of the EXP meter graphic file
   
+  
   # Bars position adjust
   #                [x, y]
-  HP_Pos_Adjust  = [20, 0]
+  HP_Pos_Adjust  = [-30, -40]
   SP_Pos_Adjust  = [20, 0]
   EXP_Pos_Adjust = [20, 0]
 end
@@ -41,21 +46,55 @@ class Window_Base < Window
   #--------------------------------------------------------------------------
   include Atoa
   #--------------------------------------------------------------------------
+  horizontal_bars = true
+  #this is over here because putting it up higher in the script just gave errors.
+  #kinda nooby with ruby here so bear with me.
+  #ideally this should be able to be changed elsewhere or something
+  
   alias draw_actor_hp_bar draw_actor_hp
-  def draw_actor_hp(actor, x, y, width = 144)
-    bar_x = HP_Pos_Adjust[0] + x
-    bar_y = HP_Pos_Adjust[1] + y + (Font.default_size * 2 /3)
-    @skin = RPG::Cache.windowskin(HP_Meter)
-    @width  = @skin.width
-    @height = @skin.height / 3
-    src_rect = Rect.new(0, 0, @width, @height) #edit
-    self.contents.blt(bar_x, bar_y, @skin, src_rect)    
-    @line   = (actor.hp == actor.maxhp ? 2 : 1)
-    @amount = 100 * actor.hp / actor.maxhp
-    src_rect2 = Rect.new(0, @line * @height, @width * @amount / 100, @height)
-    self.contents.blt(bar_x, bar_y, @skin, src_rect2)
-    draw_actor_hp_bar(actor, x, y, width)
-  end
+  if horizontal_bars == true
+    def draw_actor_hp(actor, x, y, width = 144) 
+	#is defining the same thing differently even a good idea? it doesn't particularly strike me as being so. idk.
+      bar_x = HP_Pos_Adjust[0] + x
+      bar_y = HP_Pos_Adjust[1] + y + (Font.default_size * 2 /3)
+      @skin = RPG::Cache.windowskin(HP_Meter)
+      @width  = @skin.width
+      @height = @skin.height / 3
+      src_rect = Rect.new(0, 0, @width, @height) #edit
+      self.contents.blt(bar_x, bar_y, @skin, src_rect)    
+      @line   = (actor.hp == actor.maxhp ? 2 : 1)
+      @amount = 100 * actor.hp / actor.maxhp
+      src_rect2 = Rect.new(0, @line * @height, @width * @amount / 100, @height)
+      self.contents.blt(bar_x, bar_y, @skin, src_rect2)
+      draw_actor_hp_bar(actor, x, y, width)
+    end
+  else #vertical version
+    def draw_actor_hp(actor, x, y, width = 144) #draws the numbers
+      #global positions of the bars
+      bar_x = HP_Pos_Adjust[0] + x + (Font.default_size * 2 /3) 
+      #parens thing makes sure it's in the right spot on the menu
+      bar_y = HP_Pos_Adjust[1] + y 
+      @skin = RPG::Cache.windowskin(HP_Meter2)#the windowskin used
+      @width  = @skin.width / 3 #splits it into 3 parts
+      @height = @skin.height #basic height
+      #these are presumibly used to get a measure for how large to make the bars
+      
+      src_rect = Rect.new(0, 0, @width, @height) #bar background setup
+      #x coords, y coords, image used, rectangle to draw
+      self.contents.blt(bar_x, bar_y, @skin, src_rect) #base rectangle for back
+      
+      @line   = (actor.hp == actor.maxhp ? 2 : 1) #which line is it using
+      @amount = 100 * actor.hp / actor.maxhp #percent of hp remaining
+      
+      #selects the proper bar, selects the y
+      src_rect2 = Rect.new(@line * @width , 0 , @width , @height * @amount / 100) #the action rectangle
+      self.contents.blt(bar_x, bar_y , @skin, src_rect2) #bacon lettuce tomato 
+      #x coord, y coord, bitmap, rectangle
+      #important note: this thing drains the bar the wrong way, even when I've attempted to flip the bar.
+	  #that winds up only flipping the graphics
+      draw_actor_hp_bar(actor, x, y, width) 
+    end
+    end
   #--------------------------------------------------------------------------
   alias draw_actor_sp_bar draw_actor_sp
   def draw_actor_sp(actor, x, y, width = 144)

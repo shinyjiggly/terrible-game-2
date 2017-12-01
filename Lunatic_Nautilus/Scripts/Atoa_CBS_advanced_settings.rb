@@ -551,6 +551,9 @@ module Atoa
   Skill_Settings[7] = ["MOVEPOSITION/50,0,150,0,300","MIRAGEADVANCE/nil","MIRAGEACTION/nil","TARGETSWITCH"]
   #test
   
+  Skill_Settings[9] = ["STEAL/ITEM"]
+  Skill_Settings[10] = ["STEAL/GOLD"]
+  
   Skill_Settings[53] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[54] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[55] = ["MOVETYPE/STEPFOWARD"]

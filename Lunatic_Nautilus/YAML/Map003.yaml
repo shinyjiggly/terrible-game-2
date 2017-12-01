@@ -253,7 +253,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[0]uhhh...\\. somewhere in "
+          - "\\Name[\\n[1]]\\P[0]uhhh...\\. somewhere in "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -544,7 +544,7 @@ root: !ruby/object:RPG::Map
           code: 402
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[3]\\name[Medi]Fair enough..."
+          - "\\p[3]\\name[Medi]o-okay."
           indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -633,7 +633,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[0]...Get back to your post, number 4."
+          - "\\Name[\\n[1]]\\P[0]...Get back to your post, number 4."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -929,7 +929,7 @@ root: !ruby/object:RPG::Map
           code: 250
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Daraway]\\P[6]Fair enough!\\."
+          - "\\Name[Daraway]\\P[6]As you wish.\\."
           indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1156,7 +1156,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[0]What he said."
+          - "\\Name[\\n[1]]\\P[0]What he said."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1527,7 +1527,7 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[0]Of course. With my Lethal Strike..."
+          - "\\Name[\\n[1]]\\P[0]Of course. With my Lethal Strike..."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1537,7 +1537,7 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph and Cleaver]\\P[9]We'll take on the world!"
+          - "\\Name[\\n[1] and Cleaver]\\P[9]We'll take on the world!"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1613,7 +1613,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[0]...right."
+          - "\\Name[\\n[1]]\\P[0]...right."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1694,12 +1694,12 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[0]It's okay, Fiora."
+          - "\\Name[\\n[1]]\\P[0]It's okay, Fiora."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[0]The designers will find a way to let "
+          - "\\Name[\\n[1]]\\P[0]The designers will find a way to let "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1770,7 +1770,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[0]Your knives still suck."
+          - "\\Name[\\n[1]]\\P[0]Your knives still suck."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1856,7 +1856,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[0]Thought I did."
+          - "\\Name[\\n[1]]\\P[0]Thought I did."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1927,14 +1927,9 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Soldier]\\P[14]Battle me one on one, "
+          - "\\Name[Soldier]\\P[14]Holla holla get $"
           indent: 0
           code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - you coward!
-          indent: 0
-          code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
           - 0
@@ -2032,6 +2027,14 @@ root: !ruby/object:RPG::Map
           - "$game_temp.no_raid_attack = true"
           indent: 0
           code: 655
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 0
+          - 0
+          - 5555
+          indent: 0
+          code: 315
         - !ruby/object:RPG::EventCommand
           parameters:
           - 3

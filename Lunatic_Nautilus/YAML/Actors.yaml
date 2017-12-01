@@ -4,7 +4,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Dolph
+  name: Captain
   character_name: dolph_walkingx2
   weapon_id: 1
   armor2_fix: false
@@ -1888,7 +1888,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Pirate 1
+  name: Calhoun
   character_name: calhouncharx2
   weapon_id: 11
   armor2_fix: false
@@ -2516,7 +2516,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Pirate 2
+  name: Dwight
   character_name: dwightcharx2
   weapon_id: 13
   armor2_fix: false
@@ -3144,7 +3144,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Pirate 3
+  name: Renzo
   character_name: renzocharx2
   weapon_id: 2
   armor2_fix: false
@@ -3772,7 +3772,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Pirate 4
+  name: Yoan
   character_name: yoancharx2
   weapon_id: 14
   armor2_fix: false
@@ -4400,7 +4400,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Pirate 5
+  name: Bompillia
   character_name: pompiliacharx2
   weapon_id: 15
   armor2_fix: false
@@ -5028,7 +5028,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Pirate 6
+  name: Shesi
   character_name: shesicharx2
   weapon_id: 4
   armor2_fix: false
@@ -5656,7 +5656,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Pirate 7
+  name: Fiora
   character_name: fioracharx2
   weapon_id: 8
   armor2_fix: false
