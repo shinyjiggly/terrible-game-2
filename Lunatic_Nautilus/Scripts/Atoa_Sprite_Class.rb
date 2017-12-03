@@ -134,21 +134,21 @@ class RPG::Sprite < ::Sprite
         elsif value.numeric? and value > 9998 #90
           @_damage_color = [rand(255) ,rand(255),rand(255)]#[Hp_hi_Dmg_Color[0],Hp_hi_Dmg_Color[1],Hp_hi_Dmg_Color[2]]
         elsif value.numeric? and value > 6400 #80
-          @_damage_color = [249,30,30]
+          @_damage_color = [255,30,30]
         elsif value.numeric? and value > 3200 #70
-          @_damage_color = [212,30,30]
+          @_damage_color = [255,30,30]
         elsif value.numeric? and value > 1600 #60
-          @_damage_color = [165,30,30]
+          @_damage_color = [255,30,30]
         elsif value.numeric? and value > 800 #50
-          @_damage_color = [131,30,30]  
-        elsif value.numeric? and value > 400 #40
-          @_damage_color = [120,64,64]  
-        elsif value.numeric? and value > 200 #30
-          @_damage_color = [143,113,113]  
-        elsif value.numeric? and value > 100 #20
-          @_damage_color = [180,165,165]  
-        elsif value.numeric? and value > 50 #10
-          @_damage_color = [221,221,221]  
+          @_damage_color = [255,30,30]  
+        elsif value.numeric? and value > 400 #red
+          @_damage_color = [255,0,0]  
+        elsif value.numeric? and value > 200 #orange
+          @_damage_color = [255,128,0]  
+        elsif value.numeric? and value > 100 #yellow
+          @_damage_color = [250,200,9]  
+        elsif value.numeric? and value > 50 #pink
+          @_damage_color = [255,128,128]  
         elsif value.numeric? and value == 69 #nice
           @_damage_color = [255,50,255]  
           
