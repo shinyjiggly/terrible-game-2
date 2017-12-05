@@ -16,7 +16,7 @@ root:
   element_set:
   - 15
   - 16
-  atk: 15
+  atk: 18
   animation2_id: 28
   id: 1
   str_plus: 0
