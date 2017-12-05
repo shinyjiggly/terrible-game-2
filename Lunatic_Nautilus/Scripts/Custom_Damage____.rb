@@ -99,8 +99,7 @@ module Atoa
   # This example deal fixed 1000 damage
   # (it's needed to set the variation on database to Zero)
   Skill_Custom_Formula[22] = "1000"
-  Skill_Custom_Formula[3] = "(rand(2)*rand(2) * ({atk} + rand({atk})/4)) + (rand(2)*rand(2) * ({atk} + rand({atk})/4)) + (rand(2)*rand(2) * ({atk} + rand({atk})/4)) + (rand(2)*rand(2) * ({atk} + rand({atk})/4)) + (rand(2)*rand(2) * ({atk} + rand({atk})/4))" 
-  #gun of five
+  Skill_Custom_Formula[3] = "({atk} + rand({atk}+1))" #assault
   Skill_Custom_Formula[4] = "({atk} + rand({atk}))/3"
   Skill_Custom_Formula[5] = "((({atk}/2 + rand({atk}+1)*1.5)*{str})*2 - {def})" #gunaxe x2
   Skill_Custom_Formula[8] = "#{Skill_Custom_Formula[5]}" #inaccurate gunaxe

@@ -4,7 +4,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Captain
+  name: Finn
   character_name: dolph_walkingx2
   weapon_id: 1
   armor2_fix: false
@@ -1260,7 +1260,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Cleaver
+  name: Fang
   character_name: cleavercharx2
   weapon_id: 1
   armor2_fix: false

@@ -540,7 +540,7 @@ module Atoa
   Skill_Settings[1] = ["MOVETYPE/STEPFOWARD","TARGETSWITCH"] #null skill
   Skill_Settings[2] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORCASTER/false, true, false, false"] 
   #single shot
-  Skill_Settings[3] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORCASTER/false, true, false, false"] 
+  Skill_Settings[3] = ["MOVETYPE/NOMOVE","TARGETSWITCH","ANIMMIRRORCASTER/false, true, false, false", "COMBO/5"] 
   #5-in-1 shot
   Skill_Settings[4] = ["MOVETYPE/STEPFOWARD","ANIME/7"]
   #gunblitz
