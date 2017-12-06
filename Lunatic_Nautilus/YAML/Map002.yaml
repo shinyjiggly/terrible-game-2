@@ -501,6 +501,15 @@ root: !ruby/object:RPG::Map
           code: 412
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 1
+          - 1
+          - 0
+          - 0
+          - 4
+          indent: 0
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 2
           - false
           - false

@@ -35,7 +35,7 @@ root:
   dex_plus: 0
   element_set:
   - 15
-  atk: 13
+  atk: 14
   animation2_id: 27
   id: 2
   str_plus: 0
@@ -204,7 +204,7 @@ root:
   dex_plus: 0
   element_set:
   - 16
-  atk: 10
+  atk: 11
   animation2_id: 2
   id: 11
   str_plus: 0
@@ -244,7 +244,7 @@ root:
   dex_plus: 0
   element_set:
   - 15
-  atk: 6
+  atk: 10
   animation2_id: 27
   id: 13
   str_plus: 0
@@ -264,7 +264,7 @@ root:
   dex_plus: 0
   element_set:
   - 15
-  atk: 9
+  atk: 10
   animation2_id: 30
   id: 14
   str_plus: 0

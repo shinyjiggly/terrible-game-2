@@ -74,7 +74,7 @@ module Atoa
   Weapon_Custom_Formula[1] = "({atk}/2 + rand({atk}+1)*1.5).round*{str} - {def}" #gunaxe
   Weapon_Custom_Formula[2] = "({atk} + rand({atk}+1)/8)*{str} - {def}" #sword
   Weapon_Custom_Formula[3] = "({str} + (rand({str}+1) / 4)) - {def}" #fist
-  Weapon_Custom_Formula[4] = "({atk}/2 + rand({atk}+1)/8)*user.dex - {def}/2" #rapier
+  Weapon_Custom_Formula[4] = "({atk} + rand({atk}+1)/8)*user.dex - {atk} - {def}/2" #rapier
   Weapon_Custom_Formula[5] = "rand({atk}) * (({str}*2+1)-{def})" #testing
   Weapon_Custom_Formula[6] = "({atk} + rand({atk}+1) / 4) * ({str} + user.dex) / 2 - {def}" #single knife
   Weapon_Custom_Formula[7] = "[rand({atk}+1),{atk}/2].max * [(({str}+{atk})-({def})),1].max" #random axe
