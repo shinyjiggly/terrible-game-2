@@ -317,7 +317,8 @@ class Scene_Battle
       end
       if @active_battler != nil and 
         
-        @active_battler.individual_commands.include?(@command_name)#active battler's individual commands hace command name in them
+        @active_battler.individual_commands.include?(@command_name)
+        #active battler's individual commands hace command name in them
         
         if Usable_Command.include?(@command_name) #if the usable command has [command name] in it
           #unless skill can use it true
@@ -531,6 +532,7 @@ class Window_Skill < Window_Selectable
   #     command_type : skill type
   #--------------------------------------------------------------------------
   def initialize(actor, command_type = '')
+    #note: this area is for magic menu stuff
     super(0, 128, 640, 352)
     @command_type = command_type
     @actor = actor
@@ -540,6 +542,7 @@ class Window_Skill < Window_Selectable
     if $game_temp.in_battle
       self.y = 320
       self.height = 160
+      #self.width = 160
       self.z = 900
       self.back_opacity = Base_Opacity
     end
@@ -569,6 +572,7 @@ class Window_Skill < Window_Selectable
     @item_max = @data.size
     if @item_max > 0
       self.contents = Bitmap.new(width - 32, row_max * 32)
+      #self.contents = Bitmap.new(width - 32, row_max * 32)
       for i in 0...@item_max
         draw_item(i)
       end
@@ -615,11 +619,12 @@ class Window_Command_IBC < Window_Selectable
       comand_size =  commands.size * 32 + 32
     end
     comand_size = [comand_size, Max_Commands_Shown * 32 + 32].min
-    super(0, 0, width, comand_size)
+    super(0, 0, 640, 100) #super(0, 0, width, comand_size)
     @battler = battler
     @item_max = commands.size
     @commands = commands
-    self.contents = Bitmap.new(width - 32, @item_max * 32)
+    self.contents = Bitmap.new(@item_max * 32, 100)
+    #self.contents = Bitmap.new(width - 32, @item_max * 32)
     refresh
     self.index = 0
     if Command_Window_Bg != nil
@@ -655,8 +660,12 @@ class Window_Command_IBC < Window_Selectable
   #--------------------------------------------------------------------------
   def draw_item(index, color)
     self.contents.font.color = set_font_color(index, color)
-    rect = Rect.new(4, 32 * index, self.contents.width - 8, 32)
-    self.contents.fill_rect(rect, Color.new(0, 0, 0, 0))
+    rect = Rect.new(index * self.contents.width, 0, self.contents.width, 32)#important
+    #index * self.contents.width
+    
+    #4 px over, 32(times the index) px down, width of the contents, height of 32
+    #rect = Rect.new(4, 32 * index, self.contents.width - 8, 32)
+    self.contents.fill_rect(rect, Color.new(0, 0, 0, 255)) #for testing
     self.contents.draw_text(rect, @commands[index]) 
     #draws the text for the commands
   end

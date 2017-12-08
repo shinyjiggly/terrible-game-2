@@ -46,7 +46,8 @@ module Atoa
   
   # Only valid if 'Display_Type = 2', adjust the base position of the attributes
   # of each character
-  Custom_Stat_Position = [[353,180],[353, 258],[353,346],[455,145],[455,223],[455,305],[457,371],[555,180],[555,258],[555,346]]
+  Custom_Stat_Position = [[440,256],[440,318],[440,390],[512,256],[512,318],[512,390],[584, 228],[584,290],[584,352],[584,414]]
+  #[[353,180],[353, 258],[353,346],[455,145],[455,223],[455,305],[457,371],[555,180],[555,258],[555,346]]
 
   # Configuration of the Attributes Battle Window
   # Battle_Window = [Position X, Position Y, Width, Height, Opacity, Trasparent Edge]
@@ -95,13 +96,13 @@ module Atoa
   # State_Config = [Position X, Position Y]
   State_Config = [0, 45]
   # Show Level Up Message in status window?
-  Lvl_UP_FLAG = true
+  Lvl_UP_FLAG = false
   # Level Up Message
   Lvl_Up_Msg = 'LEVEL UP!'
   # The level up message is shown in the same place as the states
  
   # Configuration of the Level exhibition
-  Draw_Level = true # Show level in status window?
+  Draw_Level = false # Show level in status window?
   Level_Name = 'Lv' # Name of the 'Level' Status shown in the window
   
   # Configuration of the Level text exhibition
@@ -133,7 +134,7 @@ module Atoa
   # Show Faces? true = show / false = don't show
   Show_Faces = false
   # Face_Config = [Position X, Position Y, Opacity]
-  Face_Config = [32, 104, 160]
+  Face_Config = [32, 32, 255]
  
   # Extension for Face file name, use if you want the battle faces file names
   # to be different from the normal faces
@@ -208,7 +209,7 @@ class Window_Base
       self.contents.font.name = HP_Text[2]
       self.contents.font.size = HP_Text[3]
       self.contents.font.bold = HP_Text[4]
-      self.contents.draw_text(x, y, 32, 32, $data_system.words.hp)
+      #self.contents.draw_text(x, y, 32, 32, $data_system.words.hp)
       if width - 32 >= 108
         hp_x = x + width - 108
         flag = true
@@ -221,17 +222,17 @@ class Window_Base
       self.contents.font.name = HP_Number[0]
       self.contents.font.size = HP_Number[1]
       self.contents.font.bold = HP_Number[2]
-      self.contents.draw_text(hp_x-40, y, 48, 32, actor.hp.to_s, 2) #edited
+      #self.contents.draw_text(hp_x-40, y, 48, 32, actor.hp.to_s, 2) #edited
       if flag
         self.contents.font.color = normal_color
         self.contents.font.name = HP_Text[2]
         self.contents.font.size = HP_Text[3]
         self.contents.font.bold = HP_Text[4]
-        self.contents.draw_text(hp_x + 48 -40, y, 12, 32, '/', 1)
+        #self.contents.draw_text(hp_x + 48 -40, y, 12, 32, '/', 1)
         self.contents.font.name = Max_HP_Number[0]
         self.contents.font.size = Max_HP_Number[1]
         self.contents.font.bold = Max_HP_Number[2]
-        self.contents.draw_text(hp_x + 60-40, y, 48, 32, actor.maxhp.to_s)
+       # self.contents.draw_text(hp_x + 60-40, y, 48, 32, actor.maxhp.to_s)
       end
       set_default_font
     else
@@ -246,7 +247,7 @@ class Window_Base
       self.contents.font.name = SP_Text[2]
       self.contents.font.size = SP_Text[3]
       self.contents.font.bold = SP_Text[4]
-      self.contents.draw_text(x, y, 32, 32, $data_system.words.sp)
+      #self.contents.draw_text(x, y, 32, 32, $data_system.words.sp)
       if width - 32 >= 108
         sp_x = x + width - 108
         flag = true
@@ -259,17 +260,17 @@ class Window_Base
       self.contents.font.name = SP_Number[0]
       self.contents.font.size = SP_Number[1]
       self.contents.font.bold = SP_Number[2]
-      self.contents.draw_text(sp_x-40, y+3, 48, 32, actor.sp.to_s, 2)
+      #self.contents.draw_text(sp_x-40, y+3, 48, 32, actor.sp.to_s, 2)
       if flag
         self.contents.font.color = normal_color
         self.contents.font.name = SP_Text[2]
         self.contents.font.size = SP_Text[3]
         self.contents.font.bold = SP_Text[4]
-        self.contents.draw_text(sp_x + 48-40, y+3, 12, 32, '/', 1)
+       # self.contents.draw_text(sp_x + 48-40, y+3, 12, 32, '/', 1)
         self.contents.font.name = Max_SP_Number[0]
         self.contents.font.size = Max_SP_Number[1]
         self.contents.font.bold = Max_SP_Number[2]
-        self.contents.draw_text(sp_x + 60-40, y+3, 48, 32, actor.maxsp.to_s)
+        #self.contents.draw_text(sp_x + 60-40, y+3, 48, 32, actor.maxsp.to_s)
       end
       set_default_font
     else
@@ -330,7 +331,7 @@ class Window_Base
   #--------------------------------------------------------------------------
   def set_default_font
     self.contents.font.name = Font.default_name
-    self.contents.font.size = 12 #Font.default_size 12
+    self.contents.font.size = 20 #Font.default_size 12
     self.contents.font.bold = false
   end
 end
@@ -373,9 +374,11 @@ class Window_BattleStatus < Window_Base
         actor_x = Custom_Stat_Position[i][0]
         actor_y = Custom_Stat_Position[i][1]
       end
+      #face stuff here
       draw_actor_battle_face(actor, actor_x + Face_Config[0], actor_y + Face_Config[1], Face_Config[2]) if Show_Faces
+      
       draw_actor_battle_graphic(actor, actor_x + Char_Config[0], actor_y + Char_Config[1], Char_Config[2]) if Show_Char
-      draw_actor_name(actor, actor_x + Name_Config[0], actor_y + Name_Config[1])
+      #draw_actor_name(actor, actor_x + Name_Config[0], actor_y + Name_Config[1])
       draw_actor_hp(actor, actor_x + HP_Text[0], actor_y + HP_Text[1], hp_w)
       draw_actor_sp(actor, actor_x + SP_Text[0], actor_y + SP_Text[1], sp_w)
       draw_actor_level(actor, actor_x + Level_Text[0], actor_y + Level_Text[1]) if Draw_Level

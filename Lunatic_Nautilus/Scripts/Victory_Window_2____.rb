@@ -26,7 +26,7 @@ class Window_Base < Window
     bitmap = RPG::Cache.icon(skill.icon_name)
     self.contents.blt(x, y + 4, bitmap, Rect.new(0, 0, 24, 24))
     self.contents.font.color = normal_color
-    self.contents.font.size = Font.default_size
+    self.contents.font.size = 20
     self.contents.draw_text(x + 28, y, 212, 32, skill.name)
   end
 
@@ -105,7 +105,7 @@ class Window_BattleResult < Window_Base
       #self.contents = Bitmap.new(608, 288)
       self.y = 0
       self.height = 440
-      self.contents.font.size = Font.default_size
+      self.contents.font.size = 20
     end
     self.contents.clear
     x = 0
@@ -144,7 +144,7 @@ class Window_BattleResult < Window_Base
       end
     end
     
-    self.contents.font.size = Font.default_size
+    self.contents.font.size = 20
     self.contents.draw_text(0, 130, 640, 32, '|-----------Level-------------------------------|------New Skills--------|')
     y = 160
     
@@ -183,7 +183,7 @@ class Window_BattleResult < Window_Base
         end
 
         unless @learn_skills == []
-          self.contents.font.size = Font.default_size
+          self.contents.font.size = 20
           self.contents.font.color = normal_color
           
           #skill y is Y plus
@@ -208,7 +208,7 @@ class Window_BattleResult < Window_Base
             #self.contents.draw_text(444, sy - 8 + j * 24, 180, 32, skill.name)
           end
 
-          self.contents.font.size = Font.default_size
+          self.contents.font.size = 20
         end
 
       else

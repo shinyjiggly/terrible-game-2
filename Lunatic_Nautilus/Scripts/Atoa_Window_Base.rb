@@ -390,7 +390,7 @@ end
 #==============================================================================
 # ■ Window_NameCommand
 #------------------------------------------------------------------------------
-# Esta janela exibe o nome do battler ativo
+# This window displays the name of the active battler
 #==============================================================================
 
 class Window_NameCommand < Window_Base
@@ -401,10 +401,13 @@ class Window_NameCommand < Window_Base
   #     y     : Desenhar a partir da coordenada y
   #--------------------------------------------------------------------------
   def initialize(actor, x, y) #make the box
-    super(x, y, 130, 50)
-    self.contents = Bitmap.new(width - 44, height - 32 ) #-32 #put the stuff up and right 32
+    super(x, y, 190, 50) #location, size
+    self.contents = Bitmap.new(width - 44, height - 32 ) 
+    #self.contents = Bitmap.new(width - 44, height - 32 ) 
+    #-32 #put the stuff up and right 32
     self.contents.font.name = "PlopDump"
-    self.back_opacity = Base_Opacity
+    self.back_opacity = Base_Opacity #0
+    draw_actor_battle_face(actor, width-44, height-32, 255) #add the face
     self.z = 4000
     refresh(actor)
   end
