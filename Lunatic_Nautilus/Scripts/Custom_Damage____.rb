@@ -74,7 +74,7 @@ module Atoa
   Weapon_Custom_Formula[1] = "({atk}/2 + rand({atk}+1)*1.5).round*{str} - {def}" #gunaxe
   Weapon_Custom_Formula[2] = "({atk} + rand({atk}+1)/8)*{str} - {def}" #sword
   Weapon_Custom_Formula[3] = "({str} + (rand({str}+1) / 4)) - {def}" #fist
-  Weapon_Custom_Formula[4] = "({atk}/2 + rand({atk}+1)/8)*user.dex - {def}/2" #rapier
+  Weapon_Custom_Formula[4] = "({atk} + rand({atk}+1)/8)*user.dex - {atk} - {def}/2" #rapier
   Weapon_Custom_Formula[5] = "rand({atk}) * (({str}*2+1)-{def})" #testing
   Weapon_Custom_Formula[6] = "({atk} + rand({atk}+1) / 4) * ({str} + user.dex) / 2 - {def}" #single knife
   Weapon_Custom_Formula[7] = "[rand({atk}+1),{atk}/2].max * [(({str}+{atk})-({def})),1].max" #random axe
@@ -99,8 +99,7 @@ module Atoa
   # This example deal fixed 1000 damage
   # (it's needed to set the variation on database to Zero)
   Skill_Custom_Formula[22] = "1000"
-  Skill_Custom_Formula[3] = "(rand(2)*rand(2) * ({atk} + rand({atk})/4)) + (rand(2)*rand(2) * ({atk} + rand({atk})/4)) + (rand(2)*rand(2) * ({atk} + rand({atk})/4)) + (rand(2)*rand(2) * ({atk} + rand({atk})/4)) + (rand(2)*rand(2) * ({atk} + rand({atk})/4))" 
-  #gun of five
+  Skill_Custom_Formula[3] = "({atk} + rand({atk}+1))" #assault
   Skill_Custom_Formula[4] = "({atk} + rand({atk}))/3"
   Skill_Custom_Formula[5] = "((({atk}/2 + rand({atk}+1)*1.5)*{str})*2 - {def})" #gunaxe x2
   Skill_Custom_Formula[8] = "#{Skill_Custom_Formula[5]}" #inaccurate gunaxe

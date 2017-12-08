@@ -15,11 +15,11 @@ root: !ruby/object:Hash
     scroll_y: 324
     parent_id: 0
   3: !ruby/object:RPG::MapInfo
-    scroll_x: 532
+    scroll_x: 624
     name: testmap
     expanded: true
     order: 13
-    scroll_y: 318
+    scroll_y: 320
     parent_id: 0
   4: !ruby/object:RPG::MapInfo
     scroll_x: 560

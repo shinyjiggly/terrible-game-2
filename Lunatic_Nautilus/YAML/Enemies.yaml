@@ -100,7 +100,7 @@ root:
   int: 50
   maxsp: 500
   treasure_prob: 100
-  pdef: 10
+  pdef: 14
   exp: 20
   agi: 4
   maxhp: 300

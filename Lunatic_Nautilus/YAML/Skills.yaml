@@ -81,7 +81,7 @@ root:
   dex_f: 23
   power: 29
   element_set: []
-  hit: 100
+  hit: 25
   animation2_id: 12
   description: shots all around
   str_f: 0
