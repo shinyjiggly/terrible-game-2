@@ -129,13 +129,32 @@ class RPG::Sprite < ::Sprite
           #give it the heal colors
           @_damage_color = [Hp_Rec_Color[0],Hp_Rec_Color[1],Hp_Rec_Color[2]]
           @_damage_color = [Sp_Rec_Color[0],Sp_Rec_Color[1],Sp_Rec_Color[2]] if sp_damage
+   
         
-          
-        elsif value.numeric? and value > 60 #nice
+        elsif value.numeric? and value > 9998 #90
           @_damage_color = [rand(255) ,rand(255),rand(255)]#[Hp_hi_Dmg_Color[0],Hp_hi_Dmg_Color[1],Hp_hi_Dmg_Color[2]]
-        else
+        elsif value.numeric? and value > 6400 #80
+          @_damage_color = [255,30,30]
+        elsif value.numeric? and value > 3200 #70
+          @_damage_color = [255,30,30]
+        elsif value.numeric? and value > 1600 #60
+          @_damage_color = [255,30,30]
+        elsif value.numeric? and value > 800 #50
+          @_damage_color = [255,30,30]  
+        elsif value.numeric? and value > 400 #red
+          @_damage_color = [255,0,0]  
+        elsif value.numeric? and value > 200 #orange
+          @_damage_color = [255,128,0]  
+        elsif value.numeric? and value > 100 #yellow
+          @_damage_color = [250,200,9]  
+        elsif value.numeric? and value > 50 #pink
+          @_damage_color = [255,128,128]  
+        elsif value.numeric? and value == 69 #nice
+          @_damage_color = [255,50,255]  
+          
+          else
           #if it isn't, give it the damage colors
-          @_damage_color = [Hp_Dmg_Color[0],Hp_Dmg_Color[1],Hp_Dmg_Color[2]]
+          @_damage_color = [Hp_Dmg_Color[0],Hp_Dmg_Color[1],Hp_Dmg_Color[2]] #10
           @_damage_color = [Sp_Dmg_Color[0],Sp_Dmg_Color[1],Sp_Dmg_Color[2]] if sp_damage
           @_damage_color = [Crt_Dmg_Color[0],Crt_Dmg_Color[1],Crt_Dmg_Color[2]] if critical 
           @_damage_color = [Mss_Txt_Color[0],Mss_Txt_Color[1],Mss_Txt_Color[2]] if damage_string == Miss_Message

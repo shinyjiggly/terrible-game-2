@@ -73,7 +73,7 @@ root: !ruby/object:RPG::Map
           code: 412
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[1]Stand down.\\. You know this isn't "
+          - "\\Name[\\n[1]]\\P[1]Stand down.\\. You know this isn't "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -110,7 +110,7 @@ root: !ruby/object:RPG::Map
           code: 203
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Cleaver]\\P[0]Dolph,\\. you damn coward!\\. "
+          - "\\Name[Cleaver]\\P[0]Finn,\\. you damn coward!\\. "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -130,7 +130,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[1]No, you idiot!"
+          - "\\Name[\\n[1]]\\P[1]No, you idiot!"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -227,7 +227,7 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[1]Because if we only raid Imperial "
+          - "\\Name[Finn]\\P[1]Because if we only raid Imperial "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -237,7 +237,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[1]And then the merchants and "
+          - "\\Name[\\n[1]]\\P[1]And then the merchants and "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -252,7 +252,7 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - And yer-- \^
+          - And yer--
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -352,7 +352,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[1]You get back on this ship,\\. and I "
+          - "\\Name[\\n[1]]\\P[1]You get back on this ship,\\. and I "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -381,7 +381,7 @@ root: !ruby/object:RPG::Map
           code: 322
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Cleaver]\\P[0]...Fine.\\| But just ye wait, Dolph...\\. "
+          - "\\Name[Cleaver]\\P[0]...Fine.\\| But just ye wait, Finn...\\. "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -426,7 +426,7 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[1]...\\.Throw him in the brig."
+          - "\\Name[\\n[1]]\\P[1]...\\.Throw him in the brig."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1386,7 +1386,7 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
-      name: dolph
+      name: captain
       y: 4
       x: 7
       id: 1

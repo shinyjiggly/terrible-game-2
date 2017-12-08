@@ -317,7 +317,7 @@ root: !ruby/object:RPG::Map
         walk_anime: true
         move_speed: 3
         through: false
-      name: dolph
+      name: captain
       y: 33
       x: 16
       id: 6
@@ -1122,7 +1122,7 @@ root: !ruby/object:RPG::Map
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[6]Right, men! Time for payday! "
+          - "\\Name[\\n[1]]\\P[6]Right, men! Time for payday! "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1756,7 +1756,7 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[6]Reconsidering your position,\\. are "
+          - "\\Name[\\n[1]]\\P[6]Reconsidering your position,\\. are "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1791,7 +1791,7 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Cleaver]\\P[12]Yer a fool, Dolph.\\|"
+          - "\\Name[Cleaver]\\P[12]Yer a fool.\\|"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1930,7 +1930,7 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[6]Calm down, Jeremiah."
+          - "\\Name[\\n[1]]\\P[6]Calm down, Jeremiah."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1987,7 +1987,7 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[6] Regardless of your "
+          - "\\Name[\\n[1]]\\P[6] Regardless of your "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -2007,7 +2007,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[6]The Twin Terrors,\\. remember?"
+          - "\\Name[\\n[1]]\\P[6]The Twin Terrors,\\. remember?"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -2098,7 +2098,7 @@ root: !ruby/object:RPG::Map
           code: 210
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Pirate 2]\\P[16]Cap'n!\\|"
+          - "\\Name[Dwight]\\P[16]Cap'n!\\|"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -2157,7 +2157,7 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dolph]\\P[6]Eh?\\. What is it?"
+          - "\\Name[\\n[1]]\\P[6]Eh?\\. What is it?"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
