@@ -384,9 +384,9 @@ class Window_BattleStatus < Window_Base
       draw_actor_level(actor, actor_x + Level_Text[0], actor_y + Level_Text[1]) if Draw_Level
       if @level_up_flags[i] and Lvl_UP_FLAG
         self.contents.font.color = normal_color
-        self.contents.draw_text(actor_x + State_Config[0], actor_y + State_Config[1], 132, 32, Lvl_Up_Msg ) #132,32
+        #self.contents.draw_text(actor_x + State_Config[0], actor_y + State_Config[1], 132, 32, Lvl_Up_Msg ) #132,32
       else
-        draw_actor_state(actor, actor_x + State_Config[0], actor_y + State_Config[1])
+        #draw_actor_state(actor, actor_x + State_Config[0], actor_y + State_Config[1])
       end
     end
   end

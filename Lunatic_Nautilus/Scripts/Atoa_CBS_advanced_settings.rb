@@ -670,7 +670,7 @@ module Atoa
   
   Weapon_Settings[69] = ["STARTTHROWWEAPON/nil,10,11,11,11,11,200,0,-20,0,0",
                          "ENDTHROWWEAPON/nil,10,11,11,11,11,200,0,-20,0,0",
-                         "MOVETYPE/NOMOVE","TARGET/ALLENEMIES"]
+                         "MOVETYPE/NOMOVE","TARGET/ALLENEMIES","DMGVARIANCE/0"]
   
   #=============================================================================
   

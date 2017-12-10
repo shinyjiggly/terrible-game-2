@@ -53,7 +53,8 @@ module Atoa
   Max_Party = 10
   
   # Set here the actors battlers position if "Auto_Set_Postions = false"
-  Custom_Postions = [[353,280],[353, 358],[353,446],[455,245],[455,323],[455,405],[455,471],[555,280],[555,358],[555,446]]
+  Custom_Postions = [[440,256],[440,318],[440,390],[512,256],[512,318],[512,390],[584, 228],[584,290],[584,352],[584,414]]
+  #[[353,280],[353, 358],[353,446],[455,245],[455,323],[455,405],[455,471],[555,280],[555,358],[555,446]]
   
   # You can change the postion of the actors battlers in the screen.
   # Has no effect if "Auto_Set_Postions = false"

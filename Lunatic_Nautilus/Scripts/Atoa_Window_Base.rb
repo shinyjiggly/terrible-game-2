@@ -407,7 +407,7 @@ class Window_NameCommand < Window_Base
     #-32 #put the stuff up and right 32
     self.contents.font.name = "PlopDump"
     self.back_opacity = Base_Opacity #0
-    draw_actor_battle_face(actor, width-44, height-32, 255) #add the face
+    #draw_actor_battle_face(actor, width-44, height-32, 255) #add the face
     self.z = 4000
     refresh(actor)
   end
