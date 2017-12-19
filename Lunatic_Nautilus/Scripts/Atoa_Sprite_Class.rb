@@ -147,10 +147,10 @@ class RPG::Sprite < ::Sprite
           @_damage_color = [255,128,0]  
         elsif value.numeric? and value > 100 #yellow
           @_damage_color = [250,200,9]  
-        elsif value.numeric? and value > 50 #pink
-          @_damage_color = [255,128,128]  
         elsif value.numeric? and value == 69 #nice
           @_damage_color = [255,50,255]  
+        elsif value.numeric? and value > 50 #pink
+          @_damage_color = [255,128,128]  
           
           else
           #if it isn't, give it the damage colors

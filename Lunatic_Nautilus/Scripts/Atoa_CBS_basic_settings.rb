@@ -143,7 +143,7 @@ module Atoa
   Victory_Time = 90   # Victory animation duration. Numeric Value
   
   # Set here the postion of the Battle Command Window
-  Command_Window_Position = 2
+  Command_Window_Position = 3
   # 0 = Above the Actor
   # 1 = Right of the Actor
   # 2 = Left of the Actor
@@ -153,7 +153,7 @@ module Atoa
   Command_Window_Position_Adjust =  [0, -100]
   
   # Set the postion of the command window  if 'Command_Window_Position = 3'
-  Command_Window_Custom_Position = [0, 128] #[240, 128]
+  Command_Window_Custom_Position = [240, 128] #[240, 128]
   
   # Set there the postion of actor name window
   Name_Window_Position = 4
@@ -170,7 +170,7 @@ module Atoa
   Base_Opacity = 255 #160
   
   # Show actor name window when selecting action?
-  Battle_Name_Window = true
+  Battle_Name_Window = false
   
   # Hide status window when selecting items/skills?
   Status_Window_Hide = true

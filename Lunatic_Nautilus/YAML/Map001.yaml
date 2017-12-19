@@ -898,7 +898,7 @@ root: !ruby/object:RPG::Map
           code: 207
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Cleaver]\\P[0]\\a[bip]Eh? Is that..."
+          - "\\Name[Fang]\\P[0]Eh? Is that..."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -969,12 +969,12 @@ root: !ruby/object:RPG::Map
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Cleaver]\\P[0]Heh... \\."
+          - "\\Name[Fang]\\P[0]Heh... \\."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - What Dolph don't know won't hurt 'im.
+          - What Finn don't know won't hurt 'im.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -1596,7 +1596,7 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Cleaver]\\P[0]I'll be plenty!"
+          - "\\Name[Fang]\\P[0]I'll be plenty!"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -2610,7 +2610,7 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\P[0]\\name[Dolph]I'm getting tired.\\."
+          - "\\P[0]\\name[\\n[1]]I'm getting tired.\\."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand

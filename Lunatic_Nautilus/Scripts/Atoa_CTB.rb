@@ -32,19 +32,20 @@ module Atoa
   #Sound effect played when teh character's turn comes. nil for no sound
   Command_Up_SE = 'saved'
  
-  # Escape Messagem
+  # Escape Message
   Escape_Text = "The party tried to escape..."
   
   # Order Window Postion
-  Ctb_Window_Position = [0, 233]
+  Ctb_Window_Position = [230, 52]
 
   # Order show style
-  Ctb_Order_Style = 3
+  Ctb_Order_Style = 2
   # 0 = Vertical Window with the battlers names, if an character start to cast
   #     an skill, the skill name will be shown in the window too
   # 1 = Vertical Window with images that represents each battler
   # 2 = Horizontal Window with images that represents each battler
   # 3 = No exhibition
+  # 4 = shows images and names (WIP)
 
   # Name of the image file shown if an battler do not have an image
   # when 'Ctb_Order_Style' equal 1 or 2.
@@ -84,24 +85,24 @@ module Atoa
   Ctb_Show_Duplicates = true
   
   # Tipe of "slide" of the turn images
-  Ctb_Graphic_Slide = 0
+  Ctb_Graphic_Slide = 1
   # 0 = no slide
   # 1 = enemies and actors slide to the same sides
   # 2 = enemies and actors slide to different sides
   
   # Number of Names/Images shown on the order window
-  Show_Ctb_Turn = 7
+  Show_Ctb_Turn = 1
 
   # Hide windows when a battler is executing an action?
   Hide_During_Action = true
    
   # Order Window Back Opacity
   # (0-255) 0 = transparent, 255 = full opacity
-  Ctb_Window_Back_Opacity = 160
+  Ctb_Window_Back_Opacity = 0
   
   # Order Window Border Opacity
   # (0-255) 0 = transparent, 255 = full opacity
-  Ctb_Window_Border_Opacity = 255
+  Ctb_Window_Border_Opacity = 0
 
   # CTB's maximum value, only change if you know what you doing.
   Max_Ctb = 500
@@ -725,13 +726,17 @@ class Window_Ctb < Window_Base
     case Ctb_Order_Style
     when 0,3
       w = 160 
-      h = 22 + (18 * Show_Ctb_Turn)
+      h = 122 + (18 * Show_Ctb_Turn)
+
     when 1
       w = RPG::Cache.faces(Defatult_Ctb_Img).width + 32
       h = [((RPG::Cache.faces(Defatult_Ctb_Img).height + Ctb_Image_Distance) * Show_Ctb_Turn) + 32, 480].min
     when 2
       w = [((RPG::Cache.faces(Defatult_Ctb_Img).width + Ctb_Image_Distance) * Show_Ctb_Turn) + 32, 640].min
       h = RPG::Cache.faces(Defatult_Ctb_Img).height + 32
+    when 4
+      w = [((RPG::Cache.faces(Defatult_Ctb_Img).width + Ctb_Image_Distance) * Show_Ctb_Turn) + 32, 640].min
+      h = RPG::Cache.faces(Defatult_Ctb_Img).height + 32   
     end
     super(@ctb_settings[0], @ctb_settings[1], w, h)
     self.contents = Bitmap.new(self.width - 32, self.height - 32)
@@ -799,7 +804,7 @@ class Window_Ctb < Window_Base
   #--------------------------------------------------------------------------
   def refresh
     update_order
-    update_text_window if Ctb_Order_Style == 0
+    update_text_window if Ctb_Order_Style == 0 or Ctb_Order_Style == 4
   end
   #--------------------------------------------------------------------------
   # * Update window text
@@ -809,7 +814,7 @@ class Window_Ctb < Window_Base
     self.contents.font.color = system_color
     self.contents.font.size = 22
     self.contents.font.bold = true
-    self.contents.draw_text(0, 0, 100, 22, 'Next up')
+    #self.contents.draw_text(0, 0, 100, 22, 'Next up')
     for i in 0...@order.size
       order =  @order[i]
       battler = set_battler(order[1])
@@ -825,14 +830,14 @@ class Window_Ctb < Window_Base
       end
       self.contents.font.color = knockout_color if order[3] == 2 or order[3] == 3
       self.contents.font.color = disabled_color if order[3] == 4
-      self.contents.draw_text(4, y + 24, self.width - 32, 18, name)
+      self.contents.draw_text(4, y + 24, self.width - 32, 18, name + "aaaaa")
     end
   end
   #--------------------------------------------------------------------------
   # * Frame Update
   #--------------------------------------------------------------------------
   def update
-    if [1,2].include?(Ctb_Order_Style)
+    if [1,2,4].include?(Ctb_Order_Style)
       if order_comparision(@order_window, @current_order) and not @animated
         @old_order = @current_order.dup
         @animation_count = 20
@@ -906,6 +911,8 @@ class Window_Ctb < Window_Base
       draw_ctb_turn(x, y, img, rect, dist, @current_order[i][2] != '', battler, i)
       y += img.height + Ctb_Image_Distance if Ctb_Order_Style == 1
       x += img.width + Ctb_Image_Distance if Ctb_Order_Style == 2
+      
+      x += img.width + Ctb_Image_Distance if Ctb_Order_Style == 4 #new!
     end
   end
   #--------------------------------------------------------------------------
@@ -1481,7 +1488,7 @@ class Scene_Battle
   def update_phase3_skill_select
     @active_battler.selected_action = @skill_window.skill
     if @curent_index != @skill_window.index or
-       (Ctb_Order_Style == 0 and Graphics.frame_count % 3 == 0)
+       (Ctb_Order_Style == 0 or Ctb_Order_Style == 4 and Graphics.frame_count % 3 == 0)
       update_all_ctb
       @ctb_window.refresh
       @curent_index = @skill_window.index
@@ -1496,7 +1503,7 @@ class Scene_Battle
   def update_phase3_item_select
     @active_battler.selected_action = @item_window.item
     if @curent_index != @item_window.index or
-       (Ctb_Order_Style == 0 and Graphics.frame_count % 3 == 0)
+       (Ctb_Order_Style == 0 or Ctb_Order_Style == 4 and Graphics.frame_count % 3 == 0)
       update_all_ctb
       @ctb_window.refresh
       @curent_index = @item_window.index
@@ -1585,7 +1592,7 @@ class Scene_Battle
       @active_battler.selected_action = ''
     end
     if @curent_command_index != @actor_command_window.index or
-       (Ctb_Order_Style == 0 and Graphics.frame_count % 3 == 0)
+       (Ctb_Order_Style == 0 or Ctb_Order_Style == 4 and Graphics.frame_count % 3 == 0)
       update_all_ctb
       @ctb_window.refresh
       @curent_command_index = @actor_command_window.index

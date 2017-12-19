@@ -1,3 +1,7 @@
+27174260    RGSS Linker                                  RGSS_Linker.rb
+70050640    Audio (Fmodex)                               Audio_(Fmodex).rb
+35484553    FMOD Ex Audio                                FMOD_Ex_Audio.rb
+42507035    -----                                        EMPTY
 75819864    Game_Temp                                    Game_Temp.rb
 61166382    Game_System                                  Game_System.rb
 65768432    Game_Switches                                Game_Switches.rb
@@ -94,7 +98,11 @@
 93415179    Battle Windows                               Battle_Windows.rb
 3577221     HP/SP/EXP                                    HP_SP_EXP.rb
 20364602    Simple Font Shadow                           Simple_Font_Shadow.rb
-79937627                                                 EMPTY
+35887453                                                 EMPTY
+79937627    bgm_main                                     bgm_main.rb
+23743331    bgm_extras                                   bgm_extras.rb
+67821719                                                 EMPTY
+46453158    Transition pack                              Transition_pack.rb
 18843368                                                 EMPTY
 95698182    Atoa CBS - basic settings                    Atoa_CBS_basic_settings.rb
 69493194    Atoa CBS - advanced settings                 Atoa_CBS_advanced_settings.rb
@@ -149,6 +157,8 @@
 60108649    sprite wave effect                           sprite_wave_effect.rb
 20058967    Scroll panorama                              Scroll_panorama.rb
 28868707    anti lag                                     anti_lag.rb
+44843113    buy only / sell only shops                   buy_only___sell_only_shops.rb
+52856926    Lightning and thunder                        Lightning_and_thunder.rb
 37417015    -------------------                          EMPTY
 63588152    Main                                         Main.rb
 95038157    -----------------------------                EMPTY

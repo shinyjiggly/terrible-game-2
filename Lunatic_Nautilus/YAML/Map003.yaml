@@ -1,8 +1,8 @@
 --- !ruby/object:Hash
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
-    volume: 100
-    name: basicbeach
+    volume: 65
+    name: coolsteppecoast
     pitch: 100
   events: !ruby/object:Hash
     1: !ruby/object:RPG::Event
@@ -664,7 +664,7 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\a[bip] \\P[-1] bwahahahaha!\\."
+          - "\\P[-1] bwahahahaha!\\."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand

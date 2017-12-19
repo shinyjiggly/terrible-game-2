@@ -117,7 +117,7 @@ def initialize
 xrxs9_initialize
 
 if $soundname_on_speak == nil then
-  $soundname_on_speak = ""
+  $soundname_on_speak = '' #"Audio/SE/bip.wav"
 end
 
 $gaiji_file = "./Graphics/Gaiji/sample.png"
@@ -431,7 +431,8 @@ if @now_text != nil and @mid_stop == false
         @now_text.sub!(/\[(.*?)\]/, "")
         buftxt = $1.dup.to_s
         if buftxt.match(/\//) == nil and buftxt != "" then
-          $soundname_on_speak = "Audio/SE/" + buftxt
+          $soundname_on_speak = "Audio/SE/" + buftxt #edit this
+          
         else
           $soundname_on_speak = buftxt.dup
         end

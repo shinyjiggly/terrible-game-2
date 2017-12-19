@@ -62,7 +62,7 @@ class PK8
   
   # The value of Varba_Var controls the battle theme.
   #          [id] = [Music File, Volume, Pitch]
-  Varba_Theme[0] = ["battle_theme1", 100, 100] #regular
+  Varba_Theme[0] = ["battleone", 100, 100] #regular
   Varba_Theme[1] = ["guitarnoodle", 100, 100] #vs daraway
   Varba_Theme[2] = ["bigtestboss", 100, 100] #special
   Varba_Theme[3] = ["jungle", 100, 100] #???
