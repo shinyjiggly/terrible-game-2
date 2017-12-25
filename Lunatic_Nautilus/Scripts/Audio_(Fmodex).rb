@@ -44,7 +44,7 @@ module Audio
   @me_play = method(:me_play)
   @me_fade = method(:me_fade)
   @me_stop = method(:me_stop)
-  @se_play = method(:se_play)
+  #@se_play = method(:se_play)
   @se_stop = method(:se_stop)
   #---
   #>Volumes definition
@@ -103,12 +103,22 @@ module Audio
     return @me_stop.call if(@library != ::FmodEx)
     ::FmodEx.me_stop
   end
-  def se_play(file_name, volume = 100, pitch = 100)
-    volume = volume * @sfx_volume / 100
-    return @se_play.call(file_name, volume, pitch) if(@library != ::FmodEx)
-    file_name = check_file(file_name)
-    ::FmodEx.se_play(file_name, volume, pitch)
+=begin
+def self.se_play(name, volume=100, pitch=100)
+  if @fmod_se.size > @fmod.maxChannels
+    Audio.se_clean
+    if @fmod_se.size > @fmod.maxChannels
+    #msgbox_p 0
+    se = @fmod_se.shift
+    #msgbox_p se
+    self.stop(se) if self.playing?(se)
   end
+end
+  # Load SE into memory and play it
+  @fmod_se << self.play(name, volume, pitch, 0, false, false)
+  end
+
+=end
   def se_stop
     return @se_stop.call if(@library != ::FmodEx)
     ::FmodEx.se_stop

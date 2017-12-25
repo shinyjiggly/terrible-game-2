@@ -117,7 +117,7 @@ def initialize
 xrxs9_initialize
 
 if $soundname_on_speak == nil then
-  $soundname_on_speak = '' #"Audio/SE/bip.wav"
+  $soundname_on_speak = "Audio/SE/bip.wav"
 end
 
 $gaiji_file = "./Graphics/Gaiji/sample.png"
@@ -752,7 +752,7 @@ else
   self.contents.stretch_blt(Rect.new(x, y, size, size), @gaiji_cache, Rect.new(num * 24, 0, 24, 24))
 
   if $soundname_on_speak != "" then
-    Audio.se_play($soundname_on_speak)
+    Audio.se_play($soundname_on_speak) #EDIT
   end
   return size
 end

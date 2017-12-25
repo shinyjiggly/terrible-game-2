@@ -1036,11 +1036,12 @@ module FMod
     @fmod_bgs = self.set_loop_points(@fmod_bgs, first, second, unit)
   end
   #--------------------------------------------------------------------------
-  # * Play SE
+  # * Play SE DISABLED
   #     name            : Name of the file
   #     volume          : Channel volume
   #     pitch           : Channel frequency
   #-------------------------------------------------------------------------- 
+=begin
   def self.se_play(name, volume, pitch)
     if @fmod_se.size > @fmod.maxChannels
       se = @fmod_se.shift
@@ -1049,6 +1050,7 @@ module FMod
     # Load SE into memory and play it
     @fmod_se << self.play(name, volume, pitch, 0, false, false)
   end
+=end
   #--------------------------------------------------------------------------
   # * Stop and Dispose of all SEs
   #-------------------------------------------------------------------------- 
@@ -1253,9 +1255,10 @@ module Audio
   #     volume          : Channel volume
   #     pitch           : Channel frequency
   #-------------------------------------------------------------------------- 
-  def Audio.se_play(filename, volume = 100, pitch = 100) 
-    FMod::se_play(filename, volume, pitch)
-  end
+#  def Audio.se_play(filename, volume = 100, pitch = 100) 
+#    FMod::se_play(filename, volume, pitch)
+#  end
+  
   #--------------------------------------------------------------------------
   # * Stops SE Playback
   #-------------------------------------------------------------------------- 
