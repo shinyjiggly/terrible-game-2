@@ -213,9 +213,9 @@ class Game_Actor < Game_Battler
   #--------------------------------------------------------------------------
   def base_cha
     n = base_parameter(6)
-    n *= Actor_Mult_Cha 
-    #what the fuck, why isn't this working
-    for item in equips.compact do n += item.cha_plus end
+    #n *= Actor_Mult_Cha 
+    ##what the fuck, why isn't this working
+    #for item in equips.compact do n += item.cha_plus end
     return n.to_i
   end 
   

@@ -137,7 +137,7 @@
   #                   Both have a 2pt curve for cha and 3pt curve for const
   #
   #
-    XTRA_STATS_ACTOR = {1 => [[10, 2], [12, 3]],
+    XTRA_STATS_ACTOR = {0 => [[30, 2], [12, 3]],
                         2 => [[20, 2], [24, 3]] }  
     
     
