@@ -137,6 +137,8 @@ class Game_Battler
       rate += (user.dex * skill.dex_f / 100)
       rate += (user.agi * skill.agi_f / 100)
       rate += (user.int * skill.int_f / 100)
+      
+      rate += (user.cha * skill.cha_f / 100) #new
       # Calculate basic damage
       self.damage = power * rate / 20
       # Element correction

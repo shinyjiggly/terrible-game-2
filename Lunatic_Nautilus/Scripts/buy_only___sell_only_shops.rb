@@ -42,8 +42,8 @@ class Window_ShopCommand < Window_Selectable
     @item_max = 3
     @column_max = 3
     @commands = ["Buy", "Sell", "Exit"]
-    self.contents.font.name = "Arial"
-    self.contents.font.size = 24
+    self.contents.font.name = "PlopDump"
+    self.contents.font.size = 20
     refresh
     self.index = 0
   end

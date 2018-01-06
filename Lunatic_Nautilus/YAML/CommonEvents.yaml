@@ -956,8 +956,28 @@ root:
   switch_id: 1
   id: 7
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: day of the week checker
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - t = Time.now
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - aaaa = t.strftime("%w")
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - bbbb = aaaa.to_i
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "$game_variables[20] = bbbb"
+    indent: 0
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0

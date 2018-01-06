@@ -39,6 +39,7 @@ class Game_Battler
     @dex_plus = 0
     @agi_plus = 0
     @int_plus = 0
+    @cha_plus = 0 #new!
     @hidden = false
     @immortal = false
     @damage_pop = false
@@ -116,6 +117,19 @@ class Game_Battler
     n = [[Integer(n), 1].max, 999].min
     return n
   end
+  
+  #--------------------------------------------------------------------------
+  # * Get Charisma(CHA) #new!!
+  #--------------------------------------------------------------------------
+  def int
+    n = [[base_cha + @cha_plus, 1].max, 999].min
+    for i in @states
+      n *= $data_states[i].cha_rate / 100.0
+    end
+    n = [[Integer(n), 1].max, 999].min
+    return n
+  end
+  
   #--------------------------------------------------------------------------
   # * Set Maximum HP
   #     maxhp : new maximum HP
@@ -165,6 +179,15 @@ class Game_Battler
   def int=(int)
     @int_plus += int - self.int
     @int_plus = [[@int_plus, -999].max, 999].min
+  end
+  
+  #--------------------------------------------------------------------------
+  # * Set Charisma (CHA)
+  #     cha : new Charisma (CHA)
+  #--------------------------------------------------------------------------
+  def cha=(cha)
+    @cha_plus += cha - self.cha
+    @cha_plus = [[@cha_plus, -999].max, 999].min
   end
   #--------------------------------------------------------------------------
   # * Get Hit Rate

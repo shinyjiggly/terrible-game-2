@@ -94,6 +94,7 @@
 4303983     ------------------                           EMPTY
 4928462     Atoa Custom Battle System                    Atoa_Custom_Battle_System.rb
 62132726    Font                                         Font.rb
+4688758     longer script calls                          longer_script_calls.rb
 56455682                                                 EMPTY
 93415179    Battle Windows                               Battle_Windows.rb
 3577221     HP/SP/EXP                                    HP_SP_EXP.rb
@@ -103,6 +104,7 @@
 23743331    bgm_extras                                   bgm_extras.rb
 67821719                                                 EMPTY
 46453158    Transition pack                              Transition_pack.rb
+13876443    Extra Stats                                  Extra_Stats.rb
 18843368                                                 EMPTY
 95698182    Atoa CBS - basic settings                    Atoa_CBS_basic_settings.rb
 69493194    Atoa CBS - advanced settings                 Atoa_CBS_advanced_settings.rb
@@ -130,6 +132,7 @@
 20208372    Large Party Menu                             Large_Party_Menu.rb
 60317430    Atoa CTB                                     Atoa_CTB.rb
 92410424    Status Limit                                 Status_Limit.rb
+77300359    Status effect pops (disabled)                Status_effect_pops_(disabled).rb
 99951215    New Status                                   New_Status.rb
 62906568    Equipment Multislots                         Equipment_Multislots.rb
 51625542    Equipment skills                             Equipment_skills.rb
@@ -145,6 +148,7 @@
 24406872    States Graphic                               States_Graphic.rb
 71807687    Equipment Sprite                             Equipment_Sprite.rb
 8643023     Victory Window 2 <--                         Victory_Window_2____.rb
+90201145    -----------                                  EMPTY
 52246534    FFVII Menu                                   FFVII_Menu.rb
 77964422    Die on the map                               Die_on_the_map.rb
 18011638    Dash                                         Dash.rb
@@ -159,9 +163,11 @@
 28868707    anti lag                                     anti_lag.rb
 44843113    buy only / sell only shops                   buy_only___sell_only_shops.rb
 52856926    Lightning and thunder                        Lightning_and_thunder.rb
+41302047    Advanced map scrolling                       Advanced_map_scrolling.rb
 37417015    -------------------                          EMPTY
 63588152    Main                                         Main.rb
 95038157    -----------------------------                EMPTY
 39119497    ------gay baby jail------                    ______gay_baby_jail______.rb
 78465921    Twohanded --disabled!!--                     Twohanded___disabled!!__.rb
+22831673    Threat System (disabled)                     Threat_System_(disabled).rb
 31494106                                                 EMPTY

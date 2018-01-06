@@ -262,6 +262,23 @@ class Game_Actor < Game_Battler
     return [[n, 1].max, 999].min
   end
   #--------------------------------------------------------------------------
+  # * Get Basic Charisma (new!!)
+  #--------------------------------------------------------------------------
+  def base_cha
+    n = $data_actors[@actor_id].parameters[6, @level]
+    weapon = $data_weapons[@weapon_id]
+    armor1 = $data_armors[@armor1_id]
+    armor2 = $data_armors[@armor2_id]
+    armor3 = $data_armors[@armor3_id]
+    armor4 = $data_armors[@armor4_id]
+    n += weapon != nil ? weapon.cha_plus : 0
+    n += armor1 != nil ? armor1.cha_plus : 0
+    n += armor2 != nil ? armor2.cha_plus : 0
+    n += armor3 != nil ? armor3.cha_plus : 0
+    n += armor4 != nil ? armor4.cha_plus : 0
+    return [[n, 1].max, 999].min
+  end
+  #--------------------------------------------------------------------------
   # * Get Basic Attack Power
   #--------------------------------------------------------------------------
   def base_atk

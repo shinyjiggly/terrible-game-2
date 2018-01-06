@@ -17,6 +17,7 @@ class RPG::Weapon
   attr_accessor :dmg                   # critical damage
   attr_accessor :rcrt                  # critica evade
   attr_accessor :rdmg                  # critical damage resist
+  attr_accessor :cha                   # cHARISMA
   #--------------------------------------------------------------------------
   # * Type string setting
   #--------------------------------------------------------------------------
@@ -101,8 +102,14 @@ class RPG::Weapon
   def rdmg
     return 0
   end
-end
 
+  #--------------------------------------------------------------------------
+  # * Get Charisma Rate
+  #--------------------------------------------------------------------------
+  def cha
+    return 0
+  end
+end
 #==============================================================================
 # ** RPG::Armor
 #------------------------------------------------------------------------------
@@ -122,6 +129,7 @@ class RPG::Armor
   attr_accessor :dmg                   # critical damage
   attr_accessor :rcrt                  # critica evade
   attr_accessor :rdmg                  # critical damage resist
+  attr_accessor :cha                   # cHARISMA
   #--------------------------------------------------------------------------
   # * Type string setting
   #--------------------------------------------------------------------------
@@ -204,6 +212,13 @@ class RPG::Armor
   # * Get Critical Damage Resist Rate
   #--------------------------------------------------------------------------
   def rdmg
+    return 0
+  end
+
+  #--------------------------------------------------------------------------
+  # * Get Charisma Rate
+  #--------------------------------------------------------------------------
+  def cha
     return 0
   end
 end

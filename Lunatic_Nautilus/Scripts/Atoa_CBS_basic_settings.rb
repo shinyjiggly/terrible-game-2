@@ -279,6 +279,9 @@ module Atoa
   # Damage_Algorithm_Type > 1. It will replace the Dexterity attribute
   Status_Vitality = "Vitality"
   
+  # a new stat right here
+  Status_Charisma = "Charisma"
+  
   # Unnamerd Battlers settingss
   Unarmed_Attack    = 20 # Unnarmed Attack Power
   Unarmed_Animation = 4  # Unnarmed Attack Animation ID

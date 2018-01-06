@@ -687,6 +687,11 @@ root: !ruby/object:RPG::Map
           indent: 0
           code: 123
         - !ruby/object:RPG::EventCommand
+          parameters:
+          - 8
+          indent: 0
+          code: 117
+        - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
           code: 116
@@ -1583,34 +1588,83 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Calhoun]\\P[10]We are number one but "
+          - "\\Name[Calhoun]\\P[10]Let me check what day it is..."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - constantly suffering.
+          - 8
           indent: 0
-          code: 401
+          code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[\\n[1]]\\P[0]...right."
+          - "\\Name[Calhoun]\\P[10]it's day \\v[20] of the current "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Calhoun]\\P[10]no, I mean it,\\. I tried to use "
+          - week.
           indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 20
+          - 0
+          - 6
+          - 0
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Calhoun]\\P[10]...you know what that means?\\."
+          indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'Snappy on myself the other day '
-          indent: 0
+          - THE SATURDAY ROOM IS OPEN!!!
+          indent: 1
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - and it blew up in my face.
-          indent: 0
+          - "\\Name[\\n[1]]\\P[0]..."
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 5
+          - 5
+          - 5
+          indent: 1
+          code: 225
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Calhoun]\\P[10]YOU GOTTA CHECK IT OUT,\\."
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'IT''S AT THE END OF THE MINE OVER '
+          indent: 1
           code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - THERE.
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[\\n[1]]\\P[0]...did we need to know that?"
+          indent: 0
+          code: 101
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -2695,6 +2749,200 @@ root: !ruby/object:RPG::Map
       y: 6
       x: 2
       id: 18
+    19: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Grandmaw]\\P[19]Oh dearie!"
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - What is this accursed CHARISMA stat
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - and how ever will we get it working?
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 12
+          - "$game_party.actors[0].cha > 20"
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[\\n[1]]\\P[0]I believe we already have."
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[\\n[1]]\\P[0]uHHHH....,,,"
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - fix the fucking charisma stat
+          indent: 0
+          code: 108
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 1
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 4
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: grandmacatx2
+          pattern: 0
+          tile_id: 0
+          direction: 8
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 4
+        through: false
+      name: EV019
+      y: 8
+      x: 21
+      id: 19
+    20: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 17
+          - 9
+          - 19
+          - 0
+          - 0
+          indent: 0
+          code: 201
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: true
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 6
+          self_switch_valid: false
+          variable_id: 20
+          variable_valid: true
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 1
+        step_anime: true
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: sparklex2
+          pattern: 0
+          tile_id: 0
+          direction: 6
+          blend_type: 0
+          character_hue: 0
+        walk_anime: false
+        move_speed: 3
+        through: false
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 7
+          self_switch_valid: false
+          variable_id: 20
+          variable_valid: true
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      name: EV020
+      y: 0
+      x: 29
+      id: 20
   tileset_id: 1
   bgs: !ruby/object:RPG::AudioFile
     volume: 80
@@ -4295,9 +4543,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 443
-    - 439
-    - 447
+    - 451
+    - 0
+    - 455
     - 280
     - 268
     - 248
@@ -4334,9 +4582,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 451
+    - 459
     - 0
-    - 455
+    - 463
     - 0
     - 452
     - 280
@@ -4373,9 +4621,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 459
     - 0
-    - 463
+    - 0
+    - 0
     - 0
     - 0
     - 0
@@ -4412,9 +4660,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
+    - 443
+    - 439
+    - 447
     - 0
     - 0
     - 0
@@ -4451,9 +4699,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 443
-    - 439
-    - 447
+    - 451
+    - 0
+    - 455
     - 0
     - 0
     - 0
@@ -4490,9 +4738,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 451
+    - 459
     - 0
-    - 455
+    - 463
     - 0
     - 0
     - 0
@@ -4529,9 +4777,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 459
     - 0
-    - 463
+    - 0
+    - 0
     - 0
     - 0
     - 0
@@ -4568,9 +4816,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 0
+    - 443
+    - 439
+    - 447
     - 0
     - 0
     - 0
@@ -4607,9 +4855,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 443
-    - 439
-    - 447
+    - 451
+    - 0
+    - 455
     - 0
     - 0
     - 0
@@ -4646,45 +4894,6 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 451
-    - 0
-    - 455
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 452
-    - 256
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
     - 459
     - 0
     - 463
@@ -4694,7 +4903,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 0
+    - 452
     - 256
     - 0
     - 0
@@ -4844,6 +5053,45 @@ root: !ruby/object:RPG::Map
     - 459
     - 0
     - 463
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 256
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
     - 0
     - 0
     - 0

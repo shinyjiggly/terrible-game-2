@@ -5,7 +5,7 @@ root: !ruby/object:Hash
     name: Ship Deck
     expanded: true
     order: 2
-    scroll_y: 312
+    scroll_y: 824
     parent_id: 0
   2: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -19,7 +19,7 @@ root: !ruby/object:Hash
     name: testmap
     expanded: true
     order: 13
-    scroll_y: 320
+    scroll_y: 303
     parent_id: 0
   4: !ruby/object:RPG::MapInfo
     scroll_x: 560
@@ -112,3 +112,10 @@ root: !ruby/object:Hash
     order: 8
     scroll_y: 488
     parent_id: 1
+  17: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: fancy room
+    expanded: false
+    order: 17
+    scroll_y: 328
+    parent_id: 3

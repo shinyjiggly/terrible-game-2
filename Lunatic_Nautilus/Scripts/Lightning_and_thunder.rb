@@ -177,7 +177,7 @@ class Interpreter
   #
   #   - Plays Thuder Sound Effect with Variations on Volume and Pitch
   #--------------------------------------------------------------------------
-  def se_thunder(volume=100, pitch=100, file='061-Thunderclap01')
+  def se_thunder(volume=100, pitch=100, file='PerfectThunder2056381765')
     # Call Game Screen for Command Execution (order is different than args)
     thunder = RPG::AudioFile.new(file, volume, pitch)
     # Play Sound

@@ -95,7 +95,7 @@ end
 #duplicate font color
    self.font.color = @shade
 #draw shadow
-   draw_shadow(x, y, width, height, string, align)
+  draw_shadow(x, y, width, height, string, align)
 #end of draw text method
 end
 #end of Bitmap class

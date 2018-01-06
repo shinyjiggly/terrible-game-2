@@ -21,7 +21,7 @@ root: !ruby/object:RPG::System
   - new ship map id
   - button press
   - special event
-  - ''
+  - day of the week
   - ''
   - ''
   - ''
