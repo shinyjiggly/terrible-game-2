@@ -1,10 +1,10 @@
----
+--- !ruby/object:Hash
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
     name: beautifulsunsetland
     pitch: 75
-  events:
+  events: !ruby/object:Hash
     1: !ruby/object:RPG::Event
       pages:
       - !ruby/object:RPG::Event::Page
@@ -567,7 +567,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 589
     - 591
-    - 391
+    - 0
     - 0
     - 0
     - 560
@@ -585,9 +585,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 390
-    - 396
-    - 396
+    - 0
+    - 0
+    - 0
     - 0
     - 0
     - 568
@@ -686,8 +686,8 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 396
-    - 396
+    - 0
+    - 0
     - 0
     - 0
     - 0
@@ -940,7 +940,6 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 423
     - 0
     - 0
     - 0
@@ -979,8 +978,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 391
-    - 391
+    - 0
+    - 0
+    - 0
     - 0
     - 0
     - 0
