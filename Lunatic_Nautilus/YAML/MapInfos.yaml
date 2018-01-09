@@ -15,11 +15,11 @@ root: !ruby/object:Hash
     scroll_y: 324
     parent_id: 0
   3: !ruby/object:RPG::MapInfo
-    scroll_x: 532
+    scroll_x: 737
     name: testmap
     expanded: true
     order: 13
-    scroll_y: 303
+    scroll_y: 320
     parent_id: 0
   4: !ruby/object:RPG::MapInfo
     scroll_x: 560
@@ -40,7 +40,7 @@ root: !ruby/object:Hash
     name: daraway's ship
     expanded: true
     order: 11
-    scroll_y: 1032
+    scroll_y: 1004
     parent_id: 1
   7: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -117,5 +117,5 @@ root: !ruby/object:Hash
     name: fancy room
     expanded: false
     order: 17
-    scroll_y: 328
+    scroll_y: 273
     parent_id: 3

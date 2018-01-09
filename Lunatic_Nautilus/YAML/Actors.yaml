@@ -6,7 +6,7 @@ root:
   initial_level: 1
   name: Finn
   character_name: dolph_walkingx2
-  weapon_id: 69
+  weapon_id: 1
   armor2_fix: false
   parameters: !ruby/object:Table
     dim: 2
@@ -20,7 +20,7 @@ root:
     - 0
     - 0
     - 0
-    - 450
+    - 4500
     - 534
     - 9
     - 4

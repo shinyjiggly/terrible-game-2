@@ -43,7 +43,7 @@ class Game_Battler
     # Clear critical flag
     self.critical = false
     # First hit detection
-    hit_result = (rand(100) < attacker.hit+5)
+    hit_result = (rand(100) < 100)
     # If hit occurs
     if hit_result == true
       # Calculate basic damage
@@ -70,7 +70,7 @@ class Game_Battler
         self.damage += rand(amp+1) + rand(amp+1) - amp
       end
       # Second hit detection
-      eva = 8 * self.agi / attacker.dex + self.eva
+      eva = (3 * (self.agi - attacker.dex) + self.eva - attacker.hit) * ((1-self.hp/self.maxhp)+0.5) - 5
       hit = self.damage < 0 ? 100 : 100 - eva
       hit = self.cant_evade? ? 100 : hit
       hit_result = (rand(100) < hit)

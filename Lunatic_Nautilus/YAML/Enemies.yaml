@@ -90,7 +90,7 @@ root:
     skill_id: 2
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 4
   eva: 0
   animation1_id: 0
   name: Natsiya Sold.
@@ -103,7 +103,7 @@ root:
   pdef: 14
   exp: 20
   agi: 4
-  maxhp: 300
+  maxhp: 3000
   armor_id: 0
   battler_hue: 0
   atk: 75
@@ -138,7 +138,7 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
+  dex: 4
   animation2_id: 2
   id: 2
   item_id: 2

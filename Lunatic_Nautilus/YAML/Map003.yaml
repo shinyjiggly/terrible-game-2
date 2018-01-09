@@ -1116,34 +1116,49 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dwight]\\P[7]I kinda feel sorry for the "
+          - "\\Name[Dwight]\\P[7]Looks like you finally found the "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - one who has to find that accuracy formula.
+          - accuracy formula.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dwight]\\P[7]Is it really that important?"
+          - "\\Name[Finn]\\P[0]Seems like it!"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Fang]\\P[9]Ye need to understand the tools "
+          - "\\Name[Dwight]\\P[7]Seems like Nyx's having a bit too "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - yer workin' with to formulate a plan.
+          - much fun with it though.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[\\n[1]]\\P[0]What he said."
+          - "\\Name[Dwight]\\P[7]She got it so that evasion "
           indent: 0
           code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - increases at low health.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Dwight]\\P[7]Hope that doesn't change the "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - fights too much.
+          indent: 0
+          code: 401
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -1507,37 +1522,17 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Fang]\\P[9]Ye ready fer this, Finn?"
+          - "\\Name[Fang]\\P[9]My magic's finally fixed!"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[\\n[1]]\\P[0]Of course. With my Lethal Strike..."
+          - "\\Name[\\n[1]]\\P[0]Good to hear!"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Fang]\\P[9]And my Umbral Magic..."
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\Name[\\n[1] and Fang]\\P[9]We'll take on the world!"
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\Name[Fang]\\P[9]Although my magic is actin' a bit "
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - perplexing as of late...
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\Name[Fang]\\P[9]I'm sure Nyx'll fix it soon enough."
+          - "\\Name[Fang]\\P[9]I'm ready to take on anything now."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1948,20 +1943,6 @@ root: !ruby/object:RPG::Map
           code: 129
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 8
-          - 0
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 5
-          - 0
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - 3
           - 1
           - 1
@@ -1969,16 +1950,16 @@ root: !ruby/object:RPG::Map
           code: 129
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 9
-          - 0
+          - 4
+          - 1
           - 1
           indent: 0
           code: 129
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 7
-          - 0
-          - 0
+          - 5
+          - 1
+          - 1
           indent: 0
           code: 129
         - !ruby/object:RPG::EventCommand
@@ -1990,8 +1971,29 @@ root: !ruby/object:RPG::Map
           code: 129
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 4
-          - 0
+          - 7
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 8
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 9
+          - 1
+          - 1
+          indent: 0
+          code: 129
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 1
           - 1
           indent: 0
           code: 129
