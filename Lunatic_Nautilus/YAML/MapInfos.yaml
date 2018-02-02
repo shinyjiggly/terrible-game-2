@@ -117,5 +117,26 @@ root: !ruby/object:Hash
     name: fancy room
     expanded: false
     order: 17
-    scroll_y: 273
+    scroll_y: 320
+    parent_id: 3
+  18: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: Oasis
+    expanded: false
+    order: 18
+    scroll_y: 240
+    parent_id: 3
+  19: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: Home
+    expanded: false
+    order: 19
+    scroll_y: 240
+    parent_id: 3
+  20: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: The Droughtlands
+    expanded: false
+    order: 20
+    scroll_y: 240
     parent_id: 3
