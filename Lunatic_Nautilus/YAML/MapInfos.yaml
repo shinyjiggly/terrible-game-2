@@ -134,7 +134,7 @@ root: !ruby/object:Hash
     scroll_y: 240
     parent_id: 3
   20: !ruby/object:RPG::MapInfo
-    scroll_x: 320
+    scroll_x: 626
     name: The Droughtlands
     expanded: false
     order: 20
