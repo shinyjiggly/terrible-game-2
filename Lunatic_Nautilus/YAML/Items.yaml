@@ -555,7 +555,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: "-- Raw Food Items --"
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -584,13 +584,13 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: raw meat
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 50
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -607,19 +607,19 @@ root:
   animation2_id: 0
   hit: 100
   id: 21
-  description: ''
+  description: Thick and full of protein!
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: raw fish
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 50
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -636,19 +636,19 @@ root:
   animation2_id: 0
   hit: 100
   id: 22
-  description: ''
+  description: lots of protein, but not quite as thick
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: true
+  consumable: false
   animation1_id: 0
-  name: ''
+  name: raw veggies
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 30
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -665,19 +665,19 @@ root:
   animation2_id: 0
   hit: 100
   id: 23
-  description: ''
+  description: Vegetables that still need to be cooked...
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: water
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 10
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -694,19 +694,19 @@ root:
   animation2_id: 0
   hit: 100
   id: 24
-  description: ''
+  description: Essential for soups and good for drinking!
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: true
+  consumable: false
   animation1_id: 0
-  name: ''
+  name: salt
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 10
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -723,19 +723,19 @@ root:
   animation2_id: 0
   hit: 100
   id: 25
-  description: ''
+  description: it's good for flavor...
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: true
+  consumable: false
   animation1_id: 0
-  name: ''
+  name: frying batter
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 10
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -752,19 +752,19 @@ root:
   animation2_id: 0
   hit: 100
   id: 26
-  description: ''
+  description: required for fried recipes
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: true
+  consumable: false
   animation1_id: 0
-  name: ''
+  name: fresh greens
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 20
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -781,19 +781,19 @@ root:
   animation2_id: 0
   hit: 100
   id: 27
-  description: ''
+  description: suited more for herbivores...
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: true
+  consumable: false
   animation1_id: 0
-  name: ''
+  name: rich sauce
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 20
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -810,19 +810,19 @@ root:
   animation2_id: 0
   hit: 100
   id: 28
-  description: ''
+  description: Goes well with meaty dishes
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: true
+  consumable: false
   animation1_id: 0
-  name: ''
+  name: cooking oil
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 10
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -843,15 +843,15 @@ root:
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: true
+  consumable: false
   animation1_id: 0
-  name: ''
+  name: frostland seasoning
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 20
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -868,19 +868,19 @@ root:
   animation2_id: 0
   hit: 100
   id: 30
-  description: ''
+  description: 'a staple '
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: crickets
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 40
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -897,13 +897,13 @@ root:
   animation2_id: 0
   hit: 100
   id: 31
-  description: ''
+  description: high in protein, but not liked by most...
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: true
+  consumable: false
   animation1_id: 0
-  name: ''
+  name: Athena's spice
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -926,7 +926,7 @@ root:
   animation2_id: 0
   hit: 100
   id: 32
-  description: ''
+  description: has strong memories attatched to it...
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item

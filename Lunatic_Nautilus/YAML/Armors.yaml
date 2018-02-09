@@ -327,7 +327,7 @@ root:
 - !ruby/object:RPG::Armor
   eva: 0
   int_plus: 0
-  name: ''
+  name: Frostland Cuisine
   icon_name: ''
   mdef: 0
   auto_state_id: 0
@@ -335,11 +335,11 @@ root:
   agi_plus: 0
   pdef: 0
   guard_state_set: []
-  kind: 0
+  kind: 3
   dex_plus: 0
   guard_element_set: []
   id: 20
-  description: ''
+  description: All the recipes you could ever need...?
   str_plus: 0
 - !ruby/object:RPG::Armor
   eva: 0

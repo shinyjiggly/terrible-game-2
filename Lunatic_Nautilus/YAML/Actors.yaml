@@ -4400,7 +4400,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Bompillia
+  name: Pompillia
   character_name: pompiliacharx2
   weapon_id: 15
   armor2_fix: false
@@ -7524,7 +7524,7 @@ root:
     - 545
   exp_inflation: 30
   armor3_id: 0
-  class_id: 1
+  class_id: 12
   exp_basis: 30
   armor1_fix: false
   armor2_id: 0
@@ -7536,7 +7536,7 @@ root:
   id: 12
   armor1_id: 0
   armor3_fix: false
-  battler_name: testbattle
+  battler_name: calhounx2
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1

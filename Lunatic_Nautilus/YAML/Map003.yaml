@@ -2945,6 +2945,168 @@ root: !ruby/object:RPG::Map
       y: 0
       x: 29
       id: 20
+    21: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - snoooow
+          - 0
+          - 64
+          - 0
+          - 100
+          - -45
+          - 45
+          indent: 0
+          code: 204
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 100
+            name: cozytown
+            pitch: 100
+          indent: 0
+          code: 241
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: true
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: true
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: sparklex2
+          pattern: 0
+          tile_id: 0
+          direction: 4
+          blend_type: 0
+          character_hue: 0
+        walk_anime: false
+        move_speed: 3
+        through: false
+      name: EV021
+      y: 14
+      x: 3
+      id: 21
+    22: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 18
+          - 0
+          - 27
+          - 0
+          - 0
+          indent: 0
+          code: 201
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: true
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 6
+          self_switch_valid: false
+          variable_id: 20
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 1
+        step_anime: true
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: sparklex2
+          pattern: 0
+          tile_id: 0
+          direction: 4
+          blend_type: 0
+          character_hue: 0
+        walk_anime: false
+        move_speed: 3
+        through: false
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 0
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 7
+          self_switch_valid: false
+          variable_id: 20
+          variable_valid: true
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 0
+        step_anime: false
+        move_frequency: 3
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: ''
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 0
+        walk_anime: true
+        move_speed: 3
+        through: false
+      name: EV022
+      y: 14
+      x: 38
+      id: 22
   tileset_id: 1
   bgs: !ruby/object:RPG::AudioFile
     volume: 80
@@ -4165,7 +4327,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 408
-    - 0
+    - 408
     - 52
     - 86
     - 0
@@ -4204,7 +4366,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 416
-    - 0
+    - 408
     - 72
     - 0
     - 0
@@ -4243,7 +4405,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 413
     - 0
-    - 0
+    - 408
     - 72
     - 0
     - 0
@@ -4282,7 +4444,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 0
+    - 416
     - 72
     - 0
     - 0
@@ -4317,11 +4479,11 @@ root: !ruby/object:RPG::Map
     - 208
     - 216
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 227
+    - 225
+    - 225
+    - 225
+    - 225
     - 72
     - 0
     - 0
@@ -4354,9 +4516,9 @@ root: !ruby/object:RPG::Map
     - 0
     - 226
     - 193
-    - 216
-    - 0
-    - 0
+    - 198
+    - 225
+    - 231
     - 0
     - 0
     - 0
@@ -4945,7 +5107,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 256
+    - 280
     - 0
     - 0
     - 0
@@ -4984,7 +5146,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 256
+    - 0
     - 0
     - 0
     - 0
@@ -5023,7 +5185,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 256
+    - 0
     - 0
     - 0
     - 0
@@ -5062,7 +5224,6 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 256
     - 0
     - 0
     - 0
@@ -5101,7 +5262,8 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 256
+    - 0
+    - 0
     - 0
     - 0
     - 0
@@ -5140,7 +5302,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 274
-    - 241
+    - 260
     - 0
     - 0
     - 0

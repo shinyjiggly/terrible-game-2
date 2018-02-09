@@ -928,8 +928,9 @@ root:
     - 3
     - 3
 - !ruby/object:RPG::Class
-  name: Templar
-  armor_set: []
+  name: Time Cook
+  armor_set:
+  - 20
   learnings:
   - !ruby/object:RPG::Class::Learning
     level: 1
@@ -979,7 +980,7 @@ root:
     - 3
     - 3
     - 3
-    - 3
+    - 4
     - 3
     - 3
     - 3

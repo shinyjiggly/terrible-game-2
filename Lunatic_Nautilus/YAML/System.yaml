@@ -242,7 +242,7 @@ root: !ruby/object:RPG::System
     pitch: 50
   gameover_me: !ruby/object:RPG::AudioFile
     volume: 100
-    name: endmaybe
+    name: athingie
     pitch: 100
   battler_name: "$natgunner"
   save_se: !ruby/object:RPG::AudioFile
