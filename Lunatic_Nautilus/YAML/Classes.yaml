@@ -928,7 +928,7 @@ root:
     - 3
     - 3
 - !ruby/object:RPG::Class
-  name: Time Cook
+  name: Gastromancer
   armor_set:
   - 20
   learnings:

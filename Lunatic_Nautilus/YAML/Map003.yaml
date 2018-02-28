@@ -233,19 +233,19 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Renzo]\\P[2]You've caused all of us a lot of "
+          - "\\Name[Renzo]\\P[2]It looks like Finn skipped town "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - pain, Finn. And some day you'll pay the price.
+          - 'after that threat.\. '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[\\n[1]]\\P[0]..."
+          - I guess I'm more threatening than I thought.
           indent: 0
-          code: 101
+          code: 401
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -603,19 +603,14 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Yoan]\\P[4]Whoa, hey Finn! Didn't see you "
+          - "\\Name[Yoan]\\P[4]Is it just me, or is it getting colder "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - there!
+          - around here?
           indent: 0
           code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\Name[\\n[1]]\\P[0]...Get back to your post, number 4."
-          indent: 0
-          code: 101
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -674,10 +669,10 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 3
-          - 0
-          - 0
           - 1
+          - 0
+          - 0
+          - 7
           indent: 0
           code: 126
         - !ruby/object:RPG::EventCommand
@@ -691,6 +686,15 @@ root: !ruby/object:RPG::Map
           - 8
           indent: 0
           code: 117
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 1
+          - 0
+          - 300
+          - false
+          indent: 0
+          code: 311
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -1116,47 +1120,12 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dwight]\\P[7]Looks like you finally found the "
+          - "\\Name[Dwight]\\P[7]That accuracy formula "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - accuracy formula.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\Name[Finn]\\P[0]Seems like it!"
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\Name[Dwight]\\P[7]Seems like Nyx's having a bit too "
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - much fun with it though.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\Name[Dwight]\\P[7]She got it so that evasion "
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - increases at low health.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\Name[Dwight]\\P[7]Hope that doesn't change the "
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - fights too much.
+          - is kicking as usual...
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -1527,12 +1496,22 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[\\n[1]]\\P[0]Good to hear!"
+          - "\\Name[Fang]\\P[9]I'm ready to take on anything now."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Fang]\\P[9]I'm ready to take on anything now."
+          - "\\Name[Athena]\\P[0]You better wait your turn,\\. "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - the adventure shall not start yet.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Fang]\\P[9]...\\.Don't test me."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1622,7 +1601,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[\\n[1]]\\P[0]..."
+          - "\\Name[Athena]\\P[0]...\\. the Saturday room?"
           indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1657,7 +1636,7 @@ root: !ruby/object:RPG::Map
           code: 412
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[\\n[1]]\\P[0]...did we need to know that?"
+          - "\\Name[Athena]\\P[0]Okay then...\\. right."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1708,17 +1687,17 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Fiora]\\P[11]Even if the whole crew leaves "
+          - "\\Name[Fiora]\\P[11]So I guess we're both "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - you...
+          - exploring our pasts?
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Fiora]\\P[11]I'll always be on your side, Finn."
+          - "\\Name[Athena]\\P[0]It appears so..."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -1850,34 +1829,29 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Finn]\\P[0]Your Rapier is finally fixed!"
+          - "\\Name[Shesi]\\P[13]I can't believe it,\\. "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Finn]\\P[0]You can deal pink damage "
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - now.
+          - 'that flake of a captain won''t give me my '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Shesi]\\P[13]..."
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\Name[Shesi]\\P[13]Can I please just get my rent "
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - money already?
+          - flipping rent money.
           indent: 0
           code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Athena]\\P[0]I am sure you'll get it one day."
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Shesi]\\P[13]But I need it NOW!"
+          indent: 0
+          code: 101
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -2757,7 +2731,7 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Grandmaw]\\P[19]Oh dearie!"
+          - "\\Name[Grandmaw]\\P[19]Oh dearie!\\."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -2778,9 +2752,14 @@ root: !ruby/object:RPG::Map
           code: 111
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[\\n[1]]\\P[0]I believe we already have."
+          - "\\Name[Athena]\\P[0]Step aside,\\. "
           indent: 1
           code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - I've got it handled already.
+          indent: 1
+          code: 401
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1
@@ -2791,7 +2770,7 @@ root: !ruby/object:RPG::Map
           code: 411
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[\\n[1]]\\P[0]uHHHH....,,,"
+          - "\\Name[Athena]\\P[0]I think it's clear that it's impossible."
           indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -3333,7 +3312,7 @@ root: !ruby/object:RPG::Map
     - 387
     - 387
     - 387
-    - 387
+    - 442
     - 387
     - 393
     - 393

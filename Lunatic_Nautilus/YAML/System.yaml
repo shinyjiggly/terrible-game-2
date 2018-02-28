@@ -22,9 +22,9 @@ root: !ruby/object:RPG::System
   - button press
   - special event
   - day of the week
-  - ''
-  - ''
-  - ''
+  - "[f]protein type"
+  - "[f]specialty level"
+  - "[f]up-able stat"
   - ''
   - ''
   - ''
@@ -162,7 +162,7 @@ root: !ruby/object:RPG::System
     volume: 100
     name: boingthing
     pitch: 100
-  title_name: title0
+  title_name: snowtitlebackx2
   _: 7829367
   enemy_collapse_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -198,7 +198,7 @@ root: !ruby/object:RPG::System
     pitch: 100
   title_bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: titlescreen_LN
+    name: windswept snowstorm
     pitch: 100
   buzzer_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -232,10 +232,7 @@ root: !ruby/object:RPG::System
     armor1_id: 0
   battleback_name: shipdeckx2
   party_members:
-  - 1
-  - 3
-  - 2
-  - 8
+  - 12
   actor_collapse_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: unavailable

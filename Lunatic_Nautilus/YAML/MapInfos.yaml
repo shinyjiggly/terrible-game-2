@@ -5,7 +5,7 @@ root: !ruby/object:Hash
     name: Ship Deck
     expanded: false
     order: 2
-    scroll_y: 824
+    scroll_y: 968
     parent_id: 0
   2: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -15,7 +15,7 @@ root: !ruby/object:Hash
     scroll_y: 324
     parent_id: 0
   3: !ruby/object:RPG::MapInfo
-    scroll_x: 715
+    scroll_x: 532
     name: testmap
     expanded: true
     order: 13
@@ -121,8 +121,15 @@ root: !ruby/object:Hash
     parent_id: 3
   18: !ruby/object:RPG::MapInfo
     scroll_x: 496
-    name: frostlands
-    expanded: false
+    name: frostlands test
+    expanded: true
     order: 18
     scroll_y: 680
     parent_id: 0
+  19: !ruby/object:RPG::MapInfo
+    scroll_x: 1067
+    name: cozio
+    expanded: false
+    order: 19
+    scroll_y: 303
+    parent_id: 18

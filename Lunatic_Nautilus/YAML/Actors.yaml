@@ -6913,7 +6913,7 @@ root:
   armor4_id: 0
   initial_level: 1
   name: Athena
-  character_name: calhouncharx2
+  character_name: snowballschancex2
   weapon_id: 0
   armor2_fix: false
   parameters: !ruby/object:Table

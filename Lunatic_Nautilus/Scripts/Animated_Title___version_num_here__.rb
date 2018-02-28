@@ -74,7 +74,7 @@ class Scene_Title
 #                           BEGIN CONFIGURATION
 #=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
 
-  ANIMATED = ['title', 23, 2]
+  ANIMATED = nil #['title', 1, 0]
   # ['FILENAME', NUMBER_IMAGES, SPEED]
    ANIMATION_TYPE = 0
    # 0 = Do not loop. Run through images and stop on last one.
@@ -94,7 +94,7 @@ class Scene_Title
   # [TYPE, POWER]
   # Weather effect to be used on title screen. 
 
-  FOG = nil # ['001-Fog01', 0, 2, -2, 3, 60]
+  FOG =  ['snoooow', 0, 7, -10, 1, 160]
   # ['FILENAME', HUE, X-SPEED, Y-SPEED, ZOOM, OPACITY]
   # Fog to be displayed on the title screen.
 
@@ -102,7 +102,7 @@ class Scene_Title
   # ['FILENAME', VOLUME, PITCH]
   # Background sound to be played during title. 
   
-  PIC = ['gametitleempty', 0, 0, 3001, 0, true, 2]
+  PIC = ['snowtitlex2', 0, 0, 3001, 255, false, 2]
   # ['NAME', X, Y, Z, OPACITY, FADE-IN?, FADE-IN SPEED]
   # Picture to be displayed on title screen.
     
@@ -119,7 +119,7 @@ class Scene_Title
   # only one. 
   
   
-  TEXT = ["alpha 0.3", 8, 460, 'PlopDump', 18]
+  TEXT = ["frostlands 1.3", 8, 460, 'PlopDump', 18]
   # ['STRING', X, Y, FONTNAME, FONTSIZE]
   # Have text be displayed on the images such as the version number, etc.
    TEXT_COLOR = Color.new(50, 62, 77, 255)
@@ -127,7 +127,7 @@ class Scene_Title
    # Color used for the text if being used. White is default.
    
    
-  WINDOW_DATA = [470, 325, 0, 128, false]
+  WINDOW_DATA = [370, 325, 0, 128, false]
   # [X, Y, OPACITY, WIDTH, SHOW_WINDOWSKIN?]
   # Coordinates used for the main window. Default settings will be used if nil.
   COMMANDS = ['New Game', 'Load Game','Quit']

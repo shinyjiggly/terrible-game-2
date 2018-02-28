@@ -12,6 +12,7 @@ module Atoa
   Enemy_Custom_Formula = {}
   Weapon_Custom_Formula = {}
   Skill_Custom_Formula = {}
+  Item_Custom_Formula = {} #NEW
   # Do not remove these lines
   
   #=============================================================================
@@ -104,7 +105,7 @@ module Atoa
   Skill_Custom_Formula[5] = "((({atk}/2 + rand({atk}+1)*1.5)*{str})*2 - {def})" #gunaxe x2
   Skill_Custom_Formula[8] = "#{Skill_Custom_Formula[5]}" #inaccurate gunaxe
   Skill_Custom_Formula[54] = "(26+rand(26+1)/8)*user.int" #shasho
-  
+
   # This example the power of the attack depends on the number of potions
   # ($game_party.item_number(1) = number of potions)
   # (Number of Potions * 3 - Target Mdef / 2) * (20 + User Int) / 20
@@ -124,6 +125,12 @@ module Atoa
   
   # One example to show how other formulas can be added.
   Skill_Custom_Formula[162] = "#{Actor_Custom_Formula[3]} * 5"
+  
+  
+  #NEW!!
+  #Item_Custom_Formula[1] = ""
+  #NOTE: GET DIFFERENT STUFF TO WORK DIFFERENTLY DEPENDING ON WHO IS TARGETED!!
+  
   #=============================================================================
   # IMPORTANT
   #=============================================================================

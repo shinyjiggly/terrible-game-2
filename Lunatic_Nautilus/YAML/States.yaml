@@ -600,7 +600,7 @@ root:
   hit_rate: 100
   hold_turn: 0
   eva: 0
-  name: groovy
+  name: Eating
   zero_hp: false
   atk_rate: 100
   minus_state_set: []
@@ -619,7 +619,7 @@ root:
   agi_rate: 100
   guard_element_set: []
   maxhp_rate: 100
-  auto_release_prob: 0
+  auto_release_prob: 100
   id: 21
   pdef_rate: 100
   cant_get_exp: false
@@ -629,7 +629,7 @@ root:
   hit_rate: 100
   hold_turn: 0
   eva: 0
-  name: 2 groovy
+  name: Just Eaten
   zero_hp: false
   atk_rate: 100
   minus_state_set: []
@@ -639,8 +639,7 @@ root:
   rating: 5
   nonresistance: false
   int_rate: 100
-  plus_state_set:
-  - 21
+  plus_state_set: []
   maxsp_rate: 100
   shock_release_prob: 0
   cant_evade: false
@@ -669,9 +668,7 @@ root:
   rating: 5
   nonresistance: false
   int_rate: 100
-  plus_state_set:
-  - 21
-  - 22
+  plus_state_set: []
   maxsp_rate: 100
   shock_release_prob: 0
   cant_evade: false
@@ -696,7 +693,7 @@ root:
   minus_state_set: []
   str_rate: 100
   battle_only: true
-  slip_damage: false
+  slip_damage: true
   rating: 5
   nonresistance: false
   int_rate: 100
