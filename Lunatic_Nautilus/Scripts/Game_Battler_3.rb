@@ -157,7 +157,7 @@ class Game_Battler
         self.damage += rand(amp+1) + rand(amp+1) - amp
       end
       # Second hit detection
-      eva = 8 * self.agi / user.dex + self.eva
+      eva = 5*(self.agi - user.dex)
       hit = self.damage < 0 ? 100 : 100 - eva * skill.eva_f / 100
       hit = self.cant_evade? ? 100 : hit
       hit_result = (rand(100) < hit)

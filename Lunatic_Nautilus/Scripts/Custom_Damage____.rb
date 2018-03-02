@@ -103,6 +103,7 @@ module Atoa
   Skill_Custom_Formula[4] = "({atk} + rand({atk}))/3"
   Skill_Custom_Formula[5] = "((({atk}/2 + rand({atk}+1)*1.5)*{str})*2 - {def})" #gunaxe x2
   Skill_Custom_Formula[8] = "#{Skill_Custom_Formula[5]}" #inaccurate gunaxe
+  Skill_Custom_Formula[11] = "{atk}" #You are slowed.
   Skill_Custom_Formula[54] = "(26+rand(26+1)/8)*user.int" #shasho
   
   # This example the power of the attack depends on the number of potions

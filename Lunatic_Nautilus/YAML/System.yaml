@@ -157,7 +157,7 @@ root: !ruby/object:RPG::System
     volume: 100
     name: battle_theme1
     pitch: 100
-  test_troop_id: 3
+  test_troop_id: 6
   equip_se: !ruby/object:RPG::AudioFile
     volume: 100
     name: boingthing
@@ -207,25 +207,9 @@ root: !ruby/object:RPG::System
   windowskin_name: mainskin
   test_battlers:
   - !ruby/object:RPG::System::TestBattler
-    actor_id: 3
+    actor_id: 10
     armor4_id: 0
-    weapon_id: 1
-    level: 3
-    armor3_id: 1
-    armor2_id: 0
-    armor1_id: 0
-  - !ruby/object:RPG::System::TestBattler
-    actor_id: 2
-    armor4_id: 0
-    weapon_id: 3
-    level: 8
-    armor3_id: 2
-    armor2_id: 0
-    armor1_id: 0
-  - !ruby/object:RPG::System::TestBattler
-    actor_id: 4
-    armor4_id: 0
-    weapon_id: 0
+    weapon_id: 8
     level: 1
     armor3_id: 1
     armor2_id: 0

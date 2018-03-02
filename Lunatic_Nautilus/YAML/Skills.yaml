@@ -292,63 +292,65 @@ root:
   sp_cost: 0
   variance: 15
 - !ruby/object:RPG::Skill
-  animation1_id: 0
-  int_f: 100
+  animation1_id: 1
+  int_f: 0
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: You are slowed.
   common_event_id: 0
-  mdef_f: 100
+  mdef_f: 0
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 25
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   dex_f: 0
   power: 0
   element_set: []
   hit: 100
-  animation2_id: 0
+  animation2_id: 2
   description: ''
   str_f: 0
   id: 11
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
-  animation1_id: 0
-  int_f: 100
+  animation1_id: 1
+  int_f: 0
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: Slowed again.
   common_event_id: 0
-  mdef_f: 100
+  mdef_f: 0
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 25
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   dex_f: 0
-  power: 0
+  power: 1
   element_set: []
   hit: 100
-  animation2_id: 0
+  animation2_id: 2
   description: ''
   str_f: 0
   id: 12
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100

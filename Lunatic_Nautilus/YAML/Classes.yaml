@@ -51,9 +51,15 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 31
     data:
     - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
     - 3
     - 3
     - 3
@@ -136,9 +142,15 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 31
     data:
     - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
     - 3
     - 3
     - 3
@@ -222,9 +234,15 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 31
     data:
     - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
     - 3
     - 3
     - 3
@@ -303,9 +321,15 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 31
     data:
     - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
     - 3
     - 3
     - 3
@@ -384,9 +408,15 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 31
     data:
     - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
     - 3
     - 3
     - 3
@@ -465,9 +495,15 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 31
     data:
     - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
     - 3
     - 3
     - 3
@@ -549,9 +585,15 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 31
     data:
     - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
     - 3
     - 3
     - 3
@@ -630,9 +672,15 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 31
     data:
     - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
     - 3
     - 3
     - 3
@@ -691,9 +739,15 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 31
     data:
     - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
     - 3
     - 3
     - 3
@@ -795,9 +849,15 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 31
     data:
     - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
     - 3
     - 3
     - 3
@@ -875,9 +935,15 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 31
     data:
     - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
     - 3
     - 3
     - 3
@@ -939,9 +1005,15 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 31
     data:
     - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
     - 3
     - 3
     - 3
