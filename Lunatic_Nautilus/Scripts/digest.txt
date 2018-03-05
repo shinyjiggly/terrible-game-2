@@ -143,7 +143,6 @@
 26472483    Enemy Name Window                            Enemy_Name_Window.rb
 73046781    Counterattack                                Counterattack.rb
 42283720    Custom Damage <--                            Custom_Damage____.rb
-74527597    Battle Advantage                             Battle_Advantage.rb
 64022756    Consume items                                Consume_items.rb
 24406872    States Graphic                               States_Graphic.rb
 71807687    Equipment Sprite                             Equipment_Sprite.rb
@@ -170,4 +169,5 @@
 39119497    ------gay baby jail------                    ______gay_baby_jail______.rb
 78465921    Twohanded --disabled!!--                     Twohanded___disabled!!__.rb
 22831673    Threat System (disabled)                     Threat_System_(disabled).rb
+24971364    Battle Advantage                             Battle_Advantage.rb
 31494106                                                 EMPTY

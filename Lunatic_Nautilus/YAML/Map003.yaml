@@ -1817,81 +1817,6 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 0
-          indent: 0
-          code: 314
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 10
-          - 1
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 3
-          - 1
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 4
-          - 1
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 5
-          - 1
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 6
-          - 0
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 7
-          - 1
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 8
-          - 1
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 9
-          - 1
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - 1
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 2
-          - 1
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - 1
           - 1
           - 0
@@ -1921,7 +1846,7 @@ root: !ruby/object:RPG::Map
           code: 655
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 3
+          - 6
           - true
           - false
           indent: 0
@@ -1966,83 +1891,6 @@ root: !ruby/object:RPG::Map
           - "$game_temp.no_raid_attack = false"
           indent: 0
           code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 11
-          - 1
-          - 1
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 3
-          - 0
-          - 0
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 2
-          - 0
-          - 0
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 8
-          - 0
-          - 0
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 10
-          - 0
-          - 0
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 7
-          - 0
-          - 0
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 8
-          - 0
-          - 0
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 5
-          - 0
-          - 0
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 6
-          - 0
-          - 0
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 9
-          - 0
-          - 0
-          indent: 0
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 4
-          - 0
-          - 0
-          indent: 0
-          code: 129
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -2741,14 +2589,55 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 0
-          - 17
-          - 9
-          - 19
-          - 0
-          - 0
+          - "\\p[0]Would you like to go to the Droughtlands?"
           indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - - 'Yes'
+            - 'No'
+          - 2
+          indent: 0
+          code: 102
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 'Yes'
+          indent: 0
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 20
+          - 78
+          - 7
+          - 4
+          - 0
+          indent: 1
           code: 201
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 1
+          - 'No'
+          indent: 0
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[0]Got it."
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 404
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -2763,7 +2652,7 @@ root: !ruby/object:RPG::Map
           variable_value: 6
           self_switch_valid: false
           variable_id: 20
-          variable_valid: true
+          variable_valid: false
           switch2_id: 1
         move_route: !ruby/object:RPG::MoveRoute
           list:
