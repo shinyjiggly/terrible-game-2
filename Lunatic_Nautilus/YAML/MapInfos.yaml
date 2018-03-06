@@ -1,11 +1,11 @@
 --- !ruby/object:Hash
 root: !ruby/object:Hash
   1: !ruby/object:RPG::MapInfo
-    scroll_x: 464
+    scroll_x: 417
     name: Ship Deck
     expanded: true
     order: 2
-    scroll_y: 824
+    scroll_y: 331
     parent_id: 0
   2: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -15,7 +15,7 @@ root: !ruby/object:Hash
     scroll_y: 324
     parent_id: 0
   3: !ruby/object:RPG::MapInfo
-    scroll_x: 453
+    scroll_x: 426
     name: testmap
     expanded: true
     order: 13
@@ -134,7 +134,7 @@ root: !ruby/object:Hash
     scroll_y: 240
     parent_id: 3
   20: !ruby/object:RPG::MapInfo
-    scroll_x: 626
+    scroll_x: 2134
     name: The Droughtlands
     expanded: false
     order: 20
