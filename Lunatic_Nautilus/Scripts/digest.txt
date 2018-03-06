@@ -129,6 +129,7 @@
 17970177    Atoa Scene_Battle 3                          Atoa_Scene_Battle_3.rb
 44841854    Atoa Scene_Battle 4                          Atoa_Scene_Battle_4.rb
 81782964    -----------------------------                EMPTY
+24858667    multi fog                                    multi_fog.rb
 20208372    Large Party Menu                             Large_Party_Menu.rb
 60317430    Atoa CTB                                     Atoa_CTB.rb
 92410424    Status Limit                                 Status_Limit.rb
@@ -165,6 +166,7 @@
 52856926    Lightning and thunder                        Lightning_and_thunder.rb
 41302047    Advanced map scrolling                       Advanced_map_scrolling.rb
 39055950    Foodstuffs                                   Foodstuffs.rb
+27629645    pause with F12                               pause_with_F12.rb
 37417015    -------------------                          EMPTY
 63588152    Main                                         Main.rb
 95038157    -----------------------------                EMPTY

@@ -5,7 +5,7 @@ root: !ruby/object:Hash
     name: Ship Deck
     expanded: false
     order: 2
-    scroll_y: 968
+    scroll_y: 1008
     parent_id: 0
   2: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -19,7 +19,7 @@ root: !ruby/object:Hash
     name: testmap
     expanded: true
     order: 13
-    scroll_y: 303
+    scroll_y: 320
     parent_id: 0
   4: !ruby/object:RPG::MapInfo
     scroll_x: 560
@@ -127,9 +127,16 @@ root: !ruby/object:Hash
     scroll_y: 680
     parent_id: 0
   19: !ruby/object:RPG::MapInfo
-    scroll_x: 1067
+    scroll_x: 800
     name: cozio
-    expanded: false
+    expanded: true
     order: 19
-    scroll_y: 303
+    scroll_y: 624
     parent_id: 18
+  20: !ruby/object:RPG::MapInfo
+    scroll_x: 1056
+    name: maintown
+    expanded: false
+    order: 20
+    scroll_y: 624
+    parent_id: 19

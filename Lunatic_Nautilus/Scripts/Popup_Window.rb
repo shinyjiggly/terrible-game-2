@@ -17,7 +17,7 @@ class Window_Popup < Window_Base
     super(0, 200, 320, 64)
     self.contents = Bitmap.new(width - 32, height - 32)
     self.visible = false
-    self.z = 9998
+    self.z = 2222
 #=============================================================================
 # START CUSTOMIZATION
 #=============================================================================

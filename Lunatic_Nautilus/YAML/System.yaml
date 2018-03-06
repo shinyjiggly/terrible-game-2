@@ -27,7 +27,7 @@ root: !ruby/object:RPG::System
   - "[f]up-able stat"
   - ''
   - ''
-  - ''
+  - "[A] STR"
   - ''
   - ''
   - ''
@@ -141,6 +141,11 @@ root: !ruby/object:RPG::System
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - battlefog on
   - ''
   - ''
   - ''

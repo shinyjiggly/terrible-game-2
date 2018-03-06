@@ -787,268 +787,42 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Daraway]\\P[6]Will you join me in the thralls of "
+          - What outfit will you wear?
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - combat?
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - - 'Yes'
-            - 'No'
-          - 2
+          - - Outdoor
+            - Indoor
+            - Apron
+          - 0
           indent: 0
           code: 102
         - !ruby/object:RPG::EventCommand
           parameters:
           - 0
-          - 'Yes'
+          - Outdoor
           indent: 0
           code: 402
         - !ruby/object:RPG::EventCommand
           parameters:
-          - !ruby/object:Tone
-            red: -255.0
-            green: -255.0
-            blue: -255.0
-            gray: 0.0
-          - 20
-          indent: 1
-          code: 223
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 20
-          indent: 1
-          code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 3
-          - 0
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
+          - !ruby/object:Color
+            red: 255.0
+            green: 255.0
+            blue: 255.0
+            alpha: 255.0
           - 10
-          - 1
-          - 1
           indent: 1
-          code: 129
+          code: 224
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 7
-          - 1
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 5
-          - 1
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 6
-          - 1
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 9
-          - 1
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 8
-          - 1
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 4
-          - 1
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - 1
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 2
-          - 1
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - !ruby/object:Tone
-            red: 0.0
-            green: 0.0
-            blue: 0.0
-            gray: 0.0
-          - 20
-          indent: 1
-          code: 223
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 20
-          indent: 1
-          code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - !ruby/object:RPG::AudioFile
-            volume: 80
-            name: engarde
-            pitch: 100
-          indent: 1
-          code: 250
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "\\Name[Daraway]\\P[6]As you wish.\\."
-          indent: 1
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - Engarde!
-          indent: 1
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - 1
+          - 12
+          - snowballschancex2
           - 0
+          - ''
           - 0
-          - 1
           indent: 1
-          code: 122
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 4
-          - false
-          - false
-          indent: 1
-          code: 301
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - !ruby/object:Tone
-            red: -255.0
-            green: -255.0
-            blue: -255.0
-            gray: 0.0
-          - 20
-          indent: 1
-          code: 223
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 20
-          indent: 1
-          code: 106
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 3
-          - 1
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          - 0
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 2
-          - 0
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 3
-          - 0
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 10
-          - 0
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 7
-          - 0
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 5
-          - 0
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 6
-          - 0
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 9
-          - 0
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 8
-          - 0
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 4
-          - 0
-          - 1
-          indent: 1
-          code: 129
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - !ruby/object:Tone
-            red: 0.0
-            green: 0.0
-            blue: 0.0
-            gray: 0.0
-          - 20
-          indent: 1
-          code: 223
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 20
-          indent: 1
-          code: 106
+          code: 322
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1
@@ -1056,14 +830,57 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters:
           - 1
-          - 'No'
+          - Indoor
           indent: 0
           code: 402
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Daraway]\\P[6]...\\.fair enough."
+          - !ruby/object:Color
+            red: 255.0
+            green: 255.0
+            blue: 255.0
+            alpha: 255.0
+          - 10
           indent: 1
-          code: 101
+          code: 224
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 12
+          - indooroutfitx2
+          - 0
+          - ''
+          - 0
+          indent: 1
+          code: 322
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 2
+          - Apron
+          indent: 0
+          code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:Color
+            red: 255.0
+            green: 255.0
+            blue: 255.0
+            alpha: 255.0
+          - 10
+          indent: 1
+          code: 224
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 12
+          - ultimatemomchefx2
+          - 0
+          - ''
+          - 0
+          indent: 1
+          code: 322
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1
@@ -1076,7 +893,7 @@ root: !ruby/object:RPG::Map
           parameters: []
           indent: 0
           code: 0
-        move_type: 0
+        move_type: 3
         direction_fix: false
         condition: !ruby/object:RPG::Event::Page::Condition
           switch2_valid: false
@@ -1092,6 +909,13 @@ root: !ruby/object:RPG::Map
           list:
           - !ruby/object:RPG::MoveCommand
             parameters: []
+            code: 20
+          - !ruby/object:RPG::MoveCommand
+            parameters:
+            - 10
+            code: 15
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
             code: 0
           skippable: false
           repeat: true
@@ -1101,10 +925,10 @@ root: !ruby/object:RPG::Map
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
-          character_name: darawaycharx2
-          pattern: 2
+          character_name: sparklex2
+          pattern: 0
           tile_id: 0
-          direction: 2
+          direction: 6
           blend_type: 0
           character_hue: 0
         walk_anime: true
@@ -1697,7 +1521,7 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Athena]\\P[0]It appears so..."
+          - "\\Name[Coda]\\P[0]It appears so..."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -2930,20 +2754,25 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 1
-          - snoooow
+          - 52
+          - 52
           - 0
-          - 64
-          - 0
-          - 100
-          - -45
-          - 45
           indent: 0
-          code: 204
+          code: 121
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'show_fog(1, "snoooow", 0, 64, 0, '
+          indent: 0
+          code: 355
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 100, -45, 45, 1000)
+          indent: 0
+          code: 655
         - !ruby/object:RPG::EventCommand
           parameters:
           - !ruby/object:RPG::AudioFile
-            volume: 100
+            volume: 35
             name: cozytown
             pitch: 100
           indent: 0
