@@ -3621,5 +3621,4 @@ root: !ruby/object:RPG::Map
   height: 15
   encounter_step: 30
   width: 80
-  encounter_list:
-  - 6
+  encounter_list: []
