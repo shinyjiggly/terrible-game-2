@@ -253,6 +253,11 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
+          - have dinner with me?
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - "\\Name[\\n[1]]\\P[0]I'll certainly consider it!"
           indent: 0
           code: 101
@@ -2589,7 +2594,7 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[0]Would you like to go to the Droughtlands?"
+          - "\\p[0]Would you like to go Home?"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -2608,8 +2613,8 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters:
           - 0
-          - 20
-          - 78
+          - 19
+          - 15
           - 7
           - 4
           - 0

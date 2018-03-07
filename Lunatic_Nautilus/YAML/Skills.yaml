@@ -312,7 +312,7 @@ root:
   pdef_f: 0
   scope: 1
   dex_f: 0
-  power: 0
+  power: 1
   element_set: []
   hit: 100
   animation2_id: 2

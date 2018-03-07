@@ -504,7 +504,7 @@ root:
   - !ruby/object:RPG::Enemy::Action
     basic: 0
     condition_hp: 100
-    rating: 5
+    rating: 4
     condition_turn_b: 1
     kind: 1
     condition_switch_id: 0
