@@ -15,11 +15,11 @@ root: !ruby/object:Hash
     scroll_y: 324
     parent_id: 0
   3: !ruby/object:RPG::MapInfo
-    scroll_x: 532
+    scroll_x: 715
     name: testmap
     expanded: true
     order: 13
-    scroll_y: 320
+    scroll_y: 303
     parent_id: 0
   4: !ruby/object:RPG::MapInfo
     scroll_x: 560
@@ -127,16 +127,16 @@ root: !ruby/object:Hash
     scroll_y: 680
     parent_id: 0
   19: !ruby/object:RPG::MapInfo
-    scroll_x: 800
+    scroll_x: 683
     name: cozio
     expanded: true
     order: 19
-    scroll_y: 624
+    scroll_y: 303
     parent_id: 18
   20: !ruby/object:RPG::MapInfo
-    scroll_x: 1056
+    scroll_x: 1003
     name: maintown
     expanded: false
     order: 20
-    scroll_y: 624
+    scroll_y: 1264
     parent_id: 19

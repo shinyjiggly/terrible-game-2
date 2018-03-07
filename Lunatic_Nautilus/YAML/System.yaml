@@ -25,7 +25,7 @@ root: !ruby/object:RPG::System
   - "[f]protein type"
   - "[f]specialty level"
   - "[f]up-able stat"
-  - ''
+  - random number
   - ''
   - "[A] STR"
   - ''

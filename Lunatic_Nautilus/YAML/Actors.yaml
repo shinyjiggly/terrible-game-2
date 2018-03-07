@@ -6912,7 +6912,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Athena
+  name: Coda
   character_name: snowballschancex2
   weapon_id: 0
   armor2_fix: false
