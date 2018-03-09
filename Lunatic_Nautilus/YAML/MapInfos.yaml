@@ -12,7 +12,7 @@ root: !ruby/object:Hash
     name: Begin
     expanded: false
     order: 1
-    scroll_y: 324
+    scroll_y: 240
     parent_id: 0
   3: !ruby/object:RPG::MapInfo
     scroll_x: 715
@@ -127,16 +127,16 @@ root: !ruby/object:Hash
     scroll_y: 680
     parent_id: 0
   19: !ruby/object:RPG::MapInfo
-    scroll_x: 683
+    scroll_x: 532
     name: cozio
     expanded: true
     order: 19
-    scroll_y: 303
+    scroll_y: 399
     parent_id: 18
   20: !ruby/object:RPG::MapInfo
-    scroll_x: 1003
+    scroll_x: 1056
     name: maintown
     expanded: false
     order: 20
-    scroll_y: 1264
+    scroll_y: 784
     parent_id: 19
