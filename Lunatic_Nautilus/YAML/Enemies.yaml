@@ -466,7 +466,7 @@ root:
   animation2_id: 0
   id: 5
   item_id: 0
-  battler_name: "$minisoldierx2"
+  battler_name: "$natgunner"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -515,7 +515,7 @@ root:
   str: 50
   eva: 0
   animation1_id: 0
-  name: ''
+  name: Beast
   mdef: 100
   gold: 0
   weapon_id: 0
@@ -527,7 +527,7 @@ root:
   agi: 50
   maxhp: 500
   armor_id: 0
-  battler_hue: 0
+  battler_hue: 100
   atk: 100
   state_ranks: !ruby/object:Table
     dim: 1
@@ -570,7 +570,7 @@ root:
   animation2_id: 0
   id: 6
   item_id: 0
-  battler_name: ''
+  battler_name: "$natgunner"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -609,7 +609,7 @@ root:
   str: 50
   eva: 0
   animation1_id: 0
-  name: ''
+  name: Defect
   mdef: 100
   gold: 0
   weapon_id: 0
@@ -621,7 +621,7 @@ root:
   agi: 50
   maxhp: 500
   armor_id: 0
-  battler_hue: 0
+  battler_hue: 320
   atk: 100
   state_ranks: !ruby/object:Table
     dim: 1
@@ -664,7 +664,7 @@ root:
   animation2_id: 0
   id: 7
   item_id: 0
-  battler_name: ''
+  battler_name: "$natgunner"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1

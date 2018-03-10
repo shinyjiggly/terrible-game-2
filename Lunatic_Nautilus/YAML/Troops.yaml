@@ -427,7 +427,7 @@ root:
       turn_b: 0
       enemy_valid: false
     span: 0
-  name: ''
+  name: Hand
   id: 6
   members:
   - !ruby/object:RPG::Troop::Member
