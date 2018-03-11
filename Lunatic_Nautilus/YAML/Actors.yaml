@@ -4,7 +4,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Fiora
+  name: You
   character_name: fioracharx2
   weapon_id: 8
   armor2_fix: false
@@ -2518,7 +2518,7 @@ root:
   initial_level: 1
   name: Dwight
   character_name: dwightcharx2
-  weapon_id: 13
+  weapon_id: 0
   armor2_fix: false
   parameters: !ruby/object:Table
     dim: 2
@@ -3146,7 +3146,7 @@ root:
   initial_level: 1
   name: Renzo
   character_name: renzocharx2
-  weapon_id: 2
+  weapon_id: 0
   armor2_fix: false
   parameters: !ruby/object:Table
     dim: 2
@@ -3774,7 +3774,7 @@ root:
   initial_level: 1
   name: Yoan
   character_name: yoancharx2
-  weapon_id: 14
+  weapon_id: 0
   armor2_fix: false
   parameters: !ruby/object:Table
     dim: 2
@@ -4402,7 +4402,7 @@ root:
   initial_level: 1
   name: Bompillia
   character_name: pompiliacharx2
-  weapon_id: 15
+  weapon_id: 0
   armor2_fix: false
   parameters: !ruby/object:Table
     dim: 2
@@ -5030,7 +5030,7 @@ root:
   initial_level: 1
   name: Shesi
   character_name: shesicharx2
-  weapon_id: 4
+  weapon_id: 0
   armor2_fix: false
   parameters: !ruby/object:Table
     dim: 2
@@ -5658,7 +5658,7 @@ root:
   initial_level: 1
   name: Finn
   character_name: dolph_walkingx2
-  weapon_id: 1
+  weapon_id: 0
   armor2_fix: false
   parameters: !ruby/object:Table
     dim: 2
@@ -6286,7 +6286,7 @@ root:
   initial_level: 1
   name: Daraway
   character_name: darawaycharx2
-  weapon_id: 4
+  weapon_id: 0
   armor2_fix: false
   parameters: !ruby/object:Table
     dim: 2

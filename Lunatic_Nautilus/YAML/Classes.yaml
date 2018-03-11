@@ -2,7 +2,7 @@
 root:
 - 
 - !ruby/object:RPG::Class
-  name: Pirate
+  name: ''
   armor_set:
   - 1
   - 2
@@ -31,21 +31,8 @@ root:
   - 33
   learnings: []
   weapon_set:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
   - 8
-  - 9
-  - 10
-  - 11
-  - 12
-  - 13
-  - 14
-  - 15
+  - 16
   - 69
   state_ranks: !ruby/object:Table
     dim: 1

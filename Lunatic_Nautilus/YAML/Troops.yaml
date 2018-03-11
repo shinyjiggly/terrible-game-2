@@ -457,9 +457,15 @@ root:
       turn_b: 0
       enemy_valid: false
     span: 0
-  name: ''
+  name: Defect
   id: 7
-  members: []
+  members:
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 256
+    enemy_id: 7
+    x: 200
+    immortal: false
 - !ruby/object:RPG::Troop
   pages:
   - !ruby/object:RPG::Troop::Page

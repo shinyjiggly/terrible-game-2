@@ -138,7 +138,7 @@ root:
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0
-  name: Antlers
+  name: Renovare
   minus_state_set: []
   mdef: 0
   icon_name: ''
@@ -153,7 +153,7 @@ root:
   animation2_id: 2
   id: 8
   str_plus: 12
-  description: At least they're useful for something...
+  description: ''
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0
@@ -291,7 +291,7 @@ root:
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0
-  name: ''
+  name: "//////"
   minus_state_set: []
   mdef: 0
   icon_name: ''
@@ -305,7 +305,7 @@ root:
   animation2_id: 0
   id: 16
   str_plus: 0
-  description: ''
+  description: A name you've been trying to forget.
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0

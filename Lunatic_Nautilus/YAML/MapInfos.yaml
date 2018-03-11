@@ -12,7 +12,7 @@ root: !ruby/object:Hash
     name: Begin
     expanded: false
     order: 1
-    scroll_y: 324
+    scroll_y: 340
     parent_id: 0
   3: !ruby/object:RPG::MapInfo
     scroll_x: 426
