@@ -603,12 +603,22 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Yoan]\\P[4]Is it just me, or is it getting colder "
+          - aaaaaaaaaabbbbbbbbbbaaaaaaaaaabbbbbbbbbbaaa
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - around here?
+          - "\\name[Yoan]\\p[4]Has somebody been mesing around "
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'with those text files?\. Tell whoever that is to cut it '
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - out.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -3749,7 +3759,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 234
-    - 404
+    - 0
     - 208
     - 192
     - 192

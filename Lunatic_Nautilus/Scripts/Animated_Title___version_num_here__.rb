@@ -102,7 +102,7 @@ class Scene_Title
   # ['FILENAME', VOLUME, PITCH]
   # Background sound to be played during title. 
   
-  PIC = ['snowtitlex2', 0, 0, 3001, 255, false, 2]
+  PIC = ['newtitlex2', 30, 20, 3001, 255, false, 2]
   # ['NAME', X, Y, Z, OPACITY, FADE-IN?, FADE-IN SPEED]
   # Picture to be displayed on title screen.
     
@@ -119,7 +119,7 @@ class Scene_Title
   # only one. 
   
   
-  TEXT = ["frostlands 1.3", 8, 460, 'PlopDump', 18]
+  TEXT = ["frostlands 1.4", 8, 460, 'PlopDump', 18]
   # ['STRING', X, Y, FONTNAME, FONTSIZE]
   # Have text be displayed on the images such as the version number, etc.
    TEXT_COLOR = Color.new(50, 62, 77, 255)

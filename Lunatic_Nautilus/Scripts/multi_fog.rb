@@ -1,3 +1,4 @@
+=begin
 #============================================================================
 # Multi Layer Fog
 # v2.0 by Shaz
@@ -470,3 +471,4 @@ if BATTLE_FOGS
 		end 
 	end
 end # BATTLE_FOGS
+=end

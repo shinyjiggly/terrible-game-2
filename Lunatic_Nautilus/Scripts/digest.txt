@@ -105,6 +105,8 @@
 67821719                                                 EMPTY
 46453158    Transition pack                              Transition_pack.rb
 13876443    Extra Stats                                  Extra_Stats.rb
+86879061    Combine Option                               Combine_Option.rb
+87996795    Perishable Items                             Perishable_Items.rb
 18843368                                                 EMPTY
 95698182    Atoa CBS - basic settings                    Atoa_CBS_basic_settings.rb
 69493194    Atoa CBS - advanced settings                 Atoa_CBS_advanced_settings.rb
@@ -150,6 +152,7 @@
 71807687    Equipment Sprite                             Equipment_Sprite.rb
 8643023     Victory Window 2 <--                         Victory_Window_2____.rb
 90201145    -----------                                  EMPTY
+8350876     Map Scroll                                   Map_Scroll.rb
 52246534    FFVII Menu                                   FFVII_Menu.rb
 77964422    Die on the map                               Die_on_the_map.rb
 18011638    Dash                                         Dash.rb

@@ -11,31 +11,6 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 0
-          indent: 0
-          code: 208
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_temp.no_pre_emptive = true"
-          indent: 0
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_temp.no_surprised = true"
-          indent: 0
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_temp.no_back_attack = true"
-          indent: 0
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_temp.no_raid_attack = true"
-          indent: 0
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - 1
           - nightshadex2
           - 0
@@ -51,7 +26,7 @@ root: !ruby/object:RPG::Map
         - !ruby/object:RPG::EventCommand
           parameters:
           - 1
-          - 10
+          - 50
           - 0
           - 0
           - 0
@@ -64,7 +39,17 @@ root: !ruby/object:RPG::Map
           code: 232
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 50
+          - !ruby/object:Tone
+            red: 0.0
+            green: 0.0
+            blue: 0.0
+            gray: 0.0
+          - 120
+          indent: 0
+          code: 223
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 150
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
@@ -821,6 +806,20 @@ root: !ruby/object:RPG::Map
           code: 223
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 1
+          - 20
+          - 0
+          - 0
+          - 0
+          - 0
+          - 100
+          - 100
+          - 0
+          - 0
+          indent: 0
+          code: 232
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 10
           indent: 0
           code: 242
@@ -836,27 +835,32 @@ root: !ruby/object:RPG::Map
           code: 235
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\P[-1]...\\.it's been many years since then... "
+          - "\\P[-1]...\\.it's been many years since then...\\. "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'My horns have since grown in and I''ve gotten '
+          - 'My horns have since grown in,\. but I''m not '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - a job at a new restaurant as a cook.
+          - sure if I'm entirely grown up yet though...
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'Sometimes I still wonder, if someone out there, '
+          - "\\P[-1]I hope one day I'll be able to escape this place, "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'my real parents maybe, are out there somewhere... '
+          - and find a world of sunshine and happiness.\.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - My cooking will have to do until then.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -987,7 +991,7 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: false
       name: EV005
-      y: 7
+      y: 6
       x: 10
       id: 5
     6: !ruby/object:RPG::Event
@@ -1033,7 +1037,7 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: false
       name: EV006
-      y: 7
+      y: 6
       x: 8
       id: 6
   tileset_id: 8
@@ -1048,26 +1052,6 @@ root: !ruby/object:RPG::Map
     ysize: 15
     xsize: 20
     data:
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
     - 0
     - 0
     - 0
@@ -1479,9 +1463,9 @@ root: !ruby/object:RPG::Map
     - 511
     - 0
     - 0
-    - 0
     - 523
     - 524
+    - 0
     - 0
     - 0
     - 0
@@ -1499,9 +1483,9 @@ root: !ruby/object:RPG::Map
     - 519
     - 0
     - 0
-    - 463
     - 531
     - 532
+    - 463
     - 0
     - 0
     - 0
@@ -1797,6 +1781,26 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 518
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
     - 0
     - 0
     - 0

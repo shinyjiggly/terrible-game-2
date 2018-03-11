@@ -103,7 +103,7 @@ root:
   pdef: 14
   exp: 20
   agi: 4
-  maxhp: 3000
+  maxhp: 1000
   armor_id: 0
   battler_hue: 0
   atk: 75

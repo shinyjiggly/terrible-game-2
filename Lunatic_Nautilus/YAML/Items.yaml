@@ -91,7 +91,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: aaa
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -120,7 +120,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: bbb
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -149,7 +149,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: ccc
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -178,7 +178,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: ddd
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -207,7 +207,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: eee
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -236,7 +236,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: fff
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -265,7 +265,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: ggg
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -294,7 +294,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: hhh
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -323,7 +323,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: iii
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -352,7 +352,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: jjj
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -381,7 +381,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: 'no'
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -410,7 +410,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: lll
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -439,7 +439,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: mmm
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -468,7 +468,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: nnn
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -497,7 +497,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: ooo
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -526,7 +526,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: ppp
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
