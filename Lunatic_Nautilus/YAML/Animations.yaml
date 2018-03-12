@@ -10892,12 +10892,12 @@ root:
       xsize: 1
       data:
       - 3
-      - 4
-      - 65484
-      - 87
+      - 3
+      - 65477
+      - 76
       - 350
       - 0
-      - 203
+      - 201
       - 1
   - !ruby/object:RPG::Animation::Frame
     cell_max: 1
@@ -10908,12 +10908,12 @@ root:
       xsize: 1
       data:
       - 3
-      - 0
-      - 65472
-      - 106
+      - 4
+      - 65452
+      - 85
       - 345
       - 0
-      - 178
+      - 173
       - 1
   - !ruby/object:RPG::Animation::Frame
     cell_max: 1
@@ -10924,12 +10924,12 @@ root:
       xsize: 1
       data:
       - 3
-      - 8
-      - 65440
-      - 125
+      - 5
+      - 65427
+      - 93
       - 340
       - 0
-      - 152
+      - 145
       - 1
   - !ruby/object:RPG::Animation::Frame
     cell_max: 1
@@ -10940,12 +10940,12 @@ root:
       xsize: 1
       data:
       - 3
-      - 8
-      - 65424
-      - 143
+      - 6
+      - 65402
+      - 102
       - 335
       - 0
-      - 120
+      - 117
       - 1
   - !ruby/object:RPG::Animation::Frame
     cell_max: 1
@@ -10957,8 +10957,8 @@ root:
       data:
       - 3
       - 8
-      - 65400
-      - 162
+      - 65376
+      - 111
       - 330
       - 0
       - 90

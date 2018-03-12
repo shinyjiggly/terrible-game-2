@@ -11687,7 +11687,7 @@ root:
   fog_name: snoooow
   id: 6
   tileset_name: lighthousex2
-  battleback_name: ''
+  battleback_name: frostlandpathx2
   fog_blend_type: 0
 - !ruby/object:RPG::Tileset
   panorama_hue: 0

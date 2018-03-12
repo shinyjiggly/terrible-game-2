@@ -203,7 +203,7 @@ root: !ruby/object:RPG::System
     pitch: 100
   title_bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: windswept snowstorm
+    name: windsweptsnow
     pitch: 100
   buzzer_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -235,7 +235,7 @@ root: !ruby/object:RPG::System
     armor3_id: 1
     armor2_id: 0
     armor1_id: 0
-  battleback_name: shipdeckx2
+  battleback_name: frostlandpathx2
   party_members:
   - 12
   actor_collapse_se: !ruby/object:RPG::AudioFile

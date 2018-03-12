@@ -131,7 +131,7 @@
 17970177    Atoa Scene_Battle 3                          Atoa_Scene_Battle_3.rb
 44841854    Atoa Scene_Battle 4                          Atoa_Scene_Battle_4.rb
 81782964    -----------------------------                EMPTY
-24858667    multi fog                                    multi_fog.rb
+24858667    battle fog                                   battle_fog.rb
 20208372    Large Party Menu                             Large_Party_Menu.rb
 60317430    Atoa CTB                                     Atoa_CTB.rb
 92410424    Status Limit                                 Status_Limit.rb

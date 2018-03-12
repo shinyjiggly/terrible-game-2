@@ -829,8 +829,8 @@ root: !ruby/object:RPG::Map
           - 12
           - snowballschancex2
           - 0
-          - ''
-          - 0
+          - calhounx2
+          - 220
           indent: 1
           code: 322
         - !ruby/object:RPG::EventCommand
@@ -858,8 +858,8 @@ root: !ruby/object:RPG::Map
           - 12
           - indooroutfitx2
           - 0
-          - ''
-          - 0
+          - calhounx2
+          - 70
           indent: 1
           code: 322
         - !ruby/object:RPG::EventCommand
@@ -887,8 +887,8 @@ root: !ruby/object:RPG::Map
           - 12
           - ultimatemomchefx2
           - 0
-          - ''
-          - 0
+          - calhounx2
+          - 230
           indent: 1
           code: 322
         - !ruby/object:RPG::EventCommand
@@ -2640,14 +2640,26 @@ root: !ruby/object:RPG::Map
           code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 1
+          - snoooow
+          - 0
+          - 64
+          - 0
+          - 100
+          - -45
+          - 45
+          indent: 0
+          code: 204
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 'show_fog(1, "snoooow", 0, 64, 0, '
           indent: 0
-          code: 355
+          code: 108
         - !ruby/object:RPG::EventCommand
           parameters:
           - 100, -45, 45, 1000)
           indent: 0
-          code: 655
+          code: 408
         - !ruby/object:RPG::EventCommand
           parameters:
           - !ruby/object:RPG::AudioFile

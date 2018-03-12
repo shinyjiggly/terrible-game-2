@@ -387,7 +387,7 @@ root:
   str: 50
   eva: 0
   animation1_id: 0
-  name: ''
+  name: Achivement Expectation
   mdef: 100
   gold: 0
   weapon_id: 0
@@ -436,7 +436,7 @@ root:
   animation2_id: 0
   id: 5
   item_id: 0
-  battler_name: ''
+  battler_name: "$ladderx2"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -475,7 +475,7 @@ root:
   str: 50
   eva: 0
   animation1_id: 0
-  name: ''
+  name: Forbidden treat
   mdef: 100
   gold: 0
   weapon_id: 0
@@ -524,7 +524,7 @@ root:
   animation2_id: 0
   id: 6
   item_id: 0
-  battler_name: ''
+  battler_name: "$snowmanx2"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -563,7 +563,7 @@ root:
   str: 50
   eva: 0
   animation1_id: 0
-  name: ''
+  name: Gust
   mdef: 100
   gold: 0
   weapon_id: 0
@@ -612,7 +612,7 @@ root:
   animation2_id: 0
   id: 7
   item_id: 0
-  battler_name: ''
+  battler_name: "$windywindx2"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -651,7 +651,7 @@ root:
   str: 50
   eva: 0
   animation1_id: 0
-  name: ''
+  name: Winter
   mdef: 100
   gold: 0
   weapon_id: 0
@@ -700,7 +700,7 @@ root:
   animation2_id: 0
   id: 8
   item_id: 0
-  battler_name: ''
+  battler_name: "$winterx2"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
