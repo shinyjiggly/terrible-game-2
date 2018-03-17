@@ -72,26 +72,26 @@ root: !ruby/object:RPG::System
     pitch: 100
   gameover_name: gameoverx2
   words: !ruby/object:RPG::System::Words
-    str: STR
-    armor3: Body Armor
+    str: Power
+    armor3: ''
     mdef: MDEF
     gold: G
     sp: MP
-    skill: Skill
+    skill: Auras
     int: CHA
-    armor2: Helmet
+    armor2: ''
     equip: Equip
-    hp: HP
-    pdef: PDEF
+    hp: Health
+    pdef: Resilience
     attack: Attack
     agi: AGI
-    armor1: Shield
+    armor1: ''
     atk: ATK
     item: Item
-    dex: DEX
-    armor4: Accessory
+    dex: Focus
+    armor4: ''
     weapon: Weapon
-    guard: Defend
+    guard: Resilience
   switches:
   - 
   - willing to listen to voice acting

@@ -1831,26 +1831,6 @@ root: !ruby/object:RPG::Map
           code: 122
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "$game_temp.no_pre_emptive = true"
-          indent: 0
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_temp.no_surprised = true"
-          indent: 0
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_temp.no_back_attack = true"
-          indent: 0
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_temp.no_raid_attack = true"
-          indent: 0
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - 6
           - true
           - false
@@ -1876,26 +1856,6 @@ root: !ruby/object:RPG::Map
           parameters: []
           indent: 0
           code: 604
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_temp.no_pre_emptive = false"
-          indent: 0
-          code: 355
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_temp.no_surprised = false"
-          indent: 0
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "#back attack always false, it broke"
-          indent: 0
-          code: 655
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - "$game_temp.no_raid_attack = false"
-          indent: 0
-          code: 655
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0

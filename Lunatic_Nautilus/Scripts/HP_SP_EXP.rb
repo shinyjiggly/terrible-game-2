@@ -104,7 +104,7 @@ class Window_Base < Window
     bar_x = SP_Pos_Adjust[0] + x
     bar_y = SP_Pos_Adjust[1] + y + (Font.default_size * 2 /3)
     @skin = RPG::Cache.windowskin(SP_Meter)
-    @width  = @skin.width
+   @width  = @skin.width
     @height = @skin.height / 3
     src_rect = Rect.new(0, 0, @width, @height)
     self.contents.blt(bar_x, bar_y, @skin, src_rect)    
@@ -138,7 +138,7 @@ class Window_Base < Window
 
       draw_actor_sp_bar(actor, x, y, width) 
     end
-    end
+  end
   #--------------------------------------------------------------------------
   alias draw_actor_exp_bar draw_actor_exp
   def draw_actor_exp(actor, x, y)

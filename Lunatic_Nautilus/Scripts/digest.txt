@@ -97,7 +97,7 @@
 4688758     longer script calls                          longer_script_calls.rb
 56455682                                                 EMPTY
 93415179    Battle Windows                               Battle_Windows.rb
-3577221     HP/SP/EXP                                    HP_SP_EXP.rb
+11976316    HP/SP/EXP                                    HP_SP_EXP.rb
 20364602    Simple Font Shadow                           Simple_Font_Shadow.rb
 35887453                                                 EMPTY
 79937627    bgm_main                                     bgm_main.rb
