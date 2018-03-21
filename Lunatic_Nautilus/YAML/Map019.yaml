@@ -16,18 +16,27 @@ root: !ruby/object:RPG::Map
           code: 242
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 1
+          - 21
+          - 0
+          - 1
+          - 0
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - !ruby/object:Tone
             red: -255.0
             green: -255.0
             blue: -255.0
             gray: 0.0
           - 20
-          indent: 0
+          indent: 1
           code: 223
         - !ruby/object:RPG::EventCommand
           parameters:
           - 50
-          indent: 0
+          indent: 1
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -37,17 +46,17 @@ root: !ruby/object:RPG::Map
             blue: -255.0
             gray: 0.0
           - 20
-          indent: 0
+          indent: 1
           code: 223
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[0]My name is"
-          indent: 0
+          indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - Renovare.
-          indent: 0
+          indent: 1
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -57,18 +66,38 @@ root: !ruby/object:RPG::Map
             blue: 0.0
             gray: 0.0
           - 20
-          indent: 0
+          indent: 1
           code: 223
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 20
-          indent: 0
+          - 50
+          indent: 1
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[0]Need water..."
-          indent: 0
+          indent: 1
           code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - !ruby/object:RPG::AudioFile
+            volume: 100
+            name: True Home
+            pitch: 100
+          indent: 1
+          code: 241
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 116
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -92,7 +121,7 @@ root: !ruby/object:RPG::Map
             code: 0
           skippable: false
           repeat: true
-        trigger: 0
+        trigger: 3
         step_anime: false
         move_frequency: 3
         always_on_top: false
@@ -108,8 +137,8 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: false
       name: EV001
-      y: 7
-      x: 9
+      y: 0
+      x: 0
       id: 1
     2: !ruby/object:RPG::Event
       pages:
@@ -628,7 +657,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 0
     - 0
-    - 565
+    - 0
     - 0
     - 0
     - 0

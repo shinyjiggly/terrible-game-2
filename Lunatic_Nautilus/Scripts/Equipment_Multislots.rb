@@ -33,7 +33,7 @@ module Atoa
   # shown in the menu
   # If you repeat an value, means that the actor can equip more than one
   # equip of that type,
-  Equip_Kinds = [0,1,2,3,5,4,4]
+  Equip_Kinds = [0]
   # 0 = Weapons (if you add more than one value equal zero, all these equips
   #     will be considered 'right hand', so they won't remove the shield)
   # 1 = Shields (any equip set as 'Shield' will be exchanged by a weapon if
@@ -61,8 +61,7 @@ module Atoa
   #Extra_Equips_ID = {5 => [38,39]}
   
   # Name of the equips shown in the equip and status window
-  Equip_Names = ['On Hand', 'Off Hand', 'Headgear', 'Torso', 'Legs', 
-                 'Feet', 'Accessory']
+  Equip_Names = ['Identity']
   # The order here is the order that the names are shown in the menu, set
   # them according to the values set in 'Equip_Kinds'.
   # if you change the value of the kinds with script calls, remember to change
@@ -87,10 +86,10 @@ module Atoa
   #      0 = right hand weapon
   #      1 = left hand weapon or shield
   #      2,3,4... = armors
-  Equip_Lock['Weapon']= {1 => [0], 2 => [0], 3 => [0], 4 => [0], 
-                         5 => [0], 6 => [0], 7 => [0], 8 => [0]}
+  #Equip_Lock['Weapon']= {1 => [0], 2 => [0], 3 => [0], 4 => [0], 
+  #                       5 => [0], 6 => [0], 7 => [0], 8 => [0]}
   
-  Equip_Lock['Armor']= {1 => [1], 2 => [1]}
+  #Equip_Lock['Armor']= {1 => [1], 2 => [1]}
   #=============================================================================
 end
 

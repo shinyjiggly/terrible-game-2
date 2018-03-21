@@ -22,7 +22,7 @@ root: !ruby/object:RPG::System
   - button press
   - special event
   - day of the week
-  - ''
+  - day in-game
   - ''
   - ''
   - ''
@@ -72,23 +72,23 @@ root: !ruby/object:RPG::System
     pitch: 100
   gameover_name: gameoverx2
   words: !ruby/object:RPG::System::Words
-    str: Power
+    str: Strength
     armor3: ''
-    mdef: MDEF
-    gold: G
-    sp: MP
+    mdef: AuraDef
+    gold: Gold
+    sp: Aura
     skill: Auras
-    int: CHA
+    int: Charisma
     armor2: ''
     equip: Equip
     hp: Health
-    pdef: Resilience
+    pdef: Defense
     attack: Attack
-    agi: AGI
+    agi: Agility
     armor1: ''
-    atk: ATK
+    atk: WpnAtk
     item: Item
-    dex: Focus
+    dex: Accuracy
     armor4: ''
     weapon: Weapon
     guard: Resilience
@@ -190,7 +190,7 @@ root: !ruby/object:RPG::System
   - Piercing
   - Slashing
   - Bludgeoning
-  start_y: 9
+  start_y: 7
   battler_hue: 0
   load_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -231,4 +231,4 @@ root: !ruby/object:RPG::System
     name: saved
     pitch: 100
   battle_transition: battletransition
-  start_x: 10
+  start_x: 13
