@@ -89,6 +89,7 @@ module Atoa
   
   Weapon_Custom_Formula[15] = "#{Weapon_Custom_Formula[6]}" #double knives
   
+  Weapon_Custom_Formula[16] = "({str} + (rand({str}+1) / 4)) - {def} + 3"  #LADLE
   
   Weapon_Custom_Formula[69] = "69" #nice
   
@@ -121,6 +122,19 @@ module Atoa
       [user.level ** 2, 0].max
     else
       [(user.str / 10) ** 2, 0].max
+    end" 
+
+  Skill_Custom_Formula[11] = "
+    if user.actor?  
+    #if it's used on an actor, 
+      if target.id == 12  #check the actor index
+        -500
+      else
+        -100
+      end
+    else   #if not, it's just 300
+      -300
+      
     end" 
   
   # One example to show how other formulas can be added.

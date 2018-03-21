@@ -170,6 +170,7 @@
 41302047    Advanced map scrolling                       Advanced_map_scrolling.rb
 39055950    Foodstuffs                                   Foodstuffs.rb
 27629645    pause with F12                               pause_with_F12.rb
+21001661    Item activates skill                         Item_activates_skill.rb
 37417015    -------------------                          EMPTY
 63588152    Main                                         Main.rb
 95038157    -----------------------------                EMPTY

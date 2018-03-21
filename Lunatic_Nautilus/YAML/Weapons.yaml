@@ -291,7 +291,7 @@ root:
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0
-  name: ''
+  name: Basic Ladle
   minus_state_set: []
   mdef: 0
   icon_name: ''
@@ -301,11 +301,11 @@ root:
   pdef: 0
   dex_plus: 0
   element_set: []
-  atk: 0
-  animation2_id: 0
+  atk: 6
+  animation2_id: 2
   id: 16
   str_plus: 0
-  description: ''
+  description: Perfect for serving soup... OF PAIN!
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0

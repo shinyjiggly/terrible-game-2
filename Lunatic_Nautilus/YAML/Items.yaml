@@ -90,10 +90,10 @@ root:
   variance: 0
 - !ruby/object:RPG::Item
   consumable: true
-  animation1_id: 0
-  name: aaa
+  animation1_id: 10
+  name: Heal-y food 1
   minus_state_set: []
-  icon_name: ''
+  icon_name: spiralshellicon
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
@@ -107,14 +107,14 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 3
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
-  animation2_id: 0
+  animation2_id: 2
   hit: 100
   id: 4
-  description: ''
+  description: it's a food
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item

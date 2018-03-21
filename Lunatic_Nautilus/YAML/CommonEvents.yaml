@@ -996,17 +996,8 @@ root:
   switch_id: 1
   id: 9
 - !ruby/object:RPG::CommonEvent
-  name: basic food data
+  name: healy food 1
   list:
-  - !ruby/object:RPG::EventCommand
-    parameters:
-    - 23
-    - 23
-    - 0
-    - 0
-    - 0
-    indent: 0
-    code: 122
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0

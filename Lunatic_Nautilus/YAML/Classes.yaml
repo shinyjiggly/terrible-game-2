@@ -934,8 +934,12 @@ root:
   learnings:
   - !ruby/object:RPG::Class::Learning
     level: 1
+    skill_id: 11
+  - !ruby/object:RPG::Class::Learning
+    level: 1
     skill_id: 46
-  weapon_set: []
+  weapon_set:
+  - 16
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1

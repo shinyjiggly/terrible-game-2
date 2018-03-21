@@ -15,7 +15,7 @@ class Window_InputNumber < Window_Base
     @number = 0
     # Calculate cursor width from number width (0-9 equal width and postulate)
     dummy_bitmap = Bitmap.new(32, 32)
-    @cursor_width = dummy_bitmap.text_size("0").width + 8
+    @cursor_width = dummy_bitmap.text_size("0").width + 8 #EDITED
     dummy_bitmap.dispose
     super(0, 0, @cursor_width * @digits_max + 32, 64)
     self.contents = Bitmap.new(width - 32, height - 32)

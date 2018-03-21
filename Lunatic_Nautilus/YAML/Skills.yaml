@@ -292,12 +292,12 @@ root:
   sp_cost: 0
   variance: 15
 - !ruby/object:RPG::Skill
-  animation1_id: 0
+  animation1_id: 1
   int_f: 100
-  icon_name: ''
+  icon_name: spinnyicon
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: conditional heal
   common_event_id: 0
   mdef_f: 100
   occasion: 1
@@ -309,17 +309,17 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 3
   dex_f: 0
-  power: 0
+  power: -6
   element_set: []
   hit: 100
-  animation2_id: 0
+  animation2_id: 29
   description: ''
   str_f: 0
   id: 11
   sp_cost: 0
-  variance: 15
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100

@@ -53,6 +53,7 @@ module Atoa
   Equipment_Sprite['Weapon'][6] = ['_knife', true]
   Equipment_Sprite['Weapon'][14] = ['_claws', true]
   Equipment_Sprite['Weapon'][15] = ['_knives', true]
+  Equipment_Sprite['Weapon'][16] = ['_ladle', true]
   Equipment_Sprite['Weapon'][4] = ['_rapier', true]
   # IMPORTANT:
   # Remember that the graphics are *added* above/bellow the original graphic.
