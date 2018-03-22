@@ -1,7 +1,8 @@
-=begin
-#
-# Item activates skill
+#---------------------------
+# Item activates skill (Atoa cbs compatible version)
 # By: Game_Guy
+# Converted over by shinyjiggly
+#---------------------------
 
 module GGSI
   def self.item_skill(id)
@@ -25,38 +26,26 @@ class Game_Battler
   end
 end
 class Scene_Battle
-  def make_item_action_result
-    # Get item
-    @item = $data_items[@active_battler.current_action.item_id]
-    # If unable to use due to items running out
-    unless $game_party.item_can_use?(@item.id)
-      # Shift to step 1
-      @phase4_step = 1
-      
-      #update_phase4
-      return
+  #--------------------------------------------------------------------------
+  # * Make Item Action Results
+  #     battler : battler
+  #--------------------------------------------------------------------------
+  def make_item_action_result(battler)
+    battler.current_item = $data_items[battler.current_action.item_id]
+    return unless $game_party.item_can_use?(battler.current_item.id)
+    if battler.actor? and battler.current_item.consumable and not 
+       battler.multi_action_running
+      consum_item_cost(battler)
     end
-    # If consumable
-    if @item.consumable
-      # Decrease used item by 1
-      $game_party.lose_item(@item.id, 1)
-    end
-    # Display item name on help window
-    @help_window.set_text(@item.name, 1)
-    # Set animation ID
-    @animation1_id = @item.animation1_id
-    @animation2_id = @item.animation2_id
-    # Set common event ID
-    @common_event_id = @item.common_event_id
-    # Decide on target
-    index = @active_battler.current_action.target_index
+    battler.multi_action_running = battler.action_done = true
+    @status_window.refresh if status_need_refresh
+    battler.animation_1 = battler.current_item.animation1_id
+    battler.animation_2 = battler.current_item.animation2_id
+    @common_event_id = battler.current_item.common_event_id
+    index = battler.current_action.target_index
     target = $game_party.smooth_target_actor(index)
-    # Set targeted battlers
-    set_target_battlers(@item.scope)
-    # Apply item effect
-    for target in @target_battlers
-      target.item_effect(@item, @active_battler)
+    for target in battler.target_battlers
+      target.item_effect(battler.current_item, battler)
     end
   end
 end
-=end
