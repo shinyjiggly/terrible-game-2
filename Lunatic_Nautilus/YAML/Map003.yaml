@@ -2576,7 +2576,7 @@ root: !ruby/object:RPG::Map
           - 21
           - 0
           - 0
-          - 1
+          - 0
           indent: 1
           code: 122
         - !ruby/object:RPG::EventCommand

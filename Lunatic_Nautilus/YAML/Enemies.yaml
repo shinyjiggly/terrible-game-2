@@ -606,7 +606,7 @@ root:
     skill_id: 1
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 14
+  str: 100
   eva: 0
   animation1_id: 0
   name: Defect
