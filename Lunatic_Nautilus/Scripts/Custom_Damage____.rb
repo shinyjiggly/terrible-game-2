@@ -71,7 +71,10 @@ module Atoa
   36 => {'hit' =>20,'crt' => 25,'dmg' => 50}
   }
   
-  Actor_Custom_Formula[1] = "{str}*{atk}-({def}^2)"
+  Actor_Custom_Formula[1] = "({str}*{atk})-({def}^2)" #Fiora
+  Enemy_Custom_Formula[5] = "({str}*{atk})-({def}^2)" #Beast
+  Enemy_Custom_Formula[6] = "({str}*{atk})-({def}^2)" #Hand
+  Enemy_Custom_Formula[7] = "({str}*{atk})-({def}^2)" #Defect
   
   Weapon_Custom_Formula[1] = "({atk}/2 + rand({atk}+1)*1.5).round*{str} - {def}" #gunaxe
   Weapon_Custom_Formula[2] = "({atk} + rand({atk}+1)/8)*{str} - {def}" #sword

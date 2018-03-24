@@ -145,10 +145,9 @@ root:
   agi_plus: 0
   price: 0
   plus_state_set: []
-  pdef: 0
+  pdef: 10
   dex_plus: 0
-  element_set:
-  - 14
+  element_set: []
   atk: 33
   animation2_id: 2
   id: 8

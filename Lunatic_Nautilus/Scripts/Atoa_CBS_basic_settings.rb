@@ -193,7 +193,7 @@ module Atoa
   # Battle Messages. If you want the action battler name to be shown, add
   # {battler_name} in the message
   Guard_Message = "{battler_name} defends!" # Guard Message
-  Escape_Message = "{battler_name} escaped?!" # Escape (enemies only)
+  Escape_Message = "{battler_name} escaped!" # Escape (enemies only)
 
   #=============================================================================
   

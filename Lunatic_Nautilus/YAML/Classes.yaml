@@ -29,7 +29,10 @@ root:
   - 31
   - 32
   - 33
-  learnings: []
+  learnings:
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 9
   weapon_set:
   - 8
   - 16

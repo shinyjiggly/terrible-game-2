@@ -615,7 +615,7 @@ root:
     - 545
     - 545
   exp_inflation: 30
-  armor3_id: 1
+  armor3_id: 0
   class_id: 1
   exp_basis: 30
   armor1_fix: false

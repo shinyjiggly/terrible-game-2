@@ -74,17 +74,17 @@ root: !ruby/object:RPG::System
   words: !ruby/object:RPG::System::Words
     str: Strength
     armor3: ''
-    mdef: AuraDef
+    mdef: Clarity
     gold: Gold
     sp: Aura
     skill: Auras
-    int: Charisma
+    int: Intelligence
     armor2: ''
     equip: Equip
     hp: Health
-    pdef: Defense
+    pdef: Resilience
     attack: Attack
-    agi: Agility
+    agi: Speed
     armor1: ''
     atk: WpnAtk
     item: Item

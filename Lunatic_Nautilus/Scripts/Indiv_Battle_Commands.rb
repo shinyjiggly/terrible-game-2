@@ -28,7 +28,7 @@ module Atoa
   #
   # Skill_Command[Command_Name] = [Skills_IDs]
   #
-  Skill_Command['Magic'] = [ 6, 7, 9, 10, 11, 12, 13, 14, 15, 
+  Skill_Command['Auras'] = [ 6, 7, 9, 10, 11, 12, 13, 14, 15, 
     16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
     35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
     54, 55, 56]
@@ -82,6 +82,8 @@ module Atoa
   # condition to have that command. You can use that to remove basic commands
   # like "Attack" and "Defend" from an Actor.
   #Custom_Command_Order[2] = ['Attack','Defend','Item','Magic','Techs','Skill','Summon']
+  
+  Custom_Command_Order[1] = ['Attack','Auras']
   
   #==============================================================================
   # Window Settings
