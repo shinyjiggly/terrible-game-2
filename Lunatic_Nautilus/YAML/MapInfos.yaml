@@ -15,7 +15,7 @@ root: !ruby/object:Hash
     scroll_y: 340
     parent_id: 0
   3: !ruby/object:RPG::MapInfo
-    scroll_x: 924
+    scroll_x: 624
     name: testmap
     expanded: true
     order: 13
@@ -134,7 +134,7 @@ root: !ruby/object:Hash
     scroll_y: 240
     parent_id: 3
   20: !ruby/object:RPG::MapInfo
-    scroll_x: 490
+    scroll_x: 2236
     name: The Droughtlands
     expanded: false
     order: 20

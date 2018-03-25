@@ -71,10 +71,10 @@ module Atoa
   36 => {'hit' =>20,'crt' => 25,'dmg' => 50}
   }
   
-  Actor_Custom_Formula[1] = "({str}*{atk})-({def}^2)" #Fiora
-  Enemy_Custom_Formula[5] = "({str}*{atk})-({def}^2)" #Beast
-  Enemy_Custom_Formula[6] = "({str}*{atk})-({def}^2)" #Hand
-  Enemy_Custom_Formula[7] = "({str}*{atk})-({def}^2)" #Defect
+  Actor_Custom_Formula[1] = "({str}*{atk})-({def}*{def})" #Fiora
+  Skill_Custom_Formula[11] = "({str}*{atk})-({def}*{def})" #Come with me...
+  Enemy_Custom_Formula[6] = "({str}*{atk})-({def}*{def})" #Defect
+  Enemy_Custom_Formula[7] = "({str}*{atk})-({def}*{def})" #Beast
   
   Weapon_Custom_Formula[1] = "({atk}/2 + rand({atk}+1)*1.5).round*{str} - {def}" #gunaxe
   Weapon_Custom_Formula[2] = "({atk} + rand({atk}+1)/8)*{str} - {def}" #sword
@@ -108,7 +108,6 @@ module Atoa
   Skill_Custom_Formula[4] = "({atk} + rand({atk}))/3"
   Skill_Custom_Formula[5] = "((({atk}/2 + rand({atk}+1)*1.5)*{str})*2 - {def})" #gunaxe x2
   Skill_Custom_Formula[8] = "#{Skill_Custom_Formula[5]}" #inaccurate gunaxe
-  Skill_Custom_Formula[11] = "{atk}" #You are slowed.
   Skill_Custom_Formula[54] = "(26+rand(26+1)/8)*user.int" #shasho
   
   # This example the power of the attack depends on the number of potions

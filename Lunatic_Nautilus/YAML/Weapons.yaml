@@ -148,10 +148,10 @@ root:
   pdef: 10
   dex_plus: 0
   element_set: []
-  atk: 33
+  atk: 11
   animation2_id: 2
   id: 8
-  str_plus: 12
+  str_plus: 0
   description: ''
 - !ruby/object:RPG::Weapon
   int_plus: 0

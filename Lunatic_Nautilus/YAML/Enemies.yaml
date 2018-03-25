@@ -408,7 +408,7 @@ root:
     skill_id: 25
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 12
+  str: 11
   eva: 0
   animation1_id: 0
   name: Hand
@@ -418,13 +418,13 @@ root:
   int: 1
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
+  pdef: 10
   exp: 0
   agi: 10
   maxhp: 500
   armor_id: 0
   battler_hue: 200
-  atk: 12
+  atk: 11
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -494,22 +494,12 @@ root:
   - !ruby/object:RPG::Enemy::Action
     basic: 0
     condition_hp: 100
-    rating: 5
-    condition_turn_b: 0
-    kind: 1
-    condition_switch_id: 0
-    condition_turn_a: 1
-    skill_id: 11
-    condition_level: 1
-  - !ruby/object:RPG::Enemy::Action
-    basic: 0
-    condition_hp: 100
     rating: 4
     condition_turn_b: 1
-    kind: 0
+    kind: 1
     condition_switch_id: 0
     condition_turn_a: 0
-    skill_id: 12
+    skill_id: 11
     condition_level: 1
 - !ruby/object:RPG::Enemy
   str: 17

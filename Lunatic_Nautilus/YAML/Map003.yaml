@@ -1131,12 +1131,22 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Dwight]\\P[7]Maybe I'll get my own"
+          - "\\Name[Dwight]\\P[7]This is taking a lot more time"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - game someday too.
+          - and effort than I expected.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\Name[Fiora]\\p[0]We'll make it."
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - This I promise you.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand

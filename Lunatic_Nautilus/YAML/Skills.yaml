@@ -298,7 +298,7 @@ root:
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: You are slowed.
+  name: Come with me...
   common_event_id: 0
   mdef_f: 0
   occasion: 1

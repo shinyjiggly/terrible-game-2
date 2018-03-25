@@ -74,9 +74,9 @@ root: !ruby/object:RPG::System
   words: !ruby/object:RPG::System::Words
     str: Strength
     armor3: ''
-    mdef: Clarity
+    mdef: Resolve
     gold: Gold
-    sp: Aura
+    sp: 'Aura '
     skill: Auras
     int: Intelligence
     armor2: ''
@@ -86,7 +86,7 @@ root: !ruby/object:RPG::System
     attack: Attack
     agi: Speed
     armor1: ''
-    atk: WpnAtk
+    atk: Clarity
     item: Item
     dex: Accuracy
     armor4: ''
