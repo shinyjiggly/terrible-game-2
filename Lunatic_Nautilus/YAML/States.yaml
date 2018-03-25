@@ -366,9 +366,9 @@ root:
   animation_id: 0
 - !ruby/object:RPG::State
   hit_rate: 100
-  hold_turn: 6
+  hold_turn: 5
   eva: 0
-  name: Sharp
+  name: Focus
   zero_hp: false
   atk_rate: 150
   minus_state_set: []
@@ -379,15 +379,15 @@ root:
   nonresistance: true
   int_rate: 100
   plus_state_set: []
-  maxsp_rate: 100
-  shock_release_prob: 0
+  maxsp_rate: 200
+  shock_release_prob: 10
   cant_evade: false
   mdef_rate: 100
   restriction: 0
   agi_rate: 100
   guard_element_set: []
   maxhp_rate: 100
-  auto_release_prob: 100
+  auto_release_prob: 50
   id: 13
   pdef_rate: 100
   cant_get_exp: false
@@ -538,177 +538,3 @@ root:
   cant_get_exp: false
   dex_rate: 100
   animation_id: 0
-- !ruby/object:RPG::State
-  hit_rate: 100
-  hold_turn: 1
-  eva: 0
-  name: Clock-blocked
-  zero_hp: false
-  atk_rate: 100
-  minus_state_set: []
-  str_rate: 100
-  battle_only: true
-  slip_damage: false
-  rating: 5
-  nonresistance: false
-  int_rate: 100
-  plus_state_set: []
-  maxsp_rate: 100
-  shock_release_prob: 0
-  cant_evade: false
-  mdef_rate: 100
-  restriction: 4
-  agi_rate: 100
-  guard_element_set: []
-  maxhp_rate: 100
-  auto_release_prob: 100
-  id: 19
-  pdef_rate: 100
-  cant_get_exp: false
-  dex_rate: 100
-  animation_id: 0
-- !ruby/object:RPG::State
-  hit_rate: 100
-  hold_turn: 0
-  eva: 0
-  name: Bardsong
-  zero_hp: false
-  atk_rate: 100
-  minus_state_set: []
-  str_rate: 100
-  battle_only: true
-  slip_damage: false
-  rating: 2
-  nonresistance: true
-  int_rate: 100
-  plus_state_set: []
-  maxsp_rate: 105
-  shock_release_prob: 0
-  cant_evade: false
-  mdef_rate: 150
-  restriction: 0
-  agi_rate: 100
-  guard_element_set: []
-  maxhp_rate: 100
-  auto_release_prob: 0
-  id: 20
-  pdef_rate: 100
-  cant_get_exp: false
-  dex_rate: 100
-  animation_id: 0
-- !ruby/object:RPG::State
-  hit_rate: 100
-  hold_turn: 0
-  eva: 0
-  name: Eating
-  zero_hp: false
-  atk_rate: 100
-  minus_state_set: []
-  str_rate: 100
-  battle_only: true
-  slip_damage: false
-  rating: 5
-  nonresistance: false
-  int_rate: 100
-  plus_state_set: []
-  maxsp_rate: 100
-  shock_release_prob: 0
-  cant_evade: false
-  mdef_rate: 100
-  restriction: 0
-  agi_rate: 100
-  guard_element_set: []
-  maxhp_rate: 100
-  auto_release_prob: 100
-  id: 21
-  pdef_rate: 100
-  cant_get_exp: false
-  dex_rate: 100
-  animation_id: 0
-- !ruby/object:RPG::State
-  hit_rate: 100
-  hold_turn: 0
-  eva: 0
-  name: Just Eaten
-  zero_hp: false
-  atk_rate: 100
-  minus_state_set: []
-  str_rate: 100
-  battle_only: true
-  slip_damage: false
-  rating: 5
-  nonresistance: false
-  int_rate: 100
-  plus_state_set: []
-  maxsp_rate: 100
-  shock_release_prob: 0
-  cant_evade: false
-  mdef_rate: 100
-  restriction: 0
-  agi_rate: 100
-  guard_element_set: []
-  maxhp_rate: 100
-  auto_release_prob: 0
-  id: 22
-  pdef_rate: 100
-  cant_get_exp: false
-  dex_rate: 100
-  animation_id: 0
-- !ruby/object:RPG::State
-  hit_rate: 100
-  hold_turn: 0
-  eva: 0
-  name: 3 groovy
-  zero_hp: false
-  atk_rate: 100
-  minus_state_set: []
-  str_rate: 100
-  battle_only: true
-  slip_damage: false
-  rating: 5
-  nonresistance: false
-  int_rate: 100
-  plus_state_set: []
-  maxsp_rate: 100
-  shock_release_prob: 0
-  cant_evade: false
-  mdef_rate: 100
-  restriction: 0
-  agi_rate: 100
-  guard_element_set: []
-  maxhp_rate: 100
-  auto_release_prob: 0
-  id: 23
-  pdef_rate: 100
-  cant_get_exp: false
-  dex_rate: 100
-  animation_id: 0
-- !ruby/object:RPG::State
-  hit_rate: 100
-  hold_turn: 0
-  eva: 0
-  name: On fire
-  zero_hp: false
-  atk_rate: 100
-  minus_state_set: []
-  str_rate: 100
-  battle_only: true
-  slip_damage: true
-  rating: 5
-  nonresistance: false
-  int_rate: 100
-  plus_state_set: []
-  maxsp_rate: 100
-  shock_release_prob: 0
-  cant_evade: false
-  mdef_rate: 100
-  restriction: 0
-  agi_rate: 100
-  guard_element_set: []
-  maxhp_rate: 100
-  auto_release_prob: 0
-  id: 24
-  pdef_rate: 100
-  cant_get_exp: false
-  dex_rate: 100
-  animation_id: 11

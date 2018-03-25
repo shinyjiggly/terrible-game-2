@@ -1527,6 +1527,7 @@ class Scene_Battle
   # * Go to Command Input of Previous Actor
   #--------------------------------------------------------------------------
   def phase3_switch_actor
+=begin
     @input_battler.current_action.clear
     @active_battler.current_cost = no_action_cost(@active_battler)
     @active_battler.ctb_update(@active_battler.current_cost)
@@ -1535,6 +1536,7 @@ class Scene_Battle
     command_input_cancel
     @input_battler = nil
     @actor_index = nil
+=end
   end
   #--------------------------------------------------------------------------
   # * Frame Update (actor command phase)

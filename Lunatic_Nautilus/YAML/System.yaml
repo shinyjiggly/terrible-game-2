@@ -160,7 +160,7 @@ root: !ruby/object:RPG::System
     pitch: 100
   battle_bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: battle_theme1
+    name: ''
     pitch: 100
   test_troop_id: 3
   equip_se: !ruby/object:RPG::AudioFile

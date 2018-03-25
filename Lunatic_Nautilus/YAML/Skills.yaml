@@ -321,34 +321,35 @@ root:
   sp_cost: 0
   variance: 0
 - !ruby/object:RPG::Skill
-  animation1_id: 0
+  animation1_id: 29
   int_f: 100
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: Focus
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 13
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 7
   dex_f: 0
   power: 0
   element_set: []
   hit: 100
   animation2_id: 0
-  description: ''
+  description: You have the capacity for greater things, if you would focus.
   str_f: 0
   id: 12
-  sp_cost: 0
-  variance: 15
+  sp_cost: 10
+  variance: 0
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
@@ -708,8 +709,7 @@ root:
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set:
-  - 24
+  plus_state_set: []
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -769,8 +769,7 @@ root:
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set:
-  - 24
+  plus_state_set: []
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -801,8 +800,7 @@ root:
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set:
-  - 24
+  plus_state_set: []
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -863,8 +861,7 @@ root:
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set:
-  - 24
+  plus_state_set: []
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -1445,8 +1442,7 @@ root:
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set:
-  - 19
+  plus_state_set: []
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80

@@ -134,11 +134,11 @@ root: !ruby/object:Hash
     scroll_y: 399
     parent_id: 18
   20: !ruby/object:RPG::MapInfo
-    scroll_x: 1056
+    scroll_x: 532
     name: maintown
-    expanded: false
+    expanded: true
     order: 21
-    scroll_y: 784
+    scroll_y: 560
     parent_id: 19
   21: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -147,3 +147,24 @@ root: !ruby/object:Hash
     order: 2
     scroll_y: 240
     parent_id: 2
+  22: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: coda room
+    expanded: false
+    order: 22
+    scroll_y: 240
+    parent_id: 20
+  23: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: upperhallway
+    expanded: true
+    order: 23
+    scroll_y: 240
+    parent_id: 20
+  24: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: downstairs
+    expanded: false
+    order: 24
+    scroll_y: 240
+    parent_id: 23

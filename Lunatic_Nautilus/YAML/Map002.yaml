@@ -865,29 +865,15 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 12
-          - snowballschancex2
-          - 0
-          - calhounx2
-          - 0
-          indent: 0
-          code: 322
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 1
-          indent: 0
-          code: 208
-        - !ruby/object:RPG::EventCommand
-          parameters:
           - 10
           indent: 0
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
           - 0
-          - 20
-          - 12
-          - 15
+          - 23
+          - 8
+          - 6
           - 2
           - 0
           indent: 0

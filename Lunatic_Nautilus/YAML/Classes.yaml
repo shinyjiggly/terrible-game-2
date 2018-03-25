@@ -51,15 +51,9 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 19
     data:
     - 0
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
     - 3
     - 3
     - 3
@@ -136,15 +130,9 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 19
     data:
     - 0
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
     - 3
     - 3
     - 3
@@ -222,15 +210,9 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 19
     data:
     - 0
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
     - 3
     - 3
     - 3
@@ -303,15 +285,9 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 19
     data:
     - 0
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
     - 3
     - 3
     - 3
@@ -384,15 +360,9 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 19
     data:
     - 0
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
     - 3
     - 3
     - 3
@@ -465,15 +435,9 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 19
     data:
     - 0
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
     - 3
     - 3
     - 3
@@ -549,15 +513,9 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 19
     data:
     - 0
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
     - 3
     - 3
     - 3
@@ -630,15 +588,9 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 19
     data:
     - 0
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
     - 3
     - 3
     - 3
@@ -691,15 +643,9 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 19
     data:
     - 0
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
     - 3
     - 3
     - 3
@@ -795,15 +741,9 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 19
     data:
     - 0
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
     - 3
     - 3
     - 3
@@ -875,15 +815,9 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 19
     data:
     - 0
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
     - 3
     - 3
     - 3
@@ -937,6 +871,9 @@ root:
     skill_id: 11
   - !ruby/object:RPG::Class::Learning
     level: 1
+    skill_id: 12
+  - !ruby/object:RPG::Class::Learning
+    level: 1
     skill_id: 46
   weapon_set:
   - 16
@@ -944,15 +881,9 @@ root:
     dim: 1
     zsize: 1
     ysize: 1
-    xsize: 25
+    xsize: 19
     data:
     - 0
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
     - 3
     - 3
     - 3
