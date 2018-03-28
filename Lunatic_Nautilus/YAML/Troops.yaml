@@ -487,9 +487,15 @@ root:
       turn_b: 0
       enemy_valid: false
     span: 0
-  name: ''
+  name: Beast
   id: 8
-  members: []
+  members:
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 248
+    enemy_id: 6
+    x: 176
+    immortal: false
 - !ruby/object:RPG::Troop
   pages:
   - !ruby/object:RPG::Troop::Page

@@ -328,13 +328,13 @@ root:
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: Slowed again.
+  name: Defective.
   common_event_id: 0
   mdef_f: 0
   occasion: 1
   agi_f: 0
   plus_state_set:
-  - 25
+  - 29
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -358,12 +358,13 @@ root:
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: My claws cut deep...
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 28
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80

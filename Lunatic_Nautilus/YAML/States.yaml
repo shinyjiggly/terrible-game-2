@@ -719,7 +719,7 @@ root:
   hit_rate: 100
   hold_turn: 0
   eva: 0
-  name: Slowed (Hand)
+  name: Slowed
   zero_hp: false
   atk_rate: 100
   minus_state_set: []
@@ -735,7 +735,7 @@ root:
   cant_evade: false
   mdef_rate: 100
   restriction: 0
-  agi_rate: 87
+  agi_rate: 50
   guard_element_set: []
   maxhp_rate: 100
   auto_release_prob: 0

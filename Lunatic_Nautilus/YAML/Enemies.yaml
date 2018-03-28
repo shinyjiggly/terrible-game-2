@@ -502,7 +502,7 @@ root:
     skill_id: 11
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 17
+  str: 10
   eva: 0
   animation1_id: 0
   name: Beast
@@ -518,7 +518,7 @@ root:
   maxhp: 500
   armor_id: 0
   battler_hue: 100
-  atk: 17
+  atk: 29
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -590,13 +590,13 @@ root:
     condition_hp: 100
     rating: 5
     condition_turn_b: 1
-    kind: 0
+    kind: 1
     condition_switch_id: 0
     condition_turn_a: 0
-    skill_id: 1
+    skill_id: 13
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 100
+  str: 14
   eva: 0
   animation1_id: 0
   name: Defect
@@ -684,10 +684,10 @@ root:
     condition_hp: 100
     rating: 5
     condition_turn_b: 1
-    kind: 0
+    kind: 1
     condition_switch_id: 0
     condition_turn_a: 0
-    skill_id: 1
+    skill_id: 12
     condition_level: 1
 - !ruby/object:RPG::Enemy
   str: 50

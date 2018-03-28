@@ -3623,3 +3623,5 @@ root: !ruby/object:RPG::Map
   width: 80
   encounter_list:
   - 6
+  - 7
+  - 8

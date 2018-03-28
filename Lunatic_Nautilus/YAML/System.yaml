@@ -214,7 +214,7 @@ root: !ruby/object:RPG::System
     armor3_id: 0
     armor2_id: 0
     armor1_id: 0
-  battleback_name: shipdeckx2
+  battleback_name: darawaydeckx2
   party_members:
   - 1
   actor_collapse_se: !ruby/object:RPG::AudioFile

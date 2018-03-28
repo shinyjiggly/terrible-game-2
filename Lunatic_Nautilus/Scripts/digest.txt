@@ -133,7 +133,7 @@
 60317430    Atoa CTB                                     Atoa_CTB.rb
 92410424    Status Limit                                 Status_Limit.rb
 77300359    Status effect pops (disabled)                Status_effect_pops_(disabled).rb
-99951215    New Status                                   New_Status.rb
+85543474    New Status                                   New_Status.rb
 62906568    Equipment Multislots                         Equipment_Multislots.rb
 51625542    Equipment skills                             Equipment_skills.rb
 24104288    Advanced Weapons                             Advanced_Weapons.rb
