@@ -73,8 +73,8 @@ module Atoa
   
   Actor_Custom_Formula[1] = "({str}*{atk})-({def}*{def})" #Fiora
   Skill_Custom_Formula[11] = "({str}*{atk})-({def}*{def})" #Come with me...
-  Enemy_Custom_Formula[6] = "({str}*{atk})-({def}*{def})" #Defect
-  Enemy_Custom_Formula[7] = "({str}*{atk})-({def}*{def})" #Beast
+  Skill_Custom_Formula[12] = "({str}*{atk})-(target.mdef*target.mdef)" #Defective.
+  Skill_Custom_Formula[13] = "({str}*{atk})-({def}*{def})" #My claws cut deep...
   
   Weapon_Custom_Formula[1] = "({atk}/2 + rand({atk}+1)*1.5).round*{str} - {def}" #gunaxe
   Weapon_Custom_Formula[2] = "({atk} + rand({atk}+1)/8)*{str} - {def}" #sword

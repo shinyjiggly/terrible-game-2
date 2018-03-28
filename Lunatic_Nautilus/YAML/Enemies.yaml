@@ -408,7 +408,7 @@ root:
     skill_id: 25
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 11
+  str: 12
   eva: 0
   animation1_id: 0
   name: Hand
@@ -418,13 +418,13 @@ root:
   int: 1
   maxsp: 500
   treasure_prob: 100
-  pdef: 10
+  pdef: 12
   exp: 0
   agi: 10
   maxhp: 500
   armor_id: 0
   battler_hue: 200
-  atk: 11
+  atk: 12
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -509,10 +509,10 @@ root:
   mdef: 100
   gold: 0
   weapon_id: 0
-  int: 50
+  int: 1
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
+  pdef: 4
   exp: 0
   agi: 20
   maxhp: 500
@@ -596,23 +596,23 @@ root:
     skill_id: 13
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 14
+  str: 11
   eva: 0
   animation1_id: 0
   name: Defect
   mdef: 100
   gold: 0
   weapon_id: 0
-  int: 50
+  int: 1
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
+  pdef: 10
   exp: 0
   agi: 14
   maxhp: 500
   armor_id: 0
   battler_hue: 320
-  atk: 15
+  atk: 11
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1

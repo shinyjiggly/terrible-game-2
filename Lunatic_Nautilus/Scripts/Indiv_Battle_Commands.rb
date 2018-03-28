@@ -83,7 +83,7 @@ module Atoa
   # like "Attack" and "Defend" from an Actor.
   #Custom_Command_Order[2] = ['Attack','Defend','Item','Magic','Techs','Skill','Summon']
   
-  Custom_Command_Order[1] = ['Attack','Auras']
+  Custom_Command_Order[1] = ['Attack','Auras','Escape']
   
   #==============================================================================
   # Window Settings

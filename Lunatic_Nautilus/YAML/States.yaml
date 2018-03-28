@@ -837,9 +837,9 @@ root:
   eva: 0
   name: Defective
   zero_hp: false
-  atk_rate: 90
+  atk_rate: 95
   minus_state_set: []
-  str_rate: 90
+  str_rate: 95
   battle_only: true
   slip_damage: false
   rating: 5
