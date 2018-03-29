@@ -411,13 +411,22 @@ root:
   - !ruby/object:RPG::Troop::Page
     list:
     - !ruby/object:RPG::EventCommand
+      parameters:
+      - "\\name[Fiora]The Hand emerges from beneath."
+      indent: 0
+      code: 101
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 116
+    - !ruby/object:RPG::EventCommand
       parameters: []
       indent: 0
       code: 0
     condition: !ruby/object:RPG::Troop::Page::Condition
       actor_id: 1
       turn_a: 0
-      turn_valid: false
+      turn_valid: true
       enemy_hp: 50
       switch_valid: false
       switch_id: 1

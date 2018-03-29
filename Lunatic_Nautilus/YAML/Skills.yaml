@@ -234,42 +234,12 @@ root:
   sp_cost: 0
   variance: 0
 - !ruby/object:RPG::Skill
-  animation1_id: 1
-  int_f: 0
-  icon_name: ''
-  eva_f: 0
-  minus_state_set: []
-  name: Resilience
-  common_event_id: 0
-  mdef_f: 0
-  occasion: 1
-  agi_f: 0
-  plus_state_set:
-  - 27
-  atk_f: 0
-  menu_se: !ruby/object:RPG::AudioFile
-    volume: 80
-    name: ''
-    pitch: 100
-  pdef_f: 0
-  scope: 7
-  dex_f: 0
-  power: 0
-  element_set: []
-  hit: 100
-  animation2_id: 0
-  description: Just grin and bear it.
-  str_f: 0
-  id: 9
-  sp_cost: 0
-  variance: 15
-- !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: Steal Money
+  name: ''
   common_event_id: 0
   mdef_f: 100
   occasion: 1
@@ -281,9 +251,38 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 1
+  scope: 0
   dex_f: 0
-  power: 2
+  power: 0
+  element_set: []
+  hit: 100
+  animation2_id: 0
+  description: ''
+  str_f: 0
+  id: 9
+  sp_cost: 0
+  variance: 15
+- !ruby/object:RPG::Skill
+  animation1_id: 0
+  int_f: 100
+  icon_name: ''
+  eva_f: 0
+  minus_state_set: []
+  name: ''
+  common_event_id: 0
+  mdef_f: 100
+  occasion: 1
+  agi_f: 0
+  plus_state_set: []
+  atk_f: 0
+  menu_se: !ruby/object:RPG::AudioFile
+    volume: 80
+    name: ''
+    pitch: 100
+  pdef_f: 0
+  scope: 0
+  dex_f: 0
+  power: 0
   element_set: []
   hit: 100
   animation2_id: 0
@@ -353,7 +352,7 @@ root:
   sp_cost: 0
   variance: 0
 - !ruby/object:RPG::Skill
-  animation1_id: 0
+  animation1_id: 1
   int_f: 100
   icon_name: ''
   eva_f: 0
@@ -371,12 +370,12 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   dex_f: 0
   power: 1
   element_set: []
   hit: 100
-  animation2_id: 21
+  animation2_id: 2
   description: ''
   str_f: 0
   id: 13
@@ -412,37 +411,38 @@ root:
   sp_cost: 0
   variance: 15
 - !ruby/object:RPG::Skill
-  animation1_id: 0
-  int_f: 100
+  animation1_id: 1
+  int_f: 0
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: Resilience
   common_event_id: 0
-  mdef_f: 100
+  mdef_f: 0
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 27
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 7
   dex_f: 0
   power: 0
   element_set: []
   hit: 100
   animation2_id: 0
-  description: ''
+  description: Just grin and bear it.
   str_f: 0
   id: 15
   sp_cost: 0
   variance: 15
 - !ruby/object:RPG::Skill
   animation1_id: 0
-  int_f: 100
+  int_f: 0
   icon_name: ''
   eva_f: 0
   minus_state_set: []
