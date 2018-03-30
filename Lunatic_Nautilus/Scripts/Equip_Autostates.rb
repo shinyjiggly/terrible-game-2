@@ -1,3 +1,4 @@
+=begin
 #==============================================================================
 # Equipment Auto States
 # By Atoa
@@ -125,3 +126,4 @@ class Game_Actor < Game_Battler
     equip_autostates(equip_type, id)
   end
 end
+=end

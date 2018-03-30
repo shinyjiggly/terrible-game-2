@@ -874,6 +874,9 @@ root:
     skill_id: 12
   - !ruby/object:RPG::Class::Learning
     level: 1
+    skill_id: 13
+  - !ruby/object:RPG::Class::Learning
+    level: 1
     skill_id: 46
   weapon_set:
   - 16

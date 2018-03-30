@@ -160,6 +160,7 @@
 81063585    Popup Window                                 Popup_Window.rb
 89413122    Variable-based Battle Themes v1.1            Variable_based_Battle_Themes_v1.1.rb
 47444769    Advanced Message Script                      Advanced_Message_Script.rb
+26746883    Multi message windows                        Multi_message_windows.rb
 86422875    Draining skill                               Draining_skill.rb
 25664505    hp sacrifice                                 hp_sacrifice.rb
 60108649    sprite wave effect                           sprite_wave_effect.rb

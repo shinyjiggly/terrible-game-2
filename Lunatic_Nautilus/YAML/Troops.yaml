@@ -203,6 +203,72 @@ root:
       turn_b: 0
       enemy_valid: false
     span: 0
+  - !ruby/object:RPG::Troop::Page
+    list:
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "\\p[a]Coda:"
+      indent: 0
+      code: 101
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - what do you want?!?!?
+      indent: 0
+      code: 401
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "\\p[1]Soldier:"
+      indent: 0
+      code: 101
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - I want you to die, Mr. Bond.
+      indent: 0
+      code: 401
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - 5
+      - 5
+      - 5
+      indent: 0
+      code: 225
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "\\p[a]Coda:"
+      indent: 0
+      code: 101
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - THAT'S MISS BOND TO YOU, BUCKO!
+      indent: 0
+      code: 401
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "\\p[b]Renzo:"
+      indent: 0
+      code: 101
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - Let's show that fool who they're messing with.
+      indent: 0
+      code: 401
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 0
+    condition: !ruby/object:RPG::Troop::Page::Condition
+      actor_id: 1
+      turn_a: 0
+      turn_valid: true
+      enemy_hp: 50
+      switch_valid: false
+      switch_id: 1
+      enemy_index: 0
+      actor_valid: false
+      actor_hp: 50
+      turn_b: 0
+      enemy_valid: false
+    span: 0
   name: Natsiya Soldier
   id: 3
   members:
@@ -315,7 +381,7 @@ root:
     list:
     - !ruby/object:RPG::EventCommand
       parameters:
-      - "\\name[Cleaver]\\c[5]You shall all die now."
+      - "\\p[f]\\c[5]You shall all die now."
       indent: 0
       code: 101
     - !ruby/object:RPG::EventCommand

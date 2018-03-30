@@ -356,8 +356,8 @@ root:
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
-  common_event_id: 0
+  name: Escape
+  common_event_id: 11
   mdef_f: 100
   occasion: 1
   agi_f: 0
@@ -374,7 +374,7 @@ root:
   element_set: []
   hit: 100
   animation2_id: 0
-  description: ''
+  description: Get outta here!
   str_f: 0
   id: 13
   sp_cost: 0

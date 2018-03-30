@@ -1,3 +1,4 @@
+=begin
 #===================================================
 # ■ AMS - Advanced Message Script - R4 [Update #2]
 #===================================================
@@ -153,12 +154,12 @@ end
 
 def refresh
  
-self.contents.clear
-self.contents.font.color = text_color($ams.message_box_text_color)
-self.contents.font.name = $ams.font_type
+self.contents.clear #get rid of everything
+self.contents.font.color = text_color($ams.message_box_text_color) #color the box
+self.contents.font.name = $ams.font_type #make the font right
 self.contents.font.size = $ams.font_size
-self.windowskin = RPG::Cache.windowskin($ams.message_box_skin)
-@x = @y = @max_x = @max_y = @indent = @lines = 0
+self.windowskin = RPG::Cache.windowskin($ams.message_box_skin) #use the right windowkin
+@x = @y = @max_x = @max_y = @indent = @lines = 0 
 @face_indent = 0
 @opacity = 255
 @cursor_width = 0
@@ -166,7 +167,7 @@ self.windowskin = RPG::Cache.windowskin($ams.message_box_skin)
 @write_wait = 0
 @mid_stop = false
 @face_file = nil
-@popchar = -2
+@popchar = -2 #a bunch of settings
 
 if $game_temp.choice_start == 0
   @x = 8
@@ -1101,3 +1102,4 @@ end
 #===================================================
 # ▲ CLASS Scene_Load Additional Code Ends
 #===================================================
+=end

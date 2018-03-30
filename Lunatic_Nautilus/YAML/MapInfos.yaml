@@ -3,7 +3,7 @@ root: !ruby/object:Hash
   1: !ruby/object:RPG::MapInfo
     scroll_x: 464
     name: Ship Deck
-    expanded: false
+    expanded: true
     order: 3
     scroll_y: 1192
     parent_id: 0
@@ -24,7 +24,7 @@ root: !ruby/object:Hash
   4: !ruby/object:RPG::MapInfo
     scroll_x: 560
     name: warhip deck demo
-    expanded: true
+    expanded: false
     order: 10
     scroll_y: 1071
     parent_id: 1
@@ -127,11 +127,11 @@ root: !ruby/object:Hash
     scroll_y: 680
     parent_id: 0
   19: !ruby/object:RPG::MapInfo
-    scroll_x: 532
+    scroll_x: 1067
     name: cozio
     expanded: true
     order: 20
-    scroll_y: 399
+    scroll_y: 303
     parent_id: 18
   20: !ruby/object:RPG::MapInfo
     scroll_x: 532

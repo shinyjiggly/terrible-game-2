@@ -903,7 +903,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: false
   animation1_id: 0
-  name: Athena's spice
+  name: Pepper shaker
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0

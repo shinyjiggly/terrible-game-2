@@ -59,7 +59,7 @@ root: !ruby/object:RPG::System
   magic_number: 77323823
   escape_se: !ruby/object:RPG::AudioFile
     volume: 80
-    name: menacing
+    name: sxgbin41
     pitch: 100
   battle_end_me: !ruby/object:RPG::AudioFile
     volume: 100
