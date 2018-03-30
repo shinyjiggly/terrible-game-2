@@ -69,6 +69,8 @@ module Atoa
   Usable_Command['Gunblitz'] = 4
   Usable_Command['Lethal Strike'] = 5
   Usable_Command['Deadly Blow'] = 8
+  Usable_Command['Escape'] = 19
+  
   # Commands Color
   # You can add different colors for each command name
   #  Command_Color[Command_Name] = [red, green, blue]

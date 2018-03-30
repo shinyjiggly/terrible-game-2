@@ -986,8 +986,18 @@ root:
   switch_id: 1
   id: 8
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: Escape
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 0
+    - 0
+    - 2
+    - -1
+    - 1
+    indent: 0
+    code: 339
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
