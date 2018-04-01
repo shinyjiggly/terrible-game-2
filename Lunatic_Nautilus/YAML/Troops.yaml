@@ -207,51 +207,111 @@ root:
     list:
     - !ruby/object:RPG::EventCommand
       parameters:
-      - "\\p[a]Coda:"
+      - 0
+      - 7
+      - 1
       indent: 0
+      code: 111
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "\\p[a]Coda:"
+      indent: 1
       code: 101
     - !ruby/object:RPG::EventCommand
       parameters:
       - what do you want?!?!?
-      indent: 0
+      indent: 1
       code: 401
     - !ruby/object:RPG::EventCommand
       parameters:
       - "\\p[1]Soldier:"
-      indent: 0
+      indent: 1
       code: 101
     - !ruby/object:RPG::EventCommand
       parameters:
       - I want you to die, Mr. Bond.
-      indent: 0
+      indent: 1
       code: 401
     - !ruby/object:RPG::EventCommand
       parameters:
       - 5
       - 5
       - 5
-      indent: 0
+      indent: 1
       code: 225
     - !ruby/object:RPG::EventCommand
       parameters:
       - "\\p[a]Coda:"
-      indent: 0
+      indent: 1
       code: 101
     - !ruby/object:RPG::EventCommand
       parameters:
       - THAT'S MISS BOND TO YOU, BUCKO!
-      indent: 0
+      indent: 1
       code: 401
     - !ruby/object:RPG::EventCommand
       parameters:
-      - "\\p[b]Renzo:"
-      indent: 0
+      - "\\v\\p[b]Renzo:"
+      indent: 1
       code: 101
     - !ruby/object:RPG::EventCommand
       parameters:
       - Let's show that fool who they're messing with.
-      indent: 0
+      indent: 1
       code: 401
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 1
+      code: 0
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 411
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "\\p[a]Jello:"
+      indent: 1
+      code: 101
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - I'M NOT READY FOR THIS....
+      indent: 1
+      code: 401
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - 5
+      - 5
+      - 5
+      indent: 1
+      code: 225
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "\\p[a]Jello:"
+      indent: 1
+      code: 101
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - I'M NOT READY FOR THIS!!!!
+      indent: 1
+      code: 401
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - "\\+\\v\\p[b]Renzo:"
+      indent: 1
+      code: 101
+    - !ruby/object:RPG::EventCommand
+      parameters:
+      - Let's show that fool who they're-\!
+      indent: 1
+      code: 401
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 1
+      code: 0
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 412
     - !ruby/object:RPG::EventCommand
       parameters: []
       indent: 0

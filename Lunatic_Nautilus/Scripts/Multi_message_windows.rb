@@ -598,7 +598,7 @@
   
   # filenames of tail and windowskin used for speech balloons
   FILENAME_SPEECH_TAIL = "maintail.png"
-  FILENAME_SPEECH_WINDOWSKIN = "mainskin.png"
+  FILENAME_SPEECH_WINDOWSKIN = "jiggskinx2.png"
 
   # filenames of tail and windowskin used for thought balloons
   FILENAME_THOUGHT_TAIL = "dottail.png"
@@ -721,7 +721,7 @@ class Game_Message
     @auto_move_continue = true
     
     # exit if distance from speaker is too great
-    @dist_exit = true
+    @dist_exit = false
     # distance player can be before window closes
     @dist_max = 4
     

@@ -4,9 +4,9 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Finn
-  character_name: dolph_walkingx2
-  weapon_id: 1
+  name: Jello
+  character_name: jigglypuffx2
+  weapon_id: 69
   armor2_fix: false
   parameters: !ruby/object:Table
     dim: 2
@@ -615,11 +615,11 @@ root:
     - 582
     - 349
   exp_inflation: 35
-  armor3_id: 3
+  armor3_id: 0
   class_id: 1
   exp_basis: 25
   armor1_fix: false
-  armor2_id: 33
+  armor2_id: 0
   armor4_fix: false
   battler_hue: 0
   weapon_fix: false
@@ -628,7 +628,7 @@ root:
   id: 1
   armor1_id: 0
   armor3_fix: false
-  battler_name: dolphbattlex2
+  battler_name: newjigg1x2
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1

@@ -100,7 +100,7 @@ root: !ruby/object:RPG::System
   - tracking ship movement
   - locked in place
   - restless
-  - ''
+  - april fools
   - ''
   - ''
   - ''
@@ -167,7 +167,7 @@ root: !ruby/object:RPG::System
     volume: 100
     name: boingthing
     pitch: 100
-  title_name: crappyfootstepx2
+  title_name: jiggstitlex2
   _: 7829367
   enemy_collapse_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -203,7 +203,7 @@ root: !ruby/object:RPG::System
     pitch: 100
   title_bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: windsweptsnow
+    name: jigglytheme
     pitch: 100
   buzzer_se: !ruby/object:RPG::AudioFile
     volume: 80

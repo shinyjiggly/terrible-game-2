@@ -2,7 +2,7 @@
 root:
 - 
 - !ruby/object:RPG::Class
-  name: Pirate
+  name: Jigglypuff
   armor_set:
   - 1
   - 2
