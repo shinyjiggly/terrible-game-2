@@ -399,6 +399,7 @@
   - \A = auto-pause mode toggle for ,.?! characters
   - \S[n] = set speed at which text appears in letter-by-letter mode
   - \D[n] = set delay (in frames) before next text appears
+  - \.    = adds a short delay
   - \P[n] = position message over event with id n
             * use n=0 for player
             * in battle, use n=a,b,c,d for actors (e.g. \P[a] for first actor)
@@ -598,7 +599,7 @@
   
   # filenames of tail and windowskin used for speech balloons
   FILENAME_SPEECH_TAIL = "maintail.png"
-  FILENAME_SPEECH_WINDOWSKIN = "jiggskinx2.png"
+  FILENAME_SPEECH_WINDOWSKIN = "mainskin.png"
 
   # filenames of tail and windowskin used for thought balloons
   FILENAME_THOUGHT_TAIL = "dottail.png"
@@ -698,8 +699,8 @@ class Game_Message
     
     # font details
     # overrides all defaults; leave nil to just use defaults (e.g. as above)
-    @font_name = nil
-    @font_size = nil
+    @font_name = "PlopDump"
+    @font_size = 20
     @font_color = nil
 
     # pause on these characters ,.?!
@@ -739,7 +740,7 @@ class Game_Message
     @sound_audio = 'bip'          # Audio SE (in DB) to play
     @sound_volume = 80                     # Text Sound Volume
     @sound_pitch = 100                      # Text Sound Pitch
-    @sound_pitch_range = 10                # How Much to vary the Pitch
+    @sound_pitch_range = 30                # How Much to vary the Pitch
     @sound_vary_pitch = true               # Whether to Vary the Pitch or not
     @sound_frequency = 3                   # Plays a sound this many letters
 

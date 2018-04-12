@@ -58,7 +58,7 @@ module Atoa
   #  kind = equipment type, set on Equip_Kinds
   #  equips_ids = id of the armors of this equip type
   
-  #Extra_Equips_ID = {5 => [38,39]}
+  Extra_Equips_ID = {5 => [38,39]}
   
   # Name of the equips shown in the equip and status window
   Equip_Names = ['Tool','Outfit','Accessory']
@@ -89,7 +89,7 @@ module Atoa
   Equip_Lock['Weapon']= {1 => [0], 2 => [0], 3 => [0], 4 => [0], 
                          5 => [0], 6 => [0], 7 => [0], 8 => [0]}
   
-  Equip_Lock['Armor']= {1 => [1], 2 => [1]}
+  Equip_Lock['Armor']= {12 => [1], 2 => [1]}
   #=============================================================================
 end
 

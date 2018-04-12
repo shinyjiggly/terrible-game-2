@@ -996,14 +996,56 @@ root:
   switch_id: 1
   id: 9
 - !ruby/object:RPG::CommonEvent
-  name: healy food 1
+  name: clothes changer
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 12
+    - 4
+    - 6
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - snowballschancex2
+    - 0
+    - snowtrudgerx2
+    - 0
+    indent: 1
+    code: 322
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - indooroutfitx2
+    - 0
+    - snowtrudgerx2
+    - 0
+    indent: 1
+    code: 322
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
-  trigger: 0
-  switch_id: 1
+  trigger: 2
+  switch_id: 20
   id: 10
 - !ruby/object:RPG::CommonEvent
   name: Escape

@@ -65,7 +65,7 @@ root: !ruby/object:RPG::System
     volume: 100
     name: boss
     pitch: 100
-  start_map_id: 3
+  start_map_id: 21
   shop_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: buying
@@ -101,7 +101,7 @@ root: !ruby/object:RPG::System
   - locked in place
   - restless
   - april fools
-  - ''
+  - hass the jacket
   - ''
   - ''
   - ''
@@ -167,7 +167,7 @@ root: !ruby/object:RPG::System
     volume: 100
     name: boingthing
     pitch: 100
-  title_name: jiggstitlex2
+  title_name: crappyfootstepx2
   _: 7829367
   enemy_collapse_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -195,7 +195,7 @@ root: !ruby/object:RPG::System
   - Piercing
   - Slashing
   - Bludgeoning
-  start_y: 4
+  start_y: 6
   battler_hue: 0
   load_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -203,7 +203,7 @@ root: !ruby/object:RPG::System
     pitch: 100
   title_bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: jigglytheme
+    name: windsweptsnow
     pitch: 100
   buzzer_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -252,4 +252,4 @@ root: !ruby/object:RPG::System
     name: saved
     pitch: 100
   battle_transition: battletransition
-  start_x: 14
+  start_x: 9

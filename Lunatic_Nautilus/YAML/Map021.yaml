@@ -111,7 +111,7 @@ root: !ruby/object:RPG::Map
       y: 0
       x: 0
       id: 1
-  tileset_id: 8
+  tileset_id: 1
   bgs: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''

@@ -864,6 +864,7 @@ root:
 - !ruby/object:RPG::Class
   name: Gastromancer
   armor_set:
+  - 6
   - 20
   learnings:
   - !ruby/object:RPG::Class::Learning

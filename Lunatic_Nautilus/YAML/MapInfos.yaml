@@ -166,7 +166,7 @@ root: !ruby/object:Hash
     name: downstairs
     expanded: false
     order: 25
-    scroll_y: 240
+    scroll_y: 312
     parent_id: 23
   25: !ruby/object:RPG::MapInfo
     scroll_x: 496

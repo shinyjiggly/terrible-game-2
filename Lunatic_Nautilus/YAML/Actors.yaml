@@ -7526,7 +7526,7 @@ root:
   armor3_id: 0
   class_id: 12
   exp_basis: 30
-  armor1_fix: false
+  armor1_fix: true
   armor2_id: 0
   armor4_fix: false
   battler_hue: 0
