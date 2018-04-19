@@ -1,5 +1,4 @@
-# lunatic_whatever
-An original RPG Maker XP game about pirates I think.
+# Terrible game 2: Even Worse
 
 # How To Work On The Project
 
@@ -23,3 +22,4 @@ An original RPG Maker XP game about pirates I think.
 9. go back to Git Bash, type `cd lunatic_whatever/Lunatic_Nautilus` and hit enter.
 10. Still in Git Bash, run the command `git commit -A` and then run `git commit -m "[MESSAGE]"` NOTE: remember to replace `[MESSAGE]` with a description of what changes you've made. For example, if you changed MAP001, you would run the command `git commit -m "changed MAP001"`
 11. Then, simply run `git push origin master` and you're done!
+#or, you can be a visual learner like me, use the hella slow gui version, click the plus button in the lefthan corner, and clone from there

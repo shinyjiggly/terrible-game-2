@@ -1,9 +1,0 @@
---- !ruby/object:Hash
-root: !ruby/object:Hash
-  1: !ruby/object:RPG::MapInfo
-    scroll_x: 320
-    name: Demo Map
-    expanded: false
-    order: 1
-    scroll_y: 240
-    parent_id: 0

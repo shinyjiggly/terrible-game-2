@@ -1,0 +1,250 @@
+--- !ruby/object:Hash
+root: !ruby/object:RPG::System
+  variables:
+  - 
+  - battle theme
+  - progress
+  - recoil amount
+  - days at sea
+  - docked map x
+  - docked map y
+  - docked map id
+  - current chapter
+  - saved ship map x
+  - saved ship map y
+  - saved ship map id
+  - docked loaction
+  - squares travelled today
+  - maximum squares per day
+  - new ship map x
+  - new ship map y
+  - new ship map id
+  - button press
+  - special event
+  - day of the week
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  cancel_se: !ruby/object:RPG::AudioFile
+    volume: 80
+    name: cancel
+    pitch: 100
+  magic_number: 77323823
+  escape_se: !ruby/object:RPG::AudioFile
+    volume: 80
+    name: menacing
+    pitch: 100
+  battle_end_me: !ruby/object:RPG::AudioFile
+    volume: 100
+    name: boss
+    pitch: 100
+  start_map_id: 1
+  shop_se: !ruby/object:RPG::AudioFile
+    volume: 80
+    name: buying
+    pitch: 100
+  gameover_name: gameoverx2
+  words: !ruby/object:RPG::System::Words
+    str: STR
+    armor3: Body Armor
+    mdef: MDEF
+    gold: G
+    sp: MP
+    skill: Skill
+    int: INT
+    armor2: Helmet
+    equip: Equip
+    hp: HP
+    pdef: PDEF
+    attack: Attack
+    agi: AGI
+    armor1: Shield
+    atk: ATK
+    item: Item
+    dex: DEX
+    armor4: Accessory
+    weapon: Weapon
+    guard: Defend
+  switches:
+  - 
+  - willing to listen to voice acting
+  - ship docked
+  - can use ship
+  - tracking ship movement
+  - locked in place
+  - restless
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - can die on the map
+  - "[cat] ladder effects"
+  - "[cat] caterpillar pause"
+  - "[cat] Caterpillar active"
+  - "[cat] dead effects"
+  - "[cat] remove visible actors"
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  decision_se: !ruby/object:RPG::AudioFile
+    volume: 80
+    name: select
+    pitch: 100
+  edit_map_id: 1
+  battle_start_se: !ruby/object:RPG::AudioFile
+    volume: 80
+    name: menacing
+    pitch: 100
+  battle_bgm: !ruby/object:RPG::AudioFile
+    volume: 100
+    name: battle_theme1
+    pitch: 100
+  test_troop_id: 3
+  equip_se: !ruby/object:RPG::AudioFile
+    volume: 100
+    name: boingthing
+    pitch: 100
+  title_name: title0
+  _: 7829367
+  enemy_collapse_se: !ruby/object:RPG::AudioFile
+    volume: 80
+    name: cancel
+    pitch: 100
+  cursor_se: !ruby/object:RPG::AudioFile
+    volume: 80
+    name: cursor
+    pitch: 100
+  elements:
+  - ''
+  - Fire
+  - Water
+  - Air
+  - Earth
+  - Ice
+  - Thunder
+  - Plant
+  - Poison
+  - Holy
+  - Dark
+  - Cosmic
+  - Psychic
+  - Time
+  - Piercing
+  - Slashing
+  - Bludgeoning
+  start_y: 10
+  battler_hue: 0
+  load_se: !ruby/object:RPG::AudioFile
+    volume: 80
+    name: begin
+    pitch: 100
+  title_bgm: !ruby/object:RPG::AudioFile
+    volume: 100
+    name: opening1
+    pitch: 100
+  buzzer_se: !ruby/object:RPG::AudioFile
+    volume: 80
+    name: unavailable
+    pitch: 100
+  windowskin_name: mainskin
+  test_battlers:
+  - !ruby/object:RPG::System::TestBattler
+    actor_id: 3
+    armor4_id: 0
+    weapon_id: 0
+    level: 3
+    armor3_id: 1
+    armor2_id: 0
+    armor1_id: 0
+  - !ruby/object:RPG::System::TestBattler
+    actor_id: 2
+    armor4_id: 0
+    weapon_id: 3
+    level: 8
+    armor3_id: 2
+    armor2_id: 0
+    armor1_id: 0
+  - !ruby/object:RPG::System::TestBattler
+    actor_id: 4
+    armor4_id: 0
+    weapon_id: 0
+    level: 1
+    armor3_id: 0
+    armor2_id: 0
+    armor1_id: 0
+  battleback_name: shipdeckx2
+  party_members:
+  - 2
+  actor_collapse_se: !ruby/object:RPG::AudioFile
+    volume: 80
+    name: unavailable
+    pitch: 50
+  gameover_me: !ruby/object:RPG::AudioFile
+    volume: 100
+    name: athingie
+    pitch: 100
+  battler_name: "$natgunner"
+  save_se: !ruby/object:RPG::AudioFile
+    volume: 80
+    name: saved
+    pitch: 100
+  battle_transition: battletransition
+  start_x: 7

@@ -1,9 +1,0 @@
---- !ruby/object:Hash
-root: !ruby/object:Hash
-  1: !ruby/object:RPG::MapInfo
-    scroll_x: 362
-    name: MAP001
-    expanded: false
-    order: 1
-    scroll_y: 328
-    parent_id: 0
