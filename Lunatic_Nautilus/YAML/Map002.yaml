@@ -2,7 +2,7 @@
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: dazzlingcave
+    name: dazzlercave
     pitch: 100
   events: !ruby/object:Hash
     1: !ruby/object:RPG::Event
@@ -122,97 +122,42 @@ root: !ruby/object:RPG::Map
           code: 655
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'Once upon a time, a very very long time '
+          - 'Once upon a time, the temporics, the '
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'ago... There was a world that belonged '
+          - 'people of time, lived on a far away '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - to the temporics, the people of time.
+          - 'world. It is said that it was always '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'The sun shined warmly and it never '
+          - warm, and they were happy.
+          indent: 0
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 'But, there was once one called Jikan. '
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'snowed. Everyone was happy. '
+          - 'They sought the secrets of time and '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'However, there was one temporic who '
+          - 'space, and payed for them with '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - was not satisfied. They wanted power.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - This one's name was Jikan.
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'Jikan spend their entire life searching for '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - the secrets of time and space.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - Old and frail, Jikan had little to lose.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'Upon the celestrial precpiece Jikan stood. '
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'The forces of the cosmos beckoned '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'them forth. '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'But, every power must come at a price. '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'To obtain ultimate power, Jikan had to '
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'sacrifice something precious and '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - irreplacable.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - They had to cast aside their tempority.
+          - their tempority.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -282,302 +227,152 @@ root: !ruby/object:RPG::Map
           code: 655
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'World weary and jaded by their years, '
+          - 'The temporics, for as long as they '
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'Jikan did not find it hard to cast it aside. '
+          - 'could remember, were ruled by Jikan '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'Nothing would stand in the way of their '
+          - 'and their heartless grip. '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - goal, not even themself.
+          - But then how were they happy?
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - The process was quick and painless.
+          - Jikan's tempority, cast away from them,
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'Stripped of their tempority, Jikan was '
+          - 'somehow lived on, and sought to protect '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'empty enough to house the forces of '
+          - 'the temporics from Jikan''s wrath. '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'the cosmos within them. '
+          - The people of time treasured this.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'And what did Jikan do with this power? '
+          - 'One day however, the world cracked in '
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'They used it to rule the world! Nothing '
+          - 'half by the weight of Jikan''s cruelty. '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - would be spared from their influence.
+          - 'The pain was unbearable, and the end '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - Every temporic felt the power of Jikan.
+          - was nigh, but what could they do?
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'Unfortunately, the stress Jikan had '
+          - 'The temporics hatched a plan. '
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'placed upon the fabric of the stars had '
+          - 'They would send their children to a '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'brought forth the end of days. It would '
+          - 'new world, where they would have '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - not be long before the world fell apart.
+          - the hope of a bright future.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'However, not all was lost. Jikan''s '
+          - 'So Jikan''s Tempority led the adults '
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'tempority had managed to persist apart '
+          - 'in a grand battle against Jikan. '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'from them, and had been leading a long '
+          - 'They knew they would not win against '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - winded rebellion against the them.
+          - 'time itself, but they had to fight. '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'Just as Jikan had went back to the '
+          - 'The temporics had to fight for the '
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'beginning to establish rule, their tempority '
+          - 'sake of their children, and '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'had also went back to the beginning, but '
+          - their future.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - for a more wholesome reason.
+          - ''
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'Jikan''s tempority had made it their mission '
+          - 'Their children flew away in a great '
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - to protect all of tempority from their wrath.
+          - 'ship, protected from Time''s Wrath '
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'The people of time lived for the sake of '
+          - by the will of the temporic spirit.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - their protector in secret.
+          - ''
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'The time they had upon that world was '
+          - 'Some say that the temporics of old '
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'numbered. Jikan''s tempority knew they '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'did not have the might to overthrow their '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - overlord before the end.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'So instead, they hatched a grand escape '
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'plan. they would send their children upon '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'great ships into the starry sky, to escape '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - their crumbling world.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'Meanwhile, everyone else would fight '
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'together against Jikan to keep them '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'distracted, so they would be allowed '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - safe passage. They had bet it all on this.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'On the dawn of the final day, those of '
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - age banded together to face time itself.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'For the sake of the next generation... '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - For the sake of their people's hope.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'Meanwhile, the children of time perpared '
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'for a long journey. With the stongest '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'magic they could muster, they sealed '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - themselves to weather eons of travel.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'And so, the children launched off as '
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'their parents fought against time for them. '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'For how long can a parent fight for their '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - children? Days? Months? Years?
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - Time will invaribly claim them, after all.
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'Despite the odds stacked against them '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'however, the people of time knew they '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - had no choice but to keep fighting.
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'The temporic spirit burns bright for the '
-          indent: 0
-          code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'sake of this ageless battle against time. '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - 'Even the children who awakened to find '
-          indent: 0
-          code: 401
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - new worlds, they could feel this too.
+          - are still fighting to this very day.
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand
@@ -709,14 +504,9 @@ root: !ruby/object:RPG::Map
           code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\Name[Coda]\\P[6](...she might not believe it,\\. "
+          - "\\Name[Coda]\\P[6]..."
           indent: 0
           code: 101
-        - !ruby/object:RPG::EventCommand
-          parameters:
-          - but I can feel it.)
-          indent: 0
-          code: 401
         - !ruby/object:RPG::EventCommand
           parameters:
           - 6

@@ -621,7 +621,7 @@
 
   
   # defaults for thought text
-  THOUGHT_FONT_COLOR = "#696969" #nice
+  THOUGHT_FONT_COLOR = "#EEEEEE"
   THOUGHT_FONT_NAME = "PlopDump"
   THOUGHT_FONT_SIZE = 20
 
@@ -740,7 +740,7 @@ class Game_Message
     @sound_audio = 'bip'          # Audio SE (in DB) to play
     @sound_volume = 80                     # Text Sound Volume
     @sound_pitch = 100                      # Text Sound Pitch
-    @sound_pitch_range = 30                # How Much to vary the Pitch
+    @sound_pitch_range = 10                # How Much to vary the Pitch
     @sound_vary_pitch = true               # Whether to Vary the Pitch or not
     @sound_frequency = 3                   # Plays a sound this many letters
 
