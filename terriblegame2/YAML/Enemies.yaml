@@ -387,15 +387,15 @@ root:
   str: 50
   eva: 0
   animation1_id: 0
-  name: ''
+  name: Death Dough-goo
   mdef: 100
-  gold: 0
+  gold: 22
   weapon_id: 0
   int: 50
   maxsp: 500
   treasure_prob: 100
   pdef: 100
-  exp: 0
+  exp: 22
   agi: 50
   maxhp: 500
   armor_id: 0
@@ -436,7 +436,7 @@ root:
   animation2_id: 0
   id: 5
   item_id: 0
-  battler_name: ''
+  battler_name: "$Dough-Goo"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -472,23 +472,23 @@ root:
     skill_id: 1
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 5
   eva: 0
   animation1_id: 0
-  name: ''
-  mdef: 100
-  gold: 0
+  name: Dough-goo
+  mdef: 10
+  gold: 22
   weapon_id: 0
-  int: 50
-  maxsp: 500
+  int: 5
+  maxsp: 50
   treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
+  pdef: 10
+  exp: 22
+  agi: 5
   maxhp: 500
   armor_id: 0
-  battler_hue: 0
-  atk: 100
+  battler_hue: 180
+  atk: 10
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -520,11 +520,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
+  dex: 5
   animation2_id: 0
   id: 6
   item_id: 0
-  battler_name: ''
+  battler_name: "$Dough-Goo"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1

@@ -62,11 +62,11 @@ class PK8
   
   # The value of Varba_Var controls the battle theme.
   #          [id] = [Music File, Volume, Pitch]
-  Varba_Theme[0] = ["battleone", 100, 100] #regular
-  Varba_Theme[1] = ["guitarnoodle", 100, 100] #vs daraway
-  Varba_Theme[2] = ["bigtestboss", 100, 100] #special
+  Varba_Theme[0] = ["mariorce", 100, 100] #regular
+  Varba_Theme[1] = ["endless-fight", 100, 100] #vs daraway
+  Varba_Theme[2] = ["field4", 100, 100] #special
   Varba_Theme[3] = ["jungle", 100, 100] #???
-  Varba_Theme[4] = ["Searching The Great Sea", 100, 100] #opening
+  Varba_Theme[4] = ["rubybattle", 100, 100] #opening
 end
 
 if PK8::Varba_RMXP == true # If using RMXP

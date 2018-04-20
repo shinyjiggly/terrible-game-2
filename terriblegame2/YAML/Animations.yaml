@@ -10848,9 +10848,249 @@ root:
     frame: 3
   animation_hue: 0
 - !ruby/object:RPG::Animation
-  name: ''
-  animation_name: caldera1x2
+  name: kaboom
+  animation_name: exploder
   frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 0
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 1
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 2
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 3
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 4
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 5
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 6
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 7
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 8
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 9
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 10
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 11
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 12
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 13
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 14
+      - 0
+      - 0
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
   - !ruby/object:RPG::Animation::Frame
     cell_max: 0
     cell_data: !ruby/object:Table
@@ -10859,10 +11099,38 @@ root:
       ysize: 8
       xsize: 0
       data: []
-  frame_max: 1
+  frame_max: 16
   position: 1
   id: 31
-  timings: []
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    flash_color: !ruby/object:Color
+      red: 255.0
+      green: 255.0
+      blue: 255.0
+      alpha: 255.0
+    condition: 0
+    flash_scope: 1
+    se: !ruby/object:RPG::AudioFile
+      volume: 80
+      name: explosion
+      pitch: 50
+    flash_duration: 5
+    frame: 0
+  - !ruby/object:RPG::Animation::Timing
+    flash_color: !ruby/object:Color
+      red: 255.0
+      green: 255.0
+      blue: 255.0
+      alpha: 255.0
+    condition: 0
+    flash_scope: 0
+    se: !ruby/object:RPG::AudioFile
+      volume: 80
+      name: explosion
+      pitch: 100
+    flash_duration: 5
+    frame: 0
   animation_hue: 0
 - !ruby/object:RPG::Animation
   name: ''

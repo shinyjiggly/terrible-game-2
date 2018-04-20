@@ -1,7 +1,7 @@
 --- !ruby/object:Hash
 root: !ruby/object:Hash
   1: !ruby/object:RPG::MapInfo
-    scroll_x: 532
+    scroll_x: 596
     name: field
     expanded: true
     order: 2
@@ -38,7 +38,7 @@ root: !ruby/object:Hash
   6: !ruby/object:RPG::MapInfo
     scroll_x: 384
     name: daraway's ship
-    expanded: true
+    expanded: false
     order: 6
     scroll_y: 1032
     parent_id: 1

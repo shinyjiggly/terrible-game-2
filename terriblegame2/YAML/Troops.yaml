@@ -7,34 +7,14 @@ root:
     list:
     - !ruby/object:RPG::EventCommand
       parameters:
-      - hey, check this out!
+      - "\\p[1]hey, check this out!"
       indent: 0
       code: 101
-    - !ruby/object:RPG::EventCommand
-      parameters:
-      - a= $game_party.actors[1]
-      indent: 0
-      code: 355
-    - !ruby/object:RPG::EventCommand
-      parameters:
-      - "$scene.battler_custom_move(a,222,111)"
-      indent: 0
-      code: 655
     - !ruby/object:RPG::EventCommand
       parameters:
       - woohoo!
       indent: 0
       code: 101
-    - !ruby/object:RPG::EventCommand
-      parameters:
-      - a= $game_party.actors[1]
-      indent: 0
-      code: 355
-    - !ruby/object:RPG::EventCommand
-      parameters:
-      - "$scene.battler_reset_position(a)"
-      indent: 0
-      code: 655
     - !ruby/object:RPG::EventCommand
       parameters: []
       indent: 0
@@ -218,7 +198,7 @@ root:
     list:
     - !ruby/object:RPG::EventCommand
       parameters:
-      - "\\Name[Dolph]Enough!"
+      - Enough!
       indent: 0
       code: 101
     - !ruby/object:RPG::EventCommand
@@ -315,7 +295,7 @@ root:
     list:
     - !ruby/object:RPG::EventCommand
       parameters:
-      - "\\name[Cleaver]\\c[5]You shall all die now."
+      - "\\p[1]\\c[5]You shall all die now."
       indent: 0
       code: 101
     - !ruby/object:RPG::EventCommand
@@ -406,3 +386,111 @@ root:
     enemy_id: 4
     x: 120
     immortal: false
+- !ruby/object:RPG::Troop
+  pages:
+  - !ruby/object:RPG::Troop::Page
+    list:
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 0
+    condition: !ruby/object:RPG::Troop::Page::Condition
+      actor_id: 1
+      turn_a: 0
+      turn_valid: false
+      enemy_hp: 50
+      switch_valid: false
+      switch_id: 1
+      enemy_index: 0
+      actor_valid: false
+      actor_hp: 50
+      turn_b: 0
+      enemy_valid: false
+    span: 0
+  name: Death Dough-goo
+  id: 6
+  members:
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 240
+    enemy_id: 5
+    x: 328
+    immortal: false
+- !ruby/object:RPG::Troop
+  pages:
+  - !ruby/object:RPG::Troop::Page
+    list:
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 0
+    condition: !ruby/object:RPG::Troop::Page::Condition
+      actor_id: 1
+      turn_a: 0
+      turn_valid: false
+      enemy_hp: 50
+      switch_valid: false
+      switch_id: 1
+      enemy_index: 0
+      actor_valid: false
+      actor_hp: 50
+      turn_b: 0
+      enemy_valid: false
+    span: 0
+  name: Dough-goo
+  id: 7
+  members:
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 240
+    enemy_id: 6
+    x: 312
+    immortal: false
+- !ruby/object:RPG::Troop
+  pages:
+  - !ruby/object:RPG::Troop::Page
+    list:
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 0
+    condition: !ruby/object:RPG::Troop::Page::Condition
+      actor_id: 1
+      turn_a: 0
+      turn_valid: false
+      enemy_hp: 50
+      switch_valid: false
+      switch_id: 1
+      enemy_index: 0
+      actor_valid: false
+      actor_hp: 50
+      turn_b: 0
+      enemy_valid: false
+    span: 0
+  name: ''
+  id: 8
+  members: []
+- !ruby/object:RPG::Troop
+  pages:
+  - !ruby/object:RPG::Troop::Page
+    list:
+    - !ruby/object:RPG::EventCommand
+      parameters: []
+      indent: 0
+      code: 0
+    condition: !ruby/object:RPG::Troop::Page::Condition
+      actor_id: 1
+      turn_a: 0
+      turn_valid: false
+      enemy_hp: 50
+      switch_valid: false
+      switch_id: 1
+      enemy_index: 0
+      actor_valid: false
+      actor_hp: 50
+      turn_b: 0
+      enemy_valid: false
+    span: 0
+  name: ''
+  id: 9
+  members: []
