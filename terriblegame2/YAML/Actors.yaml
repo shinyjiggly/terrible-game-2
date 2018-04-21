@@ -3133,14 +3133,14 @@ root:
   armor1_fix: true
   armor2_id: 0
   armor4_fix: false
-  battler_hue: 0
+  battler_hue: 270
   weapon_fix: true
   final_level: 99
   character_hue: 0
   id: 5
   armor1_id: 0
   armor3_fix: false
-  battler_name: dwightx2
+  battler_name: yoan2
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
