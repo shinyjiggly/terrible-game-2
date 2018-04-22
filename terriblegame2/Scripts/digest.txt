@@ -148,6 +148,7 @@
 71807687    Equipment Sprite                             Equipment_Sprite.rb
 8643023     Victory Window 2 <--                         Victory_Window_2____.rb
 90201145    -----------                                  EMPTY
+3378958     Enemies are a bitch                          Enemies_are_a_bitch.rb
 52246534    FFVII Menu                                   FFVII_Menu.rb
 77964422    Die on the map                               Die_on_the_map.rb
 18011638    Dash                                         Dash.rb
@@ -155,6 +156,7 @@
 81063585    Popup Window                                 Popup_Window.rb
 89413122    Variable-based Battle Themes v1.1            Variable_based_Battle_Themes_v1.1.rb
 47444769    Multiple Message Windows                     Multiple_Message_Windows.rb
+28561122    Typing quirks                                Typing_quirks.rb
 70354990    Caterpillar                                  Caterpillar.rb
 86422875    Draining skill                               Draining_skill.rb
 25664505    hp sacrifice                                 hp_sacrifice.rb

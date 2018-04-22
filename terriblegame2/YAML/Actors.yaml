@@ -1261,8 +1261,8 @@ root:
   armor4_id: 0
   initial_level: 1
   name: Nyx
-  character_name: cleavercharx2
-  weapon_id: 0
+  character_name: nyx2
+  weapon_id: 2
   armor2_fix: false
   parameters: !ruby/object:Table
     dim: 2
@@ -1884,7 +1884,7 @@ root:
   id: 3
   armor1_id: 0
   armor3_fix: false
-  battler_name: cleaverbattlex2
+  battler_name: fiorabattlex2
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1

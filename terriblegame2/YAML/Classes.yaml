@@ -29,7 +29,10 @@ root:
   - 31
   - 32
   - 33
-  learnings: []
+  learnings:
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 51
   weapon_set:
   - 1
   - 2
@@ -129,9 +132,13 @@ root:
   - 30
   - 31
   - 32
-  learnings: []
+  learnings:
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 51
   weapon_set:
   - 3
+  - 12
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -215,9 +222,14 @@ root:
   - 30
   - 31
   - 32
-  learnings: []
+  learnings:
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 51
   weapon_set:
   - 2
+  - 4
+  - 15
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -293,7 +305,10 @@ root:
   - 30
   - 31
   - 32
-  learnings: []
+  learnings:
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 51
   weapon_set:
   - 13
   - 14
@@ -374,7 +389,10 @@ root:
   - 30
   - 31
   - 32
-  learnings: []
+  learnings:
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 51
   weapon_set:
   - 17
   - 18

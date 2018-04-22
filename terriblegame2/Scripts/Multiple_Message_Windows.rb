@@ -355,6 +355,7 @@
     * \I[Wn] = display icon of weapon with id n (note the "W")
     * \I[An] = display icon of armor with id n (note the "A")
     * \I[Sn] = display icon of skill with id n (note the "S")
+    * \IC[] = display icon with that name
   * display icon and name of item, weapon, armor or skill
     * \I&N[In] = display icon and name of item with id n (note the "I")
     * \I&N[Wn] = display icon and name of weapon with id n (note the "W")
@@ -1257,6 +1258,8 @@ class Window_Message < Window_Selectable
       @text.gsub!(/\.  /) { ".  \015" } # Period with Two Spaces
       @text.gsub!(/\\[.]/) { "\015" }    # the \. command
       
+      # select an icon
+      #@text.gsub!(/\\[Ii][Cc]\[]/) { "\025" } 
       # self close message
       @text.gsub!(/\\[!]/) { "\006" }
       # wait for button input

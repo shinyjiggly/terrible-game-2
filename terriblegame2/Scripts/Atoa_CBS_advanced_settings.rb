@@ -553,7 +553,7 @@ module Atoa
   
   Skill_Settings[9] = ["STEAL/ITEM"]
   Skill_Settings[10] = ["STEAL/GOLD"]
-  
+  Skill_Settings[51] = ["TARGET/ALLBATTLERS","EXCLUDEUSER"] # @everyone
   Skill_Settings[53] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[54] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[55] = ["MOVETYPE/STEPFOWARD"]

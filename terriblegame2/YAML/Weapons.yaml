@@ -272,10 +272,10 @@ root:
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0
-  name: Knives
+  name: 69 Knice
   minus_state_set: []
   mdef: 0
-  icon_name: ''
+  icon_name: '69'
   agi_plus: 0
   price: 0
   plus_state_set: []
@@ -287,7 +287,7 @@ root:
   animation2_id: 2
   id: 15
   str_plus: 0
-  description: A speedy weapon for quick thinkers.
+  description: a pair of knives with 69 engraved upon them. Nice.
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0
@@ -1248,7 +1248,7 @@ root:
   name: 69 NICE
   minus_state_set: []
   mdef: 0
-  icon_name: planticon
+  icon_name: '69'
   agi_plus: 0
   price: 0
   plus_state_set: []
@@ -1259,7 +1259,7 @@ root:
   animation2_id: 2
   id: 69
   str_plus: 0
-  description: testing weapon for weapon formulas
+  description: Nice
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0

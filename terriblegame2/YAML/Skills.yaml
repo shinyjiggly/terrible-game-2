@@ -4,7 +4,7 @@ root:
 - !ruby/object:RPG::Skill
   animation1_id: 1
   int_f: 50
-  icon_name: ''
+  icon_name: theB
   eva_f: 0
   minus_state_set: []
   name: "--Skills Generica--"
@@ -1497,17 +1497,18 @@ root:
   sp_cost: 20
   variance: 15
 - !ruby/object:RPG::Skill
-  animation1_id: 0
+  animation1_id: 1
   int_f: 100
-  icon_name: ''
+  icon_name: at
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: everyone
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 24
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -1519,8 +1520,8 @@ root:
   power: 0
   element_set: []
   hit: 100
-  animation2_id: 0
-  description: ''
+  animation2_id: 10
+  description: bound to start Discord
   str_f: 0
   id: 51
   sp_cost: 0
@@ -2036,7 +2037,7 @@ root:
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
-  icon_name: ''
+  icon_name: '69'
   eva_f: 0
   minus_state_set: []
   name: ''
