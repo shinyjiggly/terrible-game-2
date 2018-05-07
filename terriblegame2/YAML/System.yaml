@@ -23,10 +23,10 @@ root: !ruby/object:RPG::System
   - special event
   - day of the week
   - typing quirk active
-  - ''
-  - ''
-  - ''
-  - ''
+  - x
+  - y
+  - map
+  - help
   - ''
   - ''
   - ''
@@ -100,10 +100,10 @@ root: !ruby/object:RPG::System
   - tracking ship movement
   - locked in place
   - restless
-  - niki join
+  - niki kicks sonics ass
   - kitty mewves
-  - ''
-  - ''
+  - thedoorisopen
+  - thinginthehole
   - ''
   - ''
   - ''

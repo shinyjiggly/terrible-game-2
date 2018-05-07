@@ -542,7 +542,7 @@ root:
   hit_rate: 100
   hold_turn: 1
   eva: 0
-  name: Clock-blocked
+  name: smashcharged
   zero_hp: false
   atk_rate: 100
   minus_state_set: []
@@ -557,7 +557,7 @@ root:
   shock_release_prob: 0
   cant_evade: false
   mdef_rate: 100
-  restriction: 4
+  restriction: 0
   agi_rate: 100
   guard_element_set: []
   maxhp_rate: 100
@@ -566,12 +566,12 @@ root:
   pdef_rate: 100
   cant_get_exp: false
   dex_rate: 100
-  animation_id: 0
+  animation_id: 32
 - !ruby/object:RPG::State
   hit_rate: 100
   hold_turn: 0
   eva: 0
-  name: Bardsong
+  name: peeved
   zero_hp: false
   atk_rate: 100
   minus_state_set: []
@@ -600,7 +600,7 @@ root:
   hit_rate: 100
   hold_turn: 0
   eva: 0
-  name: groovy
+  name: pissed off
   zero_hp: false
   atk_rate: 100
   minus_state_set: []
@@ -629,7 +629,7 @@ root:
   hit_rate: 100
   hold_turn: 0
   eva: 0
-  name: 2 groovy
+  name: absofuckinloutly angry
   zero_hp: false
   atk_rate: 100
   minus_state_set: []
@@ -659,19 +659,19 @@ root:
   hit_rate: 100
   hold_turn: 0
   eva: 0
-  name: 3 groovy
+  name: Chill
   zero_hp: false
   atk_rate: 100
-  minus_state_set: []
+  minus_state_set:
+  - 21
+  - 22
   str_rate: 100
   battle_only: true
   slip_damage: false
   rating: 5
   nonresistance: false
   int_rate: 100
-  plus_state_set:
-  - 21
-  - 22
+  plus_state_set: []
   maxsp_rate: 100
   shock_release_prob: 0
   cant_evade: false

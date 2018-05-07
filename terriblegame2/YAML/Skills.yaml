@@ -182,7 +182,7 @@ root:
   eva_f: 0
   minus_state_set: []
   name: weirdo test move
-  common_event_id: 0
+  common_event_id: 11
   mdef_f: 100
   occasion: 1
   agi_f: 0
@@ -195,10 +195,10 @@ root:
   pdef_f: 0
   scope: 1
   dex_f: 0
-  power: 23
+  power: 9999
   element_set: []
   hit: 100
-  animation2_id: 4
+  animation2_id: 5
   description: aaaaa???
   str_f: 0
   id: 7
@@ -297,19 +297,20 @@ root:
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: mild taunt
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 20
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   dex_f: 0
   power: 0
   element_set: []
@@ -326,19 +327,20 @@ root:
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: spicy taunt
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 21
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   dex_f: 0
   power: 0
   element_set: []
@@ -355,19 +357,20 @@ root:
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: ultra spicy taunt
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 22
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   dex_f: 0
   power: 0
   element_set: []
@@ -384,12 +387,13 @@ root:
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: super un-taunt
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 23
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -410,11 +414,11 @@ root:
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
-  icon_name: ''
+  icon_name: angru
   eva_f: 0
   minus_state_set: []
-  name: ''
-  common_event_id: 0
+  name: Help
+  common_event_id: 13
   mdef_f: 100
   occasion: 1
   agi_f: 0
@@ -431,7 +435,7 @@ root:
   element_set: []
   hit: 100
   animation2_id: 0
-  description: ''
+  description: call for help
   str_f: 0
   id: 15
   sp_cost: 0
@@ -718,7 +722,7 @@ root:
   pdef_f: 0
   scope: 1
   dex_f: 0
-  power: 0
+  power: 20
   element_set:
   - 1
   hit: 100
@@ -748,7 +752,7 @@ root:
   pdef_f: 0
   scope: 1
   dex_f: 0
-  power: 0
+  power: 20
   element_set:
   - 4
   hit: 100
@@ -779,7 +783,7 @@ root:
   pdef_f: 0
   scope: 1
   dex_f: 0
-  power: 0
+  power: 40
   element_set:
   - 1
   - 2
@@ -811,7 +815,7 @@ root:
   pdef_f: 0
   scope: 2
   dex_f: 0
-  power: 0
+  power: 30
   element_set:
   - 1
   - 3
@@ -842,7 +846,7 @@ root:
   pdef_f: 0
   scope: 2
   dex_f: 0
-  power: 0
+  power: 40
   element_set:
   - 4
   hit: 100
@@ -873,7 +877,7 @@ root:
   pdef_f: 0
   scope: 2
   dex_f: 0
-  power: 0
+  power: 40
   element_set:
   - 1
   - 4
@@ -904,7 +908,7 @@ root:
   pdef_f: 0
   scope: 2
   dex_f: 0
-  power: 0
+  power: 60
   element_set:
   - 4
   - 11
@@ -935,7 +939,7 @@ root:
   pdef_f: 0
   scope: 3
   dex_f: 0
-  power: 0
+  power: 40
   element_set:
   - 1
   hit: 100
@@ -1130,7 +1134,7 @@ root:
   animation1_id: 0
   int_f: 100
   icon_name: watericon
-  eva_f: 0
+  eva_f: 2
   minus_state_set: []
   name: SOAKER
   common_event_id: 0
@@ -1138,7 +1142,7 @@ root:
   occasion: 1
   agi_f: 0
   plus_state_set: []
-  atk_f: 0
+  atk_f: 2
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
@@ -1146,7 +1150,7 @@ root:
   pdef_f: 0
   scope: 1
   dex_f: 0
-  power: 0
+  power: 20
   element_set:
   - 2
   hit: 100
@@ -1154,7 +1158,7 @@ root:
   description: Shoots water to damage a single target
   str_f: 0
   id: 39
-  sp_cost: 0
+  sp_cost: 2
   variance: 15
 - !ruby/object:RPG::Skill
   animation1_id: 0
@@ -1176,7 +1180,7 @@ root:
   pdef_f: 0
   scope: 1
   dex_f: 0
-  power: 0
+  power: 20
   element_set:
   - 5
   hit: 100
@@ -1206,7 +1210,7 @@ root:
   pdef_f: 0
   scope: 2
   dex_f: 0
-  power: 0
+  power: 40
   element_set:
   - 2
   - 3
@@ -1238,7 +1242,7 @@ root:
   pdef_f: 0
   scope: 2
   dex_f: 0
-  power: 0
+  power: 30
   element_set:
   - 2
   hit: 100
@@ -1268,7 +1272,7 @@ root:
   pdef_f: 0
   scope: 2
   dex_f: 0
-  power: 0
+  power: 30
   element_set:
   - 5
   hit: 100
@@ -1298,7 +1302,7 @@ root:
   pdef_f: 0
   scope: 2
   dex_f: 0
-  power: 0
+  power: 40
   element_set:
   - 2
   - 5
@@ -1329,7 +1333,7 @@ root:
   pdef_f: 0
   scope: 2
   dex_f: 0
-  power: 0
+  power: 60
   element_set:
   - 5
   - 11

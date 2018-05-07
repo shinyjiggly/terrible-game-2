@@ -11133,22 +11133,190 @@ root:
     frame: 0
   animation_hue: 0
 - !ruby/object:RPG::Animation
-  name: ''
-  animation_name: ''
+  name: smashcharge
+  animation_name: darknessx2
   frames:
   - !ruby/object:RPG::Animation::Frame
-    cell_max: 0
+    cell_max: 1
     cell_data: !ruby/object:Table
-      dim: 1
+      dim: 2
       zsize: 1
-      ysize: 1
-      xsize: 0
-      data: []
-  frame_max: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 7
+      - 0
+      - 65424
+      - 100
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 7
+      - 0
+      - 65420
+      - 105
+      - 0
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 7
+      - 0
+      - 65416
+      - 110
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 7
+      - 0
+      - 65412
+      - 115
+      - 0
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 7
+      - 0
+      - 65408
+      - 120
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 7
+      - 0
+      - 65404
+      - 125
+      - 0
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 7
+      - 0
+      - 65400
+      - 130
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 7
+      - 0
+      - 65396
+      - 135
+      - 0
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 7
+      - 0
+      - 65392
+      - 140
+      - 0
+      - 0
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 7
+      - 0
+      - 65388
+      - 145
+      - 0
+      - 1
+      - 255
+      - 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_max: 1
+    cell_data: !ruby/object:Table
+      dim: 2
+      zsize: 1
+      ysize: 8
+      xsize: 1
+      data:
+      - 7
+      - 0
+      - 65384
+      - 150
+      - 0
+      - 0
+      - 255
+      - 1
+  frame_max: 11
   position: 1
   id: 32
   timings: []
-  animation_hue: 0
+  animation_hue: 80
 - !ruby/object:RPG::Animation
   name: ''
   animation_name: ''

@@ -4,6 +4,7 @@
 #---
 #© 2015 - Nuri Yuri (塗 ゆり)
 #===
+
 module Kernel
   unless @RGSS_Linker #>To avoid the RGSS Reset problem
      

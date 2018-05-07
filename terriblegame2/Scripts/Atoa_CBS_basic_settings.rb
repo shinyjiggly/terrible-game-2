@@ -66,7 +66,7 @@ module Atoa
   # (E.g.: you want the battle status window in the top of screen)
   # That's apply to all enemies battlers
   Enemy_Position_AdjustX = 0
-  Enemy_Position_AdjustY = 90
+  Enemy_Position_AdjustY = 30
   
   # Battle screen dimensions, used to limit the battle viewport
   # Battle_Screen_Dimension = [width, height]
@@ -153,7 +153,7 @@ module Atoa
   Command_Window_Position_Adjust =  [0, -100]
   
   # Set the postion of the command window  if 'Command_Window_Position = 3'
-  Command_Window_Custom_Position = [240, 128] #[240, 128]
+  Command_Window_Custom_Position = [240, 100] #[240, 128]
   
   # Set there the postion of actor name window
   Name_Window_Position = 4

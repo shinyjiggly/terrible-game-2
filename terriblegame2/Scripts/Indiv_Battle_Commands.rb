@@ -28,7 +28,7 @@ module Atoa
   #
   # Skill_Command[Command_Name] = [Skills_IDs]
   #
-  Skill_Command['Magic'] = [ 6, 7, 9, 10, 11, 12, 13, 14, 15, 
+  Skill_Command['Magic'] = [ 6, 9, 10, 11, 12, 13, 14, 15, 
     16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
     35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
     54, 55, 56]
@@ -38,7 +38,7 @@ module Atoa
   
   # Skill_Command['Summon'] = [83,84,85,86]
   
-  # Skill_Command['Limit Break'] = [108]
+   Skill_Command['FINAL SMASH'] = [7]
   
   # Skill_Command['Unite'] = [100,103]
     
@@ -72,7 +72,7 @@ module Atoa
   # Commands Color
   # You can add different colors for each command name
   #  Command_Color[Command_Name] = [red, green, blue]
-  #Command_Color['Limit Break'] = [255, 255, 0]
+  Command_Color['Limit Break'] = [255, 255, 0]
   
   # Custom Command Order
   # You can change the order that the commands are shown for specific actors.
@@ -118,7 +118,7 @@ module Atoa
   # With it you can make commands that are only shown if the Overdrive bar is full
   # Just add the command name bellow. Remember that the command must be configurated
   # according the other options. You can add how many commands you want
-  Overdrive_Commands = ['Limit Break']
+  #Overdrive_Commands = ['Limit Break']
   
 end
 

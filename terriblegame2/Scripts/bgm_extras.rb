@@ -1,3 +1,4 @@
+
 class Game_Temp
   attr_accessor :map_bgm_pos
   alias :fmodex_old_temp_initialize :initialize unless $@
@@ -137,6 +138,8 @@ class Scene_Battle
     end
     # If C button was pressed
     if Input.trigger?(Input::C)
+      $game_system.bgm_play($game_temp.map_bgm, $game_temp.map_bgm_pos)
+      #$game_system.play_bgm
 ############################################################################
 #   REMOVED $game_system.play_bgm BECAUSE IT'S DONE AUTOMATICALLY
 #   WHEN ME IS DONE PLAYING
@@ -147,4 +150,3 @@ class Scene_Battle
     end
   end
 end
-

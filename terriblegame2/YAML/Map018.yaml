@@ -481,7 +481,7 @@ root: !ruby/object:RPG::Map
           code: 655
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[11]\\I[S1]ehold!"
+          - "\\p[11]Hewwo"
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -511,12 +511,12 @@ root: !ruby/object:RPG::Map
           code: 655
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[11]these cats decided I'd be a good queen. "
+          - "\\p[11]Look at this place!\\. "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - I might need some time to think about this.
+          - there were so may cats here it was amazing!
           indent: 0
           code: 401
         - !ruby/object:RPG::EventCommand

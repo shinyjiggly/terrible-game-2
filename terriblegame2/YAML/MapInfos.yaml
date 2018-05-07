@@ -1,11 +1,11 @@
 --- !ruby/object:Hash
 root: !ruby/object:Hash
   1: !ruby/object:RPG::MapInfo
-    scroll_x: 1833
+    scroll_x: 1652
     name: field
     expanded: true
     order: 2
-    scroll_y: 879
+    scroll_y: 815
     parent_id: 0
   2: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -18,91 +18,91 @@ root: !ruby/object:Hash
     scroll_x: 715
     name: testing beach
     expanded: false
-    order: 14
+    order: 19
     scroll_y: 303
     parent_id: 0
   4: !ruby/object:RPG::MapInfo
     scroll_x: 532
     name: warhip deck demo
     expanded: false
-    order: 6
+    order: 11
     scroll_y: 303
     parent_id: 1
   5: !ruby/object:RPG::MapInfo
     scroll_x: 320
     name: interior crocodile aligator
     expanded: false
-    order: 7
+    order: 12
     scroll_y: 312
     parent_id: 4
   6: !ruby/object:RPG::MapInfo
     scroll_x: 384
     name: daraway's ship
     expanded: false
-    order: 8
+    order: 13
     scroll_y: 1032
     parent_id: 1
   7: !ruby/object:RPG::MapInfo
-    scroll_x: 752
+    scroll_x: 1227
     name: danger pathway
-    expanded: false
+    expanded: true
     order: 5
-    scroll_y: 304
+    scroll_y: 303
     parent_id: 1
   8: !ruby/object:RPG::MapInfo
     scroll_x: 368
     name: Cove waterway
     expanded: false
-    order: 9
+    order: 14
     scroll_y: 312
     parent_id: 1
   9: !ruby/object:RPG::MapInfo
     scroll_x: 560
     name: midnight liquicave
     expanded: true
-    order: 10
+    order: 15
     scroll_y: 400
     parent_id: 8
   10: !ruby/object:RPG::MapInfo
     scroll_x: 541
     name: cave path
     expanded: true
-    order: 11
+    order: 16
     scroll_y: 240
     parent_id: 9
   11: !ruby/object:RPG::MapInfo
     scroll_x: 320
     name: here's the slide
     expanded: false
-    order: 12
+    order: 17
     scroll_y: 240
     parent_id: 10
   12: !ruby/object:RPG::MapInfo
     scroll_x: 320
     name: map template
     expanded: false
-    order: 19
+    order: 24
     scroll_y: 240
     parent_id: 0
   13: !ruby/object:RPG::MapInfo
     scroll_x: 320
     name: world map
     expanded: false
-    order: 15
+    order: 20
     scroll_y: 240
     parent_id: 3
   14: !ruby/object:RPG::MapInfo
     scroll_x: 320
     name: dock 1
     expanded: false
-    order: 16
+    order: 21
     scroll_y: 240
     parent_id: 13
   15: !ruby/object:RPG::MapInfo
     scroll_x: 320
     name: dock 2
     expanded: false
-    order: 17
+    order: 22
     scroll_y: 240
     parent_id: 13
   16: !ruby/object:RPG::MapInfo
@@ -116,7 +116,7 @@ root: !ruby/object:Hash
     scroll_x: 320
     name: fancy room
     expanded: false
-    order: 18
+    order: 23
     scroll_y: 312
     parent_id: 3
   18: !ruby/object:RPG::MapInfo
@@ -130,6 +130,41 @@ root: !ruby/object:Hash
     scroll_x: 464
     name: Ship Deck
     expanded: false
-    order: 13
+    order: 18
     scroll_y: 824
     parent_id: 1
+  20: !ruby/object:RPG::MapInfo
+    scroll_x: 867
+    name: Land of Holes and Numbers
+    expanded: true
+    order: 6
+    scroll_y: 240
+    parent_id: 7
+  21: !ruby/object:RPG::MapInfo
+    scroll_x: 464
+    name: closeup
+    expanded: true
+    order: 7
+    scroll_y: 240
+    parent_id: 20
+  22: !ruby/object:RPG::MapInfo
+    scroll_x: 400
+    name: door of the past
+    expanded: true
+    order: 8
+    scroll_y: 240
+    parent_id: 21
+  23: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: south room
+    expanded: false
+    order: 9
+    scroll_y: 312
+    parent_id: 22
+  24: !ruby/object:RPG::MapInfo
+    scroll_x: 611
+    name: circle room
+    expanded: false
+    order: 10
+    scroll_y: 240
+    parent_id: 22

@@ -7,6 +7,7 @@
 #                           ArePeeGee (AIM name)
 #  Last Update          :   September 23rd, 2008
 #  Version              :   1.5
+
 #------------------------------------------------------------------------------
 # A rewrite of the built-in Audio module to extend its functionality
 # using the FMOD Ex library (http://www.fmod.org/). In particular,

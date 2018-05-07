@@ -21,8 +21,8 @@ module Atoa
   
   # Bars position adjust
   #                [x, y]
-  HP_Pos_Adjust  = [-28, -140]
-  SP_Pos_Adjust  = [-6, -122]
+  HP_Pos_Adjust  = [0, -30]
+  SP_Pos_Adjust  = [24, -16]
   EXP_Pos_Adjust = [20, 0]
 end
 

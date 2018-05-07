@@ -1036,8 +1036,67 @@ root:
   switch_id: 1
   id: 10
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: unsmash me bayby
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - remove final smash
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 1
+    - 7
+    indent: 0
+    code: 318
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - 1
+    - 7
+    indent: 0
+    code: 318
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - 1
+    - 7
+    indent: 0
+    code: 318
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 1
+    - 7
+    indent: 0
+    code: 318
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 5
+    - 1
+    - 7
+    indent: 0
+    code: 318
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 1
+    - 7
+    indent: 0
+    code: 318
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - remove smashcharged state
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 1
+    - 19
+    indent: 0
+    code: 313
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
@@ -1045,6 +1104,236 @@ root:
   trigger: 0
   switch_id: 1
   id: 11
+- !ruby/object:RPG::CommonEvent
+  name: smash me into a can shape
+  list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - give final smash
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 0
+    - 7
+    indent: 0
+    code: 318
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - 0
+    - 7
+    indent: 0
+    code: 318
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - 0
+    - 7
+    indent: 0
+    code: 318
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    - 0
+    - 7
+    indent: 0
+    code: 318
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 5
+    - 0
+    - 7
+    indent: 0
+    code: 318
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 6
+    - 0
+    - 7
+    indent: 0
+    code: 318
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - add smashcharged state
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 0
+    - 19
+    indent: 0
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 0
+  trigger: 0
+  switch_id: 1
+  id: 12
+- !ruby/object:RPG::CommonEvent
+  name: help
+  list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'what''s that? help? '
+    indent: 0
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 'where? '
+    indent: 0
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - what is help?
+    indent: 0
+    code: 401
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - - "?"
+      - "??"
+      - "???"
+      - "??"
+    - 0
+    indent: 0
+    code: 102
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - "?"
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[a]..."
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - "??"
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[a]..."
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 2
+    - "???"
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[a]Please..."
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "-up the variable by one"
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "-if you tried enough, it will work."
+    indent: 1
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 25
+    - 0
+    - 5
+    - 3
+    indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - you got help!
+    indent: 2
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 25
+    - 25
+    - 0
+    - 0
+    - 0
+    indent: 2
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 25
+    - 25
+    - 1
+    - 0
+    - 1
+    indent: 2
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[a]..."
+    indent: 2
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 3
+    - "??"
+    indent: 0
+    code: 402
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "\\p[a]..."
+    indent: 1
+    code: 101
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 404
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 0
+  trigger: 0
+  switch_id: 1
+  id: 13
 - !ruby/object:RPG::CommonEvent
   name: ''
   list:
@@ -1054,4 +1343,14 @@ root:
     code: 0
   trigger: 0
   switch_id: 1
-  id: 12
+  id: 14
+- !ruby/object:RPG::CommonEvent
+  name: ''
+  list:
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 0
+  trigger: 0
+  switch_id: 1
+  id: 15

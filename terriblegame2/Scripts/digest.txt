@@ -149,6 +149,7 @@
 8643023     Victory Window 2 <--                         Victory_Window_2____.rb
 90201145    -----------                                  EMPTY
 3378958     Enemies are a bitch                          Enemies_are_a_bitch.rb
+50457636    taunt states                                 taunt_states.rb
 52246534    FFVII Menu                                   FFVII_Menu.rb
 77964422    Die on the map                               Die_on_the_map.rb
 18011638    Dash                                         Dash.rb

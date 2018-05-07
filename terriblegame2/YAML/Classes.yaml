@@ -308,6 +308,12 @@ root:
   learnings:
   - !ruby/object:RPG::Class::Learning
     level: 1
+    skill_id: 11
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 13
+  - !ruby/object:RPG::Class::Learning
+    level: 1
     skill_id: 51
   weapon_set:
   - 13
