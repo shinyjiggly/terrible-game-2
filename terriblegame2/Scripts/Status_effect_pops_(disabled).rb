@@ -318,7 +318,7 @@ class RPG::Sprite < ::Sprite
   #     y         : y-position of damage pop sprite being adjusted
   #--------------------------------------------------------------------------
   def damage_state_sprite_drawing(bitmap, state_dur, delay, count, x, y)
-    dmg_delay = Multi_Pop ? i : 1
+    dmg_delay = Multi_Pop ? i : 1 #borken
     dmg_adjust = Damage_Sprite ? 32 : 96
     @_damage_sprites[count] = ::Sprite.new(self.viewport)
     @_damage_sprites[count].bitmap  = bitmap

@@ -1,3 +1,4 @@
+=begin
 #==============================================================================
 #
 #      HERETIC's CATERPILLAR SCRIPT [XP]
@@ -6555,3 +6556,4 @@ class Spriteset_Map
     end
   end
 end
+=end

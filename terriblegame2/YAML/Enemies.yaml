@@ -756,23 +756,23 @@ root:
     skill_id: 1
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 2
-  eva: 2
+  str: 4
+  eva: 3
   animation1_id: 0
   name: imp
   mdef: 2
-  gold: 2
+  gold: 4
   weapon_id: 0
   int: 2
   maxsp: 23
   treasure_prob: 100
-  pdef: 2
-  exp: 2
+  pdef: 4
+  exp: 4
   agi: 2
-  maxhp: 20
+  maxhp: 22
   armor_id: 0
   battler_hue: 0
-  atk: 2
+  atk: 4
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -804,7 +804,7 @@ root:
     - 3
     - 3
     - 3
-  dex: 2
+  dex: 4
   animation2_id: 0
   id: 9
   item_id: 0

@@ -43,7 +43,7 @@ root:
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0
-  name: Bare Fists
+  name: Boxing Gloves
   minus_state_set: []
   mdef: 0
   icon_name: ''
@@ -52,12 +52,13 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 16
   atk: 9
   animation2_id: 2
   id: 3
   str_plus: 0
-  description: Gonna throw down!
+  description: Dear strong bad, how do you type with your boxing gloves on?
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0
@@ -109,6 +110,7 @@ root:
   pdef: 0
   dex_plus: 0
   element_set:
+  - 14
   - 15
   atk: 6
   animation2_id: 2
@@ -166,7 +168,8 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 14
   atk: 100
   animation2_id: 3
   id: 9
@@ -184,7 +187,8 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 14
   atk: 75
   animation2_id: 3
   id: 10
@@ -282,7 +286,7 @@ root:
   pdef: 0
   dex_plus: 0
   element_set:
-  - 15
+  - 14
   atk: 6
   animation2_id: 2
   id: 15
@@ -291,21 +295,22 @@ root:
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0
-  name: ''
+  name: Prosthetic leg
   minus_state_set: []
   mdef: 0
   icon_name: ''
   agi_plus: 0
   price: 0
   plus_state_set: []
-  pdef: 0
+  pdef: 3
   dex_plus: 0
-  element_set: []
-  atk: 0
-  animation2_id: 0
+  element_set:
+  - 16
+  atk: 12
+  animation2_id: 2
   id: 16
-  str_plus: 0
-  description: ''
+  str_plus: 3
+  description: what are you gonna do? kick me to death?
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0

@@ -129,12 +129,13 @@
 17970177    Atoa Scene_Battle 3                          Atoa_Scene_Battle_3.rb
 44841854    Atoa Scene_Battle 4                          Atoa_Scene_Battle_4.rb
 81782964    -----------------------------                EMPTY
+48780024    sprite wave effect                           sprite_wave_effect.rb
 20208372    Large Party Menu                             Large_Party_Menu.rb
 60317430    Atoa CTB                                     Atoa_CTB.rb
 92410424    Status Limit                                 Status_Limit.rb
 77300359    Status effect pops (disabled)                Status_effect_pops_(disabled).rb
 99951215    New Status                                   New_Status.rb
-62906568    Equipment Multislots                         Equipment_Multislots.rb
+62906568    Equipment Multislots (disabled)              Equipment_Multislots_(disabled).rb
 51625542    Equipment skills                             Equipment_skills.rb
 24104288    Advanced Weapons                             Advanced_Weapons.rb
 12597090    Equip Autostates                             Equip_Autostates.rb
@@ -152,7 +153,6 @@
 50457636    taunt states                                 taunt_states.rb
 52246534    FFVII Menu                                   FFVII_Menu.rb
 77964422    Die on the map                               Die_on_the_map.rb
-18011638    Dash                                         Dash.rb
 79881993    Animated Title --                            Animated_Title___.rb
 81063585    Popup Window                                 Popup_Window.rb
 89413122    Variable-based Battle Themes v1.1            Variable_based_Battle_Themes_v1.1.rb
@@ -161,13 +161,26 @@
 70354990    Caterpillar                                  Caterpillar.rb
 86422875    Draining skill                               Draining_skill.rb
 25664505    hp sacrifice                                 hp_sacrifice.rb
-60108649    sprite wave effect                           sprite_wave_effect.rb
 20058967    Scroll panorama                              Scroll_panorama.rb
 28868707    anti lag                                     anti_lag.rb
 44843113    buy only / sell only shops                   buy_only___sell_only_shops.rb
 52856926    Lightning and thunder                        Lightning_and_thunder.rb
 41302047    Advanced map scrolling                       Advanced_map_scrolling.rb
-39055950    Foodstuffs                                   Foodstuffs.rb
+77905186    Combine option                               Combine_option.rb
+39055950    Item activates skill                         Item_activates_skill.rb
+53028226    ---------------                              EMPTY
+50801670    CCOA Caterpillar                             CCOA_Caterpillar.rb
+27207781    cat Game_Train                               cat_Game_Train.rb
+68359624    cat Game_TrainActor                          cat_Game_TrainActor.rb
+40193586    cat Game_Map                                 cat_Game_Map.rb
+38360056    cat Game_Player                              cat_Game_Player.rb
+46692587    Dash                                         Dash.rb
+58354156    cat Spriteset_Map                            cat_Spriteset_Map.rb
+30686419    cat Interpreter                              cat_Interpreter.rb
+84872091    cat Game_Temp                                cat_Game_Temp.rb
+848656      cat Scene_Title                              cat_Scene_Title.rb
+40458847    cat Scene_Save                               cat_Scene_Save.rb
+84228760    cat Scene_Load                               cat_Scene_Load.rb
 37417015    -------------------                          EMPTY
 63588152    Main                                         Main.rb
 95038157    -----------------------------                EMPTY

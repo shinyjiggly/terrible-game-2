@@ -310,7 +310,7 @@ module Atoa
   # -----------------------------------------------------------------------------------
   # "ANIME/**" : Action with pose different from the default. You can add
   #   more than one value to make the pose random. Leave 0 for no pose change
-  #   ** must be equal the Poses ID, separated by comas.
+  #   ** must be equal the Poses ID, separated by commas.
   #   Ex.: "ANIME/0"
   #        "ANIME/12"
   #        "ANIME/12,13,14"
@@ -648,7 +648,7 @@ module Atoa
   Weapon_Settings[13] = []#Tamer's Whip
   Weapon_Settings[14] = []#Claws
   Weapon_Settings[15] = ["COMBO/2"] #Knives
-  Weapon_Settings[16] = ["DMGVARIANCE/0"]
+  Weapon_Settings[16] = ["ANIME/9","ADVJUMP/20"] #leg
   Weapon_Settings[17] = ["STARTTHROW/101-Attack13,0,122,123,124,125,300,-20,0,0,0",
                          "MOVETYPE/NOMOVE"]
   Weapon_Settings[18] = ["STARTTHROW/101-Attack13,0,122,123,124,125,300,-20,0,0,0",

@@ -5,7 +5,7 @@ root:
   eva: 0
   int_plus: 0
   name: Clothes
-  icon_name: ''
+  icon_name: shirt3
   mdef: 0
   auto_state_id: 0
   price: 0
@@ -21,7 +21,7 @@ root:
 - !ruby/object:RPG::Armor
   eva: 0
   int_plus: 0
-  name: Short Breeches
+  name: Shorts
   icon_name: ''
   mdef: 6
   auto_state_id: 0
@@ -33,13 +33,13 @@ root:
   dex_plus: 0
   guard_element_set: []
   id: 2
-  description: Perfect for jumping in!
+  description: Comfy and easy to wear!
   str_plus: 0
 - !ruby/object:RPG::Armor
   eva: 0
   int_plus: 0
-  name: Seaworthy Longcoat
-  icon_name: ''
+  name: Badass Longcoat
+  icon_name: coat
   mdef: 0
   auto_state_id: 0
   price: 0
@@ -48,9 +48,11 @@ root:
   guard_state_set: []
   kind: 2
   dex_plus: 0
-  guard_element_set: []
+  guard_element_set:
+  - 10
+  - 12
   id: 3
-  description: A long blue coat perfect for weathering the ocean.
+  description: A long black coat perfect for brooding.
   str_plus: 0
 - !ruby/object:RPG::Armor
   eva: 0
@@ -88,25 +90,26 @@ root:
   str_plus: 0
 - !ruby/object:RPG::Armor
   eva: 0
-  int_plus: 0
-  name: ''
+  int_plus: 1
+  name: Thicc sweater
   icon_name: ''
   mdef: 0
   auto_state_id: 0
   price: 0
   agi_plus: 0
-  pdef: 0
+  pdef: 13
   guard_state_set: []
-  kind: 0
+  kind: 2
   dex_plus: 0
-  guard_element_set: []
+  guard_element_set:
+  - 5
   id: 6
   description: ''
   str_plus: 0
 - !ruby/object:RPG::Armor
   eva: 0
   int_plus: 0
-  name: ''
+  name: Monkey necklace
   icon_name: ''
   mdef: 0
   auto_state_id: 0
@@ -114,67 +117,68 @@ root:
   agi_plus: 0
   pdef: 0
   guard_state_set: []
-  kind: 0
-  dex_plus: 0
+  kind: 3
+  dex_plus: 2
   guard_element_set: []
   id: 7
-  description: ''
-  str_plus: 0
+  description: Has a monkey face on it!
+  str_plus: 2
 - !ruby/object:RPG::Armor
   eva: 0
-  int_plus: 0
-  name: ''
+  int_plus: 3
+  name: Bell collar
   icon_name: ''
-  mdef: 0
+  mdef: 3
   auto_state_id: 0
   price: 0
-  agi_plus: 0
+  agi_plus: 2
   pdef: 0
   guard_state_set: []
-  kind: 0
+  kind: 3
   dex_plus: 0
   guard_element_set: []
   id: 8
-  description: ''
+  description: purrfect, isn't it?
   str_plus: 0
 - !ruby/object:RPG::Armor
-  eva: 0
-  int_plus: 0
-  name: ''
+  eva: 3
+  int_plus: 1
+  name: Black hat
   icon_name: ''
   mdef: 0
   auto_state_id: 0
   price: 0
-  agi_plus: 0
-  pdef: 0
+  agi_plus: 2
+  pdef: 5
   guard_state_set: []
-  kind: 0
+  kind: 1
   dex_plus: 0
-  guard_element_set: []
+  guard_element_set:
+  - 12
   id: 9
-  description: ''
+  description: In memory of a favorite hat long gone...
   str_plus: 0
 - !ruby/object:RPG::Armor
   eva: 0
-  int_plus: 0
-  name: ''
+  int_plus: 4
+  name: Mage's robe
   icon_name: ''
-  mdef: 0
+  mdef: 10
   auto_state_id: 0
   price: 0
   agi_plus: 0
-  pdef: 0
+  pdef: 10
   guard_state_set: []
-  kind: 0
-  dex_plus: 0
+  kind: 2
+  dex_plus: -1
   guard_element_set: []
   id: 10
-  description: ''
+  description: Really comfy and has long floppy sleeves.
   str_plus: 0
 - !ruby/object:RPG::Armor
   eva: 0
   int_plus: 0
-  name: ''
+  name: Crecent cowlick
   icon_name: ''
   mdef: 0
   auto_state_id: 0
@@ -182,16 +186,16 @@ root:
   agi_plus: 0
   pdef: 0
   guard_state_set: []
-  kind: 0
+  kind: 1
   dex_plus: 0
   guard_element_set: []
   id: 11
-  description: ''
+  description: Legend says if Kat loses this, she'll Die... probably.
   str_plus: 0
 - !ruby/object:RPG::Armor
   eva: 0
   int_plus: 0
-  name: ''
+  name: Cute outfit
   icon_name: ''
   mdef: 0
   auto_state_id: 0
@@ -199,28 +203,28 @@ root:
   agi_plus: 0
   pdef: 0
   guard_state_set: []
-  kind: 0
+  kind: 2
   dex_plus: 0
   guard_element_set: []
   id: 12
   description: ''
   str_plus: 0
 - !ruby/object:RPG::Armor
-  eva: 0
-  int_plus: 0
-  name: ''
+  eva: 2
+  int_plus: 1
+  name: Kitty ears
   icon_name: ''
   mdef: 0
   auto_state_id: 0
   price: 0
-  agi_plus: 0
+  agi_plus: 1
   pdef: 0
   guard_state_set: []
-  kind: 0
+  kind: 1
   dex_plus: 0
   guard_element_set: []
   id: 13
-  description: ''
+  description: Nya~
   str_plus: 0
 - !ruby/object:RPG::Armor
   eva: 0

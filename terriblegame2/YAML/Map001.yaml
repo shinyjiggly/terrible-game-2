@@ -523,11 +523,21 @@ root: !ruby/object:RPG::Map
           code: 117
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 23
-          - 23
-          - 0
+          - 22
+          - 22
+          - 1
           indent: 0
           code: 121
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 1
+          - 18
+          - 8
+          - 0
+          - 0
+          indent: 0
+          code: 201
         - !ruby/object:RPG::EventCommand
           parameters:
           - 1
@@ -754,7 +764,7 @@ root: !ruby/object:RPG::Map
           parameters: []
           indent: 0
           code: 0
-        move_type: 1
+        move_type: 0
         direction_fix: false
         condition: !ruby/object:RPG::Event::Page::Condition
           switch2_valid: false
@@ -769,10 +779,14 @@ root: !ruby/object:RPG::Map
         move_route: !ruby/object:RPG::MoveRoute
           list:
           - !ruby/object:RPG::MoveCommand
+            parameters:
+            - "@wave_amp = 2"
+            code: 45
+          - !ruby/object:RPG::MoveCommand
             parameters: []
             code: 0
           skippable: false
-          repeat: true
+          repeat: false
         trigger: 1
         step_anime: false
         move_frequency: 5

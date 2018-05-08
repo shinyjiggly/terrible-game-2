@@ -1,11 +1,11 @@
 --- !ruby/object:Hash
 root: !ruby/object:Hash
   1: !ruby/object:RPG::MapInfo
-    scroll_x: 1652
+    scroll_x: 1044
     name: field
     expanded: true
     order: 2
-    scroll_y: 815
+    scroll_y: 335
     parent_id: 0
   2: !ruby/object:RPG::MapInfo
     scroll_x: 320

@@ -1304,10 +1304,12 @@ class Window_Message < Window_Selectable
       elsif @text.gsub!(/\\[Pp]\[([a-zA-Z])\]/, "") != nil and
           $game_temp.in_battle
         @float_id = $1.downcase
+        
       # Tie-In with Caterpillar, use \P[Cn] for a Cat Actor or Follower \P[C1]
       elsif @text.gsub!(/\\[Pp]\[[Cc]([0-9]+)\]/, "") != nil and
             !$game_temp.in_battle and
             Interpreter.method_defined?('get_cat_position_id')
+            
         # This only works with Heretic's Caterpillar
         if $1.to_i == 0
           @float_id = 0 # Player
@@ -1317,6 +1319,7 @@ class Window_Message < Window_Selectable
           # Returns the Event ID of the Cat Actor in that position          
           @float_id = s.get_cat_position_id($1.to_i - 1)
         end        
+        
       elsif @text.gsub!(/\\[Pp]/, "") != nil or
             ($game_system.message.floating and $game_system.message.resize) and
             !$game_temp.in_battle

@@ -1608,7 +1608,7 @@ root:
   pdef_f: 0
   scope: 1
   dex_f: 6
-  power: 2000
+  power: 30
   element_set:
   - 10
   hit: 100
@@ -1668,7 +1668,7 @@ root:
   pdef_f: 0
   scope: 2
   dex_f: 0
-  power: 24
+  power: 50
   element_set:
   - 10
   hit: 100
@@ -1698,7 +1698,7 @@ root:
   pdef_f: 0
   scope: 2
   dex_f: 0
-  power: 0
+  power: 70
   element_set:
   - 10
   - 11
@@ -1814,7 +1814,8 @@ root:
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 14
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -1884,8 +1885,9 @@ root:
   pdef_f: 0
   scope: 1
   dex_f: 0
-  power: 0
-  element_set: []
+  power: 20
+  element_set:
+  - 10
   hit: 100
   animation2_id: 0
   description: Siphons life energy from the enemy.
@@ -1928,7 +1930,7 @@ root:
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: "--Skills Aura--"
   common_event_id: 0
   mdef_f: 100
   occasion: 1
@@ -1954,10 +1956,10 @@ root:
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
-  icon_name: ''
+  icon_name: cosmicicon
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: Encouragement
   common_event_id: 0
   mdef_f: 100
   occasion: 1
@@ -1969,7 +1971,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 3
   dex_f: 0
   power: 0
   element_set: []

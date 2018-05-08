@@ -65,7 +65,7 @@ root: !ruby/object:RPG::System
     volume: 100
     name: boss
     pitch: 100
-  start_map_id: 1
+  start_map_id: 21
   shop_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: buying
@@ -75,16 +75,16 @@ root: !ruby/object:RPG::System
     str: STR
     armor3: Body Armor
     mdef: MDEF
-    gold: G
+    gold: B.coin
     sp: MP
     skill: Skill
-    int: INT
+    int: MAG
     armor2: Helmet
     equip: Equip
     hp: HP
     pdef: PDEF
     attack: Attack
-    agi: AGI
+    agi: SPD
     armor1: Shield
     atk: ATK
     item: Item
@@ -115,8 +115,8 @@ root: !ruby/object:RPG::System
   - ''
   - can die on the map
   - "[cat] ladder effects"
-  - "[cat] caterpillar pause"
-  - "[cat] Caterpillar active"
+  - "[cat] caterpillar puase"
+  - "[cat] Caterpillar invisible"
   - "[cat] dead effects"
   - "[cat] remove visible actors"
   - ''
@@ -190,7 +190,7 @@ root: !ruby/object:RPG::System
   - Piercing
   - Slashing
   - Bludgeoning
-  start_y: 10
+  start_y: 13
   battler_hue: 0
   load_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -219,7 +219,7 @@ root: !ruby/object:RPG::System
     armor4_id: 0
     weapon_id: 3
     level: 8
-    armor3_id: 2
+    armor3_id: 0
     armor2_id: 0
     armor1_id: 0
   - !ruby/object:RPG::System::TestBattler
@@ -247,4 +247,4 @@ root: !ruby/object:RPG::System
     name: saved
     pitch: 100
   battle_transition: battletransition
-  start_x: 7
+  start_x: 15

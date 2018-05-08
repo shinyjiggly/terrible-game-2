@@ -226,6 +226,7 @@ class Scene_Title
     # Create picture graphic if needed.
     if PIC != nil
       @picture = Sprite.new
+      @wave_amp = 2
       @picture.bitmap = RPG::Cache.picture(PIC[0])
       @picture.x, @picture.y, @picture.z = PIC[1], PIC[2], PIC[3]
       @picture.opacity = PIC[4]
