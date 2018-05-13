@@ -6,7 +6,7 @@ root:
   animation1_id: 0
   name: Potion
   minus_state_set: []
-  icon_name: ''
+  icon_name: jokes
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0

@@ -442,6 +442,8 @@
   - \I&N[An] = display icon and name of armor with id n (note the "A")
   - \I&N[Sn] = display icon and name of skill with id n (note the "S")
   - \MAP = display the name of the current map
+  NEW!!
+  - \PIC[n] = display a picture
 
   * Foot Forward Notes * - Sprite Sheets only have 16 total Frames of Animation
     and of which, 4 are duplicates.  Foot Forward Options allow access to
@@ -1165,7 +1167,7 @@ class Window_Message < Window_Selectable
       @text.gsub!(/\\[Gg]/) { "\002" }  # Gold Window Auto, based on Player Loc
 
       
-        #Dubealex's Choose Name Box Text Color
+        #Dubealex's Choose Name Box Text Color (NEW)
    @text.gsub!(/\\[Zz]\[([0-9]+)\]/) do
    $Game_Message.name_box_text_color=$1.to_i
    @text.sub!(/\\[Zz]\[([0-9]+)\]/) { "" }
@@ -1258,8 +1260,12 @@ class Window_Message < Window_Selectable
       @text.gsub!(/\.  /) { ".  \015" } # Period with Two Spaces
       @text.gsub!(/\\[.]/) { "\015" }    # the \. command
       
-      # select an icon
+      # select an icon (unimplemented!)
       #@text.gsub!(/\\[Ii][Cc]\[]/) { "\025" } 
+      
+      # show a picture!
+      @text.gsub!(/\\[Qq]\[([\w]+)\]/) { "\026[#{$1}]" } 
+      
       # self close message
       @text.gsub!(/\\[!]/) { "\006" }
       # wait for button input
@@ -2232,13 +2238,26 @@ class Window_Message < Window_Selectable
           # Dont take up space in window, next character
           next
         end
+        # Picture display!!
+        if c == "\026" #and @string_id
+          @text.sub!(/\[([\w]+)\]/, "")
+          bitmap = RPG::Cache.picture($1.to_s)
+          rect = Rect.new(0, 0, bitmap.width, bitmap.height)
+          contents.blt(4+@x, 32*@y, bitmap, rect)
+          #contents.blt(4+@x, 32*@y+4, bitmap, rect)
+          @x += bitmap.width + 4
+          #@y += bitmap.height
+          next
+        end     
+        
         # if \F* (Foot Forward Animation On "Other" Foot)
         if c == "\022" and @float_id
           speaker = (@float_id > 0) ? $game_map.events[@float_id] : $game_player
           speaker.foot_forward_on(frame = 1)
           # Dont take up space in window, next character
           next
-        end          
+        end  
+        
         # If new line text
         if c == "\n"
           # Update cursor width if choice

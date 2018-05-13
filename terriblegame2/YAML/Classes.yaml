@@ -22,6 +22,9 @@ root:
   learnings:
   - !ruby/object:RPG::Class::Learning
     level: 1
+    skill_id: 16
+  - !ruby/object:RPG::Class::Learning
+    level: 1
     skill_id: 51
   weapon_set:
   - 3
@@ -500,12 +503,9 @@ root:
     - 3
     - 3
 - !ruby/object:RPG::Class
-  name: Militant Clown
+  name: Actually a boulder
   armor_set:
-  - 9
-  - 10
-  - 11
-  - 12
+  - 14
   - 21
   - 22
   - 23
@@ -521,8 +521,24 @@ root:
   learnings:
   - !ruby/object:RPG::Class::Learning
     level: 1
-    skill_id: 1
+    skill_id: 26
+  - !ruby/object:RPG::Class::Learning
+    level: 3
+    skill_id: 27
+  - !ruby/object:RPG::Class::Learning
+    level: 5
+    skill_id: 28
+  - !ruby/object:RPG::Class::Learning
+    level: 6
+    skill_id: 29
+  - !ruby/object:RPG::Class::Learning
+    level: 8
+    skill_id: 30
+  - !ruby/object:RPG::Class::Learning
+    level: 10
+    skill_id: 31
   weapon_set:
+  - 17
   - 25
   - 26
   - 27

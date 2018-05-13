@@ -696,7 +696,7 @@ root:
   minus_state_set: []
   str_rate: 100
   battle_only: true
-  slip_damage: false
+  slip_damage: true
   rating: 5
   nonresistance: false
   int_rate: 100

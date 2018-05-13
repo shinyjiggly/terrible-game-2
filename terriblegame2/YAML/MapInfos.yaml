@@ -1,11 +1,11 @@
 --- !ruby/object:Hash
 root: !ruby/object:Hash
   1: !ruby/object:RPG::MapInfo
-    scroll_x: 1044
+    scroll_x: 532
     name: field
     expanded: true
     order: 2
-    scroll_y: 335
+    scroll_y: 303
     parent_id: 0
   2: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -18,7 +18,7 @@ root: !ruby/object:Hash
     scroll_x: 715
     name: testing beach
     expanded: false
-    order: 19
+    order: 20
     scroll_y: 303
     parent_id: 0
   4: !ruby/object:RPG::MapInfo
@@ -45,7 +45,7 @@ root: !ruby/object:Hash
   7: !ruby/object:RPG::MapInfo
     scroll_x: 1227
     name: danger pathway
-    expanded: true
+    expanded: false
     order: 5
     scroll_y: 303
     parent_id: 1
@@ -81,28 +81,28 @@ root: !ruby/object:Hash
     scroll_x: 320
     name: map template
     expanded: false
-    order: 24
+    order: 25
     scroll_y: 240
     parent_id: 0
   13: !ruby/object:RPG::MapInfo
     scroll_x: 320
     name: world map
     expanded: false
-    order: 20
+    order: 21
     scroll_y: 240
     parent_id: 3
   14: !ruby/object:RPG::MapInfo
     scroll_x: 320
     name: dock 1
     expanded: false
-    order: 21
+    order: 22
     scroll_y: 240
     parent_id: 13
   15: !ruby/object:RPG::MapInfo
     scroll_x: 320
     name: dock 2
     expanded: false
-    order: 22
+    order: 23
     scroll_y: 240
     parent_id: 13
   16: !ruby/object:RPG::MapInfo
@@ -116,7 +116,7 @@ root: !ruby/object:Hash
     scroll_x: 320
     name: fancy room
     expanded: false
-    order: 23
+    order: 24
     scroll_y: 312
     parent_id: 3
   18: !ruby/object:RPG::MapInfo
@@ -168,3 +168,10 @@ root: !ruby/object:Hash
     order: 10
     scroll_y: 240
     parent_id: 22
+  25: !ruby/object:RPG::MapInfo
+    scroll_x: 1003
+    name: Mt. dew
+    expanded: false
+    order: 19
+    scroll_y: 752
+    parent_id: 1

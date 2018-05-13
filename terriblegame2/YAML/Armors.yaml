@@ -229,19 +229,21 @@ root:
 - !ruby/object:RPG::Armor
   eva: 0
   int_plus: 0
-  name: ''
-  icon_name: ''
+  name: Rock armor
+  icon_name: earthicon
   mdef: 0
   auto_state_id: 0
   price: 0
   agi_plus: 0
-  pdef: 0
+  pdef: 99
   guard_state_set: []
-  kind: 0
+  kind: 2
   dex_plus: 0
-  guard_element_set: []
+  guard_element_set:
+  - 1
+  - 8
   id: 14
-  description: ''
+  description: rock on!
   str_plus: 0
 - !ruby/object:RPG::Armor
   eva: 0

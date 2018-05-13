@@ -166,7 +166,8 @@
 44843113    buy only / sell only shops                   buy_only___sell_only_shops.rb
 52856926    Lightning and thunder                        Lightning_and_thunder.rb
 41302047    Advanced map scrolling                       Advanced_map_scrolling.rb
-77905186    Combine option                               Combine_option.rb
+77905186    Crafting program                             Crafting_program.rb
+94990335    Crafting recipes                             Crafting_recipes.rb
 39055950    Item activates skill                         Item_activates_skill.rb
 53028226    ---------------                              EMPTY
 50801670    CCOA Caterpillar                             CCOA_Caterpillar.rb

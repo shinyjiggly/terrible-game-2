@@ -499,7 +499,7 @@ module Atoa
   #    avaliable for actors.
   
   Actor_Settings[1] = ["NOCOLLAPSE"]
-  Actor_Settings[2] = ["NOCOLLAPSE", "JUMP/200"]
+  Actor_Settings[2] = ["NOCOLLAPSE"]
   Actor_Settings[3] = ["NOCOLLAPSE"]
   Actor_Settings[4] = ["NOCOLLAPSE"]
   Actor_Settings[5] = ["NOCOLLAPSE"]
@@ -550,9 +550,13 @@ module Atoa
   #5 shot
   Skill_Settings[7] = ["MOVEPOSITION/50,0,150,0,300","MIRAGEADVANCE/nil","MIRAGEACTION/nil","TARGETSWITCH"]
   #test
+
   
   Skill_Settings[9] = ["STEAL/ITEM"]
   Skill_Settings[10] = ["STEAL/GOLD"]
+  
+  #Skill_Settings[16] = ["HIDE/BATTLER"]
+  #angru
   Skill_Settings[51] = ["TARGET/ALLBATTLERS","EXCLUDEUSER"] # @everyone
   Skill_Settings[53] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[54] = ["MOVETYPE/STEPFOWARD"]

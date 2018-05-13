@@ -65,7 +65,7 @@ root: !ruby/object:RPG::System
     volume: 100
     name: boss
     pitch: 100
-  start_map_id: 21
+  start_map_id: 1
   shop_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: buying
@@ -247,4 +247,4 @@ root: !ruby/object:RPG::System
     name: saved
     pitch: 100
   battle_transition: battletransition
-  start_x: 15
+  start_x: 7

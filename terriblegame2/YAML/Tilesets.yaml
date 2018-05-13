@@ -15178,7 +15178,7 @@ root:
   battleback_name: ''
   fog_blend_type: 0
 - !ruby/object:RPG::Tileset
-  panorama_hue: 0
+  panorama_hue: 340
   terrain_tags: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -15860,7 +15860,7 @@ root:
   name: valley of duh
   fog_sy: 0
   fog_opacity: 64
-  panorama_name: ''
+  panorama_name: starsx2
   priorities: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -16545,7 +16545,7 @@ root:
   - midwater
   - bounderies
   - deepwater
-  - ''
+  - dirtpath
   - ''
   - ''
   - ''

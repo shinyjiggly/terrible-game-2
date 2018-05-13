@@ -16,6 +16,12 @@ class Game_Train
     @actors.push(Game_TrainActor.new(1))
     @actors.push(Game_TrainActor.new(2))
     @actors.push(Game_TrainActor.new(3))
+    @actors.push(Game_TrainActor.new(4))
+    @actors.push(Game_TrainActor.new(5))
+    @actors.push(Game_TrainActor.new(6))
+    @actors.push(Game_TrainActor.new(7))
+    @actors.push(Game_TrainActor.new(8))
+    @actors.push(Game_TrainActor.new(9))
   end
   
   def add_move(command)

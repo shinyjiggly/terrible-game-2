@@ -11,7 +11,7 @@ class Spriteset_Map
   #--------------------------------------------------------------------------
   def initialize
     # Make viewports
-    @viewport1 = Viewport.new(0, 0, 640, 480)
+    @viewport1 = Viewport.new(0, 0, 640, 480) #what are these for
     @viewport2 = Viewport.new(0, 0, 640, 480)
     @viewport3 = Viewport.new(0, 0, 640, 480)
     @viewport2.z = 200

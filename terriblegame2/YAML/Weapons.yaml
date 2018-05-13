@@ -314,7 +314,7 @@ root:
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0
-  name: ''
+  name: Rock staff
   minus_state_set: []
   mdef: 0
   icon_name: ''
@@ -323,12 +323,14 @@ root:
   plus_state_set: []
   pdef: 0
   dex_plus: 0
-  element_set: []
+  element_set:
+  - 4
+  - 16
   atk: 0
   animation2_id: 0
   id: 17
   str_plus: 0
-  description: ''
+  description: a pillar of stone to whack you with
 - !ruby/object:RPG::Weapon
   int_plus: 0
   animation1_id: 0

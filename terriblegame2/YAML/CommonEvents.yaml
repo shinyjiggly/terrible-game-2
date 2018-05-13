@@ -1335,8 +1335,41 @@ root:
   switch_id: 1
   id: 13
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: handbook
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - instruct1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 100
+    - 100
+    - 255
+    - 0
+    indent: 0
+    code: 231
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - hit the next page button
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - instruct2
+    - 0
+    - 0
+    - 0
+    - 0
+    - 100
+    - 100
+    - 255
+    - 0
+    indent: 0
+    code: 231
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0

@@ -441,33 +441,34 @@ root:
   sp_cost: 0
   variance: 15
 - !ruby/object:RPG::Skill
-  animation1_id: 0
+  animation1_id: 33
   int_f: 100
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: angru
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 8
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 2
   dex_f: 0
   power: 0
   element_set: []
   hit: 100
-  animation2_id: 0
-  description: ''
+  animation2_id: 10
+  description: im angery
   str_f: 0
   id: 16
-  sp_cost: 0
+  sp_cost: 2
   variance: 15
 - !ruby/object:RPG::Skill
   animation1_id: 0
@@ -1154,7 +1155,7 @@ root:
   element_set:
   - 2
   hit: 100
-  animation2_id: 9
+  animation2_id: 34
   description: Shoots water to damage a single target
   str_f: 0
   id: 39
@@ -1184,7 +1185,7 @@ root:
   element_set:
   - 5
   hit: 100
-  animation2_id: 9
+  animation2_id: 37
   description: Drops an ice crystal to damage a single target
   str_f: 0
   id: 40
@@ -1246,7 +1247,7 @@ root:
   element_set:
   - 2
   hit: 100
-  animation2_id: 9
+  animation2_id: 36
   description: Summons a torrent of rain to damage all enemies
   str_f: 0
   id: 42
