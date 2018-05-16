@@ -104,11 +104,11 @@ root: !ruby/object:RPG::System
   - kitty mewves
   - thedoorisopen
   - thinginthehole
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - switch noise
+  - order switch 1
+  - order switch 2
+  - order switch 3
+  - order switch 4
   - ''
   - ''
   - ''
@@ -157,7 +157,7 @@ root: !ruby/object:RPG::System
     volume: 100
     name: battle_theme1
     pitch: 100
-  test_troop_id: 3
+  test_troop_id: 10
   equip_se: !ruby/object:RPG::AudioFile
     volume: 100
     name: boingthing

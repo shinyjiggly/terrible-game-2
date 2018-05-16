@@ -2,7 +2,7 @@
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: Pokemon_-_Diamond___Pearl_-_Route_205_(Day)
+    name: 107 Dream of the Shore Bordering Another World
     pitch: 100
   events: !ruby/object:Hash
     1: !ruby/object:RPG::Event
@@ -563,18 +563,25 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - return_train_to_player
+          - 4
+          - 4
+          - 0
           indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - return_train_to_player
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
           - 20
-          indent: 0
+          indent: 1
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
           - "$game_temp.transfer_move_route = 1"
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -601,37 +608,37 @@ root: !ruby/object:RPG::Map
               code: 0
             skippable: false
             repeat: false
-          indent: 0
+          indent: 1
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
           - *4
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *5
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *6
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *7
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *8
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - "$game_temp.transfer_move_route = 2"
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -670,57 +677,57 @@ root: !ruby/object:RPG::Map
               code: 0
             skippable: false
             repeat: false
-          indent: 0
+          indent: 1
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
           - *9
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *10
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *11
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *12
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *13
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *14
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *15
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *16
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *17
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - "$game_temp.transfer_move_route = 3"
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -765,114 +772,114 @@ root: !ruby/object:RPG::Map
               code: 0
             skippable: false
             repeat: false
-          indent: 0
+          indent: 1
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
           - *18
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *19
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *20
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *21
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *22
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *23
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *24
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *25
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *26
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *27
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - *28
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - 20
-          indent: 0
+          indent: 1
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[0]on the count of three!"
-          indent: 0
+          indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[0]one,"
-          indent: 0
+          indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[0]two..."
-          indent: 0
+          indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - 2
           - 5
           - 5
-          indent: 0
+          indent: 1
           code: 225
         - !ruby/object:RPG::EventCommand
           parameters:
           - message.sound_audio = 'mariocat'
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
           - message.sound_frequency = 9
-          indent: 0
+          indent: 1
           code: 655
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[c2]Half life 3 confirmed!!!1!"
-          indent: 0
+          indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - message.sound_audio = 'bip'
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
           - message.sound_frequency = 3
-          indent: 0
+          indent: 1
           code: 655
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -887,17 +894,17 @@ root: !ruby/object:RPG::Map
               code: 0
             skippable: false
             repeat: false
-          indent: 0
+          indent: 1
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
           - *29
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - "$game_temp.transfer_move_route = 1"
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -912,17 +919,17 @@ root: !ruby/object:RPG::Map
               code: 0
             skippable: false
             repeat: false
-          indent: 0
+          indent: 1
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
           - *30
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - "$game_temp.transfer_move_route = 3"
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -937,22 +944,22 @@ root: !ruby/object:RPG::Map
               code: 0
             skippable: false
             repeat: false
-          indent: 0
+          indent: 1
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
           - *31
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[0]..."
-          indent: 0
+          indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - "$game_temp.transfer_move_route = 2"
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -967,42 +974,42 @@ root: !ruby/object:RPG::Map
               code: 0
             skippable: false
             repeat: false
-          indent: 0
+          indent: 1
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
           - *32
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - message.sound_audio = 'mariocat'
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
           - message.sound_frequency = 9
-          indent: 0
+          indent: 1
           code: 655
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[c2]...what?"
-          indent: 0
+          indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - message.sound_audio = 'bip'
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
           - message.sound_frequency = 3
-          indent: 0
+          indent: 1
           code: 655
         - !ruby/object:RPG::EventCommand
           parameters:
           - 20
-          indent: 0
+          indent: 1
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -1017,17 +1024,17 @@ root: !ruby/object:RPG::Map
               code: 0
             skippable: false
             repeat: false
-          indent: 0
+          indent: 1
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
           - *33
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - "$game_temp.transfer_move_route = 1"
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -1042,17 +1049,17 @@ root: !ruby/object:RPG::Map
               code: 0
             skippable: false
             repeat: false
-          indent: 0
+          indent: 1
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
           - *34
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - "$game_temp.transfer_move_route = 2"
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -1067,17 +1074,17 @@ root: !ruby/object:RPG::Map
               code: 0
             skippable: false
             repeat: false
-          indent: 0
+          indent: 1
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
           - *35
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - "$game_temp.transfer_move_route = 3"
-          indent: 0
+          indent: 1
           code: 355
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -1092,17 +1099,17 @@ root: !ruby/object:RPG::Map
               code: 0
             skippable: false
             repeat: false
-          indent: 0
+          indent: 1
           code: 209
         - !ruby/object:RPG::EventCommand
           parameters:
           - *36
-          indent: 0
+          indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[0]...three!"
-          indent: 0
+          indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -1110,36 +1117,36 @@ root: !ruby/object:RPG::Map
             volume: 80
             name: earth01
             pitch: 100
-          indent: 0
+          indent: 1
           code: 250
         - !ruby/object:RPG::EventCommand
           parameters:
           - 5
           - 5
           - 5
-          indent: 0
+          indent: 1
           code: 225
         - !ruby/object:RPG::EventCommand
           parameters:
           - 9
           - 9
           - 0
-          indent: 0
+          indent: 1
           code: 121
         - !ruby/object:RPG::EventCommand
           parameters:
           - 20
-          indent: 0
+          indent: 1
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
           - "\\p[c1]We did it!"
-          indent: 0
+          indent: 1
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
           - 20
-          indent: 0
+          indent: 1
           code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
@@ -1149,8 +1156,44 @@ root: !ruby/object:RPG::Map
           - 10
           - 0
           - 0
-          indent: 0
+          indent: 1
           code: 201
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 411
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "...something's missing."
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[c1]Hey, didn't we pass by Rhesus "
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - on the way here?
+          indent: 1
+          code: 401
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[c2]Let's pay Rhehe a visit"
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
@@ -1185,7 +1228,7 @@ root: !ruby/object:RPG::Map
           tile_id: 0
           direction: 4
           blend_type: 0
-          character_hue: 0
+          character_hue: 80
         walk_anime: false
         move_speed: 3
         through: false
@@ -1669,12 +1712,95 @@ root: !ruby/object:RPG::Map
       y: 10
       x: 11
       id: 17
+    18: !ruby/object:RPG::Event
+      pages:
+      - !ruby/object:RPG::Event::Page
+        list:
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 10
+          - true
+          - false
+          indent: 0
+          code: 301
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 601
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 31
+          indent: 1
+          code: 207
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 116
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 602
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 604
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 0
+        move_type: 1
+        direction_fix: false
+        condition: !ruby/object:RPG::Event::Page::Condition
+          switch2_valid: false
+          self_switch_ch: A
+          switch1_id: 1
+          switch1_valid: false
+          variable_value: 0
+          self_switch_valid: false
+          variable_id: 1
+          variable_valid: false
+          switch2_id: 1
+        move_route: !ruby/object:RPG::MoveRoute
+          list:
+          - !ruby/object:RPG::MoveCommand
+            parameters: []
+            code: 0
+          skippable: false
+          repeat: true
+        trigger: 1
+        step_anime: false
+        move_frequency: 6
+        always_on_top: false
+        graphic: !ruby/object:RPG::Event::Page::Graphic
+          opacity: 255
+          character_name: impimppimp
+          pattern: 0
+          tile_id: 0
+          direction: 2
+          blend_type: 0
+          character_hue: 150
+        walk_anime: true
+        move_speed: 5
+        through: false
+      name: EV018
+      y: 12
+      x: 13
+      id: 18
   tileset_id: 16
   bgs: !ruby/object:RPG::AudioFile
     volume: 35
     name: oceanloop
     pitch: 100
-  autoplay_bgm: false
+  autoplay_bgm: true
   data: !ruby/object:Table
     dim: 3
     zsize: 3

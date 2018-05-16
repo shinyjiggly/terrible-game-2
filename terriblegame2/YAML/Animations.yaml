@@ -10842,8 +10842,8 @@ root:
     flash_scope: 1
     se: !ruby/object:RPG::AudioFile
       volume: 80
-      name: ''
-      pitch: 100
+      name: sandstorm
+      pitch: 150
     flash_duration: 5
     frame: 3
   animation_hue: 0

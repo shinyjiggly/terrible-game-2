@@ -2,7 +2,7 @@
 root: !ruby/object:RPG::Map
   bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: Pokemon_-_Diamond___Pearl_-_Route_205_(Day)
+    name: The Brink of Time Track 1 - Chrono Trigger
     pitch: 100
   events: !ruby/object:Hash
     1: !ruby/object:RPG::Event
@@ -481,6 +481,15 @@ root: !ruby/object:RPG::Map
           code: 201
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 1
+          - 1
+          - 0
+          - 0
+          - 0
+          indent: 0
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - -1
           - !ruby/object:RPG::MoveRoute
             list:
@@ -692,7 +701,7 @@ root: !ruby/object:RPG::Map
             code: 0
           skippable: false
           repeat: true
-        trigger: 1
+        trigger: 2
         step_anime: false
         move_frequency: 3
         always_on_top: false
@@ -807,6 +816,15 @@ root: !ruby/object:RPG::Map
           code: 201
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 1
+          - 1
+          - 0
+          - 0
+          - 1
+          indent: 0
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - -1
           - !ruby/object:RPG::MoveRoute
             list:
@@ -888,7 +906,7 @@ root: !ruby/object:RPG::Map
     volume: 35
     name: oceanloop
     pitch: 100
-  autoplay_bgm: false
+  autoplay_bgm: true
   data: !ruby/object:Table
     dim: 3
     zsize: 3

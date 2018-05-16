@@ -105,6 +105,18 @@ root:
   - 32
   learnings:
   - !ruby/object:RPG::Class::Learning
+    level: 3
+    skill_id: 25
+  - !ruby/object:RPG::Class::Learning
+    level: 4
+    skill_id: 26
+  - !ruby/object:RPG::Class::Learning
+    level: 2
+    skill_id: 39
+  - !ruby/object:RPG::Class::Learning
+    level: 3
+    skill_id: 40
+  - !ruby/object:RPG::Class::Learning
     level: 1
     skill_id: 51
   weapon_set:
