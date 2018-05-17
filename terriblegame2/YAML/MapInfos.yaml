@@ -1,7 +1,7 @@
 --- !ruby/object:Hash
 root: !ruby/object:Hash
   1: !ruby/object:RPG::MapInfo
-    scroll_x: 1347
+    scroll_x: 707
     name: field
     expanded: true
     order: 2

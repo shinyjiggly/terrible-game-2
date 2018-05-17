@@ -1317,6 +1317,7 @@ class Window_Message < Window_Selectable
             Interpreter.method_defined?('get_cat_position_id')
             
         # This only works with Heretic's Caterpillar
+        #CHANGE THIS
         if $1.to_i == 0
           @float_id = 0 # Player
         elsif $1.to_i > 0 and $1.to_i <= $game_system.caterpillar.actors.size

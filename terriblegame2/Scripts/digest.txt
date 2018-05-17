@@ -158,7 +158,6 @@
 89413122    Variable-based Battle Themes v1.1            Variable_based_Battle_Themes_v1.1.rb
 47444769    Multiple Message Windows                     Multiple_Message_Windows.rb
 28561122    Typing quirks                                Typing_quirks.rb
-70354990    Caterpillar                                  Caterpillar.rb
 86422875    Draining skill                               Draining_skill.rb
 25664505    hp sacrifice                                 hp_sacrifice.rb
 20058967    Scroll panorama                              Scroll_panorama.rb
@@ -169,23 +168,19 @@
 77905186    Crafting program                             Crafting_program.rb
 94990335    Crafting recipes                             Crafting_recipes.rb
 39055950    Item activates skill                         Item_activates_skill.rb
+75238118    Dash                                         Dash.rb
 53028226    ---------------                              EMPTY
-50801670    CCOA Caterpillar                             CCOA_Caterpillar.rb
-27207781    cat Game_Train                               cat_Game_Train.rb
-68359624    cat Game_TrainActor                          cat_Game_TrainActor.rb
-40193586    cat Game_Map                                 cat_Game_Map.rb
-38360056    cat Game_Player                              cat_Game_Player.rb
-46692587    Dash                                         Dash.rb
-58354156    cat Spriteset_Map                            cat_Spriteset_Map.rb
-30686419    cat Interpreter                              cat_Interpreter.rb
-84872091    cat Game_Temp                                cat_Game_Temp.rb
-848656      cat Scene_Title                              cat_Scene_Title.rb
-40458847    cat Scene_Save                               cat_Scene_Save.rb
-84228760    cat Scene_Load                               cat_Scene_Load.rb
-37417015    -------------------                          EMPTY
+68660691    Path finiding                                Path_finiding.rb
+53409383                                                 EMPTY
+81599446    Enhanced Squad                               Enhanced_Squad.rb
+28899619    squad config                                 squad_config.rb
+69821682    squad engine                                 squad_engine.rb
+96345515    squad menu                                   squad_menu.rb
+11421057    -----------                                  EMPTY
 63588152    Main                                         Main.rb
 95038157    -----------------------------                EMPTY
 39119497    ------gay baby jail------                    ______gay_baby_jail______.rb
 78465921    Twohanded --disabled!!--                     Twohanded___disabled!!__.rb
 22831673    Threat System (disabled)                     Threat_System_(disabled).rb
+71357575    Caterpillar                                  Caterpillar.rb
 31494106                                                 EMPTY
