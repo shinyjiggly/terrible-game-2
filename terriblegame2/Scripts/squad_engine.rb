@@ -1129,6 +1129,7 @@ class Game_Ally < Game_Character
       # Set transparency based on squad on/off switch
       @transparent = $game_switches[$game_system.squad_switch_id] 
     end
+  
     # Exit with original parent system if ally set with move route flag
     return super if @wait_move_route == true 
     # Exit if ally waiting
@@ -1136,6 +1137,7 @@ class Game_Ally < Game_Character
     # Exit if not in the same map
     return if @map_id != $game_map.map_id
     # Regroup proper and active allies if 'stuck'
+    clear_path
     update_autoregroup
     # Handle ally speed and move frequency
     update_speed_and_frequency

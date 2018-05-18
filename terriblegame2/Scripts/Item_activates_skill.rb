@@ -11,7 +11,7 @@ module GGSI
     # pretty much
     # when item then return skill it casts
     
-    when 4 then return 11 # heal-y food uses conditional heal
+    when 5 then return 4 # smexy moves uses gunblitz
       
     end
     return nil

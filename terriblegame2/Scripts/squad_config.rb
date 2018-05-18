@@ -62,7 +62,7 @@ module Squad
   # 
     REGROUP_TIMER   = 1     # Seconds that pass before testing (nil to disable)
     REGROUP_RANGE   = 5     # Tile distance before running (nil to disable)
-    REGROUP_PATH    = true  # If true, uses Pathfinding*. Else members 'flash'
+    REGROUP_PATH    = false  # If true, uses Pathfinding*. Else members 'flash'
 
     
     # PARTY MOVEMENT

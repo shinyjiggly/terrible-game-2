@@ -28,7 +28,7 @@ root:
   hit: 100
   id: 1
   description: Restores HP to one ally.
-  recover_hp: 500
+  recover_hp: 474
   variance: 0
 - !ruby/object:RPG::Item
   consumable: false
@@ -91,7 +91,7 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: Build Grist
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -114,13 +114,13 @@ root:
   animation2_id: 0
   hit: 100
   id: 4
-  description: ''
-  recover_hp: 0
+  description: It looks like gushers... doesn't taste like them though.
+  recover_hp: 1
   variance: 0
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: smexy moves
   minus_state_set: []
   icon_name: ''
   recover_hp_rate: 0
@@ -143,7 +143,7 @@ root:
   animation2_id: 0
   hit: 100
   id: 5
-  description: ''
+  description: the m is for slope
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item

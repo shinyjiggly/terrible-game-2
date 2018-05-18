@@ -2337,7 +2337,7 @@ root:
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: "--Skills Electrica--"
   common_event_id: 0
   mdef_f: 100
   occasion: 1
@@ -2352,7 +2352,8 @@ root:
   scope: 0
   dex_f: 0
   power: 0
-  element_set: []
+  element_set:
+  - 6
   hit: 100
   animation2_id: 0
   description: ''
@@ -2363,60 +2364,64 @@ root:
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
-  icon_name: ''
+  icon_name: thundericon
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: ZAPPO
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 8
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   dex_f: 0
-  power: 0
-  element_set: []
+  power: 10
+  element_set:
+  - 6
   hit: 100
-  animation2_id: 0
-  description: ''
+  animation2_id: 38
+  description: just a little zap
   str_f: 0
   id: 80
-  sp_cost: 0
+  sp_cost: 20
   variance: 15
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
-  icon_name: ''
+  icon_name: thundericon
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: Strike
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 8
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   dex_f: 0
-  power: 0
-  element_set: []
+  power: 30
+  element_set:
+  - 6
   hit: 100
-  animation2_id: 0
-  description: ''
+  animation2_id: 39
+  description: gets them struck by lightning
   str_f: 0
   id: 81
-  sp_cost: 0
+  sp_cost: 40
   variance: 15
 - !ruby/object:RPG::Skill
   animation1_id: 0
@@ -2436,7 +2441,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   dex_f: 0
   power: 0
   element_set: []
@@ -2445,65 +2450,69 @@ root:
   description: Lets you steal an item
   str_f: 0
   id: 82
-  sp_cost: 0
+  sp_cost: 20
   variance: 15
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
-  icon_name: ''
+  icon_name: thundericon
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: Triple bolt
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 8
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   dex_f: 0
-  power: 0
-  element_set: []
+  power: 60
+  element_set:
+  - 6
   hit: 100
-  animation2_id: 0
-  description: ''
+  animation2_id: 40
+  description: three little thunderbolts
   str_f: 0
   id: 83
-  sp_cost: 0
+  sp_cost: 50
   variance: 15
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
-  icon_name: ''
+  icon_name: thundericon
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: hit fucking everyone
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 8
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 2
   dex_f: 0
-  power: 0
-  element_set: []
+  power: 30
+  element_set:
+  - 6
   hit: 100
-  animation2_id: 0
-  description: ''
+  animation2_id: 39
+  description: gets them ALL struck by lightning
   str_f: 0
   id: 84
-  sp_cost: 0
+  sp_cost: 50
   variance: 15
 - !ruby/object:RPG::Skill
   animation1_id: 0

@@ -1889,7 +1889,7 @@ root:
   armor4_id: 7
   initial_level: 1
   name: Rhesus
-  character_name: rehes
+  character_name: rehes2
   weapon_id: 7
   armor2_fix: false
   parameters: !ruby/object:Table
@@ -2512,7 +2512,7 @@ root:
   id: 4
   armor1_id: 0
   armor3_fix: false
-  battler_name: calhounx2
+  battler_name: rhebattle
 - !ruby/object:RPG::Actor
   armor4_id: 8
   initial_level: 1

@@ -47,6 +47,7 @@ module Atoa
   
   Equipment_Sprite['Weapon'][69] = ['_nice', true]
   Equipment_Sprite['Weapon'][1] = ['_gunaxe', true]
+  Equipment_Sprite['Weapon'][7] = ['_axe', true]
   Equipment_Sprite['Weapon'][2] = ['_cutlass', true]
   Equipment_Sprite['Weapon'][11] = ['_staff', true]
   Equipment_Sprite['Weapon'][13] = ['_whip', true]
