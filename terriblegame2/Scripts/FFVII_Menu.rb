@@ -30,16 +30,18 @@ class Scene_Menu
      s4 = "Status"
      s5 = "Save"
      s6 = "End Game"
+     s7 = "Beastiary"
+     s8 = "Next Day ==>" #new!!
      
-     s7 = "Next Day ==>" #new!!
+    
      
    #if ship is not docked (2) and ship can be used (3)
    if $game_switches[2] == false and $game_switches[3] == true and $game_map.map_id == 1
     #change this depending on current ship
      
-     @command_window = Window_Command.new(160, [s1, s2, s3, s4, s5, s6, s7])
+     @command_window = Window_Command.new(160, [s1, s2, s3, s4, s5, s6, s7, s8])
    else
-     @command_window = Window_Command.new(160, [s1, s2, s3, s4, s5, s6])
+     @command_window = Window_Command.new(160, [s1, s2, s3, s4, s5, s6, s7])
    end
    
      @command_window.index = @menu_index
@@ -183,7 +185,12 @@ class Scene_Menu
            $game_system.se_play($data_system.decision_se)
            # Switch to end game screen
            $scene = Scene_End.new
-        when 6   # progress day
+        when 6   
+           # Play decision SE
+           $game_system.se_play($data_system.decision_se)
+           $scene = Beastary_Scene.new
+        when 7
+          # progress day
            # Play decision SE
            $game_system.se_play($data_system.decision_se)
            # exit back to map

@@ -27,10 +27,10 @@ root: !ruby/object:RPG::System
   - y
   - map
   - help
-  - ''
-  - ''
-  - ''
-  - ''
+  - min monster
+  - currency 1
+  - currency 2
+  - currency 3
   - ''
   - ''
   - ''
@@ -82,7 +82,7 @@ root: !ruby/object:RPG::System
     armor2: Helmet
     equip: Equip
     hp: HP
-    pdef: PDEF
+    pdef: DEF
     attack: Attack
     agi: SPD
     armor1: Shield
@@ -155,7 +155,7 @@ root: !ruby/object:RPG::System
     pitch: 100
   battle_bgm: !ruby/object:RPG::AudioFile
     volume: 100
-    name: battle_theme1
+    name: battle2
     pitch: 100
   test_troop_id: 10
   equip_se: !ruby/object:RPG::AudioFile
