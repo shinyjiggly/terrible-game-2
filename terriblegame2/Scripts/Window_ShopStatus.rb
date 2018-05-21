@@ -32,7 +32,7 @@ class Window_ShopStatus < Window_Base
       number = $game_party.armor_number(@item.id)
     end
     self.contents.font.color = system_color
-    self.contents.draw_text(4, 0, 200, 32, "number in possession")
+    self.contents.draw_text(4, 0, 200, 32, "what you got")
     self.contents.font.color = normal_color
     self.contents.draw_text(204, 0, 32, 32, number.to_s, 2)
     if @item.is_a?(RPG::Item)

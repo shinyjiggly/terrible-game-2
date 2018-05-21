@@ -96,6 +96,7 @@
 62132726    Font                                         Font.rb
 4688758     longer script calls                          longer_script_calls.rb
 56455682                                                 EMPTY
+53121994    slanted bar                                  slanted_bar.rb
 93415179    Battle Windows                               Battle_Windows.rb
 3577221     HP/SP/EXP                                    HP_SP_EXP.rb
 20364602    Simple Font Shadow                           Simple_Font_Shadow.rb
@@ -129,6 +130,9 @@
 17970177    Atoa Scene_Battle 3                          Atoa_Scene_Battle_3.rb
 44841854    Atoa Scene_Battle 4                          Atoa_Scene_Battle_4.rb
 81782964    -----------------------------                EMPTY
+91022786    new shop                                     new_shop.rb
+68786476    autopilot                                    autopilot.rb
+59287643    npc 8 directional                            npc_8_directional.rb
 48780024    sprite wave effect                           sprite_wave_effect.rb
 20208372    Large Party Menu                             Large_Party_Menu.rb
 60317430    Atoa CTB                                     Atoa_CTB.rb
@@ -142,15 +146,15 @@
 93796663    Enemy Autostates                             Enemy_Autostates.rb
 16279889    Indiv Battle Commands                        Indiv_Battle_Commands.rb
 26472483    Enemy Name Window                            Enemy_Name_Window.rb
-73046781    Counterattack                                Counterattack.rb
 42283720    Custom Damage <--                            Custom_Damage____.rb
 64022756    Consume items                                Consume_items.rb
 24406872    States Graphic                               States_Graphic.rb
 71807687    Equipment Sprite                             Equipment_Sprite.rb
 8643023     Victory Window 2 <--                         Victory_Window_2____.rb
-68988019    hp bars                                      hp_bars.rb
+68988019    enemy hp bars                                enemy_hp_bars.rb
 90201145    -----------                                  EMPTY
 31275624    simple beastiary                             simple_beastiary.rb
+29540037    inn option                                   inn_option.rb
 97104217    new gameover                                 new_gameover.rb
 3378958     Enemies are a bitch                          Enemies_are_a_bitch.rb
 50457636    taunt states                                 taunt_states.rb
@@ -165,7 +169,6 @@
 25664505    hp sacrifice                                 hp_sacrifice.rb
 20058967    Scroll panorama                              Scroll_panorama.rb
 28868707    anti lag                                     anti_lag.rb
-44843113    buy only / sell only shops                   buy_only___sell_only_shops.rb
 52856926    Lightning and thunder                        Lightning_and_thunder.rb
 41302047    Advanced map scrolling                       Advanced_map_scrolling.rb
 77905186    Crafting program                             Crafting_program.rb

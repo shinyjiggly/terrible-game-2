@@ -466,7 +466,7 @@ module Atoa
   Crt_Txt_Color = [255,  96,   0] # Critical text color
   Mss_Txt_Color = [176, 176, 176] # Erros message color
   Damage_Font   = "PlopDump"   # Damage Exhibition font
-  Dmg_Font_Size = 24   # Damage Exhibition font size
+  Dmg_Font_Size = 20   # Damage Exhibition font size
   
   # This settings are valid only forimage exhibition
   # These valus must be added to the graphic filename

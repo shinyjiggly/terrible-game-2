@@ -46,7 +46,8 @@ module Atoa
   
   # Only valid if 'Display_Type = 2', adjust the base position of the attributes
   # of each character
-  Custom_Stat_Position =  [[8,-8],[108,-8],[208,-8],[308,-8],[408,-8],[508,-8],[600, -8],[500,8],[584,352],[584,414]]
+  Custom_Stat_Position =  [[8,-16],[108,-16],[208,-16],[308,-16],[408,-16],
+  [508,-16],[608, -16],[500,-16],[584,-16],[584,-16]]
   #transparent bottom row
   #[[32,390],[132,390],[232,390],[332,390],[432,390],[532,390],[632, 390],[584,290],[584,352],[584,414]]
   #next to chars
@@ -73,11 +74,11 @@ module Atoa
   
   # Configuration of the HP text exhibition
   # HP_Text = [Position X, Position Y, Font Name, Font Size, Bold]
-  HP_Text = [0, 24, 'Arial', 12, false]
+  HP_Text = [0, 30, 'PlopDump', 12, false]  #0,24
    
   # Configuration of the HP digits exhibition
   # HP_Number = [Font Name, Font Size, Bold, Show Max HP]
-  HP_Number = ['Arial', 12, false, true]
+  HP_Number = ['PlopDump', 12, false, true]
   
   # Configuration of the Max HP digits exhibition
   # Max_HP_Number = [Font Name, Font Size, Bold]
@@ -85,7 +86,7 @@ module Atoa
 
   # Configuration of the SP text exhibition
   # SP_Text = [Position X, Position Y, Font Name, Font Size, Bold]
-  SP_Text = [0, 34, 'Arial', 12, false]
+  SP_Text = [0, 40, 'Arial', 12, false]  #0,34
   
   # Configuration of the SP digits exhibition
   # SP_Number = [Font Name, Font Size, Bold, Show Max HP]
@@ -333,7 +334,7 @@ class Window_Base
   end
   #--------------------------------------------------------------------------
   def set_default_font
-    self.contents.font.name = Font.default_name
+    self.contents.font.name = "PlopDump" #Font.default_name
     self.contents.font.size = 20 #Font.default_size 12
     self.contents.font.bold = false
   end
@@ -391,6 +392,8 @@ class Window_BattleStatus < Window_Base
       else
         draw_actor_state(actor, actor_x + State_Config[0], actor_y + State_Config[1])
       end
+      self.contents.font.name = "PlopDump"
+      self.contents.font.size = 20
     end
   end
   #--------------------------------------------------------------------------

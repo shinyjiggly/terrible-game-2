@@ -146,8 +146,10 @@ class Window_Help < Window_Base
     if text != @text or align != @align
       self.contents.clear
       self.contents.font.color = normal_color
-      self.contents.font.name = "PlopDump"
-      self.contents.font.size = 20
+      set_default_font
+      #self.contents.font.name = "PlopDump"
+      #self.contents.font.size = 20
+      
       self.contents.draw_text(4, 0, self.width - 40, 32, text, align)
       #self.contents.draw_text(4, 0, self.width - 40, 32, text, align)
       text_width = self.contents.text_size(text).width
@@ -169,8 +171,10 @@ class Window_Help < Window_Base
     if text != @text or align != @align or @battler != battler
       self.contents.clear
       self.contents.font.color = normal_color
-      self.contents.font.size = 20
-      self.contents.font.name = "PlopDump"
+      set_default_font
+      #self.contents.font.size = 20
+      #self.contents.font.name = "PlopDump"
+      
       self.contents.draw_text(4, 0, self.width - 40, 32, text, align)
       @text = text
       @align = align
@@ -261,7 +265,8 @@ class Window_Skill < Window_Selectable
   def draw_skill_cost(skill, x, y)
     return if Hide_Zero_SP
     cost = @actor.calc_sp_cost(skill)
-    self.contents.font.size = 20
+    set_default_font
+    #self.contents.font.size = 20
     self.contents.draw_text(x + 232, y, 48, 32, cost.to_s, 2)
   end
 end

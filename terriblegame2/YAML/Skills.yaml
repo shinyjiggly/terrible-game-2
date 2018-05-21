@@ -2042,12 +2042,12 @@ root:
   sp_cost: 0
   variance: 15
 - !ruby/object:RPG::Skill
-  animation1_id: 0
+  animation1_id: 10
   int_f: 100
   icon_name: '69'
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: '69'
   common_event_id: 0
   mdef_f: 100
   occasion: 1
@@ -2059,13 +2059,13 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 2
   dex_f: 0
-  power: 0
+  power: 69
   element_set: []
   hit: 100
-  animation2_id: 0
-  description: ''
+  animation2_id: 35
+  description: '969696969696696969'
   str_f: 0
   id: 69
   sp_cost: 0

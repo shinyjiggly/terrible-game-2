@@ -11,8 +11,7 @@ module GGSI
     # pretty much
     # when item then return skill it casts
     
-    when 5 then return 4 # smexy moves uses gunblitz
-      
+    when 5 then return 69 # smexy moves uses gunblitz
     end
     return nil
   end

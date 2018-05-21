@@ -1,12 +1,13 @@
 #==============================================================================
-# Atoa's Active Time Battle Version
+# Atoa's Conditional Turn Battle Version
 # By Atoa
 #==============================================================================
 # This script adds an CTB System (FFX like)
 # The configurations are explained below
 #
-# For obvious reasons, you can't use together with the "Atoa CTB"
+# For obvious reasons, you can't use together with the "Atoa ATB"
 #==============================================================================
+
 module Atoa  
   # Do not remove or change these lines
   Cast_Time = {}
@@ -812,7 +813,7 @@ class Window_Ctb < Window_Base
   def update_text_window
     self.contents.clear
     self.contents.font.color = system_color
-    self.contents.font.size = 22
+    self.contents.font.size = 20
     self.contents.font.bold = true
     #self.contents.draw_text(0, 0, 100, 22, 'Next up')
     for i in 0...@order.size

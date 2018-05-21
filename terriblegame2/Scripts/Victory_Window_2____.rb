@@ -26,7 +26,8 @@ class Window_Base < Window
     bitmap = RPG::Cache.icon(skill.icon_name)
     self.contents.blt(x, y + 4, bitmap, Rect.new(0, 0, 24, 24))
     self.contents.font.color = normal_color
-    self.contents.font.size = 20
+    set_default_font
+    #self.contents.font.size = 20
     self.contents.draw_text(x + 28, y, 212, 32, skill.name)
   end
 
@@ -105,19 +106,21 @@ class Window_BattleResult < Window_Base
       #self.contents = Bitmap.new(608, 288)
       self.y = 0
       self.height = 440
-      self.contents.font.size = 20
+      set_default_font
     end
     self.contents.clear
     x = 0
     self.contents.draw_text(x, 0, 200, 32, 'Loot obtained:')
     
     #draw given exp
+    
     self.contents.font.color = normal_color
     cx = contents.text_size(@exp.to_s).width
     self.contents.draw_text(x, 24, cx+12, 32, "+" + @exp.to_s)
     x += cx + 18
     
     #draw "exp"
+    
     self.contents.font.color = system_color
     cx = contents.text_size('EXP').width
     self.contents.draw_text(x, 24, 64, 32, 'EXP')
@@ -217,6 +220,7 @@ class Window_BattleResult < Window_Base
         self.contents.draw_text(charx, y , 80, 32, 'Next') #self.contents.draw_text(208, y + 24, 80, 32, 'Next')
         self.contents.font.color = normal_color
         charx += 10 #290
+        draw_slant_bar(charx, y + 20, exp, actor.next_exp, 69) #new
         self.contents.draw_text(charx, y, 84, 32, actor.next_rest_exp_s, 2)
       end
       y += 24

@@ -40,7 +40,7 @@ class Window_ShopNumber < Window_Base
     self.contents.clear
     draw_item_name(@item, 4, 96)
     self.contents.font.color = normal_color
-    self.contents.draw_text(272, 96, 32, 32, "×")
+    self.contents.draw_text(272, 96, 32, 32, "x")
     self.contents.draw_text(308, 96, 24, 32, @number.to_s, 2)
     self.cursor_rect.set(304, 96, 32, 32)
     # Draw total price and currency units

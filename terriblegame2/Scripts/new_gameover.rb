@@ -13,9 +13,13 @@ def main
 # Play game over ME
 $game_system.me_play($data_system.gameover_me)
 # Saving Settings
-s1 = "Try again?"
-s2 = "I'm finished."
-@command_window = Window_Command.new(192, [s1, s2])
+
+# Execute transition
+Graphics.transition(120)
+s1 = "Load file"
+s2 = "Exit"
+s3 = "Resume?"
+@command_window = Window_Command.new(192, [s1, s2, s3])
 @command_window.back_opacity = 160
 @command_window.x = 320 - @command_window.width / 2
 @command_window.y = 288
@@ -36,7 +40,8 @@ else
 @command_window.disable_item(1)
 end
 # Execute transition
-Graphics.transition
+Graphics.transition(120)
+
 # Main loop
 loop do
 # Update game screen
@@ -69,6 +74,9 @@ when 0 # Continue
 command_continue
 when 1 # Shutdown
 command_shutdown
+when 2 # NEW!
+command_resume
+  
 end
 end
 end
@@ -121,6 +129,9 @@ return
 end
 # Play decision SE
 $game_system.se_play($data_system.decision_se)
+Audio.bgm_fade(1)
+Audio.bgs_fade(1)
+Audio.me_fade(200)
 # Switch to load screen
 $scene = Scene_Load.new
 end
@@ -137,6 +148,39 @@ Audio.me_fade(800)
 # Shutdown
 $scene = nil
 end
+
+#--------------------------------------------------------------------------
+# * Command: Resume
+#--------------------------------------------------------------------------
+def command_resume
+# Play decision SE
+$game_temp.gameover = false
+      $game_map.setup($gameover_to_inn.map_id)
+      $game_player.moveto($gameover_to_inn.map_x, $gameover_to_inn.map_y)
+      case $gameover_to_inn.direction
+      when 2
+        $game_player.turn_down
+      when 4
+        $game_player.turn_left
+      when 6
+        $game_player.turn_right
+      when 8
+        $game_player.turn_up
+      end
+      $scene=Scene_Map.new
+      $game_map.refresh
+      
+      $game_party.lose_gold($gameover_to_inn.gold_sub)
+      char = $game_party.actors
+      for i in 0..char.size-1
+        id = char[i].id
+        $game_actors[id].hp = ($game_actors[id].maxhp * $gameover_to_inn.hp_pct).round
+        $game_actors[id].sp = ($game_actors[id].maxsp * $gameover_to_inn.sp_pct).round
+        $game_actors[id].exp = 0 - $game_actors[id].exp
+
+      end
+      end
+
 #--------------------------------------------------------------------------
 # * Battle Test
 #--------------------------------------------------------------------------

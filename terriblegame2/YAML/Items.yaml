@@ -122,7 +122,7 @@ root:
   animation1_id: 0
   name: smexy moves
   minus_state_set: []
-  icon_name: ''
+  icon_name: '69'
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
@@ -136,7 +136,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 2
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
@@ -144,7 +144,7 @@ root:
   hit: 100
   id: 5
   description: the m is for slope
-  recover_hp: 0
+  recover_hp: 1
   variance: 0
 - !ruby/object:RPG::Item
   consumable: true

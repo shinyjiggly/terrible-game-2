@@ -123,8 +123,9 @@ class Beastary_Window_1 < Window_Base
     if $game_variables[26] >= 1 #Change the [26] to your variable!
       super(0,0,440,420)
       self.contents = Bitmap.new(width-32,height-32)
-      self.contents.font.name = "PlopDump" #This is the font used. I wouldn't change this.
-      self.contents.font.size = 20
+      set_default_font
+      #self.contents.font.name = "PlopDump" #This is the font used. I wouldn't change this.
+      #self.contents.font.size = 20
     end
     
     def update(content)

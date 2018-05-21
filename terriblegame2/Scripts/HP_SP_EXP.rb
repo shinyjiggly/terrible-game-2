@@ -21,8 +21,8 @@ module Atoa
   
   # Bars position adjust
   #                [x, y]
-  HP_Pos_Adjust  = [0, -30]
-  SP_Pos_Adjust  = [24, -16]
+  HP_Pos_Adjust  = [0,0]#[0, -30] ,-8
+  SP_Pos_Adjust  = [0,0]#[24, -16]
   EXP_Pos_Adjust = [20, 0]
 end
 
@@ -53,8 +53,12 @@ class Window_Base < Window
   #ideally this should be able to be changed elsewhere or something
   
   alias draw_actor_hp_bar draw_actor_hp
-  the_setup = true
-  if the_setup == true
+  the_setup = 2
+  # 0 = horizontal
+  # 1 = vertical
+  # 2 = slanted
+  
+  if the_setup == 0
     def draw_actor_hp(actor, x, y, width = 144) 
 	#is defining the same thing differently even a good idea? it doesn't particularly strike me as being so. idk.
       bar_x = HP_Pos_Adjust[0] + x
@@ -69,8 +73,9 @@ class Window_Base < Window
       src_rect2 = Rect.new(0, @line * @height, @width * @amount / 100, @height)
       self.contents.blt(bar_x, bar_y, @skin, src_rect2)
       draw_actor_hp_bar(actor, x, y, width)
+      end
     end
-  else #vertical version
+  if the_setup == 1 #vertical version
     def draw_actor_hp(actor, x, y, width = 144) #draws the numbers
       #global positions of the bars
       bar_x = HP_Pos_Adjust[0] + x + (Font.default_size * 2 /3) 
@@ -96,10 +101,24 @@ class Window_Base < Window
 	  #that winds up only flipping the graphics
       draw_actor_hp_bar(actor, x, y, width) 
     end
-    end
+  else
+    
+    def draw_actor_hp(actor, x, y, width = 144)
+     # self.contents.font.name = "arial"
+      #self.contents.font.size = 12
+  
+    bar_x = HP_Pos_Adjust[0] + x
+      bar_y = HP_Pos_Adjust[1] + y + (Font.default_size * 2 /3)
+      draw_slant_bar(bar_x, bar_y, actor.hp, actor.maxhp, 69) #120
+      self.contents.draw_text(bar_x, bar_y -10 , 200, 10, #100, 32
+      "#{actor.hp}" + " HP")#"/" + "#{actor.maxhp}")
+    
+      end
+  end
+  
   #--------------------------------------------------------------------------
   alias draw_actor_sp_bar draw_actor_sp
-  if the_setup == false
+  if the_setup == 0
   def draw_actor_sp(actor, x, y, width = 144)
     bar_x = SP_Pos_Adjust[0] + x
     bar_y = SP_Pos_Adjust[1] + y + (Font.default_size * 2 /3)
@@ -114,7 +133,8 @@ class Window_Base < Window
     self.contents.blt(bar_x, bar_y, @skin, src_rect2)
     draw_actor_sp_bar(actor, x, y, width)
   end
-    else #vertical version
+  end
+  if the_setup == 1 #vertical version
     def draw_actor_sp(actor, x, y, width = 144) #draws the numbers
       #global positions of the bars
       bar_x = SP_Pos_Adjust[0] + x + (Font.default_size * 2 /3) 
@@ -138,7 +158,18 @@ class Window_Base < Window
 
       draw_actor_sp_bar(actor, x, y, width) 
     end
-    end
+  else
+    def draw_actor_sp(actor, x, y, width = 144) #draws the numbers
+      #self.contents.font.name = "PlopDump"
+      #self.contents.font.size = 12
+      
+    bar_x = SP_Pos_Adjust[0] + x
+      bar_y = SP_Pos_Adjust[1] + y + (Font.default_size * 2 /3)
+      draw_slant_bar(bar_x, bar_y, actor.sp, actor.maxsp, 69, 6, bar_color = Color.new(150, 0, 150, 255), end_color = Color.new(0, 0, 255, 255))
+      self.contents.draw_text(bar_x, bar_y -10 , 200, 10, #100, 32
+      "#{actor.sp}" + " MP")#"/" + "#{actor.maxhp}")
+      end
+  end
   #--------------------------------------------------------------------------
   alias draw_actor_exp_bar draw_actor_exp
   def draw_actor_exp(actor, x, y)
@@ -147,12 +178,16 @@ class Window_Base < Window
     @skin = RPG::Cache.windowskin(EXP_Meter)
     @width  = @skin.width
     @height = @skin.height / 3
-    src_rect = Rect.new(0, 0, @width, @height)
-    self.contents.blt(bar_x, bar_y, @skin, src_rect)    
+    #src_rect = Rect.new(0, 0, @width, @height)
+    #self.contents.blt(bar_x, bar_y, @skin, src_rect)    
+    
     @line   = (actor.now_exp == actor.next_exp ? 2 : 1)
     @amount = (actor.next_exp == 0 ? 0 : 100 * actor.now_exp / actor.next_exp)
-    src_rect2 = Rect.new(0, @line * @height, @width * @amount / 100, @height)
-    self.contents.blt(bar_x, bar_y, @skin, src_rect2)
-    draw_actor_exp_bar(actor, x, y)
+    
+    draw_slant_bar(bar_x, bar_y, actor.now_exp, actor.next_exp, 69) #120
+    
+    #src_rect2 = Rect.new(0, @line * @height, @width * @amount / 100, @height)
+    #self.contents.blt(bar_x, bar_y, @skin, src_rect2)
+    #draw_actor_exp_bar(actor, x, y)
   end
 end

@@ -235,14 +235,14 @@ root:
   int_rate: 100
   plus_state_set: []
   maxsp_rate: 100
-  shock_release_prob: 0
+  shock_release_prob: 25
   cant_evade: false
   mdef_rate: 100
   restriction: 4
   agi_rate: 100
   guard_element_set: []
   maxhp_rate: 100
-  auto_release_prob: 25
+  auto_release_prob: 50
   id: 8
   pdef_rate: 100
   cant_get_exp: false

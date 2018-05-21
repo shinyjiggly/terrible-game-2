@@ -101,7 +101,7 @@ module Atoa
   #claws
   
   Weapon_Custom_Formula[15] = "#{Weapon_Custom_Formula[6]}" #double knives
-  Weapon_Custom_Formula[16] = "#{Weapon_Custom_Formula[3]}" #leg
+  Weapon_Custom_Formula[16] = "#{Weapon_Custom_Formula[2]}" #leg
   
   Weapon_Custom_Formula[69] = "69" #nice
   

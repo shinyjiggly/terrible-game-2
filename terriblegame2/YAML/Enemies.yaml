@@ -521,7 +521,7 @@ root:
     - 3
     - 3
   dex: 5
-  animation2_id: 0
+  animation2_id: 2
   id: 6
   item_id: 0
   battler_name: "$Dough-Goo"
@@ -572,7 +572,7 @@ root:
   treasure_prob: 50
   pdef: 10
   exp: 30
-  agi: 6
+  agi: 30
   maxhp: 300
   armor_id: 0
   battler_hue: 0

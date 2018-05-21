@@ -43,11 +43,11 @@ root: !ruby/object:Hash
     scroll_y: 1032
     parent_id: 1
   7: !ruby/object:RPG::MapInfo
-    scroll_x: 1230
+    scroll_x: 880
     name: danger pathway
     expanded: true
     order: 5
-    scroll_y: 308
+    scroll_y: 692
     parent_id: 1
   8: !ruby/object:RPG::MapInfo
     scroll_x: 368
