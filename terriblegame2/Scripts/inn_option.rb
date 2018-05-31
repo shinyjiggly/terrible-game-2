@@ -43,7 +43,7 @@ $gameover_to_inn.direction = VALUE
 # Begin SDK Enabled Test
 #--------------------------------------------------------------------------
 #if SDK.state('GameOverToInn') == true
-
+=begin
 #==============================================================================
 # ** Gameover_To_Inn: Stores variables for game over location
 #==============================================================================
@@ -124,7 +124,9 @@ class Scene_Gameover
     end
   end
 end
+#this is usually commented out
 =end
+=begin
 #================================
 # ** Scene_Title
 #================================
@@ -161,3 +163,4 @@ end
 # End SDK Enabled Test
 #--------------------------------------------------------------------------
 #end
+=end

@@ -866,7 +866,7 @@ root:
   treasure_prob: 100
   pdef: 7
   exp: 8
-  agi: 61
+  agi: 41
   maxhp: 42
   armor_id: 0
   battler_hue: 250
@@ -962,19 +962,19 @@ root:
     skill_id: 25
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 40
   eva: 0
   animation1_id: 0
-  name: ''
-  mdef: 100
-  gold: 0
+  name: robodinosaur
+  mdef: 50
+  gold: 555
   weapon_id: 0
   int: 50
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
+  pdef: 50
+  exp: 555
+  agi: 40
   maxhp: 500
   armor_id: 0
   battler_hue: 0
@@ -1014,7 +1014,7 @@ root:
   animation2_id: 0
   id: 11
   item_id: 0
-  battler_name: ''
+  battler_name: "$robodino"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1022,22 +1022,22 @@ root:
     xsize: 17
     data:
     - 0
+    - 2
+    - 3
+    - 4
+    - 1
+    - 4
+    - 4
+    - 4
+    - 5
     - 3
     - 3
+    - 2
+    - 4
     - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
+    - 2
+    - 4
+    - 4
   actions:
   - !ruby/object:RPG::Enemy::Action
     basic: 0
@@ -1049,11 +1049,51 @@ root:
     condition_turn_a: 0
     skill_id: 1
     condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 80
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 4
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 81
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 75
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 83
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 25
+    rating: 3
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 84
+    condition_level: 1
 - !ruby/object:RPG::Enemy
   str: 50
   eva: 0
   animation1_id: 0
-  name: ''
+  name: a
   mdef: 100
   gold: 0
   weapon_id: 0
@@ -1141,7 +1181,7 @@ root:
   str: 50
   eva: 0
   animation1_id: 0
-  name: ''
+  name: aa
   mdef: 100
   gold: 0
   weapon_id: 0
@@ -1229,7 +1269,7 @@ root:
   str: 50
   eva: 0
   animation1_id: 0
-  name: ''
+  name: aaa
   mdef: 100
   gold: 0
   weapon_id: 0

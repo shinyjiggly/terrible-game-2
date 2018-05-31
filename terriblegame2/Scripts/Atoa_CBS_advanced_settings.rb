@@ -525,7 +525,7 @@ module Atoa
   Enemy_Settings[2] = ["COLLAPSE/0"]
   Enemy_Settings[3] =["ENEMYINTRO"]
   #Enemy_Settings[4] = ["VICTORYPOSE","ENEMYINTRO","COLLAPSE/1"]
-  Enemy_Settings[11] = ["VICTORYPOSE","COLLAPSE/2"]
+  Enemy_Settings[11] = ["COLLAPSE/1"]
 
   #=============================================================================
   
@@ -563,6 +563,7 @@ module Atoa
   Skill_Settings[55] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[56] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[68] = ["TIMEAFTERANIM/40"]
+  Skill_Settings[69] = ["DMGVARIANCE/0"] #nice
   
   Skill_Settings[73] = ["STARTTHROW/101-Attack13,0,122,123,124,125,300,-20,0,0,0",
                         "MOVETYPE/NOMOVE","ANIME/13"]
@@ -639,7 +640,7 @@ module Atoa
   
   Weapon_Settings[1] = [] #Aged Axegun
   Weapon_Settings[2] = [] #Cutlass
-  Weapon_Settings[3] = ["ADVJUMP/90"] #Bare Fists
+  Weapon_Settings[3] = ["ADVJUMP/20"] #Bare Fists
   Weapon_Settings[4] = [] #Rapier
   Weapon_Settings[5] = [] #BETA STICK
   Weapon_Settings[6] = [] #Knife
@@ -690,7 +691,7 @@ module Atoa
   Item_Settings[2] = ["MOVETYPE/STEPFOWARD"]
   Item_Settings[3] = ["MOVETYPE/STEPFOWARD"]
   Item_Settings[4] = ["MOVETYPE/STEPFOWARD"]
-  Item_Settings[5] = ["MOVETYPE/STEPFOWARD"]
+  Item_Settings[5] = ["MOVETYPE/STEPFOWARD","DMGVARIANCE/0"]
   Item_Settings[6] = ["MOVETYPE/STEPFOWARD"]
   Item_Settings[7] = ["MOVETYPE/STEPFOWARD"]
   Item_Settings[8] = ["MOVETYPE/STEPFOWARD"]
@@ -745,13 +746,14 @@ module Atoa
    
   Enemy_Battle_Cry[1] = {'COLLAPSE' => [['ouu',100,100]]}
   Enemy_Battle_Cry[2] = {'COLLAPSE' => [['ouu',100,100]]}
-  Enemy_Battle_Cry[3] = {'COLLAPSE' => [['ouu',80,100]]}
-  Enemy_Battle_Cry[5] = {'COLLAPSE' => [['ouu',80,100]]}
-  Enemy_Battle_Cry[6] = {'COLLAPSE' => [['ouu',80,100]]}
-  Enemy_Battle_Cry[7] = {'COLLAPSE' => [['ouu',80,100]]}
-  Enemy_Battle_Cry[8] = {'COLLAPSE' => [['ouu',80,100]]}
-  Enemy_Battle_Cry[9] = {'COLLAPSE' => [['ouu',80,100]]}
+  Enemy_Battle_Cry[3] = {'COLLAPSE' =>  [['ouu',80,100]]}
+  Enemy_Battle_Cry[5] = {'COLLAPSE' =>  [['ouu',80,100]]}
+  Enemy_Battle_Cry[6] = {'COLLAPSE' =>  [['ouu',80,100]]}
+  Enemy_Battle_Cry[7] = {'COLLAPSE' =>  [['ouu',80,100]]}
+  Enemy_Battle_Cry[8] = {'COLLAPSE' =>  [['ouu',80,100]]}
+  Enemy_Battle_Cry[9] = {'COLLAPSE' =>  [['ouu',80,100]]}
   Enemy_Battle_Cry[10] = {'COLLAPSE' => [['ouu',80,100]]}
+  Enemy_Battle_Cry[11] = {'COLLAPSE' => [['ouu',80,100]]}
   
   # LIST OF COMMANDS FOR SOUND EFFECT SETTINGS:
   #  All sound configurations follow this sintaxe:

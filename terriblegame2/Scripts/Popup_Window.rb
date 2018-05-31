@@ -36,7 +36,7 @@ class Window_Popup < Window_Base
     # Define shortcuts for displaying text
       when 0 then 'aaaAAAAAAAAAAA'
       when 1 then 'You did the thing!'
-      when 2 then 'Acquired'
+      when 2 then 'You got a'
     end
 #=============================================================================
 # END CUSTOMIZATION
@@ -135,7 +135,7 @@ class Interpreter
     # Increase / decrease items
     $game_party.gain_item(@parameters[0], value)
     # Popup Window
-    text = (value > 0 ? 'Acquired' : 'Lost')
+    text = (value > 0 ? 'you got' : 'uhhh.... what happened to')
     popup(text, $data_items[@parameters[0]], value)
     # Continue
     return true

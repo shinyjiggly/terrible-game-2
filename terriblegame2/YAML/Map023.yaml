@@ -578,7 +578,7 @@ root: !ruby/object:RPG::Map
             - &4 !ruby/object:RPG::MoveCommand
               parameters:
               - !ruby/object:RPG::AudioFile
-                volume: 60
+                volume: 10
                 name: earth04
                 pitch: 135
               code: 44
@@ -602,6 +602,11 @@ root: !ruby/object:RPG::Map
           - *5
           indent: 0
           code: 509
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 20
+          indent: 0
+          code: 106
         - !ruby/object:RPG::EventCommand
           parameters:
           - 22
@@ -701,7 +706,7 @@ root: !ruby/object:RPG::Map
             code: 0
           skippable: false
           repeat: true
-        trigger: 2
+        trigger: 4
         step_anime: false
         move_frequency: 3
         always_on_top: false
@@ -757,7 +762,7 @@ root: !ruby/object:RPG::Map
         move_speed: 3
         through: false
       name: EV012
-      y: 12
+      y: 23
       x: 10
       id: 12
     13: !ruby/object:RPG::Event

@@ -119,7 +119,7 @@ root:
   variance: 0
 - !ruby/object:RPG::Item
   consumable: true
-  animation1_id: 0
+  animation1_id: 1
   name: smexy moves
   minus_state_set: []
   icon_name: '69'
@@ -140,7 +140,7 @@ root:
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
-  animation2_id: 0
+  animation2_id: 27
   hit: 100
   id: 5
   description: the m is for slope
@@ -1249,11 +1249,11 @@ root:
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: true
+  consumable: false
   animation1_id: 0
-  name: ''
+  name: a key
   minus_state_set: []
-  icon_name: ''
+  icon_name: egkey
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
@@ -1274,7 +1274,7 @@ root:
   animation2_id: 0
   hit: 100
   id: 44
-  description: ''
+  description: it's the key to you doooooooom!!!!1
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item

@@ -162,7 +162,7 @@ root: !ruby/object:Hash
     scroll_y: 528
     parent_id: 22
   24: !ruby/object:RPG::MapInfo
-    scroll_x: 538
+    scroll_x: 614
     name: circle room
     expanded: true
     order: 10

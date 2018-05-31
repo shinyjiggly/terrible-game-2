@@ -18,7 +18,7 @@ class Beastary_Scene
   end
   
   def main
-    @mobs_max = 10 #IMPORTANT TO CHANGE THIS!!!!
+    @mobs_max = 14 #IMPORTANT TO CHANGE THIS!!!!
     @mobs_min = 1 #Where the list starts. Doesnt have to be 1!
     $game_variables[26] = @mobs_min #Change the [26] to your variable!
     @window_b1=Beastary_Window_1.new
@@ -129,19 +129,39 @@ class Beastary_Window_1 < Window_Base
     end
     
     def update(content)
+      flavortxt = {}
+      
+      flavortxt[0] = "Ash was here, gary is a loser."
+      flavortxt[1] = "AAAaaaaaaaaaa."
+      flavortxt[2] = "this is an enemy."
+      flavortxt[3] = "this is an enemy."
+      flavortxt[4] = "this is an enemy."
+      flavortxt[5] = "this is an enemy."
+      flavortxt[6] = "this is an enemy."
+      flavortxt[7] = "this is an enemy."
+      flavortxt[8] = "smash that mf like button"
+      flavortxt[9] = "An imp with an impish nature."
+      flavortxt[10] = "An imp... but somehow more... super?"
+      flavortxt[11] = "don't piss this bith off!"
+      flavortxt[12] = "this is an enemy."
+      flavortxt[13] = "this is an enemy."
+      flavortxt[14] = "this is an enemy."
+      
       @mob_id = $data_enemies[$game_variables[26]].name #Change the [26] to your variable!
-      @mob_maxhp = $data_enemies[$game_variables[26]].maxhp #Change the [26] to your variable!
-      @mob_maxsp = $data_enemies[$game_variables[26]].maxsp #Change the [26] to your variable!
-      @mob_exp = $data_enemies[$game_variables[26]].exp #Change the [26] to your variable!
-      @mob_str = $data_enemies[$game_variables[26]].str #Change the [26] to your variable!
-      @mob_dex = $data_enemies[$game_variables[26]].dex #Change the [26] to your variable!
-      @mob_agi = $data_enemies[$game_variables[26]].agi #Change the [26] to your variable!
-      @mob_int = $data_enemies[$game_variables[26]].int #Change the [26] to your variable!
-      @mob_atk = $data_enemies[$game_variables[26]].atk #Change the [26] to your variable!
-      @mob_pdef = $data_enemies[$game_variables[26]].pdef #Change the [26] to your variable!
-      @mob_mdef = $data_enemies[$game_variables[26]].mdef #Change the [26] to your variable!
-      @mob_eva = $data_enemies[$game_variables[26]].eva #Change the [26] to your variable!
-
+      @mob_maxhp = $data_enemies[$game_variables[26]].maxhp 
+      @mob_maxsp = $data_enemies[$game_variables[26]].maxsp 
+      @mob_exp = $data_enemies[$game_variables[26]].exp
+      @mob_str = $data_enemies[$game_variables[26]].str 
+      @mob_dex = $data_enemies[$game_variables[26]].dex
+      @mob_agi = $data_enemies[$game_variables[26]].agi
+      @mob_int = $data_enemies[$game_variables[26]].int
+      @mob_atk = $data_enemies[$game_variables[26]].atk 
+      @mob_pdef = $data_enemies[$game_variables[26]].pdef 
+      @mob_mdef = $data_enemies[$game_variables[26]].mdef
+      @mob_eva = $data_enemies[$game_variables[26]].eva 
+      @mob_txt = flavortxt[$game_variables[26]]
+      #@mob_pic = $data_enemies[$game_variables[26]].battler_name
+      
       self.contents.clear
       self.contents.font.color = text_color(0) #This will change text color. Its red by default. Use the numbers 0-7.
       self.contents.draw_text(0,0,300,32, @mob_id)
@@ -163,6 +183,9 @@ class Beastary_Window_1 < Window_Base
       self.contents.draw_text(0,250,300,32,"EVA: "+@mob_eva.to_s+" ")
       self.contents.font.color = text_color(1)
       self.contents.draw_text(0,270,300,32,"---------------------")
+      self.contents.draw_text(0,290,300,32,"Notes: "+@mob_txt+ " ")
+      #self.contents.bitmap.new(@mob_pic)
+      #find a better way
     end
               
   end

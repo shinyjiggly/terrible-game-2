@@ -671,9 +671,33 @@ root:
       turn_b: 0
       enemy_valid: false
     span: 0
-  name: ''
+  name: robodinosaur
   id: 11
-  members: []
+  members:
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 320
+    enemy_id: 11
+    x: 112
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 264
+    enemy_id: 10
+    x: 256
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 232
+    enemy_id: 9
+    x: 192
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 320
+    enemy_id: 9
+    x: 200
+    immortal: false
 - !ruby/object:RPG::Troop
   pages:
   - !ruby/object:RPG::Troop::Page

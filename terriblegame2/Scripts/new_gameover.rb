@@ -2,7 +2,7 @@
 # Gameover Menu Script
 # Sasuke89
 #===============================================================================
-
+=begin
 
 class Scene_Gameover
 def main
@@ -227,3 +227,4 @@ $game_system.bgm_play($game_system.battle_bgm)
 $scene = Scene_Battle.new
 end
 end
+=end

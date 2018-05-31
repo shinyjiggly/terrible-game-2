@@ -132,7 +132,6 @@
 81782964    -----------------------------                EMPTY
 91022786    new shop                                     new_shop.rb
 68786476    autopilot                                    autopilot.rb
-59287643    npc 8 directional                            npc_8_directional.rb
 48780024    sprite wave effect                           sprite_wave_effect.rb
 20208372    Large Party Menu                             Large_Party_Menu.rb
 60317430    Atoa CTB                                     Atoa_CTB.rb
@@ -182,6 +181,8 @@
 28899619    squad config                                 squad_config.rb
 69821682    squad engine                                 squad_engine.rb
 96345515    squad menu                                   squad_menu.rb
+80620706                                                 EMPTY
+73327286    Focus Radius                                 Focus_Radius.rb
 11421057    -----------                                  EMPTY
 63588152    Main                                         Main.rb
 95038157    -----------------------------                EMPTY
