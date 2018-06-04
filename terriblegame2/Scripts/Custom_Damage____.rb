@@ -59,7 +59,7 @@ module Atoa
   #     'dmg' = Critical Damage: Changes the damage dealt by critical hits.
   #     'rcrt' = Critical Rate Resist: Changes the chance of reciving citical hits
   #     'rdmg' = Critical Damage Resist: Changes the damage recived by critical hits.
-  
+=begin
   #Note: New Status is the script page with the code for making this stuff work
   Speacial_Status['Weapon'] = {
   1 => {'hit' => -20, 'CRIT-HIT' => +10},  #gunaxe
@@ -70,6 +70,7 @@ module Atoa
   35 => {'rcrt' => 20, 'rdmg' => -50}, 
   36 => {'hit' =>20,'crt' => 25,'dmg' => 50}
   }
+=end
   
   Weapon_Custom_Formula[1] = "({atk}/2 + rand({atk}+1)*1.5).round*{str} - {def}" 
   #gunaxe

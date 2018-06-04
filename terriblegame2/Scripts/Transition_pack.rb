@@ -110,6 +110,7 @@
 #------------------------------------------------------------------------------
 #  This module handles taking screenshots for the transitions.
 #==============================================================================
+
 module Screen
   
   @screen = Win32API.new 'screenshot.dll', 'Screenshot', %w(l l l l p l l), ''

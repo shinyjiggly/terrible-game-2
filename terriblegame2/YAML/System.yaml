@@ -28,9 +28,9 @@ root: !ruby/object:RPG::System
   - map
   - help
   - min monster
-  - currency 1
-  - currency 2
-  - currency 3
+  - sight radius
+  - event id
+  - ''
   - ''
   - ''
   - ''

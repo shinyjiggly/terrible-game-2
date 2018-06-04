@@ -6,7 +6,7 @@
 # Hit Rate, Critical Rate, Critical Damage, Critical Rate Resist,
 # Critical Damage Resist
 #==============================================================================
-
+=begin
 module Atoa
   # Do not remove this line
   Speacial_Status = {}
@@ -656,3 +656,4 @@ class Scene_Equip
     end
   end
 end
+=end

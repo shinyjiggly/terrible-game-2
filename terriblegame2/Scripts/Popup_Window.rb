@@ -122,7 +122,7 @@ class Interpreter
   def popup(text = '', item = nil, value = 0)
     $scene.popup_window.refresh_popup_text(text, item, value)
     $scene.popup_window.visible = true
-    Audio.se_play('Audio\SE\doodah', 80, 100) 
+    Audio.se_play('Audio/SE/doodah.wav', 80, 100) 
     $scene.popup_count = 80
   end
 

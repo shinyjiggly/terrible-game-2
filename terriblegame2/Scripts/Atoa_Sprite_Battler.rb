@@ -164,9 +164,11 @@ class Sprite_Battler < RPG::Sprite
   # * Migare effect update
   #--------------------------------------------------------------------------
   def update_mirage_effect
+=begin
     update_mirage if @mirage.nitems > 0
     mirage_init if @battler.mirage and not @mirage_init
     @mirage_init = false if @mirage_init and not @battler.mirage
+=end
   end
   #--------------------------------------------------------------------------
   # * State animation update

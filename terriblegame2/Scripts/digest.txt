@@ -106,6 +106,7 @@
 67821719                                                 EMPTY
 46453158    Transition pack                              Transition_pack.rb
 13876443    Extra Stats                                  Extra_Stats.rb
+2417803     proximity                                    proximity.rb
 18843368                                                 EMPTY
 95698182    Atoa CBS - basic settings                    Atoa_CBS_basic_settings.rb
 69493194    Atoa CBS - advanced settings                 Atoa_CBS_advanced_settings.rb

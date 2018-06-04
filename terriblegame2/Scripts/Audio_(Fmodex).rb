@@ -120,6 +120,7 @@ end
   end
 
 =end
+
   def se_stop
     return @se_stop.call if(@library != ::FmodEx)
     ::FmodEx.se_stop

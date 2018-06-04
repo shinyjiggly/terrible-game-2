@@ -1378,12 +1378,212 @@ root:
   switch_id: 1
   id: 14
 - !ruby/object:RPG::CommonEvent
-  name: ''
+  name: visability
   list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    - 28
+    - 0
+    - 75
+    - 4
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 28
+    - 28
+    - 1
+    - 0
+    - 1
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 28
+    - 28
+    - 0
+    - 0
+    - 0
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - $game_self_switches[[@map_id,$game_variables[28],"B"]]
+    indent: 0
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - if self switch b is on
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - Proxy.inprox?(@event_id=$game_variables[28],20)
+    indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - if the event is even close enough
+    indent: 2
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - Proxy.inprox?(@event_id=$game_variables[28],$game_variables[27])
+    indent: 2
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - if the event is closer
+    indent: 3
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &1 !ruby/object:RPG::MoveCommand
+        parameters:
+        - 255
+        code: 42
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: false
+      repeat: false
+    indent: 3
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *1
+    indent: 3
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      volume: 100
+      name: bip
+      pitch: 150
+    indent: 3
+    code: 250
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 28
+    - 28
+    - 1
+    - 0
+    - 1
+    indent: 3
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - !ruby/object:RPG::MoveRoute
+      list:
+      - &2 !ruby/object:RPG::MoveCommand
+        parameters:
+        - 50
+        code: 42
+      - !ruby/object:RPG::MoveCommand
+        parameters: []
+        code: 0
+      skippable: false
+      repeat: false
+    indent: 3
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *2
+    indent: 3
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      volume: 100
+      name: bip
+      pitch: 50
+    indent: 3
+    code: 250
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 28
+    - 28
+    - 1
+    - 0
+    - 1
+    indent: 3
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 3
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 411
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 412
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
-  trigger: 0
+  trigger: 2
   switch_id: 1
   id: 15
