@@ -557,6 +557,7 @@ module Atoa
   
   #Skill_Settings[16] = ["HIDE/BATTLER"]
   #angru
+    Skill_Settings[37] = ["MOVETYPE/MOVETOTARGET","ANIME/4"] #rollout
   Skill_Settings[51] = ["TARGET/ALLBATTLERS","EXCLUDEUSER"] # @everyone
   Skill_Settings[53] = ["MOVETYPE/STEPFOWARD"]
   Skill_Settings[54] = ["MOVETYPE/STEPFOWARD"]
@@ -652,7 +653,7 @@ module Atoa
   Weapon_Settings[12] = []#Simple Mace
   Weapon_Settings[13] = []#Tamer's Whip
   Weapon_Settings[14] = []#Claws
-  Weapon_Settings[15] = ["COMBO/2"] #Knives
+  Weapon_Settings[15] = ["HITS/69"] #Knives
   Weapon_Settings[16] = ["ANIME/9","ADVJUMP/20"] #leg
   Weapon_Settings[17] = ["STARTTHROW/101-Attack13,0,122,123,124,125,300,-20,0,0,0",
                          "MOVETYPE/NOMOVE"]

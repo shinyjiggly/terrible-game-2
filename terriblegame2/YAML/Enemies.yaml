@@ -1090,23 +1090,23 @@ root:
     skill_id: 84
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 35
   eva: 0
   animation1_id: 0
-  name: a
+  name: boote
   mdef: 100
-  gold: 0
+  gold: 12
   weapon_id: 0
-  int: 50
+  int: 39
   maxsp: 500
-  treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  treasure_prob: 50
+  pdef: 73
+  exp: 14
+  agi: 31
+  maxhp: 426
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 46
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1138,11 +1138,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 43
+  animation2_id: 2
   id: 12
-  item_id: 0
-  battler_name: ''
+  item_id: 25
+  battler_name: "$boote"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1178,23 +1178,23 @@ root:
     skill_id: 1
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 45
   eva: 0
   animation1_id: 0
-  name: aa
-  mdef: 100
-  gold: 0
+  name: weight
+  mdef: 94
+  gold: 14
   weapon_id: 0
-  int: 50
-  maxsp: 500
-  treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  int: 27
+  maxsp: 492
+  treasure_prob: 30
+  pdef: 97
+  exp: 14
+  agi: 24
+  maxhp: 600
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 87
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1226,11 +1226,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 45
+  animation2_id: 2
   id: 13
-  item_id: 0
-  battler_name: ''
+  item_id: 22
+  battler_name: "$brick"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1265,24 +1265,44 @@ root:
     condition_turn_a: 0
     skill_id: 1
     condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 29
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 26
+    condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 30
   eva: 0
   animation1_id: 0
-  name: aaa
-  mdef: 100
-  gold: 0
+  name: ditdon't
+  mdef: 70
+  gold: 24
   weapon_id: 0
-  int: 50
-  maxsp: 500
-  treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  int: 32
+  maxsp: 200
+  treasure_prob: 20
+  pdef: 61
+  exp: 11
+  agi: 62
+  maxhp: 371
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 61
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1314,11 +1334,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 29
+  animation2_id: 2
   id: 14
-  item_id: 0
-  battler_name: ''
+  item_id: 27
+  battler_name: "$ditto2"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1353,21 +1373,31 @@ root:
     condition_turn_a: 0
     skill_id: 1
     condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 66
+    condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
-  eva: 0
+  str: 37
+  eva: 7
   animation1_id: 0
-  name: ''
-  mdef: 100
-  gold: 0
+  name: octogam
+  mdef: 85
+  gold: 73
   weapon_id: 0
   int: 50
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
-  exp: 0
+  pdef: 86
+  exp: 21
   agi: 50
-  maxhp: 500
+  maxhp: 1522
   armor_id: 0
   battler_hue: 0
   atk: 100
@@ -1403,10 +1433,10 @@ root:
     - 3
     - 3
   dex: 50
-  animation2_id: 0
+  animation2_id: 2
   id: 15
   item_id: 0
-  battler_name: ''
+  battler_name: "$octogam"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1441,24 +1471,44 @@ root:
     condition_turn_a: 0
     skill_id: 1
     condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 39
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 42
+    condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
-  eva: 0
+  str: 32
+  eva: 8
   animation1_id: 0
-  name: ''
+  name: tomatocow
   mdef: 100
-  gold: 0
+  gold: 34
   weapon_id: 0
-  int: 50
-  maxsp: 500
-  treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  int: 28
+  maxsp: 479
+  treasure_prob: 5
+  pdef: 112
+  exp: 12
+  agi: 36
+  maxhp: 532
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 67
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1490,11 +1540,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 32
+  animation2_id: 2
   id: 16
-  item_id: 0
-  battler_name: ''
+  item_id: 1
+  battler_name: "$tomacow"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1529,24 +1579,34 @@ root:
     condition_turn_a: 0
     skill_id: 1
     condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 25
+    condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
-  eva: 0
+  str: 41
+  eva: 37
   animation1_id: 0
-  name: ''
+  name: its a mystery
   mdef: 100
-  gold: 0
+  gold: 89
   weapon_id: 0
-  int: 50
-  maxsp: 500
+  int: 37
+  maxsp: 506
   treasure_prob: 100
   pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  exp: 13
+  agi: 45
+  maxhp: 495
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 51
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1578,11 +1638,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 42
+  animation2_id: 2
   id: 17
   item_id: 0
-  battler_name: ''
+  battler_name: "$mysteryy"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1603,9 +1663,9 @@ root:
     - 3
     - 3
     - 3
-    - 3
-    - 3
-    - 3
+    - 4
+    - 4
+    - 4
   actions:
   - !ruby/object:RPG::Enemy::Action
     basic: 0
@@ -1616,6 +1676,16 @@ root:
     condition_switch_id: 0
     condition_turn_a: 0
     skill_id: 1
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 54
     condition_level: 1
 - !ruby/object:RPG::Enemy
   str: 50

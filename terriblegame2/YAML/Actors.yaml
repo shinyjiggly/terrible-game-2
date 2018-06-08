@@ -4400,9 +4400,9 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: aa
-  character_name: adnama
-  weapon_id: 0
+  name: Jello
+  character_name: jigglypuff
+  weapon_id: 14
   armor2_fix: false
   parameters: !ruby/object:Table
     dim: 2
@@ -5011,11 +5011,11 @@ root:
     - 545
     - 545
   exp_inflation: 30
-  armor3_id: 0
-  class_id: 1
+  armor3_id: 2
+  class_id: 8
   exp_basis: 30
   armor1_fix: false
-  armor2_id: 0
+  armor2_id: 13
   armor4_fix: false
   battler_hue: 0
   weapon_fix: false
@@ -5024,7 +5024,7 @@ root:
   id: 8
   armor1_id: 0
   armor3_fix: false
-  battler_name: ''
+  battler_name: newjigg1x2
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1

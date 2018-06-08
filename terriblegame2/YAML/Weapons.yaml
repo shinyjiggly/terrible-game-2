@@ -268,7 +268,7 @@ root:
   dex_plus: 0
   element_set:
   - 15
-  atk: 10
+  atk: 5
   animation2_id: 30
   id: 14
   str_plus: 0

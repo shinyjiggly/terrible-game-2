@@ -1074,14 +1074,14 @@ root:
   sp_cost: 0
   variance: 15
 - !ruby/object:RPG::Skill
-  animation1_id: 0
-  int_f: 100
-  icon_name: ''
+  animation1_id: 1
+  int_f: 22
+  icon_name: earthicon
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: Rollout
   common_event_id: 0
-  mdef_f: 100
+  mdef_f: 0
   occasion: 1
   agi_f: 0
   plus_state_set: []
@@ -1090,17 +1090,19 @@ root:
     volume: 80
     name: ''
     pitch: 100
-  pdef_f: 0
-  scope: 0
+  pdef_f: 55
+  scope: 2
   dex_f: 0
-  power: 0
-  element_set: []
+  power: 30
+  element_set:
+  - 4
+  - 16
   hit: 100
-  animation2_id: 0
-  description: ''
-  str_f: 0
+  animation2_id: 42
+  description: autobots, roll out!
+  str_f: 33
   id: 37
-  sp_cost: 0
+  sp_cost: 23
   variance: 15
 - !ruby/object:RPG::Skill
   animation1_id: 0
@@ -1984,30 +1986,31 @@ root:
   sp_cost: 0
   variance: 15
 - !ruby/object:RPG::Skill
-  animation1_id: 0
+  animation1_id: 1
   int_f: 100
-  icon_name: ''
+  icon_name: music
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: lulaby
   common_event_id: 0
   mdef_f: 100
   occasion: 1
   agi_f: 0
-  plus_state_set: []
+  plus_state_set:
+  - 7
   atk_f: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   dex_f: 0
   power: 0
   element_set: []
   hit: 100
-  animation2_id: 0
-  description: ''
+  animation2_id: 43
+  description: sing those turds to sleep
   str_f: 0
   id: 67
   sp_cost: 0

@@ -18,8 +18,8 @@ class Beastary_Scene
   end
   
   def main
-    @mobs_max = 14 #IMPORTANT TO CHANGE THIS!!!!
-    @mobs_min = 1 #Where the list starts. Doesnt have to be 1!
+    @mobs_max = 15 #IMPORTANT TO CHANGE THIS!!!!
+    @mobs_min = 12 #Where the list starts. Doesnt have to be 1!
     $game_variables[26] = @mobs_min #Change the [26] to your variable!
     @window_b1=Beastary_Window_1.new
     @window_b1.update(false)
@@ -131,7 +131,7 @@ class Beastary_Window_1 < Window_Base
     def update(content)
       flavortxt = {}
       
-      flavortxt[0] = "Ash was here, gary is a loser."
+      flavortxt[0] = "A mermaid that never ends...?"
       flavortxt[1] = "AAAaaaaaaaaaa."
       flavortxt[2] = "this is an enemy."
       flavortxt[3] = "this is an enemy."
@@ -143,9 +143,10 @@ class Beastary_Window_1 < Window_Base
       flavortxt[9] = "An imp with an impish nature."
       flavortxt[10] = "An imp... but somehow more... super?"
       flavortxt[11] = "don't piss this bith off!"
-      flavortxt[12] = "this is an enemy."
-      flavortxt[13] = "this is an enemy."
-      flavortxt[14] = "this is an enemy."
+      flavortxt[12] = "contrary to popular belief, it's not canadian."
+      flavortxt[13] = "A heavy weight from the earth. \n reminds you of your sins."
+      flavortxt[14] = "The forbidden evolved form of DITTO."
+      flavortxt[15] = "Eight legs... seven...you know the rest."
       
       @mob_id = $data_enemies[$game_variables[26]].name #Change the [26] to your variable!
       @mob_maxhp = $data_enemies[$game_variables[26]].maxhp 

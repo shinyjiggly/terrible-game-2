@@ -8,7 +8,7 @@ root:
   icon_name: shirt3
   mdef: 0
   auto_state_id: 0
-  price: 0
+  price: 14
   agi_plus: 0
   pdef: 12
   guard_state_set: []
@@ -25,7 +25,7 @@ root:
   icon_name: ''
   mdef: 6
   auto_state_id: 0
-  price: 0
+  price: 9
   agi_plus: 0
   pdef: 4
   guard_state_set: []
@@ -42,7 +42,7 @@ root:
   icon_name: coat
   mdef: 0
   auto_state_id: 0
-  price: 0
+  price: 20
   agi_plus: 0
   pdef: 15
   guard_state_set: []
@@ -61,7 +61,7 @@ root:
   icon_name: ''
   mdef: 0
   auto_state_id: 0
-  price: 0
+  price: 15
   agi_plus: 0
   pdef: 13
   guard_state_set: []
@@ -78,7 +78,7 @@ root:
   icon_name: ''
   mdef: 0
   auto_state_id: 0
-  price: 0
+  price: 49
   agi_plus: 21
   pdef: 12
   guard_state_set: []
@@ -95,7 +95,7 @@ root:
   icon_name: ''
   mdef: 0
   auto_state_id: 0
-  price: 0
+  price: 99999
   agi_plus: 0
   pdef: 13
   guard_state_set: []
@@ -113,7 +113,7 @@ root:
   icon_name: ''
   mdef: 0
   auto_state_id: 0
-  price: 0
+  price: 19
   agi_plus: 0
   pdef: 0
   guard_state_set: []
@@ -130,7 +130,7 @@ root:
   icon_name: ''
   mdef: 3
   auto_state_id: 0
-  price: 0
+  price: 12
   agi_plus: 2
   pdef: 0
   guard_state_set: []
@@ -147,7 +147,7 @@ root:
   icon_name: ''
   mdef: 0
   auto_state_id: 0
-  price: 0
+  price: 20
   agi_plus: 2
   pdef: 5
   guard_state_set: []
@@ -165,7 +165,7 @@ root:
   icon_name: ''
   mdef: 10
   auto_state_id: 0
-  price: 0
+  price: 13
   agi_plus: 0
   pdef: 10
   guard_state_set: []
@@ -182,7 +182,7 @@ root:
   icon_name: ''
   mdef: 0
   auto_state_id: 0
-  price: 0
+  price: 14
   agi_plus: 0
   pdef: 0
   guard_state_set: []
@@ -199,7 +199,7 @@ root:
   icon_name: ''
   mdef: 0
   auto_state_id: 0
-  price: 0
+  price: 19
   agi_plus: 0
   pdef: 0
   guard_state_set: []
@@ -216,7 +216,7 @@ root:
   icon_name: ''
   mdef: 0
   auto_state_id: 0
-  price: 0
+  price: 20
   agi_plus: 1
   pdef: 0
   guard_state_set: []
@@ -233,7 +233,7 @@ root:
   icon_name: earthicon
   mdef: 0
   auto_state_id: 0
-  price: 0
+  price: 15
   agi_plus: 0
   pdef: 99
   guard_state_set: []
@@ -248,19 +248,19 @@ root:
 - !ruby/object:RPG::Armor
   eva: 0
   int_plus: 0
-  name: ''
-  icon_name: ''
+  name: puffball sweater
+  icon_name: shirt1
   mdef: 0
   auto_state_id: 0
-  price: 0
+  price: 999
   agi_plus: 0
-  pdef: 0
+  pdef: 55
   guard_state_set: []
-  kind: 0
+  kind: 2
   dex_plus: 0
   guard_element_set: []
   id: 15
-  description: ''
+  description: 'perfect for winter! '
   str_plus: 0
 - !ruby/object:RPG::Armor
   eva: 0

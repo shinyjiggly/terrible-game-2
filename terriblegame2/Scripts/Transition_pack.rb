@@ -138,11 +138,11 @@ class Transition
   #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   # * CONFIG BEGIN
   #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  BATTLE_EFFECT = [0] # randomly choose from any of those
+  BATTLE_EFFECT = [0,1,2,3,4,5,6,7,8,9] # randomly choose from any of those
   SHOP_EFFECT = 0
   NAME_EFFECT = nil # uses default effect set in $game_temp.transition_type
-  MENU_EFFECT = 4
-  SAVE_EFFECT = -1 # disable effect/use default
+  MENU_EFFECT = 1
+  SAVE_EFFECT = 0 #-1 # disable effect/use default
   
   
   Explosion_Sound = nil

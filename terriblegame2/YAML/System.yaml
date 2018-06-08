@@ -109,7 +109,7 @@ root: !ruby/object:RPG::System
   - order switch 2
   - order switch 3
   - order switch 4
-  - ''
+  - winner
   - ''
   - ''
   - ''
@@ -157,17 +157,17 @@ root: !ruby/object:RPG::System
     volume: 100
     name: battle2
     pitch: 100
-  test_troop_id: 11
+  test_troop_id: 17
   equip_se: !ruby/object:RPG::AudioFile
     volume: 100
     name: boingthing
     pitch: 100
-  title_name: title0
+  title_name: sky0
   _: 7829367
   enemy_collapse_se: !ruby/object:RPG::AudioFile
     volume: 80
-    name: cancel
-    pitch: 100
+    name: damage2
+    pitch: 50
   cursor_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: cursor
@@ -190,7 +190,7 @@ root: !ruby/object:RPG::System
   - Piercing
   - Slashing
   - Bludgeoning
-  start_y: 13
+  start_y: 12
   battler_hue: 0
   load_se: !ruby/object:RPG::AudioFile
     volume: 80
@@ -199,7 +199,7 @@ root: !ruby/object:RPG::System
   title_bgm: !ruby/object:RPG::AudioFile
     volume: 100
     name: opening1
-    pitch: 100
+    pitch: 150
   buzzer_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: unavailable
@@ -207,36 +207,12 @@ root: !ruby/object:RPG::System
   windowskin_name: mainskin
   test_battlers:
   - !ruby/object:RPG::System::TestBattler
-    actor_id: 4
-    armor4_id: 7
-    weapon_id: 7
-    level: 2
-    armor3_id: 1
-    armor2_id: 0
-    armor1_id: 0
-  - !ruby/object:RPG::System::TestBattler
-    actor_id: 2
+    actor_id: 8
     armor4_id: 0
-    weapon_id: 12
-    level: 2
-    armor3_id: 0
-    armor2_id: 0
-    armor1_id: 0
-  - !ruby/object:RPG::System::TestBattler
-    actor_id: 1
-    armor4_id: 0
-    weapon_id: 16
-    level: 2
-    armor3_id: 1
-    armor2_id: 9
-    armor1_id: 0
-  - !ruby/object:RPG::System::TestBattler
-    actor_id: 5
-    armor4_id: 8
     weapon_id: 14
-    level: 2
-    armor3_id: 1
-    armor2_id: 0
+    level: 3
+    armor3_id: 2
+    armor2_id: 13
     armor1_id: 0
   battleback_name: strange
   party_members:
@@ -249,10 +225,10 @@ root: !ruby/object:RPG::System
     volume: 100
     name: RMXPgameover2
     pitch: 100
-  battler_name: "$natgunner"
+  battler_name: "$brick"
   save_se: !ruby/object:RPG::AudioFile
     volume: 80
     name: saved
     pitch: 100
   battle_transition: battletransition
-  start_x: 7
+  start_x: 10

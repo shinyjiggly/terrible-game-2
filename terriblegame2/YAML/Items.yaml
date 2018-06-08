@@ -17,7 +17,7 @@ root:
   parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
-    name: 105-Heal01
+    name: heal4
     pitch: 100
   pdef_f: 0
   scope: 3
@@ -39,7 +39,7 @@ root:
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 22
   occasion: 3
   plus_state_set: []
   recover_sp: 0
@@ -600,7 +600,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 3
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
@@ -608,7 +608,7 @@ root:
   hit: 100
   id: 21
   description: Thick and full of protein!
-  recover_hp: 0
+  recover_hp: 58
   variance: 0
 - !ruby/object:RPG::Item
   consumable: true
@@ -629,7 +629,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 3
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
@@ -637,10 +637,10 @@ root:
   hit: 100
   id: 22
   description: lots of protein, but not quite as thick
-  recover_hp: 0
+  recover_hp: 43
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: false
+  consumable: true
   animation1_id: 0
   name: raw veggies
   minus_state_set: []
@@ -658,7 +658,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 3
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
@@ -666,7 +666,7 @@ root:
   hit: 100
   id: 23
   description: Vegetables that still need to be cooked...
-  recover_hp: 0
+  recover_hp: 26
   variance: 0
 - !ruby/object:RPG::Item
   consumable: true
@@ -687,7 +687,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 3
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
@@ -695,7 +695,7 @@ root:
   hit: 100
   id: 24
   description: Essential for soups and good for drinking!
-  recover_hp: 0
+  recover_hp: 22
   variance: 0
 - !ruby/object:RPG::Item
   consumable: false
@@ -716,7 +716,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 3
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
@@ -724,7 +724,7 @@ root:
   hit: 100
   id: 25
   description: it's good for flavor...
-  recover_hp: 0
+  recover_hp: 7
   variance: 0
 - !ruby/object:RPG::Item
   consumable: false
@@ -753,10 +753,10 @@ root:
   hit: 100
   id: 26
   description: required for fried recipes
-  recover_hp: 0
+  recover_hp: 7
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: false
+  consumable: true
   animation1_id: 0
   name: fresh greens
   minus_state_set: []
@@ -774,7 +774,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 3
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
@@ -782,7 +782,7 @@ root:
   hit: 100
   id: 27
   description: suited more for herbivores...
-  recover_hp: 0
+  recover_hp: 15
   variance: 0
 - !ruby/object:RPG::Item
   consumable: false
@@ -880,7 +880,7 @@ root:
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 40
+  price: 46
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -890,7 +890,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 3
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
@@ -898,7 +898,7 @@ root:
   hit: 100
   id: 31
   description: high in protein, but not liked by most...
-  recover_hp: 0
+  recover_hp: 48
   variance: 0
 - !ruby/object:RPG::Item
   consumable: false
@@ -909,7 +909,7 @@ root:
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 24
   occasion: 0
   plus_state_set: []
   recover_sp: 0
@@ -938,7 +938,7 @@ root:
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 16
   occasion: 0
   plus_state_set: []
   recover_sp: 0

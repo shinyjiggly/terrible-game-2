@@ -13575,7 +13575,7 @@ root:
   fog_name: ''
   id: 7
   tileset_name: 026-Castle02
-  battleback_name: peachcastleinside
+  battleback_name: finalbattle
   fog_blend_type: 0
 - !ruby/object:RPG::Tileset
   panorama_hue: 0
@@ -16257,8 +16257,8 @@ root:
     - 0
     - 0
     - 0
-    - 0
-    - 0
+    - 1
+    - 1
     - 0
     - 0
     - 0
@@ -16429,8 +16429,8 @@ root:
     - 0
     - 0
     - 0
-    - 0
-    - 0
+    - 1
+    - 1
     - 0
     - 0
     - 0
@@ -20172,7 +20172,7 @@ root:
   name: Magicant 1
   fog_sy: 0
   fog_opacity: 64
-  panorama_name: ''
+  panorama_name: stainedglass2
   priorities: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -21172,7 +21172,7 @@ root:
     - 0
     - 0
     - 0
-    - 0
+    - 15
     - 0
     - 15
     - 0
@@ -21319,7 +21319,7 @@ root:
   fog_name: ''
   id: 11
   tileset_name: magicanttile
-  battleback_name: ''
+  battleback_name: magicantbattlea
   fog_blend_type: 0
 - !ruby/object:RPG::Tileset
   panorama_hue: 0
@@ -21892,7 +21892,7 @@ root:
   name: Magicant 2
   fog_sy: 0
   fog_opacity: 64
-  panorama_name: ''
+  panorama_name: stainedglass1
   priorities: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -22892,28 +22892,11 @@ root:
     - 0
     - 0
     - 0
-    - 0
-    - 0
-    - 15
     - 15
     - 0
+    - 15
+    - 15
     - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
     - 0
     - 0
     - 0
@@ -22921,30 +22904,6 @@ root:
     - 0
     - 15
     - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 0
-    - 15
-    - 0
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 15
-    - 0
-    - 0
-    - 15
-    - 15
-    - 15
-    - 0
-    - 15
-    - 15
-    - 0
     - 15
     - 15
     - 15
@@ -22960,6 +22919,47 @@ root:
     - 0
     - 0
     - 0
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 0
+    - 15
+    - 0
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 0
+    - 0
+    - 15
+    - 15
+    - 15
+    - 0
+    - 15
+    - 15
+    - 0
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
     - 0
     - 0
     - 0
@@ -23006,7 +23006,7 @@ root:
     - 0
     - 0
     - 15
-    - 0
+    - 15
     - 15
     - 0
     - 0
