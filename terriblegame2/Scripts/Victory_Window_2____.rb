@@ -64,7 +64,7 @@ class Window_BattleResult < Window_Base
     @level_up_flags = [false, false, false, false, false]
     @gold_window = Window_Gold.new
     @gold_window.x = 480
-    @gold_window.back_opacity = Base_Opacity
+    @gold_window.back_opacity = (Base_Opacity / 2)
     @gold_window.z = 4100
     super(0, 0, 640, 480)
     self.contents = Bitmap.new(width - 32, height - 32)

@@ -10,26 +10,28 @@
 #_________________________________________________
 module MOG
 # ID variable that defines the speed horizontally.
-VARPANO_X = 8
+VARPANO_X = 29 
+
 # ID variable that defines the speed vertically.
-VARPANO_Y = 9 
+VARPANO_Y = 30  
+
 # Switch ID that activates the Fade Mode.
-PANO_FADE_MODE_SWITCHE_ID = 4 #SWITCH ID 
+PANO_FADE_MODE_SWITCHE_ID = 26 #SWITCH ID 
 # Speed ​​Fade.
 PANO_FADE_SPEED = 3 
 
 # Switch ID that activates the Random Mode.
 # The picture moves in random directions.
-PAN_RAND_MOVE_SWITCHE_ID = 5  #SWITCH ID 
+PAN_RAND_MOVE_SWITCHE_ID = 27  #SWITCH ID 
 # Time to change direction.
 PAN_RAND_TIME = 2  #SWITCH ID 
 # Switche ID that leaves the FOG with low priority.
-FOG_Z_SWITCH_ID = 16
+FOG_Z_SWITCH_ID = 28
 #
-FOG_MOTION_SWITCH_ID = 17
+FOG_MOTION_SWITCH_ID = 29
 end
 
-#===============================================================================
+#============================================================================
 # Game_Map
 #===============================================================================
 class Game_Map

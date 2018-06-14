@@ -18,7 +18,7 @@ root: !ruby/object:RPG::System
   - maximum squares per day
   - new ship map x
   - new ship map y
-  - new ship map id
+  - spinning
   - button press
   - special event
   - day of the week
@@ -30,8 +30,8 @@ root: !ruby/object:RPG::System
   - min monster
   - sight radius
   - event id
-  - ''
-  - ''
+  - "[pan] x move"
+  - "[pan] y move"
   - ''
   - ''
   - ''
@@ -110,8 +110,8 @@ root: !ruby/object:RPG::System
   - order switch 3
   - order switch 4
   - winner
-  - ''
-  - ''
+  - key get
+  - destroyed the pillar
   - ''
   - can die on the map
   - "[cat] ladder effects"
@@ -119,10 +119,10 @@ root: !ruby/object:RPG::System
   - "[cat] Caterpillar invisible"
   - "[cat] dead effects"
   - "[cat] remove visible actors"
-  - ''
-  - ''
-  - ''
-  - ''
+  - "[pan] fade mode"
+  - "[pan] rando move"
+  - "[pan] fog z priority"
+  - "[pan] fog motion"
   - ''
   - ''
   - ''

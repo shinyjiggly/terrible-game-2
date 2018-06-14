@@ -21,7 +21,8 @@ root:
     pitch: 100
   pdef_f: 0
   scope: 3
-  element_set: []
+  element_set:
+  - 14
   recover_sp_rate: 0
   parameter_type: 0
   animation2_id: 1
@@ -63,7 +64,8 @@ root:
   consumable: true
   animation1_id: 1
   name: wake me up
-  minus_state_set: []
+  minus_state_set:
+  - 1
   icon_name: ''
   recover_hp_rate: 12
   common_event_id: 0
@@ -107,7 +109,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 3
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
@@ -127,7 +129,7 @@ root:
   common_event_id: 0
   mdef_f: 0
   price: 0
-  occasion: 0
+  occasion: 1
   plus_state_set: []
   recover_sp: 0
   parameter_points: 0
@@ -148,16 +150,17 @@ root:
   variance: 0
 - !ruby/object:RPG::Item
   consumable: true
-  animation1_id: 0
-  name: ''
+  animation1_id: 1
+  name: Party popper
   minus_state_set: []
-  icon_name: ''
+  icon_name: dog
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
-  occasion: 0
-  plus_state_set: []
+  price: 20
+  occasion: 1
+  plus_state_set:
+  - 4
   recover_sp: 0
   parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
@@ -165,16 +168,16 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 1
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
-  animation2_id: 0
+  animation2_id: 45
   hit: 100
   id: 6
-  description: ''
-  recover_hp: 0
-  variance: 0
+  description: POP!
+  recover_hp: -75
+  variance: 21
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0

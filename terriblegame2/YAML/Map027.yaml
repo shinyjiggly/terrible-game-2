@@ -670,12 +670,27 @@ root: !ruby/object:RPG::Map
           code: 509
         - !ruby/object:RPG::EventCommand
           parameters:
+          - 2
+          - 2
+          - 0
+          - 0
+          - 1
+          indent: 0
+          code: 122
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - 44
           - 0
           - 0
           - 1
           indent: 0
           code: 126
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - A
+          - 0
+          indent: 0
+          code: 123
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0

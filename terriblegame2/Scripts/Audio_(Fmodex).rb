@@ -12,8 +12,7 @@ module Audio
   LOOP_TABLE = [
   # [ "Audio/xxx/File_name", begin, end ]
   # Add here
-  [ "Audio/BGM/titlescreen_LN", 7997, -1]
-
+  [ "Audio/BGM/09 Omnibus", 846572, 5280869]
   
   # Note : Renember to add a comma after each ]
   #       (except for the last line and the below ]).
@@ -143,7 +142,7 @@ end
   # Function that automatically call the set_loop_points
   #===
   def loop_audio(sound, file_name)
-    filename = file_name.downcase
+    filename = file_name .downcase
     LOOP_TABLE.each do |i|
       if(i[0] == filename)
         return sound.set_loop_points(i[1], i[2])

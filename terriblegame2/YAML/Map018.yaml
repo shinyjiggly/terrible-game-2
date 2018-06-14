@@ -647,7 +647,7 @@ root: !ruby/object:RPG::Map
         always_on_top: false
         graphic: !ruby/object:RPG::Event::Page::Graphic
           opacity: 255
-          character_name: blaze2
+          character_name: blaze3
           pattern: 0
           tile_id: 0
           direction: 2

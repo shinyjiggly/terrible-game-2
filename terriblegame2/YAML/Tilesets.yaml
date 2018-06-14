@@ -604,7 +604,7 @@ root:
   name: Cove
   fog_sy: 0
   fog_opacity: 64
-  panorama_name: beamingsun
+  panorama_name: oceanloop
   priorities: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -31608,9 +31608,9 @@ root:
     - 0
     - 0
     - 0
+    - 15
     - 0
-    - 0
-    - 0
+    - 15
     - 0
     - 0
     - 0

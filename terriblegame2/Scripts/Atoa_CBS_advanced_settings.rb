@@ -526,7 +526,8 @@ module Atoa
   Enemy_Settings[3] =["ENEMYINTRO"]
   #Enemy_Settings[4] = ["VICTORYPOSE","ENEMYINTRO","COLLAPSE/1"]
   Enemy_Settings[11] = ["COLLAPSE/1"]
-
+  Enemy_Settings[15] = ["COLLAPSE/1"]
+  Enemy_Settings[18] = ["COLLAPSE/1"]
   #=============================================================================
   
   #¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤

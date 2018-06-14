@@ -949,9 +949,39 @@ root:
       turn_b: 0
       enemy_valid: false
     span: 0
-  name: ''
+  name: timebox, super imp*4
   id: 18
-  members: []
+  members:
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 224
+    enemy_id: 18
+    x: 176
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 320
+    enemy_id: 10
+    x: 56
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 96
+    enemy_id: 10
+    x: 224
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 312
+    enemy_id: 10
+    x: 160
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 224
+    enemy_id: 10
+    x: 280
+    immortal: false
 - !ruby/object:RPG::Troop
   pages:
   - !ruby/object:RPG::Troop::Page

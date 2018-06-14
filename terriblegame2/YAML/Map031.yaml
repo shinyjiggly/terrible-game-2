@@ -108,6 +108,11 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
+          - she abritrarily decided this, by the way.
+          indent: 0
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
           - A
           - 0
           indent: 0

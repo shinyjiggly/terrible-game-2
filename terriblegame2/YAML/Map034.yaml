@@ -396,7 +396,7 @@ root: !ruby/object:RPG::Map
           tile_id: 478
           direction: 2
           blend_type: 0
-          character_hue: 70
+          character_hue: 170
         walk_anime: true
         move_speed: 3
         through: false
@@ -410,7 +410,7 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[1]it's a disaster!!"
+          - "\\p[5]it's a disaster!!\\."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand

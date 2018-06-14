@@ -2610,7 +2610,7 @@ root:
   icon_name: ''
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: "-Skills Emoji-"
   common_event_id: 0
   mdef_f: 100
   occasion: 1
@@ -2636,10 +2636,10 @@ root:
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
-  icon_name: ''
+  icon_name: thinkingsoft
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: thinking
   common_event_id: 0
   mdef_f: 100
   occasion: 1
@@ -2657,7 +2657,7 @@ root:
   element_set: []
   hit: 100
   animation2_id: 0
-  description: ''
+  description: hmmmm.......
   str_f: 0
   id: 89
   sp_cost: 0
@@ -2665,10 +2665,10 @@ root:
 - !ruby/object:RPG::Skill
   animation1_id: 0
   int_f: 100
-  icon_name: ''
+  icon_name: theB
   eva_f: 0
   minus_state_set: []
-  name: ''
+  name: B
   common_event_id: 0
   mdef_f: 100
   occasion: 1
@@ -2686,7 +2686,7 @@ root:
   element_set: []
   hit: 100
   animation2_id: 0
-  description: ''
+  description: can I have some \I[S90]izza
   str_f: 0
   id: 90
   sp_cost: 0

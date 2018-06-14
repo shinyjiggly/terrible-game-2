@@ -24,6 +24,39 @@ root: !ruby/object:RPG::Map
           - 4
           - 8
           - 4
+          - 6
+          indent: 0
+          code: 111
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "\\p[1]YOU FOUND IT! I GO NOW!"
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 0
+          - 31
+          indent: 1
+          code: 207
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - A
+          - 0
+          indent: 1
+          code: 123
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 1
+          code: 0
+        - !ruby/object:RPG::EventCommand
+          parameters: []
+          indent: 0
+          code: 412
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - 4
+          - 8
+          - 4
           - 15
           indent: 0
           code: 111
@@ -686,6 +719,11 @@ root: !ruby/object:RPG::Map
           indent: 1
           code: 509
         - !ruby/object:RPG::EventCommand
+          parameters:
+          - unfortunately, mew was not under that truck.
+          indent: 1
+          code: 101
+        - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1
           code: 0
@@ -695,6 +733,11 @@ root: !ruby/object:RPG::Map
           - 'No'
           indent: 0
           code: 402
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - She decided not to lift the truck.
+          indent: 1
+          code: 101
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 1
@@ -3844,7 +3887,7 @@ root: !ruby/object:RPG::Map
     - 0
     - 610
     - 611
-    - 480
+    - 0
     - 481
     - 0
     - 0
