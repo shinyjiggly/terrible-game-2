@@ -669,7 +669,7 @@ root:
   battle_only: true
   slip_damage: false
   rating: 5
-  nonresistance: false
+  nonresistance: true
   int_rate: 100
   plus_state_set: []
   maxsp_rate: 100

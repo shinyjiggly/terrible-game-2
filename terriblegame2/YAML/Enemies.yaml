@@ -609,7 +609,7 @@ root:
     - 3
     - 3
   dex: 4
-  animation2_id: 0
+  animation2_id: 2
   id: 7
   item_id: 5
   battler_name: "$raiblu"
@@ -1826,23 +1826,23 @@ root:
     skill_id: 50
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 9
   eva: 0
   animation1_id: 0
-  name: ''
-  mdef: 100
-  gold: 0
+  name: giant squid
+  mdef: 15
+  gold: 55
   weapon_id: 0
-  int: 50
+  int: 8
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  pdef: 18
+  exp: 33
+  agi: 30
+  maxhp: 1350
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 13
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1874,11 +1874,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 6
+  animation2_id: 2
   id: 19
-  item_id: 0
-  battler_name: ''
+  item_id: 22
+  battler_name: "$squid"
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1886,13 +1886,13 @@ root:
     xsize: 17
     data:
     - 0
+    - 4
     - 3
     - 3
     - 3
+    - 2
     - 3
-    - 3
-    - 3
-    - 3
+    - 2
     - 3
     - 3
     - 3
@@ -1913,24 +1913,44 @@ root:
     condition_turn_a: 0
     skill_id: 1
     condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 39
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 4
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 42
+    condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 10
   eva: 0
   animation1_id: 0
-  name: ''
-  mdef: 100
-  gold: 0
+  name: Cleaver
+  mdef: 10
+  gold: 26
   weapon_id: 0
-  int: 50
+  int: 42
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  pdef: 10
+  exp: 26
+  agi: 30
+  maxhp: 1000
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 84
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -1962,11 +1982,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 37
+  animation2_id: 28
   id: 20
   item_id: 0
-  battler_name: ''
+  battler_name: cleaverbattlex2
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2001,24 +2021,64 @@ root:
     condition_turn_a: 0
     skill_id: 1
     condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 54
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 55
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 56
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 8
+    condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 10
   eva: 0
   animation1_id: 0
-  name: ''
-  mdef: 100
-  gold: 0
+  name: Calhoun
+  mdef: 20
+  gold: 26
   weapon_id: 0
-  int: 50
+  int: 42
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  pdef: 18
+  exp: 26
+  agi: 24
+  maxhp: 1000
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 51
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2050,11 +2110,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 37
+  animation2_id: 2
   id: 21
   item_id: 0
-  battler_name: ''
+  battler_name: calhounx2
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2089,24 +2149,54 @@ root:
     condition_turn_a: 0
     skill_id: 1
     condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 48
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 49
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 50
+    condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
-  eva: 0
+  str: 10
+  eva: 1
   animation1_id: 0
-  name: ''
-  mdef: 100
-  gold: 0
+  name: Dwight
+  mdef: 22
+  gold: 26
   weapon_id: 0
-  int: 50
+  int: 46
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  pdef: 21
+  exp: 26
+  agi: 40
+  maxhp: 1000
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 45
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2138,11 +2228,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 37
+  animation2_id: 2
   id: 22
   item_id: 0
-  battler_name: ''
+  battler_name: dwightx2
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2177,24 +2267,54 @@ root:
     condition_turn_a: 0
     skill_id: 1
     condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 16
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 25
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 2
+    condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 10
   eva: 0
   animation1_id: 0
-  name: ''
-  mdef: 100
-  gold: 0
+  name: Jeremiah
+  mdef: 22
+  gold: 26
   weapon_id: 0
-  int: 50
+  int: 46
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  pdef: 21
+  exp: 26
+  agi: 47
+  maxhp: 1000
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 45
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2226,11 +2346,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 37
+  animation2_id: 2
   id: 23
   item_id: 0
-  battler_name: ''
+  battler_name: jeremiahbattlex2
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2265,24 +2385,34 @@ root:
     condition_turn_a: 0
     skill_id: 1
     condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 39
+    condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 14
   eva: 0
   animation1_id: 0
-  name: ''
-  mdef: 100
-  gold: 0
+  name: Renzo
+  mdef: 19
+  gold: 26
   weapon_id: 0
-  int: 50
+  int: 29
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  pdef: 19
+  exp: 26
+  agi: 49
+  maxhp: 950
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 48
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2314,11 +2444,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 45
+  animation2_id: 2
   id: 24
   item_id: 0
-  battler_name: ''
+  battler_name: renzox2
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2354,23 +2484,23 @@ root:
     skill_id: 1
     condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 17
   eva: 0
   animation1_id: 0
-  name: ''
-  mdef: 100
-  gold: 0
+  name: Shesi
+  mdef: 19
+  gold: 26
   weapon_id: 0
-  int: 50
+  int: 46
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  pdef: 19
+  exp: 26
+  agi: 49
+  maxhp: 1000
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 40
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2402,11 +2532,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 61
+  animation2_id: 2
   id: 25
   item_id: 0
-  battler_name: ''
+  battler_name: shesi_battlex2
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2441,24 +2571,34 @@ root:
     condition_turn_a: 0
     skill_id: 1
     condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 1
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 26
+    condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 20
   eva: 0
   animation1_id: 0
-  name: ''
-  mdef: 100
-  gold: 0
+  name: Test Figure
+  mdef: 20
+  gold: 26
   weapon_id: 0
-  int: 50
+  int: 20
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  pdef: 20
+  exp: 26
+  agi: 20
+  maxhp: 1000
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 20
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2490,11 +2630,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 20
+  animation2_id: 2
   id: 26
   item_id: 0
-  battler_name: ''
+  battler_name: testbattle
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2529,24 +2669,34 @@ root:
     condition_turn_a: 0
     skill_id: 1
     condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 1
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 0
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 1
+    condition_level: 1
 - !ruby/object:RPG::Enemy
-  str: 50
+  str: 31
   eva: 0
   animation1_id: 0
-  name: ''
-  mdef: 100
-  gold: 0
+  name: Yoan
+  mdef: 14
+  gold: 26
   weapon_id: 0
-  int: 50
+  int: 26
   maxsp: 500
   treasure_prob: 100
-  pdef: 100
-  exp: 0
-  agi: 50
-  maxhp: 500
+  pdef: 23
+  exp: 26
+  agi: 47
+  maxhp: 1000
   armor_id: 0
   battler_hue: 0
-  atk: 100
+  atk: 27
   state_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2578,11 +2728,11 @@ root:
     - 3
     - 3
     - 3
-  dex: 50
-  animation2_id: 0
+  dex: 9
+  animation2_id: 2
   id: 27
   item_id: 0
-  battler_name: ''
+  battler_name: yoanx2
   element_ranks: !ruby/object:Table
     dim: 1
     zsize: 1
@@ -2609,6 +2759,16 @@ root:
   actions:
   - !ruby/object:RPG::Enemy::Action
     basic: 0
+    condition_hp: 100
+    rating: 5
+    condition_turn_b: 1
+    kind: 0
+    condition_switch_id: 0
+    condition_turn_a: 0
+    skill_id: 1
+    condition_level: 1
+  - !ruby/object:RPG::Enemy::Action
+    basic: 1
     condition_hp: 100
     rating: 5
     condition_turn_b: 1

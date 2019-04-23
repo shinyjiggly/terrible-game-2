@@ -2,13 +2,24 @@
 root:
 - 
 - !ruby/object:RPG::CommonEvent
-  name: third recoil
+  name: revive!
   list:
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hp -= 33
+    - 0
+    - 1
+    - 1
     indent: 0
-    code: 355
+    code: 313
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 0
+    - 0
+    - 0
+    - 10
+    - false
+    indent: 0
+    code: 311
   - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
@@ -1587,3 +1598,43 @@ root:
   trigger: 2
   switch_id: 1
   id: 15
+- !ruby/object:RPG::CommonEvent
+  name: cat voice
+  list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - message.sound_audio = 'mariocat'
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - message.sound_frequency = 9
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 0
+  trigger: 0
+  switch_id: 1
+  id: 16
+- !ruby/object:RPG::CommonEvent
+  name: bip voice
+  list:
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - message.sound_audio = 'bip'
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - message.sound_frequency = 3
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 0
+  trigger: 0
+  switch_id: 1
+  id: 17

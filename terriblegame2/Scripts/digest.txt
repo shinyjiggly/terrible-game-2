@@ -1,6 +1,3 @@
-27174260    RGSS Linker                                  RGSS_Linker.rb
-70050640    Audio (Fmodex)                               Audio_(Fmodex).rb
-35484553    FMOD Ex Audio                                FMOD_Ex_Audio.rb
 42507035    -----                                        EMPTY
 75819864    Game_Temp                                    Game_Temp.rb
 61166382    Game_System                                  Game_System.rb
@@ -100,9 +97,6 @@
 93415179    Battle Windows                               Battle_Windows.rb
 3577221     HP/SP/EXP                                    HP_SP_EXP.rb
 20364602    Simple Font Shadow                           Simple_Font_Shadow.rb
-35887453                                                 EMPTY
-79937627    bgm_main                                     bgm_main.rb
-23743331    bgm_extras                                   bgm_extras.rb
 67821719                                                 EMPTY
 46453158    Transition pack                              Transition_pack.rb
 13876443    Extra Stats                                  Extra_Stats.rb
@@ -137,9 +131,6 @@
 20208372    Large Party Menu                             Large_Party_Menu.rb
 60317430    Atoa CTB                                     Atoa_CTB.rb
 92410424    Status Limit                                 Status_Limit.rb
-77300359    Status effect pops (disabled)                Status_effect_pops_(disabled).rb
-99951215    New Status                                   New_Status.rb
-62906568    Equipment Multislots (disabled)              Equipment_Multislots_(disabled).rb
 51625542    Equipment skills                             Equipment_skills.rb
 24104288    Advanced Weapons                             Advanced_Weapons.rb
 12597090    Equip Autostates                             Equip_Autostates.rb
@@ -164,10 +155,8 @@
 81063585    Popup Window                                 Popup_Window.rb
 89413122    Variable-based Battle Themes v1.1            Variable_based_Battle_Themes_v1.1.rb
 47444769    Multiple Message Windows                     Multiple_Message_Windows.rb
-28561122    Typing quirks                                Typing_quirks.rb
 86422875    Draining skill                               Draining_skill.rb
 25664505    hp sacrifice                                 hp_sacrifice.rb
-20058967    Scroll panorama                              Scroll_panorama.rb
 28868707    anti lag                                     anti_lag.rb
 52856926    Lightning and thunder                        Lightning_and_thunder.rb
 41302047    Advanced map scrolling                       Advanced_map_scrolling.rb
@@ -182,13 +171,13 @@
 28899619    squad config                                 squad_config.rb
 69821682    squad engine                                 squad_engine.rb
 96345515    squad menu                                   squad_menu.rb
+30729534    Scroll panorama                              Scroll_panorama.rb
 80620706                                                 EMPTY
 73327286    Focus Radius                                 Focus_Radius.rb
 11421057    -----------                                  EMPTY
 63588152    Main                                         Main.rb
 95038157    -----------------------------                EMPTY
 39119497    ------gay baby jail------                    ______gay_baby_jail______.rb
-78465921    Twohanded --disabled!!--                     Twohanded___disabled!!__.rb
 22831673    Threat System (disabled)                     Threat_System_(disabled).rb
 71357575    Caterpillar                                  Caterpillar.rb
 31494106                                                 EMPTY

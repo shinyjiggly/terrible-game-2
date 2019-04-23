@@ -157,7 +157,7 @@ root: !ruby/object:RPG::System
     volume: 100
     name: battle2
     pitch: 100
-  test_troop_id: 17
+  test_troop_id: 19
   equip_se: !ruby/object:RPG::AudioFile
     volume: 100
     name: boingthing
@@ -207,12 +207,36 @@ root: !ruby/object:RPG::System
   windowskin_name: mainskin
   test_battlers:
   - !ruby/object:RPG::System::TestBattler
-    actor_id: 8
+    actor_id: 1
     armor4_id: 0
+    weapon_id: 16
+    level: 1
+    armor3_id: 1
+    armor2_id: 9
+    armor1_id: 0
+  - !ruby/object:RPG::System::TestBattler
+    actor_id: 2
+    armor4_id: 0
+    weapon_id: 11
+    level: 1
+    armor3_id: 10
+    armor2_id: 11
+    armor1_id: 0
+  - !ruby/object:RPG::System::TestBattler
+    actor_id: 4
+    armor4_id: 7
+    weapon_id: 7
+    level: 1
+    armor3_id: 1
+    armor2_id: 0
+    armor1_id: 0
+  - !ruby/object:RPG::System::TestBattler
+    actor_id: 5
+    armor4_id: 8
     weapon_id: 14
-    level: 3
-    armor3_id: 2
-    armor2_id: 13
+    level: 1
+    armor3_id: 1
+    armor2_id: 0
     armor1_id: 0
   battleback_name: strange
   party_members:

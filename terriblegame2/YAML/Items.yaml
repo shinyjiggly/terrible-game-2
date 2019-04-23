@@ -6,7 +6,7 @@ root:
   animation1_id: 0
   name: Potion
   minus_state_set: []
-  icon_name: jokes
+  icon_name: stjuice
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
@@ -66,9 +66,22 @@ root:
   name: wake me up
   minus_state_set:
   - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
   icon_name: ''
   recover_hp_rate: 12
-  common_event_id: 0
+  common_event_id: 1
   mdef_f: 0
   price: 2222
   occasion: 0
@@ -80,7 +93,7 @@ root:
     name: ''
     pitch: 100
   pdef_f: 0
-  scope: 5
+  scope: 6
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
@@ -88,7 +101,7 @@ root:
   hit: 100
   id: 3
   description: wake me up inside
-  recover_hp: 0
+  recover_hp: 100
   variance: 0
 - !ruby/object:RPG::Item
   consumable: true
@@ -154,7 +167,7 @@ root:
   name: Party popper
   minus_state_set: []
   icon_name: dog
-  recover_hp_rate: 0
+  recover_hp_rate: -36
   common_event_id: 0
   mdef_f: 0
   price: 20
@@ -181,30 +194,30 @@ root:
 - !ruby/object:RPG::Item
   consumable: true
   animation1_id: 0
-  name: ''
+  name: Magic Drink
   minus_state_set: []
-  icon_name: ''
+  icon_name: vodka
   recover_hp_rate: 0
   common_event_id: 0
   mdef_f: 0
-  price: 0
+  price: 50
   occasion: 0
   plus_state_set: []
-  recover_sp: 0
+  recover_sp: 300
   parameter_points: 0
   menu_se: !ruby/object:RPG::AudioFile
     volume: 80
-    name: ''
+    name: heal4
     pitch: 100
   pdef_f: 0
-  scope: 0
+  scope: 3
   element_set: []
   recover_sp_rate: 0
   parameter_type: 0
-  animation2_id: 0
+  animation2_id: 1
   hit: 100
   id: 7
-  description: ''
+  description: Take a fucking sip, babes
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
@@ -701,7 +714,7 @@ root:
   recover_hp: 22
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: false
+  consumable: true
   animation1_id: 0
   name: salt
   minus_state_set: []
@@ -730,7 +743,7 @@ root:
   recover_hp: 7
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: false
+  consumable: true
   animation1_id: 0
   name: frying batter
   minus_state_set: []
@@ -788,7 +801,7 @@ root:
   recover_hp: 15
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: false
+  consumable: true
   animation1_id: 0
   name: rich sauce
   minus_state_set: []
@@ -817,7 +830,7 @@ root:
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: false
+  consumable: true
   animation1_id: 0
   name: cooking oil
   minus_state_set: []
@@ -846,7 +859,7 @@ root:
   recover_hp: 0
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: false
+  consumable: true
   animation1_id: 0
   name: frostland seasoning
   minus_state_set: []
@@ -904,7 +917,7 @@ root:
   recover_hp: 48
   variance: 0
 - !ruby/object:RPG::Item
-  consumable: false
+  consumable: true
   animation1_id: 0
   name: Athena's spice
   minus_state_set: []
