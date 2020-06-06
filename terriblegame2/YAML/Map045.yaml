@@ -98,7 +98,7 @@ root: !ruby/object:RPG::Map
           code: 655
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[c2]uh, niki? that isn't obvious at all. "
+          - "\\p[c2]uh, lav? that isn't obvious at all. "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -542,12 +542,12 @@ root: !ruby/object:RPG::Map
           code: 108
         - !ruby/object:RPG::EventCommand
           parameters:
-          - niki moves front and center,
+          - lav moves front and center,
           indent: 0
           code: 408
         - !ruby/object:RPG::EventCommand
           parameters:
-          - 'niki punches the pillar REALLY HARD and rocks start '
+          - 'lav punches the pillar REALLY HARD and rocks start '
           indent: 0
           code: 408
         - !ruby/object:RPG::EventCommand

@@ -100,7 +100,7 @@ root: !ruby/object:RPG::System
   - tracking ship movement
   - locked in place
   - restless
-  - niki kicks sonics ass
+  - lav kicks sonics ass
   - kitty mewves
   - thedoorisopen
   - thinginthehole
@@ -112,7 +112,7 @@ root: !ruby/object:RPG::System
   - winner
   - key get
   - destroyed the pillar
-  - ''
+  - tragedy
   - can die on the map
   - "[cat] ladder effects"
   - "[cat] caterpillar puase"

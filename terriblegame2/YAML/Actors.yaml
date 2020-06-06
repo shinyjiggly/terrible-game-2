@@ -4,7 +4,7 @@ root:
 - !ruby/object:RPG::Actor
   armor4_id: 0
   initial_level: 1
-  name: Niki
+  name: Lavvy
   character_name: nikix2
   weapon_id: 16
   armor2_fix: false

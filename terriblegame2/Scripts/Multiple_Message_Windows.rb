@@ -1,8 +1,8 @@
 #-----------------------------------------
 #---                                   ---
 #---    Multiple Message Windows       ---
-#-------   HERETIC REVISION   ------------
-#-------     Version 1.56     ------------
+#---- HERETIC REVISION + jiggly edits  ---
+#-------     Version 1.6      ------------
 #-------                      ------------
 #-----------------------------------------
 #
@@ -21,374 +21,6 @@
 #==============================================================================
 
 =begin
-
-  
-  Version History: (Heretic)
-  1.56 - Sunday, April 19th, 2015
-  - Fixed a minor issue with Sticky
-  - Fixed an issue with \b and \i causing delays when Letter by Letter is off
-  - Fixed a bug with set_max_dist causing List Termination when an NPC
-    moved away from the Player.
-  - Fixed a bug where \$ and \% caused a Crash in Non Floating Windows
-  - Added code for compatability with Sprite Zooming and Floating for
-    both Heretic's Vehicles and Heretic's Rotate, Zoom, and Pendulums
-  - Added code for compatability with Heretic's Loop Maps
-  - Added "comma_skip_delay" so players can speed through dialogue
-  - Added "save = true / false" Option for MMW Settings in set_max_dist(N)
-  - Added "clear_max_dist" Option for NPCs and Signs with Cutscenes
-  
-    ---  SET MAX DIST and CLEAR MAX DIST  ---
-    
-    Players tend to get BORED with Dialogue Heavy NPCs, and the easiest way to
-    prevent Players from quitting the game is to allow them to WALK AWAY from
-    an NPC while they are talking.  When the Human Player gets trapped into any
-    very long dialogue from RANDOM NPCs, that is when they get BORED the most
-    and you run the risk of them quitting your game as a result.  Important
-    NPC Character Dialogue is one thing, but for Towns Folk and Signs and
-    other places you've written OPTIONAL DIALOGUE, the best thing to do is
-    to allow the Player to WALK AWAY.  Initially, this will cause you some
-    issues if you need to change MMW Settings for the course of that NPC
-    or Event Dialogue, such as Fonts or Floating or Speed.  What happens
-    is once those MMW Settings are changed, they are used on the Next Event
-    that is executed by the Player.  Thus, set_max_dist(N) was implemented
-    to allow the Player to WALK AWAY and not cause any changes to what you
-    want as your "Normal MMW Settings" on the Next Event.
-    
-    The command 'set_max_dist(N, save = true[default] / false)' is most useful
-    on Events where you change a MMW Setting during Event Execution so if the
-    Player walks away, your MMW Settings are automatically restored.  This 
-    helps to simplify your NPCs and Signs so you don't have to configure all
-    your MMW Settings for each and every event, only the ones you want to
-    change during the execution of that event.  The trouble is by setting 
-    a Maximum Distance (in Tiles), with an NPC that takes control of the
-    Player and moves them to more than the Maximum Distance you specify, the
-    Event will Exit Event Execution.  Thus, you can CLEAR the Maximum Distance
-    on an Event by running a script 'clear_max_dist' which will not affect
-    any Saved MMW Settings, but will allow you to move the Player or Event
-    to any distance from each other.  If you need to do this, also use
-    the feature 'message.move_during = false' while doing whatever you do
-    at a Distance from the Event.
-    
-    Example NPC or Sign where Player moves away from Event:
-    
-    @>set_max_dist(2)
-    @>\$Let me show you something!
-    @>(Change MMW Setting, stored by set_max_dist(2))
-    @>clear_max_dist                # No MMW changes, but now NO Max Distance!
-    @>message.move_during = false
-    @>(Move Player away from NPC / Sign / Event)
-    @>(More Text, but at a distance greater than your Max Dist) # Cant Walk Away
-    @>(Other move commands)
-    @>(Move back to Sign)
-    @>message.move_during = true     # (Allow walking away again)
-    @>set_max_dist(2, save = false)  # (Doesnt change the stored MMW Settings)
-    @>(More Text)                    # Here, Player can walk away again!
-    
-    When Events dont change any of the MMW Settings at all, then set_max_dist(N)
-    is still useful because while Messages are displayed, Touch Events do
-    not Trigger at all.  Thus, calling set_max_dist(N) helps to make sure that
-    the Touch Events still trigger properly.
-    
-    
-    
-    Example Typical NPC:
-    
-    (NPC has a Move Route to move at Random)
-    
-    set_max_dist(2)
-    @>Set Move Route: Turn Toward Player (Repeat)
-    @>\$\F+Hi there!  This is some text.\F-
-    @>\$\F+This is more text.\F-
-    @>\$\F+Even more text where the player gets bored and walks away.\F-
-    @>Set Move Route: Turn Toward Player (No Repeat)
-    
-    Player moves away more than Two Tiles from NPC and Dialogue Window closes.
-    
-    
-    
-    Example Typical Sign (MMW Settings are changed)
-    
-    (Event does not move and has Direction Fix set to ON)
-    
-    set_max_dist(1)
-    @>\P[0]The \bSign\b says:
-    @>Script: message.floating = false
-              message.letter_by_letter = false
-    @>(Sign Text)
-    @>Script: message.floating = true
-              message.letter_by_letter = true
-              
-    Here, the MMW Settings are changed.  Change them back at the end of the
-    list of Event Commands.  If the Player WALKS AWAY from the sign, the
-    stored MMW Settings are recalled and helps save you a TON of work because
-    the next Event will use the recalled MMW Settings.  As a result, you don't
-    have to set message.floating = true on EVERY Event.  Just change the stuff
-    you need to change for that part of the NPC or Event Dialogue.
-    
-    
-    When using REPOSITION ON TURN, you need to have several things:
-    - First, save your MMW Settings and set Max Dist with "set_max_dist(N)"
-    - Next, your "N" or Distance must be higher than 1
-    - Turn the Event toward the Player and turn on Repeat
-    - Run your Dialogue
-    - Clear the Repeating Move Route on the Event with another Set Move Route
-    
-    If you don't want the NPC to "pay attention" to the Player, you can 
-    simply use an "N" value of 1 so as soon as the Player steps even
-    adjacently, the Message Bubble will close.  I like using a value of 2
-    because it implies the NPC is "paying attention" to the actions
-    of the Player.  Repeating Move Routes will also RESET if the Player
-    walks away, but be sure to use a Non Repeating Move Route as the LAST
-    of the List of Event Commands, otherwise, the Event will "get stuck"
-    always paying attention to the Player.
-  
-    
-    
-  1.55
-  - Removed SDK Dependancy
-  - Script will work either WITH or WITHOUT the SDK now automatically
-    * NOTE: Different methods are defined and replaced depending on whether
-            or not the SDK is installed or not.
-  
-  1.54
-  - Added Option for Variable Text with \v[Tn]
-    $game_system.mmw_text[0] = "Hello World!"
-    In the "Show Text..." box, put in \v[T0] to display Hello World!
-    
-  - Added Player Sticky
-  
-    This means that Event and Player Message Stickyness are now independant.
-    When the player moves around, I tried to reposition the Message Bubble to
-    maximize player visibility by placing the Message Bubble out of where I
-    think they are intending to go.  For example, when the player presses
-    Right, the Players Character faces to the Right, so in order to make sure
-    the Player can see where they are trying to go, the Message Bubble is
-    repositioned to the left of the Players Character.
-    
-    Repositioning can cause some issues with making some Messages off screen
-    and unable to be read.  In order to work around this, Sticky was added to
-    favor the Top and Bottom positions.  A Sticky Message can start anywhere,
-    but once it is moved, it will try to stick to the Top or the Bottom because
-    position on the Left and Right causes some long messages to go offscreen
-    and become unreadable.
-    
-    That is what Sticky means.
-    
-    - $game_player.sticky is set to FALSE by Default, and will RESET to FALSE
-    at the end of Event Execution.
-    
-  - Added Windowskin as a Saved Variable.  That way if you walk away from
-    a sign that has a different Windowskin, that Windowskin will also be
-    reset when you walk away from a sign before the Event complets its list
-    of commands to execute.
-    
-  - Fixed a Visual Bug where a Non Floating Message Window would change
-    the Windowskin while fading out.  Redefined Window_Base update to
-    fix this bug.
-    
-  - Changed set_max_dist to allow a Zero Distance.  This is useful for
-    Passable Events.
-    
-  - Fixed some Visual Glitches caused by other features I added becoming
-    read in characters in version 1.04 of the engine.  1.02 seems to 
-    work just fine and caused me to miss these.
-    
-  - Fixed a bug with set_max_dist(N).  Cutscenes where the Player is moved
-    around by Event Commands would cause Event to stop executing.  Changed
-    to require move_during to be True and $game_player.move_route_forcing
-    to be False for Message Windows to automatically close.  So if you
-    set message.move_during = false, a Cutscene is assumed and Windows
-    will not be closed.
-    
-  1.53 (Heretic)
-  
-  - Added SOUNDS while text is printing out.  Think Banjo Kazooie
-  
-    What you NEED to know:  When an Event has finished its commands, or if
-    you walk away from it, your Sound Settings will RESET.  This is intentional.
-    It was implemented to save you work.  Although it is quite possible to do,
-    the way a non scripter would end up trying to do this would be tremendous.
-    Thus, I did it for you.
-    
-    There are several things you should know about SOUNDS.
-    
-    #1 - Sound does NOT play for every single character.  It plays a sound every
-    several characters.  Im not psychic, so I dont know what sound you will
-    be using, if any at all.  Because of this, the duration of that sound might
-    be different than some of the samples I've included.  As a result, you may
-    decide that it sounds better to play your sound every character or every 5
-    characters.  Thus, it is totally optional.  The option is called
-    message.sound_frequency
-    
-    #2 - It only plays sounds for Letters and Numbers, so non alphanumeric 
-    characters do not play sounds.  This includes spaces, and special characters
-    used for any of the message script options.  This is just something that I
-    thought you should be aware of.
-    
-    #3 - The Audio File you use needs to be imported into Sound Effects, under
-    Materialbase -> Audio/SE (its the one at the very bottom of the list).
-    I ran into a couple of files that caused both the editor and the game to 
-    crash when I tried to play them, so you may need to convert problematic
-    audio files to a different format.
-    
-    Several of the files I've imported I got from FlashKit.com.  Not all of
-    these files were compatible.  Other than that, it does have a good selection
-    of royalty free sound files.
-    
-    http://www.flashkit.com/soundfx/
-    
-    I considered setting up sound properties for each event and NPC, but decided
-    to pass on that because it caused more problems than it appeared to solve.
-    Also being considered are options to change the sound properties from within
-    the text itself.  The same way as you can make characters bold, delay, or
-    other features already built into the script.  If there is interest, I will
-    put them in, but for now, once a window starts to display its text, there
-    arent any options to change it until the next message window is displayed.
-    
-    -----  SOUND OPTIONS  -----
-    
-    These can be changed at any time with scripts.
-    
-    message.sound = true / false             # Enables or Disables Text Sounds  
-    message.sound_audio = '001-System01'     # Audio SE (in DB) to play
-    message.sound_volume = 80                # Text Sound Volume
-    message.sound_pitch = 80                 # Text Sound Pitch
-    message.sound_pitch_range = 20           # How Much to vary the Pitch
-    message.sound_vary_pitch = true          # Whether to Vary the Pitch or not
-    message.sound_frequency = 2              # Plays a sound this many letters
-    
-    
-  1.52 (Heretic)
-  
-  - Added ability to "Auto Close" Non Floating Messages based on proximity
-    to the triggered event.  You'll have to set a script for Every Event
-    you want this to occur on.
-    "set_max_dist(n)" where n the Distance in Steps.  One is Minimum.
-    
-    Notes:  set_max_dist will SAVE all of your MMW settings, and in the
-    event that the event execution is terminated early, it will restore
-    these settings you originally had.  This is done automatically in
-    order to prevent you from having to do unnecessary work.  I find
-    it was most useful for Signs where you might set message.floating = false
-    which would have resulted in you needing to put in floating = true
-    for every other event.  It just saves you work.  SO if you do want
-    to have a more permanent adjustment to your MMW settings, call them
-    BEFORE you call "set_max_dist(n)"
-    
-    If you expect the event to play out in its entirety, consider
-    using message.move_during = false.  This is intended to allow the event
-    to NOT COMPLETE all the entries in an event by allowing the player to
-    walk away and close the window.
-    
-  - Added the ability to "flip" a Message Bubble (non floating) on NPC Turn.
-  
-    This was done to allow the player to see where they are going.  When
-    the player moves around, they need to be able to see where they are
-    going, and a Message Bubble can sometimes get in their way.  I also
-    set it up so that once an NPC is moved (not turned), this feature
-    turns itself off because it assumes a Cutscene.
-    
-    This requires several things to work.
-    #1:  reposition_on_turn is enabled (message.reposition_on_turn = true)
-    #2:  NPC is set to turn_toward_player(repeat)
-    #3:  NPC has NOT been moved (there are ways around this)
-    #4:  Message Window is Auto Oriented using \$ or \%
-    
-    If you feel like re-enabling this feature after an NPC has been
-    moved, you can use a Move Route Script @allow_flip = true for
-    that NPC.
-    
-  - Added the Auto Flipping Message Windows to be "Sticky"
-  
-    What this means is that when a Message Window is repositioned, the
-    next window will appear in the same location as the previous window.
-    
-    Change it with message.sticky = true / false
-    
-  1.51b
-  
-  - Added \G+ and \G- to allow Gold Window to be at the Top or Bottom
-    of the screen.  \G can still be used.  It just positions opposite
-    of where the player is at.  Just a bit more control over the
-    position of the Gold Window.
-  
-  1.51a
-  
-  - By Request, added the \F* option to put the "Other Foot Forward"
-  
-  1.51 
-  
-  - Added \* option to display next message at ANY time  
-  
-  - Added \$ and \$ options to Auto Orient Message Bubbles relative to 
-    the direction the Speaker is facing.
-    
-  - Added "Foot Forward" commands available with \F+ and \F-
-  
-  - Added automatic features to reset a Speaking NPC to its original Stance
-    and make it Continue its Move Route.  
-  
-  *NOTE* - The links provided in the comments may be out of date.
-
-  This custom message system adds numerous features on top of the default
-  message system, the most notable being the ability to have multiple message
-  windows open at once. The included features are mostly themed around turning
-  messages into speech (and thought) balloons, but default-style messages are
-  of course still possible.
-
-  Note:
-  This version of the script uses the SDK, available from:
-  http://www.rmxp.org/forums/showthread.php?t=1802
-  
-  FEATURES
-  
-  New in 1.5:
-  * \C[#ffffff] for hexadecimal color
-  * \C for return to default color
-  * display name of item, weapon, armor or skill
-    * \N[In] = display name of item with id n (note the "I")
-    * \N[Wn] = display name of weapon with id n (note the "W")
-    * \N[An] = display name of armor with id n (note the "A")
-    * \N[Sn] = display name of skill with id n (note the "S")
-  * display icon of item, weapon, armor or skill
-    * \I[In] = display icon of item with id n (note the "I")
-    * \I[Wn] = display icon of weapon with id n (note the "W")
-    * \I[An] = display icon of armor with id n (note the "A")
-    * \I[Sn] = display icon of skill with id n (note the "S")
-    * \IC[] = display icon with that name
-  * display icon and name of item, weapon, armor or skill
-    * \I&N[In] = display icon and name of item with id n (note the "I")
-    * \I&N[Wn] = display icon and name of weapon with id n (note the "W")
-    * \I&N[An] = display icon and name of armor with id n (note the "A")
-    * \I&N[Sn] = display icon and name of skill with id n (note the "S")
-  * new windowskins available
-  * speech windowskin now definable separately from default windowskin
-  * fixed bold bug where degree sign would occasionally appear
-  * input number window now shares parent window's font
-  * changed \Var[n] back to default of \V[n]
-  
-  New in 1.1:
-  * message.autocenter for automatically centering text within messages
-  * \N[en] for displaying name of enemy with id n (note the "e")
-  * \MAP for displaying the name of the current map
-  
-  At a glance:
-  * multiple message windows
-  * speech balloons
-    * position over player/event (follows movement and scrolling)
-    * optional message tail (for speech or thought balloons)
-    * can specify location relative to player/event (up, down, left, right)
-  * thought balloons
-    * can use different windowskin, message tail and font color
-  * letter-by-letter mode
-    * variable speed (and delays)
-    * skippable on button press
-  * autoresize messages
-  * player movement allowed during messages
-    * if speaker moves offscreen, message closes (like ChronoTrigger)
-  * everything also works during battle
-  * settings configurable at anytime  
-  
   Full list of options:
 
   (Note that all are case *insensitive*.)
@@ -400,12 +32,13 @@
   - \A = auto-pause mode toggle for ,.?! characters
   - \S[n] = set speed at which text appears in letter-by-letter mode
   - \D[n] = set delay (in frames) before next text appears
-  - \.    = adds a short delay
+  - \.    = adds a short delay (new!)
   - \P[n] = position message over event with id n
             * use n=0 for player
             * in battle, use n=a,b,c,d for actors (e.g. \P[a] for first actor)
               and n=1,...,n for enemies (e.g. \P[1] for first enemy)
               where order is actually the reverse of troop order (in database)
+  - \Na[name]       = display message name!!!!
   - \P[Cn] = Tie-In with Caterpillar.  Positions Message over Cat Actor
               in n Position of Caterpillar.  1 for First Cat Actor, etc...
             * example: \P[C2] for 2nd Cat Actor, or 3rd Actor in Caterpillar
@@ -490,94 +123,16 @@
   - \G+ = display gold window at the Top of the Screen
   - \G- = display gold window at the Bottom of the Screen
   - \\ = show the '\' character
-  - \. = adds a delay (New!!)
   
-  =============================================================================
-   Global (specified below or by Call Script and persist until changed)
-  =============================================================================
-  Miscellaneous:
-  - message.move_during = true/false
-    * allow/disallow player to move during messages
-  - message.show_pause = true/false
-    * show/hide "waiting for player" pause graphic
-  - message.autocenter = true/false
-    * enable/disable automatically centering text within messages
-  - message.auto_comma_pause = true/false
-    * inserts a delay before the next character after these characters ,!.?
-    * expects correct punctuation.  One space after a comma, the rest 2 spaces
-  - message.comma_skip_delay = true/false
-    * allows skipping delays inserted by commans when Player skips to end of msg
-  - message.auto_comma_delay = n
-    * changes how long to wait after a pausable character
-  - message.auto_ff_reset = true/false
-    * resets a Foot Forward stance if a message wnidow is closed for off-screen
-    * set to false if it causes animation problems, or, dont use Foot Forward
-      on a specific NPC or Event
-  - message.auto_move_continue = true/false
-    * when moving an event off screen while speaking, resets previous move route
-  - message.dist_exit = true/false
-    * close messages if the player walks too far away
-  - message.dist_max = n
-    * the distance away from the player before windows close
-  - message.reposition_on_turn = true / false
-    * Repeat Turn Toward Player NPC's Reorient Message Windows if they Turn
-  - message.sticky
-    * If Message was Repositioned, next message will go to that Location
-    
-  Auto Repositioning Message Windows
-  - Cannot be Player
-  - NPC MUST have some form of Repeating Turn, usually toward Player
-  - NPC MUST NOT MOVE.  Turning is Fine, but cant MOVE
+  New in 1.6
   
-  - set_max_dist(n)
-    * Useful for allowing player to walk away from signs
-    * Saves your MMW Config in case of a Walk-Away Closure
-    * call from Event Editor => Scripts
+  * \f[face_image] = display faceset image (80x80 picture, broken)
   
-  Speech/thought balloon related:
-  - message.resize = true/false
-    * enable/disable automatic resizing of messages (only as big as necessary)
-  - message.floating = true/false
-    * enable/disable positioning messages above current event by default
-      (i.e. equivalent to including \P in every message)
-  - message.location = TOP, BOTTOM, LEFT or RIGHT
-    * set default location for floating messages relative to their event
-  - message.show_tail = true/false
-    * show/hide message tail for speech/thought balloons
-
-  Letter-by-letter related:
-  - message.letter_by_letter = true/false
-    * enable/disable letter-by-letter mode (globally)
-  - message.text_speed = 0-20
-    * set speed at which text appears in letter-by-letter mode (globally)
-  - message.skippable = true/false
-    * allow/disallow player to skip to end of message with button press
-
-  Font:
-  - message.font_name = font
-    * set font to use for text, overriding all defaults
-      (font can be any TrueType from Windows/Fonts folder)
-  - message.font_size = size
-    * set size of text  (default 18), overriding all defaults
-  - message.font_color = color
-    * set color of text, overriding all defaults
-    * you can use same 0-7 as for \C[n] or "#xxxxxx" for hexadecimal
-    
-  Set Move Route:
-  - foot_forward_on (frame)
-    * Optional Parameter - frame
-    * foot_forward_on(0) is default, treated as just foot_forward_on
-    * foot_forward_on(1) puts the "Other" Foot Forward
-  - foot_forward_off
-
-  Note that the default thought and shout balloon windowskins don't
-  stretch to four lines very well (unfortunately).
-    
-  Thanks:
-  XRXS code for self-close and wait for input
-  Slipknot for a convenient approach to altering settings in-game
-  SephirothSpawn for bitmap rotate method
   
+  - \xy[x,y] = position message at specific x,y coordinates (PLANNED)
+  
+  ---- Tip: you can set an event's xy coords and then target that event 
+  if you really need to use this feature before it's coded
 =end
 
 #------------------------------------------------------------------------------
@@ -606,7 +161,7 @@
 
   # filenames of tail and windowskin used for thought balloons
   FILENAME_THOUGHT_TAIL = "dottail.png"
-  FILENAME_THOUGHT_WINDOWSKIN = "mainskin.png" 
+  FILENAME_THOUGHT_WINDOWSKIN = "paperskinx2.png" 
   
   #----------------------------------------------------------------------------
   # Fonts
@@ -618,14 +173,14 @@
   
   # defaults for speech text
   SPEECH_FONT_COLOR = "#FFFFFF"
-  SPEECH_FONT_NAME = "PlopDump"
+  SPEECH_FONT_NAME = $defaultfont
   SPEECH_FONT_SIZE = 20
   
 
   
   # defaults for thought text
-  THOUGHT_FONT_COLOR = "#EEEEEE"
-  THOUGHT_FONT_NAME = "PlopDump"
+  THOUGHT_FONT_COLOR = "#000000"
+  THOUGHT_FONT_NAME = $defaultfont
   THOUGHT_FONT_SIZE = 20
 
   # note that you can use an array of fonts for SPEECH_FONT_NAME, etc.
@@ -702,9 +257,11 @@ class Game_Message
     
     # font details
     # overrides all defaults; leave nil to just use defaults (e.g. as above)
-    @font_name = "PlopDump"
+    @font_name = $defaultfont
     @font_size = 20
     @font_color = nil
+    
+
 
     # pause on these characters ,.?!
     # pause for delay number of frames if this is true, toggle with \A in Text
@@ -727,7 +284,7 @@ class Game_Message
     # exit if distance from speaker is too great
     @dist_exit = false
     # distance player can be before window closes
-    @dist_max = 4
+    @dist_max = 99999
     
     # allow message windows to float off screen instead of flipping
     @allow_offscreen = false
@@ -740,7 +297,7 @@ class Game_Message
 
     # Sounds While Speaking Related
     @sound = true                       # Enables or Disables Text Sounds  
-    @sound_audio = 'bip'          # Audio SE (in DB) to play
+    @sound_audio = 'coda'          # Audio SE (in DB) to play
     @sound_volume = 80                     # Text Sound Volume
     @sound_pitch = 100                      # Text Sound Pitch
     @sound_pitch_range = 10                # How Much to vary the Pitch
@@ -786,15 +343,27 @@ class Game_Message
   attr_accessor :sound_vary_pitch           # Whether to Vary the Pitch or not
   attr_accessor :sound_frequency            # Plays a sound this many letters
   #Name box (NEW!!)
+  attr_accessor :name_box_skin
   attr_accessor :name_box_x_offset
   attr_accessor :name_box_y_offset 
   attr_accessor :name_box_width
   attr_accessor :name_box_height
   attr_accessor :name_font_size
   attr_accessor :name_box_text_color
-  attr_accessor :name_box_skin
   
-  
+    #name box stuff
+    # go to name_sprite_position insterad, 
+    #this is probably obsolete
+ @name_box_x_offset = 0       #Choose the X axis offset of the name bos. default= 0
+ @name_box_y_offset = -10    #Choose the Y axis offset of the name bos. default= -10
+ @name_box_width = 30           #Choose the width of the Name Box. default= 8  
+ @name_box_height = 28        #Choose the height of the Name Box. default= 26
+ @name_font_type = $defaultfont #Choose the Font Name (Case Sensitive) for Name Box
+ @name_font_size = 20            #Choose the deafault Font Size for Name Box text
+ #@name_box_text_color= 3        #Choose the Text Color of the Name Box
+ @name_box_skin = "mainskin"       #Choose the WindowSkin for the Name Box
+ 
+
 
   # Used for storing the Default Sound Configuration
   def save_sound_settings
@@ -915,6 +484,9 @@ class Window_Message < Window_Selectable
     self.contents = Bitmap.new(width - 32, height - 32)
     self.visible = false
     self.z = 9000 + msgindex * 5 # permits messages to overlap legibly
+    @counter = 2
+    #how many frames long is your fire animation
+    @fireframes = 3
     @fade_in = false
     @fade_out = false
     @contents_showing = false
@@ -991,18 +563,6 @@ class Window_Message < Window_Selectable
     @auto_move_continue = $game_system.message.auto_move_continue
     # allows a specific window to be flagged if choices are displayed
     @choice_window = nil
-    
-    
- @name_box_x_offset = 0       #Choose the X axis offset of the name bos. default= 0
- @name_box_y_offset = -10    #Choose the Y axis offset of the name bos. default= -10
- @name_box_width = 10           #Choose the width of the Name Box. default= 8  
- @name_box_height = 28        #Choose the height of the Name Box. default= 26
- @name_font_type = "PlopDump" #Choose the Font Name (Case Sensitive) for Name Box
- @name_font_size = 20            #Choose the deafault Font Size for Name Box text
- @name_box_text_color= 4        #Choose the Text Color of the Name Box
- @name_box_skin = "mainskin"       #Choose the WindowSkin for the Name Box
- 
-    
     
     # Close a Window if distance from speaker is too great
     @dist_exit = $game_system.message.dist_exit
@@ -1166,38 +726,33 @@ class Window_Message < Window_Selectable
       @text.gsub!(/\\[Gg][\-]/) { "\024" } # Gold Window at Bottom
       @text.gsub!(/\\[Gg]/) { "\002" }  # Gold Window Auto, based on Player Loc
 
-      
+#=begin      
         #Dubealex's Choose Name Box Text Color (NEW)
    @text.gsub!(/\\[Zz]\[([0-9]+)\]/) do
-   $Game_Message.name_box_text_color=$1.to_i
+   $game_system.message.name_box_text_color= $1.to_i #broken
    @text.sub!(/\\[Zz]\[([0-9]+)\]/) { "" }
    end
    #End new command
    
   name_window_set = false
-  if (/\\[Nn]ame\[(.+?)\]/.match(@now_text)) != nil
+  if (/\\[Nn][Aa]\[(.+?)\]/.match(@text)) != nil
+    
     name_window_set = true
     name_text = $1
-    @text.sub!(/\\[Nn]ame\[(.*?)\]/) { "" }
+    @text.sub!(/\\[Nn][Aa]\[(.*?)\]/) { "" }
   end
-      
+if (/\\[Nn][Aa][Mm][Ee]\[(.+?)\]/.match(@text)) != nil
+  #old style compatibility
+    name_window_set = true
+    name_text = $1
+    @text.sub!(/\\[Nn][Aa][Mm][Ee]\[(.*?)\]/) { "" }
+  end
     if name_window_set
-    color=$message.name_box_text_color
-    off_x =  $message.name_box_x_offset
-    off_y =  $message.name_box_y_offset
-    space = 2
-    x = self.x + off_x - space / 2
-    y = self.y + off_y - space / 2
-    w = self.contents.text_size(name_text).width + $message.name_box_width + space
-    h = $message.name_box_height + space
-    @name_window_frame = Window_Frame.new(x, y, w, h)
-    @name_window_frame.z = self.z + 1
-    x = self.x + off_x + 4
-    y = self.y + off_y
-    @name_window_text  = Air_Text.new(x, y, name_text, color)
-    @name_window_text.z = self.z + 2
+    create_name_sprite(name_text) if name_text != ''
+    #@name_window_text.z = self.z + 2
   end
-      
+#=end
+
       # display icon of item, weapon, armor or skill
       @text.gsub!(/\\[Ii]\[([IiWwAaSs][0-9]+)\]/) { "\013[#{$1}]" }
       # display name of enemy, item, weapon, armor or skill
@@ -1265,6 +820,14 @@ class Window_Message < Window_Selectable
       
       # show a picture!
       @text.gsub!(/\\[Qq]\[([\w]+)\]/) { "\026[#{$1}]" } 
+      #render fire
+      @text.gsub!(/\\[Ff][Ii]/) { "\027" }
+      
+      @text.gsub!(/\\[Ff]\[(.+?)(?:,(\d+))?\]/) { "\028[#{$1}]" }
+      #@text.gsub!(/\\[Nn][Aa]\[([0-9]+),([0-9]+)\]/) { "\029[#{$1},#{$2}]" }
+      #display name BROKEN, PLEASE USE DUBEALEX VERSION
+      #@text.gsub!(/\\[Nn]a\[(.+?)(?:(\d+))?\]/) { "\030[#{$1}]" } 
+      #@text.gsub!(/\\[Nn][Aa]\[([\w]+)\]/) { "\030[#{$1}]" } 
       
       # self close message
       @text.gsub!(/\\[!]/) { "\006" }
@@ -1503,9 +1066,8 @@ class Window_Message < Window_Selectable
       if $game_system.message.autocenter and @text != ""
         @x = (self.width-40)/2 - @line_widths[0]/2
       end
-    end
+    end 
   end
-
   #--------------------------------------------------------------------------
   # * Resize Window
   #-------------------------------------------------------------------------- 
@@ -1551,7 +1113,7 @@ class Window_Message < Window_Selectable
   #--------------------------------------------------------------------------
   # * Reposition Window
   #-------------------------------------------------------------------------- 
-  def reposition
+  def reposition 
     if $game_temp.in_battle
       if "abcdefghij".include?(@float_id) # must be between a and d
         @float_id = @float_id[0] - 97 # a = 0, b = 1, c = 2, d = 3
@@ -1568,21 +1130,22 @@ class Window_Message < Window_Selectable
         end
         sprite = $scene.spriteset.enemy_sprites[@float_id]
       end
-      
+=begin
       if sprite.frame_height != nil #ATOA COMPATIBLE!!!!
         char_height = sprite.frame_height
         char_width = sprite.frame_width
         char_x = sprite.x
         char_y = sprite.y - char_height/2
-      else     
-=begin
+      else   
+=end
+
       if sprite.height != nil
         char_height = sprite.height
         char_width = sprite.width
         char_x = sprite.x
         char_y = sprite.y - char_height/2
       else
-=end
+
         # This prevents GAME CRASH Enemy doesnt exist
         return
       end
@@ -1635,7 +1198,7 @@ class Window_Message < Window_Selectable
       end
       # record coords of character's center
       char_x = char.screen_x
-      char_y = char.screen_y - char_height/2
+      char_y = char.screen_y - char_height/2 -16 #added the minus 16
     end
     params = [char_height, char_width, char_x, char_y]
     # position window and message tail
@@ -1646,6 +1209,7 @@ class Window_Message < Window_Selectable
     flip = need_flip?(@float_id, @location, x, y, params)
     # check if any window locations need to be "flipped"
     # because of Window Location
+    
     if @location == 4 and
        ((x < 0 and 
        (not $game_system.message.allow_offscreen or $game_temp.in_battle)) or
@@ -1662,7 +1226,7 @@ class Window_Message < Window_Selectable
       if x + self.width > 640 and 
          (!$game_system.message.allow_offscreen or $game_temp.in_battle)
         # right is no good either...
-        if y >= 0
+        if y >= 24 #EDIT was 24
           # switch to top
           @location = 8
           vars = new_position(params)
@@ -1700,7 +1264,7 @@ class Window_Message < Window_Selectable
       if x < 0 and 
          (!$game_system.message.allow_offscreen or $game_temp.in_battle)
         # left is no good either...
-        if y >= 0
+        if y >= 50
           # switch to top
           @location = 8
           vars = new_position(params)
@@ -1999,14 +1563,31 @@ class Window_Message < Window_Selectable
         # Note to Self - Reorganize based on actual Letter Sounds, not so Random
         if ['l','m','n','q','u','w','2'].include?(c)
           pitch = @sound_pitch - sound_pitch_range
+          #print(sound + "_aa")
+          if FileTest.exist?( "Audio/SE/" + $game_system.message.sound_audio + "_aa.wav" )
+            sound = sound + "_aa"
+            #print(sound)
+            end
         elsif ['a','f','h','j','k','o','r','x','1','4','7','8'].include?(c)
           pitch = @sound_pitch - sound_pitch_range / 2
+          if FileTest.exist?( "Audio/SE/" + $game_system.message.sound_audio + "_ee.wav" )
+            sound = sound + "_ee"
+            end
         elsif ['b','c','d','e','g','p','t','v','z','0','3','6'].to_a.include?(c)
           pitch = @sound_pitch
+          if FileTest.exist?( "Audio/SE/" + $game_system.message.sound_audio + "_ii.wav" )
+            sound = sound + "_ii"
+            end
         elsif ['s','7'].to_a.include?(c)
           pitch = @sound_pitch + sound_pitch_range / 2
+          if FileTest.exist?( "Audio/SE/" + $game_system.message.sound_audio + "_oo.wav" )
+            sound = sound + "_oo"
+            end
         elsif ['i','y','5','9'].to_a.include?(c)
           pitch = @sound_pitch + sound_pitch_range
+          if FileTest.exist?( "Audio/SE/" + $game_system.message.sound_audio + "_uu.wav" )
+            sound = sound + "_uu"
+            end
         else
           pitch = rand(@sound_pitch_range * 2) + @sound_pitch
         end
@@ -2194,7 +1775,7 @@ class Window_Message < Window_Selectable
           @x += 24
           #self.contents.draw_text(x + 28, y, 212, 32, item.name)
           return
-        end
+        end       
         # if \* - Display the next message
         if c == "\014"
           if $scene.is_a?(Scene_Battle)
@@ -2249,8 +1830,30 @@ class Window_Message < Window_Selectable
           @x += bitmap.width + 4
           #@y += bitmap.height
           next
-        end     
-        
+        end
+          #fire display \fi
+        if c == "\027" 
+          bitmap = RPG::Cache.picture("nyoomdf")
+          rect = Rect.new(0, 0, bitmap.width/@fireframes, bitmap.height)
+          #fire counter
+          @counter += 1
+          @counter = @counter % @fireframes*4
+          rect.x =( @counter / @fireframes) * rect.width
+          contents.blt(4+@x, 32*@y, bitmap, rect)
+          next
+        end   
+        #face display
+      if c == "\028" #imported new
+      @text.sub!(/\[(.+?)(?:,(\d+))?\]/, '')
+      face = $1.to_s
+      if  face != '' && face['|'] 
+        face = face.split('|')
+        create_portrait(face)
+        return 0
+      end
+      create_face_sprite(face) if face != ''   
+      return 0
+    end      
         # if \F* (Foot Forward Animation On "Other" Foot)
         if c == "\022" and @float_id
           speaker = (@float_id > 0) ? $game_map.events[@float_id] : $game_player
@@ -2327,8 +1930,9 @@ class Window_Message < Window_Selectable
       self.y = 16
     else
       case $game_system.message_position
+      #this is for untargetted positioned windows
       when 0  # up
-        self.y = 16
+        self.y = 20
       when 1  # middle
         self.y = 160
       when 2  # down
@@ -2369,7 +1973,6 @@ class Window_Message < Window_Selectable
             terminate_message
             # 115 Breaks Event Processing
             $game_system.map_interpreter.command_115
-            
             # If there is someone speaking        
             if @float_id
               # Player
@@ -2694,8 +2297,203 @@ class Window_Message < Window_Selectable
     end
   end
 
+
+#new
+
+  #--------------------------------------------------------------------------
+  # * Alias Listing
+  #--------------------------------------------------------------------------
+
+  alias drg128_term terminate_message unless method_defined?(:drg128_term)
+  alias drg128_upd update unless method_defined?(:drg128_upd)
+  alias drg128_rep reposition unless method_defined?(:drg128_rep)
+
+  #--------------------------------------------------------------------------
+  # * Create Face_Sprite
+  #--------------------------------------------------------------------------
+  def create_face_sprite(face='')
+    terminate_face rescue return
+    return if face.nil? || face == ' '
+    dir = 'Graphics/Pictures'
+    Dir.mkdir(dir) unless File.directory?(dir)
+    face = Bitmap.new("#{dir}/#{face}") 
+    bitmap = Bitmap.new(96,96)
+    bitmap.stretch_blt(bitmap.rect, face, face.rect) 
+    create_face_cont(bitmap)
+  end
+  #--------------------------------------------------------------------------
+  # * Create Face_Sprite
+  #--------------------------------------------------------------------------
+  def create_face_cont(bitmap)
+    @face = Sprite.new
+    @face.bitmap = bitmap
+    @face.opacity = $game_system.message.opacity
+    face_position rescue return
+    reposition
+  end
+  #--------------------------------------------------------------------------
+  # * Create Name_Sprite
+  #--------------------------------------------------------------------------
+  def create_name_sprite(name='')
+    terminate_name_sprite
+    boxcolor = Color.new(160, 20, 20) #this is what color the box is gonna be
+    bitmap = Bitmap.new(name.length*10+20, 32) #sets the box size to big enough
+    
+    boxcolor.alpha=100
+    bitmap.fill_rect(-10, 2, name.length*15, 15, boxcolor )
+    boxcolor.alpha=150
+    bitmap.fill_rect(-10, 2, name.length*10, 15, boxcolor ) 
+    boxcolor.alpha=200
+    bitmap.fill_rect(-10, 2, name.length*5, 15, boxcolor ) 
+    #draw a box here
+    bitmap.font = self.contents.font
+    bitmap.font.color = text_color(6) #yellow. it's yellow.
+    bitmap.draw_text(2, 0, name.length*10, 32, name)
+
+    @name_sprite = Sprite.new
+    @name_sprite.bitmap = bitmap
+    name_sprite_position
+  end
+  #--------------------------------------------------------------------------
+  # * Face Position
+  #--------------------------------------------------------------------------
+  def face_position
+    return if !@face || @face.disposed?   
+    if $game_system.message.floating
+      @face.x = self.x - (@face.bitmap.width * @face.zoom_x + 2)
+      @face.y = self.y  + 20 * ([64-64, 0].max/32).floor
+      @face.y -= [(10 - (self.height - 64)), -6].max
+    else
+      @face.zoom_x = 1.2
+      @face.zoom_y = 1.2
+      @face.x = self.x + (self.width - (@face.bitmap.width * @face.zoom_x + 8))
+      @face.y = self.y + 10
+    end
+    @face.z = self.z 
+  end
+  #--------------------------------------------------------------------------
+  # * Name_Sprite Position
+  #--------------------------------------------------------------------------
+  def name_sprite_position
+    return if !@name_sprite || @name_sprite.disposed?
+    @name_sprite.y = self.y - 6
+    @name_sprite.x = self.x + 8 #find the max width
+    @name_sprite.z = self.z + 101
+  end
+  #--------------------------------------------------------------------------
+  # * Terminate Face
+  #--------------------------------------------------------------------------
+  def terminate_face()  eval ('@face.dispose; @face = nil') if @face   end
+  #--------------------------------------------------------------------------
+  # * Terminate Name_Sprite
+  #--------------------------------------------------------------------------
+  def terminate_name_sprite()
+    eval('@name_sprite.dispose; @name_sprite = nil')if @name_sprite
+  end
+
+  #--------------------------------------------------------------------------
+  # * Terminate Message
+  #--------------------------------------------------------------------------
+  def terminate_message
+    @fwindowskin.bitmap.clear if !@fwindowskin.nil? && !@fwindowskin.disposed? 
+    terminate_face
+    terminate_name_sprite 
+    drg128_term
+  end
+=begin
+  #--------------------------------------------------------------------------
+  # * Update Frame
+  #--------------------------------------------------------------------------
+  def update
+    temp = $game_temp.in_battle
+    $game_temp.in_battle = $scene.is_a?(Scene_Battle)
+    drg128_upd
+    $game_temp.in_battle = temp
+  end  
+=end
+  #--------------------------------------------------------------------------
+  # * Reposition Window
+  #-------------------------------------------------------------------------- 
+  def reposition
+    drg128_rep
+    face_position
+    name_sprite_position
+  end
+  #--------------------------------------------------------------------------
+  # * Alias Listing
+  #--------------------------------------------------------------------------
+  alias upd_portrait update unless method_defined?(:upd_portrait)
+  alias term_face_por terminate_face unless method_defined?(:term_face_por)
+  #--------------------------------------------------------------------------
+  # * create_portrait
+  #--------------------------------------------------------------------------
+  def create_portrait(face)
+    terminate_face rescue return
+    return if face.nil? || face == ' ' #\f [portrait,face,coord,color,xy] 
+    dir, a, b = 'Graphics/Portrait', [204+5,28,204,204], [0,0]
+    Dir.mkdir(dir) unless File.directory?(dir)
+    a = face[2].split(',').map {|x| x.to_i } if face[2] && face[2] != ' '
+    b = face[4].split(',').map {|x| x.to_i } if face[4] && face[4] != ' '
+    c = face[3]
+    d = Bitmap.new("#{dir}/#{face[0]}") 
+    e = Bitmap.new("#{dir}/#{face[1]}")  if face[1] && face[1][0].chr != ' ' 
+    f = Bitmap.new(80,80)
+    @portrait = Sprite.new
+    @portrait.bitmap, @portrait.opacity = d, 0
+    @portrait.x, @portrait.y = b[0], b[1]
+    @portrait.bitmap.blt(0, 0, e || Bitmap.new(1,1), 
+        Rect.new(0,0,@portrait.bitmap.width,a[1]+a[3])) 
+    unless  c == ' '    
+      f.fill_rect(Rect.new(0,0,80,80),check_color(0)) if c
+      f.stretch_blt(f.rect, @portrait.bitmap, Rect.new(*a)) if face[1] != ' '
+      f.fill_rect(Rect.new(0,0,80,2),check_color(c))  if c
+      f.fill_rect(Rect.new(0,78,80,2),check_color(c)) if c
+      f.fill_rect(Rect.new(0,0,2,80),check_color(c))  if c
+      f.fill_rect(Rect.new(78,0,2,80),check_color(c)) if c
+    end
+    create_face_cont(f)
+  end
+  #--------------------------------------------------------------------------
+  # * Update Frame
+  #--------------------------------------------------------------------------
+  def update
+    @portrait.opacity = [@portrait.opacity+15, 255].min if @portrait
+    upd_portrait
+  end
+  #--------------------------------------------------------------------------
+  # * terminate_face
+  #--------------------------------------------------------------------------
+  def terminate_face
+    term_face_por
+    eval '@portrait.dispose;  @portrait = nil' if @portrait
+  end
+
 end
 
+
+#==============================================================================
+# ** Game_Character 
+#------------------------------------------------------------------------------
+#  This class deals with characters. It's used as a superclass for the
+#  Game_Player and Game_Event classes.
+#==============================================================================
+
+class Game_Character
+  #--------------------------------------------------------------------------
+  # * Public Instance Variables
+  #--------------------------------------------------------------------------
+  attr_accessor   :no_ff, :rev_scr_xy 
+  attr_reader     :erased
+  #--------------------------------------------------------------------------
+  # * Name
+  #---------------------------------------------------------------------------
+  def name() self.is_a?(Game_Event) ? @event.name : $game_party.actors[0].name end
+  #--------------------------------------------------------------------------
+  # * last_real_xy
+  #--------------------------------------------------------------------------
+  def last_real_xy() [@real_x, @real_y] end
+
+end #new
 #------------------------------------------------------------------------------
 
 class Game_Character
@@ -2719,7 +2517,7 @@ class Game_Character
     @last_real_y = @real_y
     wachunga_game_char_update
   end
-  
+ 
   def within_range?(range = 4, id = @event_id)
     e = $game_map.events[id]
     radius = (Math.hypot((e.x - $game_player.x), (e.y - $game_player.y))).abs
@@ -3726,7 +3524,7 @@ class Window_Frame < Window_Base
 
 def initialize(x, y, width, height)
 super(x, y, width, height)
-self.windowskin = RPG::Cache.windowskin($ams.name_box_skin)
+self.windowskin = RPG::Cache.windowskin($game_system.message.name_box_skin)
 self.contents = nil
 end
 #--------------------------------------------------------------------------
@@ -3785,7 +3583,33 @@ end
       mmw_sdk_patch_update(*args)
     end
   end
-  
+
+#=========================================
+# ▼ Class Air_Text Begins 
+#=========================================
+class Air_Text < Window_Base
+
+def initialize(x, y, designate_text, color=0)
+ 
+super(x-16, y-16, 32 + designate_text.size * 12, 56)
+self.opacity      = 0
+self.back_opacity = 0
+self.contents = Bitmap.new(self.width - 32, self.height - 32)
+w = self.contents.width
+h = self.contents.height
+self.contents.font.name = $defaultfonttype
+self.contents.font.size = $defaultfontsize
+#self.contents.font.color = text_color(3)#color
+self.contents.draw_text(0, 0, w, h, designate_text)
+end
+
+#--------------------------------------------------------------------------
+
+def dispose
+self.contents.clear
+super
+end
+end 
   #=============================================================================
   # ** Game_Player
   #-----------------------------------------------------------------------------
@@ -3799,12 +3623,14 @@ end
     #--------------------------------------------------------------------------
     unless method_defined?(:update_player_movement)
       def update_player_movement
+      
         case Input.dir4
         when 2 then move_down
         when 4 then move_left
         when 6 then move_right
         when 8 then move_up
         end
+
       end
     end
   end

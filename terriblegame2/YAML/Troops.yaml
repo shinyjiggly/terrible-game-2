@@ -1483,9 +1483,51 @@ root:
       turn_b: 0
       enemy_valid: false
     span: 0
-  name: ''
+  name: full crew
   id: 25
-  members: []
+  members:
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 176
+    enemy_id: 28
+    x: 336
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 216
+    enemy_id: 27
+    x: 232
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 272
+    enemy_id: 25
+    x: 320
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 288
+    enemy_id: 24
+    x: 224
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 240
+    enemy_id: 23
+    x: 368
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 144
+    enemy_id: 22
+    x: 376
+    immortal: false
+  - !ruby/object:RPG::Troop::Member
+    hidden: false
+    y: 304
+    enemy_id: 21
+    x: 320
+    immortal: false
 - !ruby/object:RPG::Troop
   pages:
   - !ruby/object:RPG::Troop::Page

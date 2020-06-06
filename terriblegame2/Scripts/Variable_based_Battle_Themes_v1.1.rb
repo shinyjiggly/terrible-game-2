@@ -70,6 +70,7 @@ class PK8
   Varba_Theme[4] = ["Spacious Anxious - 09 Omnibus", 100, 100] #timestuck
   Varba_Theme[5] = ["boss1", 100, 100]
   Varba_Theme[6] = ["guitarnoodle", 100, 100]
+  Varba_Theme[7] = ["battle_theme1", 100, 100]
 end
 
 if PK8::Varba_RMXP == true # If using RMXP

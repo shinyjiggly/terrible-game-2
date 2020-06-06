@@ -288,9 +288,9 @@ class Scene_Battle
     s2 = $data_system.words.item
     s3 = $data_system.words.guard
     s4 = @escape_name if @escape_type == 0
-    @individual_commands = [s1] + @active_battler.individual_commands + [s2, s3]
+    @individual_commands = [s1] + @active_battler.individual_commands + [s3] #s2, 
     if @escape_type == 0
-      @individual_commands = [s1]+  @active_battler.individual_commands + [s2, s3, s4]
+      @individual_commands = [s1]+  @active_battler.individual_commands + [s3, s4] #s2, 
     end
   end
   #--------------------------------------------------------------------------

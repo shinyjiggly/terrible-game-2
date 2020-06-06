@@ -1,11 +1,11 @@
 --- !ruby/object:Hash
 root: !ruby/object:Hash
   1: !ruby/object:RPG::MapInfo
-    scroll_x: 1200
+    scroll_x: 1714
     name: field
     expanded: true
     order: 12
-    scroll_y: 702
+    scroll_y: 434
     parent_id: 0
   2: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -15,25 +15,25 @@ root: !ruby/object:Hash
     scroll_y: 483
     parent_id: 0
   3: !ruby/object:RPG::MapInfo
-    scroll_x: 529
+    scroll_x: 715
     name: testing beach
     expanded: true
     order: 41
-    scroll_y: 308
+    scroll_y: 556
     parent_id: 1
   4: !ruby/object:RPG::MapInfo
-    scroll_x: 560
+    scroll_x: 587
     name: warhip deck demo
-    expanded: false
+    expanded: true
     order: 36
-    scroll_y: 632
+    scroll_y: 1548
     parent_id: 1
   5: !ruby/object:RPG::MapInfo
     scroll_x: 320
     name: interior crocodile aligator
     expanded: false
     order: 37
-    scroll_y: 312
+    scroll_y: 675
     parent_id: 4
   6: !ruby/object:RPG::MapInfo
     scroll_x: 384
@@ -54,17 +54,17 @@ root: !ruby/object:Hash
     name: Cove waterway
     expanded: true
     order: 48
-    scroll_y: 464
+    scroll_y: 611
     parent_id: 3
   9: !ruby/object:RPG::MapInfo
-    scroll_x: 560
+    scroll_x: 532
     name: midnight liquicave
     expanded: true
     order: 49
-    scroll_y: 400
+    scroll_y: 397
     parent_id: 8
   10: !ruby/object:RPG::MapInfo
-    scroll_x: 1318
+    scroll_x: 1315
     name: cave path
     expanded: true
     order: 50
@@ -81,7 +81,7 @@ root: !ruby/object:Hash
     scroll_x: 320
     name: map template
     expanded: false
-    order: 55
+    order: 58
     scroll_y: 240
     parent_id: 0
   13: !ruby/object:RPG::MapInfo
@@ -178,7 +178,7 @@ root: !ruby/object:Hash
   26: !ruby/object:RPG::MapInfo
     scroll_x: 640
     name: west room
-    expanded: false
+    expanded: true
     order: 21
     scroll_y: 320
     parent_id: 24
@@ -211,11 +211,11 @@ root: !ruby/object:Hash
     scroll_y: 240
     parent_id: 29
   31: !ruby/object:RPG::MapInfo
-    scroll_x: 640
+    scroll_x: 532
     name: jello house
     expanded: true
     order: 2
-    scroll_y: 560
+    scroll_y: 308
     parent_id: 2
   32: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -225,11 +225,11 @@ root: !ruby/object:Hash
     scroll_y: 240
     parent_id: 31
   33: !ruby/object:RPG::MapInfo
-    scroll_x: 1008
+    scroll_x: 532
     name: forestttt
-    expanded: false
+    expanded: true
     order: 4
-    scroll_y: 608
+    scroll_y: 908
     parent_id: 31
   34: !ruby/object:RPG::MapInfo
     scroll_x: 416
@@ -239,7 +239,7 @@ root: !ruby/object:Hash
     scroll_y: 432
     parent_id: 33
   35: !ruby/object:RPG::MapInfo
-    scroll_x: 1516
+    scroll_x: 2051
     name: dark
     expanded: true
     order: 6
@@ -250,7 +250,7 @@ root: !ruby/object:Hash
     name: deeperrrr
     expanded: true
     order: 7
-    scroll_y: 1136
+    scroll_y: 1132
     parent_id: 35
   37: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -264,7 +264,7 @@ root: !ruby/object:Hash
     name: final
     expanded: false
     order: 8
-    scroll_y: 624
+    scroll_y: 316
     parent_id: 36
   39: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -278,17 +278,17 @@ root: !ruby/object:Hash
     name: treefort
     expanded: false
     order: 11
-    scroll_y: 680
+    scroll_y: 675
     parent_id: 33
   41: !ruby/object:RPG::MapInfo
     scroll_x: 384
     name: stairs
-    expanded: false
+    expanded: true
     order: 26
     scroll_y: 483
     parent_id: 24
   42: !ruby/object:RPG::MapInfo
-    scroll_x: 1707
+    scroll_x: 1546
     name: downstaires
     expanded: false
     order: 27
@@ -302,21 +302,21 @@ root: !ruby/object:Hash
     scroll_y: 483
     parent_id: 41
   44: !ruby/object:RPG::MapInfo
-    scroll_x: 899
+    scroll_x: 782
     name: right path
     expanded: false
     order: 29
     scroll_y: 240
     parent_id: 43
   45: !ruby/object:RPG::MapInfo
-    scroll_x: 720
+    scroll_x: 532
     name: left path
     expanded: true
     order: 30
     scroll_y: 320
     parent_id: 43
   46: !ruby/object:RPG::MapInfo
-    scroll_x: 899
+    scroll_x: 541
     name: left path
     expanded: false
     order: 31
@@ -327,7 +327,7 @@ root: !ruby/object:Hash
     name: right before the boss room
     expanded: true
     order: 32
-    scroll_y: 312
+    scroll_y: 322
     parent_id: 43
   48: !ruby/object:RPG::MapInfo
     scroll_x: 384
@@ -344,11 +344,11 @@ root: !ruby/object:Hash
     scroll_y: 240
     parent_id: 48
   50: !ruby/object:RPG::MapInfo
-    scroll_x: 576
+    scroll_x: 532
     name: route to lake
     expanded: false
     order: 35
-    scroll_y: 432
+    scroll_y: 556
     parent_id: 7
   51: !ruby/object:RPG::MapInfo
     scroll_x: 320
@@ -379,9 +379,30 @@ root: !ruby/object:Hash
     scroll_y: 240
     parent_id: 10
   55: !ruby/object:RPG::MapInfo
-    scroll_x: 752
+    scroll_x: 533
     name: water path
     expanded: false
     order: 54
-    scroll_y: 870
+    scroll_y: 501
     parent_id: 54
+  56: !ruby/object:RPG::MapInfo
+    scroll_x: 400
+    name: secre hideout
+    expanded: false
+    order: 55
+    scroll_y: 304
+    parent_id: 54
+  57: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: Finn's room
+    expanded: false
+    order: 56
+    scroll_y: 240
+    parent_id: 54
+  58: !ruby/object:RPG::MapInfo
+    scroll_x: 320
+    name: fallingstar island
+    expanded: false
+    order: 57
+    scroll_y: 707
+    parent_id: 3

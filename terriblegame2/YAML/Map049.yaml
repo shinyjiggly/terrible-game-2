@@ -16,7 +16,7 @@ root: !ruby/object:RPG::Map
           code: 101
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[0]uh, Niki? why are there two of yous."
+          - "\\p[0]uh, Lavvy? why are there two of yous."
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand
@@ -36,7 +36,7 @@ root: !ruby/object:RPG::Map
           code: 655
         - !ruby/object:RPG::EventCommand
           parameters:
-          - "\\p[c2]wait. if that's Niki, and you're Niki, "
+          - "\\p[c2]wait. if that's Lavvy, and you're Lavvy, "
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand

@@ -172,7 +172,6 @@
 69821682    squad engine                                 squad_engine.rb
 96345515    squad menu                                   squad_menu.rb
 30729534    Scroll panorama                              Scroll_panorama.rb
-80620706                                                 EMPTY
 73327286    Focus Radius                                 Focus_Radius.rb
 11421057    -----------                                  EMPTY
 63588152    Main                                         Main.rb

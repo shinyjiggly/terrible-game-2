@@ -513,7 +513,7 @@ root: !ruby/object:RPG::Map
           code: 249
         - !ruby/object:RPG::EventCommand
           parameters:
-          - NIKI HADS JOINED YOUR PARTY\.\.\.\!
+          - LAVVY HADS JOINED YOUR PARTY\.\.\.\!
           indent: 0
           code: 101
         - !ruby/object:RPG::EventCommand

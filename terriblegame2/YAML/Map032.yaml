@@ -363,9 +363,14 @@ root: !ruby/object:RPG::Map
         list:
         - !ruby/object:RPG::EventCommand
           parameters:
-          - these books had nothing particularly relevent in them.
+          - this cook contains EXPLOSIVES!
           indent: 0
           code: 101
+        - !ruby/object:RPG::EventCommand
+          parameters:
+          - "...nah, it's got nothing."
+          indent: 0
+          code: 401
         - !ruby/object:RPG::EventCommand
           parameters: []
           indent: 0
